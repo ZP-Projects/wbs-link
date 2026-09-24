@@ -1,0 +1,38 @@
+name: Submit results
+description: Submit your WBS↔LINK Challenge answers for scoring (synthetic data only)
+title: "[Submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for taking part. A bot scores you within minutes and replies here. **Test product, synthetic data only.** Your GitHub username and scores are public."
+  - type: input
+    attributes: { label: Display name, description: "How you'd like to appear on the leaderboard" }
+  - type: dropdown
+    attributes: { label: "Your role (optional)", options: ["Owner / developer", "PM firm / owner's rep", "General contractor", "Subcontractor / supplier", "Cost or schedule analyst", "Consultant", "Data / software", "Other", "Prefer not to say"] }
+  - type: dropdown
+    attributes: { label: "Which set?", options: ["Challenge set (hidden answers)", "Practice set (answers public)"] }
+    validations: { required: true }
+  - type: input
+    attributes: { label: Minutes spent, description: "Active working time, honestly" }
+    validations: { required: true }
+  - type: checkboxes
+    attributes:
+      label: Tools used
+      options: [{label: Excel}, {label: Power Query}, {label: SQL}, {label: Python or R}, {label: Power BI}, {label: AI assistant}, {label: Other}]
+  - type: textarea
+    attributes: { label: Answers file, description: "Drag your answers .csv here (it becomes a link). Columns: period, source_file, record_id, answer, confidence" }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: "Exceptions file (optional)", description: "Drag your exceptions .csv here" }
+  - type: textarea
+    attributes: { label: "What was hardest? (optional)", description: "Your words help shape the standard" }
+  - type: checkboxes
+    attributes:
+      label: Confirmations
+      options:
+        - label: My files contain only the synthetic challenge data, and no real project, client or employer information
+          required: true
+        - label: I understand my GitHub username, entries and scores are public
+          required: true
+        - label: I'd like to be credited as a Founding Reviewer (optional)

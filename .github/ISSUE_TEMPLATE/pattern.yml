@@ -1,0 +1,18 @@
+name: Share a real-world pattern
+description: A generalised pattern you see on real projects. No names, codes or values.
+title: "[Pattern] "
+labels: ["pattern"]
+body:
+  - type: textarea
+    attributes: { label: The pattern, description: "e.g. 'Subs renumber progress lines after each approved change'. Describe the pattern, not the project." }
+    validations: { required: true }
+  - type: textarea
+    attributes: { label: How you deal with it today }
+  - type: dropdown
+    attributes: { label: "How often do you see it?", options: ["Every month", "Most projects", "Sometimes", "Rarely"] }
+  - type: checkboxes
+    attributes:
+      label: Confirmation
+      options:
+        - label: This contains no client, employer, project or person names, codes or values
+          required: true

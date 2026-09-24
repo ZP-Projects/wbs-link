@@ -1,0 +1,19 @@
+name: What the crosswalk costs you
+description: Tell us about the real effort. Anonymous-style, no names.
+title: "[Hours] "
+labels: ["hours"]
+body:
+  - type: dropdown
+    attributes: { label: Your role, options: ["Owner / developer", "PM firm / owner's rep", "General contractor", "Subcontractor / supplier", "Cost or schedule analyst", "Consultant", "Other"] }
+  - type: input
+    attributes: { label: Contractor submissions you reconcile each cycle }
+  - type: input
+    attributes: { label: Hours per reporting cycle (you and your team) }
+  - type: textarea
+    attributes: { label: "What goes wrong most often?", description: "In your own words" }
+  - type: checkboxes
+    attributes:
+      label: Confirmation
+      options:
+        - label: I've included no client, employer or project names
+          required: true

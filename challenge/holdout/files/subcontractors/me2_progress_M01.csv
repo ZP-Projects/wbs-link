@@ -1,0 +1,46 @@
+Line No,Description,Location,Pct
+10001,Set CRAH units Unit 1-01,DH1,0
+10002,Connect CRAH units Unit 1-01,DH1,0
+10003,Flush & start CRAH units Unit 1-01,DH1,55
+10004,Set CRAH units Unit 1-02,DH1,0.0
+10005,Connect CRAH units Unit 1-02,DH1,0
+10006,Flush & start CRAH units Unit 1-02,DH1,0
+10007,Set CRAH units Unit 1-03,DH1,0
+10008,Connect CRAH units Unit 1-03,DH1,0
+10009,Flush & start CRAH units Unit 1-03,DH1,4
+10010,Set CRAH units Unit 1-04,DH1,0
+10011,Connect CRAH units Unit 1-04,DH1,0.0
+10012,Flush & start CRAH units Unit 1-04,DH1,24
+10013,Set CRAH units Unit 1-05,DH1,0
+10014,Connect CRAH units Unit 1-05,DH1,52
+10015,Flush & start CRAH units Unit 1-05,DH1,63
+10016,Set CRAH units Unit 1-06,DH1,0.18
+10017,Connect CRAH units Unit 1-06,DH1,32
+10018,Flush & start CRAH units Unit 1-06,DH1,28
+10019,Set CRAH units Unit 1-07,DH1,0
+10020,Connect CRAH units Unit 1-07,DH1,0
+10021,Flush & start CRAH units Unit 1-07,DH1,0
+10022,Set CRAH units Unit 2-01,DH2,4
+10023,Connect CRAH units Unit 2-01,DH2,29
+10024,Flush & start CRAH units Unit 2-01,DH2,0
+10025,Set CRAH units Unit 2-02,DH2,33
+10026,Connect CRAH units Unit 2-02,DH2,5
+10027,Flush & start CRAH units Unit 2-02,DH2,38
+10028,Set CRAH units Unit 2-03,DH2,13
+10029,Connect CRAH units Unit 2-03,DH2,0
+10030,Flush & start CRAH units Unit 2-03,DH2,0.0
+10031,Set CRAH units Unit 2-04,DH2,0
+10032,Connect CRAH units Unit 2-04,DH2,0
+10033,Flush & start CRAH units Unit 2-04,DH2,0
+10034,Set CRAH units Unit 3-01,DH3,0
+10035,Connect CRAH units Unit 3-01,DH3,17
+10036,Flush & start CRAH units Unit 3-01,DH3,0
+10037,Set CRAH units Unit 3-02,DH3,0
+10038,,DH3,8
+10039,Flush & start CRAH units Unit 3-02,DH3,0
+10040,Set CRAH units Unit 3-03,DH3,0
+10041,Connect CRAH units Unit 3-03,DH3,0
+10042,Flush & start CRAH units Unit 3-03,DH3,3
+10043,Set CRAH units Unit 3-04,DH3,9
+10044,Connect CRAH units Unit 3-04,DH3,0
+10045,Flush & start CRAH units Unit 3-04,DH3,0

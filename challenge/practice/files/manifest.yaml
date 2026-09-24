@@ -1,0 +1,198 @@
+project: WBS↔LINK Challenge - practice set (synthetic)
+target: owner/owner_scope_structure.xlsx
+periods:
+  1:
+  - source: ct1_progress
+    party: Contractor CT1
+    kind: progress
+    file: subcontractors/ct1_progress_M01.csv
+  - source: ct2_progress
+    party: Contractor CT2
+    kind: progress
+    file: subcontractors/ct2_progress_M01.csv
+  - source: el1_progress
+    party: Contractor EL1
+    kind: progress
+    file: subcontractors/el1_progress_M01.xlsx
+  - source: el2_progress
+    party: Contractor EL2
+    kind: progress
+    file: subcontractors/el2_progress_M01.xlsx
+  - source: el4_progress
+    party: Contractor EL4
+    kind: progress
+    file: subcontractors/el4_progress_M01.csv
+  - source: fb1_progress
+    party: Contractor FB1
+    kind: progress
+    file: subcontractors/fb1_progress_M01.csv
+  - source: fb2_progress
+    party: Contractor FB2
+    kind: progress
+    file: subcontractors/fb2_progress_M01.csv
+  - source: fb3_progress
+    party: Contractor FB3
+    kind: progress
+    file: subcontractors/fb3_progress_M01.csv
+  - source: me1_progress
+    party: Contractor ME1
+    kind: progress
+    file: subcontractors/me1_progress_M01.xlsx
+  - source: me3_progress
+    party: Contractor ME3
+    kind: progress
+    file: subcontractors/me3_progress_M01.xlsx
+  - source: nb_schedule
+    party: NorthBuild
+    kind: schedule
+    file: gc/nb_schedule_M01.csv
+  - source: nb_sov
+    party: NorthBuild
+    kind: cost
+    file: gc/nb_sov_M01.xlsx
+  - source: owner_changes
+    party: Owner
+    kind: change
+    file: owner/owner_changes_M01.csv
+  - source: owner_cost
+    party: Owner
+    kind: cost
+    file: owner/owner_cost_M01.csv
+  - source: owner_milestones
+    party: Owner
+    kind: milestone
+    file: owner/owner_milestones_M01.csv
+  - source: owner_ofe
+    party: Owner
+    kind: procurement
+    file: owner/owner_ofe_M01.csv
+  2:
+  - source: ct1_progress
+    party: Contractor CT1
+    kind: progress
+    file: subcontractors/ct1_progress_M02.csv
+  - source: ct2_progress
+    party: Contractor CT2
+    kind: progress
+    file: subcontractors/ct2_progress_M02.csv
+  - source: el1_progress
+    party: Contractor EL1
+    kind: progress
+    file: subcontractors/el1_progress_M02.xlsx
+  - source: el2_progress
+    party: Contractor EL2
+    kind: progress
+    file: subcontractors/el2_progress_M02.xlsx
+  - source: el4_progress
+    party: Contractor EL4
+    kind: progress
+    file: subcontractors/el4_progress_M02.csv
+  - source: fb1_progress
+    party: Contractor FB1
+    kind: progress
+    file: subcontractors/fb1_progress_M02.csv
+  - source: fb2_progress
+    party: Contractor FB2
+    kind: progress
+    file: subcontractors/fb2_progress_M02.csv
+  - source: fb3_progress
+    party: Contractor FB3
+    kind: progress
+    file: subcontractors/fb3_progress_M02.csv
+  - source: me1_progress
+    party: Contractor ME1
+    kind: progress
+    file: subcontractors/me1_progress_M02.xlsx
+  - source: me3_progress
+    party: Contractor ME3
+    kind: progress
+    file: subcontractors/me3_progress_M02.xlsx
+  - source: nb_schedule
+    party: NorthBuild
+    kind: schedule
+    file: gc/nb_schedule_M02.csv
+  - source: nb_sov
+    party: NorthBuild
+    kind: cost
+    file: gc/nb_sov_M02.xlsx
+  - source: owner_changes
+    party: Owner
+    kind: change
+    file: owner/owner_changes_M02.csv
+  - source: owner_cost
+    party: Owner
+    kind: cost
+    file: owner/owner_cost_M02.csv
+  - source: owner_milestones
+    party: Owner
+    kind: milestone
+    file: owner/owner_milestones_M02.csv
+  - source: owner_ofe
+    party: Owner
+    kind: procurement
+    file: owner/owner_ofe_M02.csv
+  3:
+  - source: ct1_progress
+    party: Contractor CT1
+    kind: progress
+    file: subcontractors/ct1_progress_M03.csv
+  - source: ct2_progress
+    party: Contractor CT2
+    kind: progress
+    file: subcontractors/ct2_progress_M03.csv
+  - source: el1_progress
+    party: Contractor EL1
+    kind: progress
+    file: subcontractors/el1_progress_M03.xlsx
+  - source: el2_progress
+    party: Contractor EL2
+    kind: progress
+    file: subcontractors/el2_progress_M03.xlsx
+  - source: el4_progress
+    party: Contractor EL4
+    kind: progress
+    file: subcontractors/el4_progress_M03.csv
+  - source: fb1_progress
+    party: Contractor FB1
+    kind: progress
+    file: subcontractors/fb1_progress_M03.csv
+  - source: fb2_progress
+    party: Contractor FB2
+    kind: progress
+    file: subcontractors/fb2_progress_M03.csv
+  - source: fb3_progress
+    party: Contractor FB3
+    kind: progress
+    file: subcontractors/fb3_progress_M03.csv
+  - source: me1_progress
+    party: Contractor ME1
+    kind: progress
+    file: subcontractors/me1_progress_M03.xlsx
+  - source: me3_progress
+    party: Contractor ME3
+    kind: progress
+    file: subcontractors/me3_progress_M03.xlsx
+  - source: nb_schedule
+    party: NorthBuild
+    kind: schedule
+    file: gc/nb_schedule_M03.csv
+  - source: nb_sov
+    party: NorthBuild
+    kind: cost
+    file: gc/nb_sov_M03.xlsx
+  - source: owner_changes
+    party: Owner
+    kind: change
+    file: owner/owner_changes_M03.csv
+  - source: owner_cost
+    party: Owner
+    kind: cost
+    file: owner/owner_cost_M03.csv
+  - source: owner_milestones
+    party: Owner
+    kind: milestone
+    file: owner/owner_milestones_M03.csv
+  - source: owner_ofe
+    party: Owner
+    kind: procurement
+    file: owner/owner_ofe_M03.csv

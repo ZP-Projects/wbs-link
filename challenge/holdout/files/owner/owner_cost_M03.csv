@@ -1,0 +1,25 @@
+Owner Cost Line,Description,Budget,Actual to Date
+4610.01.01,Hall 1 MV Switchgear,1720000.0,0.0
+4610.01.02,Hall 1 UPS Modules,4091000.0,0.0
+4610.01.03,Hall 1 Busway,5472000.0,2443300.0
+4620.01.04,Hall 1 CRAH Units,7108000.0,1452400.0
+4620.01.05,Hall 1 Chilled Water Piping,6116000.0,1424200.0
+4630.01.06,Hall 1 Building Management System,5945000.0,0.0
+4630.01.07,Hall 1 Electrical Power Monitoring,3795000.0,1773500.0
+4610.02.01,Hall 2 MV Swicthgear,3231000.0,0.0
+4610.02.02,Hall 2 UPS Modules,1566000.0,0.0
+4610.02.03,Hall 2 Busway,6988000.0,0.0
+4620.02.04,Hall 2 CRAH Units,1326000.0,0.0
+4620.02.05,Hall 2 Chilled Water Piping,7122000.0,34600.0
+4630.02.06,Hall 2 Building Management System,6840000.0,1904200.0
+4630.02.07,Hall 2 Electrical Power Monitoring,4470000.0,0.0
+4610.03.01,Hall 3 MV Switchgear,6684000.0,1205200.0
+4610.03.02,Hall 3 USP Modules,822000.0,0.0
+4610.03.03,Hall 3 Busway,6705000.0,2449000.0
+4620.03.04,Hall 3 CARH Units,3356000.0,1594900.0
+4620.03.05,Hall 3 Chilled Water Piping,2215000.0,1707400.0
+4630.03.06,Hall 3 Building Management System,4815000.0,0.0
+4630.03.07,Hall 3 Electrical Power Monitoring,2370000.0,1120200.0
+4900.10.01,Owner builder's risk insurance,500000.0,0.0
+4900.11.01,Owner's representative fees,200000.0,23000.0
+4900.12.01,Utility interconnection deposit,500000.0,435100.0

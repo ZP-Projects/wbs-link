@@ -1,0 +1,334 @@
+Activity ID,Activity Name,WBS Code,Start,Finish,Activity % Complete
+NB100001,Receive & set Hall 1 Medium Voltage Equipmen tLineup 1A,DC-1.H1.E.SWG,2025-10-07,2025-11-12,81
+NB100002,Install & terminate Hall 1 Medium Voltage Equipment Lineup 1A,DC-1.H1.E.SWG,2025-10-26,2026-02-26,0
+NB100003,Test & energize Hall 1 Medium Voltage Equipment Lineup 1A,DC-1.H1.E.SWG,2026-02-09,2026-03-17,46
+NB100004,Receive & set Hall 1 Medium Voltage Equipment Lineup 1B,DC-1.H1.E.SWG,2025-10-02,2025-12-22,33
+NB100005,Install & terminate Hall 1 Medium Voltage Equipment Lineup 1B,DC-1.H1.E.SWG,2026-02-12,2026-04-19,0
+NB100006,Test & energize Hall 1 Medium Voltage Equipment Lineup 1B,DC-1.H1.E.SWG,2026-04-07,2026-06-09,0
+NB100007,Receive & set Hall 1 Medium Voltage Equipment Lineup 1C,DC-1.H1.E.SWG,2026-03-17,2026-04-30,0
+NB100008,Install & terminate Hall 1 Medium Voltage Equipment Lineup 1C,DC-1.H1.E.SWG,2026-04-06,2026-07-28,29
+NB100009,Test & energize Hall 1 Medium Voltage Equipment Lineup 1C,DC-1.H1.E.SWG,2026-03-05,2026-04-19,58
+NB113114,Receive & set Hall 1 Medium Voltage Equipment Lineup 1D,DC-1.H1.E.SWG,2025-10-12,2025-12-16,74
+NB100011,Install & terminate Hall 1 Medium Voltage Equipment Lineup 1D,DC-1.H1.E.SWG,2025-10-13,2025-11-03,100
+NB100012,Test & energize Hall 1 Medium Voltage Equipment Lineup 1D,DC-1.H1.E.SWG,2025-11-08,2025-12-31,0
+NB100013,Receive & set Hall 1 Static UPS Module 1A1,DC-1.H1.E.UPS,2026-01-11,2026-03-21,30
+NB100014,Install & terminate Hall 1 Static UPS Module 1A1,DC-1.H1.E.UPS,2026-02-27,2026-04-27,44
+NB113115,Install & terminate Hall 1 Static UPS Module 1A1,DC-1.H1.E.UPS,2026-02-13,2026-07-03,1
+NB100016,Receive & set Hall 1 Static UPS Module 1B2,DC-1.H1.E.UPS,2026-03-10,2026-05-02,38
+,Install & terminate Hall 1 Static UPS Module 1B2,DC-1.H1.E.UPS,2026-02-17,2026-04-19,0
+NB100018,,DC-1.H1.E.UPS,2026-04-12,2026-09-07,0
+NB100019,Receive & set Hall 1 Static UPS Module 1C3,DC-1.H1.E.UPS,2026-03-29,2026-06-23,32
+NB100020,Install & terminate Hall 1 Static UPS Module 1C3,DC-1.H1.E.UPS,2025-10-06,2025-12-01,69
+NB100021,Test & energize Hall 1 Static UPS Module 1C3,DC-1.H1.E.UPS,2025-11-10,2026-01-08,0
+NB100022,Receive & set Hall 1 Static UPS Module 1D4,DC-1.H1.E.UPS,2025-11-08,2026-02-07,19
+NB100023,Install & terminate Hall 1 Static UPS Module 1D4,DC-1.H1.E.UPS,2026-01-17,2026-05-14,0.131
+NB100024,Test & energize Hall 1 Static UPS Module 1D4,DC-1.H1.E.UPS,2026-04-03,2026-05-18,0
+NB100025,Receive & set Hall 1 Static UPS Module 1E5,DC-1.H1.E.UPS,2025-12-16,2026-03-17,20
+NB100026,Install & terminate Hall 1 Static UPS Module 1E5,DC-1.H1.E.UPS,2025-12-28,2026-04-27,16
+NB100027,Test & energize Hall 1 Static UPS Module 1E5,DC-1.H1.E.UPS,2025-11-22,2026-03-20,11
+NB100028,Receive & set Hall 1 Power track Run 1-01,DC-1.H1.E.BUS,2026-03-17,2026-05-21,0
+NB100029,Install & terminate Hall 1 Power trcak Run 1-01,DC-1.H1.E.BUS,2026-04-10,2026-05-26,0
+NB100030,Test & energize Hall 1 Power track Run 1-01,DC-1.H1.E.BUS,2026-03-02,2026-06-30,8
+NB100031,Receive & set Hall 1 Power trackR un 1-02,DC-1.H1.E.BUS,2025-12-22,2026-03-10,0
+NB100032,Install & terminate Hall 1 Power track Run 1-02,DC-1.H1.E.BUS,2026-01-12,2026-04-24,0
+NB100033,Test & energize Hall 1 Power track Run 1-02,DC-1.H1.E.BUS,2026-03-05,2026-06-26,0
+NB113103,Receive & set Hall 1 Power track Run 1-03,DC-1.H1.E.BUS,2026-03-16,2026-07-26,0
+NB100035,Install & terminate Hall 1 Power track Run 1-03,DC-1.H1.E.BUS,2026-02-08,2026-04-26,82
+NB100036,Test & energize Hall 1 Power track Run 1-03,DC-1.H1.E.BUS,2026-02-02,2026-06-08,7
+NB100037,Receive & set Hall 1 Power track Run 1-04,DC-1.H1.E.BUS,2026-01-27,2026-06-05,5
+NB100038,Install & terminate Hall 1 Power track Run 1-04,DC-1.H1.E.BUS,2026-03-18,2026-05-01,0
+NB100039,Test & energize Hall 1 Power track Run 1-04,DC-1.H1.E.BUS,2026-01-13,2026-04-17,0
+NB100040,Receive & set Hall 1 Power track Run 1-05,DC-1.H1.E.BUS,2025-12-26,2026-05-15,0
+NB100041,Install & terminate Hall 1 Power track Run 1-05,DC-1.H1.E.BUS,2026-04-08,2026-07-01,0
+NB100042,Test & energize Hall 1 Power track Run 1-05,DC-1.H1.E.BUS,2026-01-18,2026-04-14,0
+NB113117,Receive & set Hall 1 Power track Run 1-06,DC-1.H1.E.BUS,2025-11-19,2026-01-05,0
+NB100044,Install & terminate Hall 1 Power track Run 1-06,DC-1.H1.E.BUS,2025-10-20,2026-01-06,25
+NB100045,Test & energize Hall 1 Power track Run 1-06,DC-1.H1.E.BUS,2025-10-03,2026-02-20,0
+NB100046,Receive & set Hall 1 Power track Run 1-07,DC-1.H1.E.BUS,2025-12-14,2026-01-26,0
+NB113118,Install & terminate Hall 1 Power track Run 1-07,DC-1.H1.E.BUS,2026-02-06,2026-07-01,0
+NB100048,Test & energize Hall 1 Power track Run 1-07,DC-1.H1.E.BUS,2026-02-10,2026-05-24,0
+NB100049,Set Hall 1 CRAH units Unit 1-01,DC-1.H1.M.CRAH,2026-04-19,2026-07-01,0
+NB100050,Install & connect Hall 1 CRAH units Unit 1-01,DC-1.H1.M.CRAH,2025-11-08,2026-02-12,44
+NB100051,Flush & commission Hall 1 CRAH units Unit 1-01,DC-1.H1.M.CRAH,2025-11-07,2026-02-25,16
+NB100052,Set Hall 1 CRAH units Unit 1-02,DC-1.H1.M.CRAH,2025-12-16,2026-03-02,0
+NB113104,Install & connect Hall 1 CRAH units Unit 1-02,DC-1.H1.M.CRAH,2026-03-23,2026-07-26,7
+NB100054,Flush & commission Hall 1 CRAH units Unit 1-02,DC-1.H1.M.CRAH,2026-04-19,2026-05-30,47
+NB100055,Set Hall 1 CRAH units Unit 1-03,DC-1.H1.M.CRAH,2026-03-20,2026-06-18,0
+NB100056,Install & connect Hall 1 CRAH units Unit 1-03,DC-1.H1.M.CRAH,2026-02-02,2026-05-03,51
+NB100057,Install & connect Hall 1 CRAH units Unit 1-03,DC-1.H1.M.CRAH,2026-02-26,2026-03-29,94
+NB100058,Set Hall 1 CRAH units Unit 1-04,DC-1.H1.M.CRAH,2026-02-14,2026-04-17,0
+NB100059,Install & connect Hall 1 CRAH units Unit 1-04,DC-1.H1.M.CRAH,2026-03-16,2026-05-22,0
+NB100060,Flush & commission Hall 1 CRAH units Unit 1-04,DC-1.H1.M.CRAH,2026-01-06,2026-05-17,0
+NB100061,Set Hall 1 CRAH units Unit 1-05,DC-1.H1.M.CRAH,2025-12-03,2026-01-27,0
+NB113105,,DC-1.H1.M.CRAH,2025-12-11,2026-01-04,100
+NB100063,Flush & commission Hall 1 CRAH units Unit 1-05,DC-1.H1.M.CRAH,2025-11-23,2026-03-07,0
+NB100064,Flush & commission Hall 1 CRAH units Unit 1-05,DC-1.H1.M.CRAH,2025-11-06,2026-04-01,0
+NB100065,Install & connect Hall 1 CRAH units Unit 1-06,DC-1.H1.M.CRAH,2026-02-04,2026-04-15,0
+NB100066,Flush & commission Hall 1 CRAH units Unit 1-06,DC-1.H1.M.CRAH,2026-02-08,2026-03-22,0
+NB100067,Set Hall 1 CRAH units Unit 1-07,DC-1.H1.M.CRAH,2026-03-21,2026-06-16,30
+NB100068,Set Hall 1 CRAH units Unit 1-07,DC-1.H1.M.CRAH,2025-11-21,2026-02-13,0
+NB100069,Flush & commission Hall 1 CRAH units Unit 1-07,DC-1.H1.M.CRAH,2025-11-11,2026-02-22,0
+NB100070,Set Hall 1 Chilled water piping Loop 1A,DC-1.H1.M.CHW,2026-03-28,2026-06-04,93
+NB100071,Install & connect Hall 1 Chilled water piping Loop 1A,DC-1.H1.M.CHW,2026-01-02,2026-04-08,0
+NB100072,Flush & commission Hall 1 Chileld water piping Loop 1A,DC-1.H1.M.CHW,2026-02-15,2026-07-07,0.0
+NB100073,Set Hall 1 Chilled water piping Loop 1B,DC-1.H1.M.CHW,2025-11-11,2025-12-18,0
+NB100074,Install & connect Hall 1 Chilled water piping Loop 1B,DC-1.H1.M.CHW,2026-02-18,2026-07-13,0
+NB100074,Flush & commission Hall 1 Chilled water piping Loop 1B,DC-1.H1.M.CHW,2026-03-18,2026-05-11,0
+NB100076,Set Hall 1 Chilled water piping Loop 1C,DC-1.H1.M.CHW,2025-12-20,2026-04-15,0
+NB100077,Install & connect Hall 1 Chilled water piping Loop 1C,DC-1.H1.M.CHW,2025-10-28,2026-01-31,24
+NB100078,Flush & commission Hall 1 Chilled water piping Loop 1C,DC-1.H1.M.CHW,2026-01-06,2026-01-30,45
+NB100079,Set Hall 1 Chilled water piping Loop 1D,DC-1.H1.M.CHW,2025-10-30,2026-02-15,14
+NB100080,Install & connect Hall 1 Chilled water piping Loop 1D,DC-1.H1.M.CHW,2026-02-18,2026-07-07,2
+NB100081,Flush & commission Hall 1 Chilled water piping Loop 1D,DC-1.H1.M.CHW,2025-10-13,2025-11-17,0
+NB100082,Install panels Hall 1 Controls system Panel DDC-101,DC-1.H1.C.BMS,2025-11-29,2026-03-22,18
+NB113119,Program Hall 1 Controls system Panel DDC-101,DC-1.H1.C.BMS,2025-12-14,2026-01-06,0
+NB100084,Integrated test Hall 1 Controls system Panel DDC-101,DC-1.H1.C.BMS,2026-02-21,2026-04-19,34
+NB100085,Install panels Hall 1 Controls system Panel DDC-102,DC-1.H1.C.BMS,2026-03-08,2026-06-20,0
+NB100086,Program Hall 1 Controls system Panel DDC-102,DC-1.H1.C.BMS,2025-12-03,2025-12-25,63
+NB100087,Integrated test Hall 1 Controls system Panel DDC-102,DC-1.H1.C.BMS,2026-02-05,2026-07-05,0
+NB100088,Install panels Hall 1 Controls system Panel DDC-103,DC-1.H1.C.BMS,2025-12-19,2026-02-06,0
+NB100089,Program Hall 1 Controls system Panel DDC-103,DC-1.H1.C.BMS,2026-03-14,2026-06-22,0
+NB100090,Integrated test Hall 1 Controls system Panel DDC-103,DC-1.H1.C.BMS,2025-10-20,2026-02-05,36
+NB100091,Install panels Hall 1 Controls system Panel DDC-104,DC-1.H1.C.BMS,2025-11-27,2026-01-05,0
+NB100092,Program Hall 1 Controls system Panel DDC-104,DC-1.H1.C.BMS,2026-02-05,2026-06-19,8
+NB100093,Integrated test Hall 1 Controls system Panel DDC-104,DC-1.H1.C.BMS,2026-03-04,2026-05-04,0
+NB100094,Install panels Hall 1 Controls system Panel DDC-105,DC-1.H1.C.BMS,2026-01-10,2026-05-28,0
+NB100095,Program Hall 1 Controls system Panel DDC-105,DC-1.H1.C.BMS,2025-10-27,2026-01-26,0
+NB100096,Integrated test Hall 1 Controls system Panel DDC-105,DC-1.H1.C.BMS,2026-03-04,2026-07-13,10
+NB100097,Install panels Hall 1 PQ meters Meter set 101,DC-1.H1.C.EPMS,2026-04-06,2026-08-07,13
+NB100098,Program Hall 1 PQ meters Meter set 101,DC-1.H1.C.EPMS,2026-04-03,2026-07-01,44
+NB100099,Integrated test Hall 1 PQ meters Meter set 101,DC-1.H1.C.EPMS,2026-01-19,2026-02-28,48
+NB100100,Install panels Hall 1 PQ meters Meter set 102,DC-1.H1.C.EPMS,2026-02-03,2026-05-12,42
+NB100101,Program Hall 1 PQ meters Meter set 102,DC-1.H1.C.EPMS,2025-11-11,2026-03-21,0
+NB100102,Integratedt est Hall 1 PQ meters Meter set 102,DC-1.H1.C.EPMS,2026-03-07,2026-06-03,20
+NB100103,Install panels Hall 1 PQ meters Meter set 103,DC-1.H1.C.EPMS,2026-01-15,2026-05-13,12
+NB100104,Program Hall 1 PQ meters Meter set 103,DC-1.H1.C.EPMS,2026-01-05,2026-04-10,30
+NB100105,Integrated test Hall 1 PQ meters Meter set 103,DC-1.H1.C.EPMS,2025-11-01,2026-03-20,3
+NB100106,Install panels Hall 1 PQ meters Meter set 104,DC-1.H1.C.EPMS,2026-02-14,2026-05-05,28
+NB100107,Program Hall 1 PQ meters Meter set 104,DC-1.H1.C.EPMS,2025-10-18,2026-03-15,0
+NB100108,Integrated test Hall 1 PQ meters Meter set 104,DC-1.H1.C.EPMS,2025-11-24,2026-03-03,0
+NB100109,Install panels Hall 1 PQ meters Meter set 105,DC-1.H1.C.EPMS,2026-02-14,2026-04-23,0
+NB100110,Program Hall 1 PQ meters Meter set 105,DC-1.H1.C.EPMS,2025-10-01,2025-10-26,61
+NB113106,Integrated test Hall 1 PQ meters Meter set 105,DC-1.H1.C.EPMS,2026-01-01,2026-04-20,0
+NB100112,Install panels Hall 1 PQ meters Meter set 106,DC-1.H1.C.EPMS,2026-01-23,2026-02-25,0
+NB100113,Program Hall 1 PQ meters Meter set 106,DC-1.H1.C.EPMS,2026-01-02,2026-02-17,0.804
+NB100114,Integrated test aHll 1 PQ meters Meter set 106,DC-1.H1.C.EPMS,2025-12-25,2026-05-07,6
+NB100115,Install panels Hall 1 PQ meters Meter set 107,DC-1.H1.C.EPMS,2025-10-12,2025-11-26,0
+NB113107,Program Hall 1 PQ meters Meter set 107,DC-1.H1.C.EPMS,2026-02-22,2026-07-13,0
+NB100117,Integrated test Hall 1 PQ meters Meter set 107,DC-1.H1.C.EPMS,2026-04-16,2026-08-10,0
+NB100118,Install panels Hall 1 PQ meters Meter set 108,DC-1.H1.C.EPMS,2026-03-20,2026-08-06,0
+NB100119,Program Hall 1 PQ meters Meter set 108,DC-1.H1.C.EPMS,2025-10-22,2026-01-18,0
+NB100120,Integrated test Hall 1 PQ meters Meter set 108,DC-1.H1.C.EPMS,2025-10-08,2026-02-17,0
+NB100121,Receive & set Hall 2 Medium Voltage Equipment Lineup 2A,DC-1.H2.E.SWG,2026-04-08,2026-07-06,59
+NB100122,Install & terminate Hall 2 Medium Voltage Equipment Lineup 2A,DC-1.H2.E.SWG,2025-10-13,2025-12-25,32
+NB100123,Test & energize Hall 2 Medium Voltage Equipment Lineup 2A,DC-1.H2.E.SWG,2026-04-11,2026-07-30,15
+NB100124,Receive & set Hall 2 Medium Voltage Equipment Lineup 2B,DC-1.H2.E.SWG,2026-04-08,2026-07-20,0
+NB100125,Install & terminate Hall 2 Medium Voltage Equipment Lineup 2B,DC-1.H2.E.SWG,2025-10-11,2025-11-24,0
+NB100126,Test & energize Hall 2 Medium Voltage Equipment Lineup 2B,DC-1.H2.E.SWG,2026-02-20,2026-04-10,39
+NB100127,Receive & set Hall 2 Medium Voltage Equipment Lineup 2C,DC-1.H2.E.SWG,2026-03-30,2026-06-30,18
+NB100128,Install & terminate Hall 2 Medium Voltage Equipment Lineup 2C,DC-1.H2.E.SWG,2025-11-09,2026-01-22,28
+NB100129,Test & energize Hall 2 Medium Voltage Equipment Lineup 2C,DC-1.H2.E.SWG,2026-02-03,2026-04-25,28
+NB100130,Receive & set Hall 2 Medium Voltage Equipment Lineup 2D,DC-1.H2.E.SWG,2026-03-06,2026-05-14,0
+NB100131,Install & terminate Hall 2 Medium Voltage Equipment Lineup 2D,DC-1.H2.E.SWG,2026-04-02,2026-06-21,21
+NB100132,Test & energize Hall 2 Medium Voltage Equipment Lineup 2D,DC-1.H2.E.SWG,2025-10-09,2025-12-17,0
+NB100133,Receive & set Hall 2 Static UPS Module 2A1,DC-1.H2.E.UPS,2025-12-26,2026-04-13,12
+NB100134,Install & terminate Hall 2 Static UPS Module 2A1,DC-1.H2.E.UPS,2026-01-19,2026-02-11,0
+NB100135,Test & energize Hall 2 Static UPS Module 2A1,DC-1.H2.E.UPS,2025-10-30,2025-11-26,0
+NB100136,Receive & set Hall 2 Static UPS Module 2B2,DC-1.H2.E.UPS,2026-03-23,2026-07-05,0
+NB100137,Install & terminate Hall 2 Static UPS Module 2B2,DC-1.H2.E.UPS,2025-12-19,2026-01-12,44
+NB100138,Test & energize Hall 2 Static UPS Module 2B2,DC-1.H2.E.UPS,2025-11-12,2026-01-06,0
+NB100139,Receive & set Hall 2 Static UPS Module 2C3,DC-1.H2.E.UPS,2025-10-06,2025-12-04,81
+NB100140,Install & terminate Hall 2 Static UPS Module 2C3,DC-1.H2.E.UPS,2026-03-03,2026-07-29,0.0
+NB100141,Test & energize Hall 2 Static UPS Module 2C3,DC-1.H2.E.UPS,2026-04-12,2026-08-12,12
+NB100142,Receive & set Hall 2 Static UPS Module 2D4,DC-1.H2.E.UPS,2026-04-03,2026-08-06,8
+NB100143,Install & terminate Hall 2 Static UPS Module 2D4,DC-1.H2.E.UPS,2026-03-15,2026-05-16,63
+NB100144,Test & energize Hall 2 Static UPS Module 2D4,DC-1.H2.E.UPS,2026-03-25,2026-05-07,36
+NB113120,Receive & set Hall 2 Static UPS Module 2E5,DC-1.H2.E.UPS,2025-10-06,2026-02-21,3
+NB100146,Install & terminate Hall 2 Static UPS Module 2E5,DC-1.H2.E.UPS,2026-04-02,2026-05-27,0
+NB100147,Test & energize Hall 2 Static UPS Module 2E5,DC-1.H2.E.UPS,2026-01-03,2026-05-29,0
+NB100148,Receive & set Hall 2 Power track Run 2-01,DC-1.H2.E.BUS,2026-02-15,2026-03-21,0
+NB100149,Install & terminate Hall 2 Power track Run 2-01,DC-1.H2.E.BUS,2025-10-30,2025-12-11,0
+NB100150,Test & energize Hall 2 Power track Run 2-01,DC-1.H2.E.BUS,2026-01-29,2026-04-06,0.346
+NB100151,Receive & set Hall 2 Power track Run 2-02,DC-1.H2.E.BUS,2026-03-16,2026-06-03,0.0
+NB100152,Install & terminate Hall 2 Power track Run 2-02,DC-1.H2.E.BUS,2025-10-02,2025-12-19,23
+NB100153,Test & energize Hall 2 Power track Run 2-02,DC-1.H2.E.BUS,2026-04-10,2026-05-15,68
+NB100154,Receive & set Hall 2 Power track Run 2-03,DC-1.H2.E.BUS,2025-12-16,2026-01-14,47
+NB113121,Install & terminate Hall 2 Power track Run 2-03,DC-1.H2.E.BUS,2025-10-27,2025-12-10,100
+NB100156,Test & energize Hall 2 Power track Run 2-03,DC-1.H2.E.BUS,2026-03-18,2026-07-25,7
+NB113108,Receive & set Hall 2 Power track Run 2-04,DC-1.H2.E.BUS,2026-03-24,2026-08-02,0.0
+NB100158,Install & terminate Hall 2 Power track Run 2-04,DC-1.H2.E.BUS,2026-03-05,2026-07-07,0
+NB100159,Test & energize Hall 2 Power track Run 2-04,DC-1.H2.E.BUS,2025-11-12,2026-01-30,0
+NB100160,Set Hall 2 CRAH units Unit 2-01,DC-1.H2.M.CRAH,2025-10-16,2026-01-31,0.197
+NB100161,Install & connect Hall 2 CRAH units Unit 2-01,DC-1.H2.M.CRAH,2026-02-28,2026-04-27,31
+NB100162,Install & connect Hall 2 CRAH units Unit 2-01,DC-1.H2.M.CRAH,2025-10-03,2025-11-30,0
+NB100163,Set Hall 2 CRAH units Unit 2-02,DC-1.H2.M.CRAH,2026-01-27,2026-06-14,2
+NB100164,Install & connect Hall 2 CRAH units Unit 2-02,DC-1.H2.M.CRAH,2026-02-14,2026-06-02,0
+NB100165,Flush & commission Hall 2 CRAH units Unit 2-02,DC-1.H2.M.CRAH,2026-01-28,2026-03-18,0
+NB100166,Set Hall 2 CRAH units Unit 2-03,DC-1.H2.M.CRAH,2025-12-10,2026-01-28,58
+NB100167,Install & connect Hall 2 CRAH units Unit 2-03,DC-1.H2.M.CRAH,2025-10-28,2025-12-06,65
+NB100168,Flush & commission Hall 2 CRAH units Unit 2-03,DC-1.H2.M.CRAH,2026-03-01,2026-05-24,0
+NB100169,Set Hall 2 CRAH units Unit 2-04,DC-1.H2.M.CRAH,2025-12-05,2026-01-23,64
+NB100170,Install & connect Hall 2 CRAH units Unit 2-04,DC-1.H2.M.CRAH,2026-03-31,2026-08-13,6
+NB100171,Flush & commission Hall 2 CRAH units Unit 2-04,DC-1.H2.M.CRAH,2026-03-08,2026-05-05,0
+NB100172,Set Hall 2 Chilled water piping Loop 2A,DC-1.H2.M.CHW,2025-11-26,2026-02-20,33
+NB100173,Install & connect Hall 2 Chilled water piping Loop 2A,DC-1.H2.M.CHW,2026-02-05,2026-03-12,100
+NB100174,Flush & commission Hall 2 Chilled water piping Loop 2A,DC-1.H2.M.CHW,2026-03-08,2026-07-09,0
+NB100175,Set Hall 2 Chilled water piping Loop 2B,DC-1.H2.M.CHW,2026-01-02,2026-04-22,0.0
+NB100176,Install & connect Hall 2 Chilled water piping Loop 2B,DC-1.H2.M.CHW,2025-10-30,2025-12-05,36
+NB100177,Flush & commission Hall 2 Chilled water piping Loop 2B,DC-1.H2.M.CHW,2025-12-15,2026-01-19,54
+NB113122,Set Hall 2 Chilled water piping Loop 2C,DC-1.H2.M.CHW,2025-10-25,2025-11-20,58
+NB113123,Install & connect Hall 2 Chilled water piping Loop 2C,DC-1.H2.M.CHW,2025-11-16,2026-01-10,40
+NB100180,Flush & commission Hall 2 Chilled water piping Loop 2C,DC-1.H2.M.CHW,2025-12-19,2026-05-12,0.0
+NB100181,Set Hall 2 Chilled water piping Loop 2D,DC-1.H2.M.CHW,2026-01-23,2026-05-08,0
+NB100182,Install & connect Hall 2 Chilled water piping Loop 2D,DC-1.H2.M.CHW,2026-01-31,2026-05-23,24
+NB100183,Flush & commission Hall 2 Chilled water piping Loop 2D,DC-1.H2.M.CHW,2025-12-22,2026-02-02,0
+NB100184,Install panels Hall 2 Controls system Panel DDC-201,DC-1.H2.C.BMS,2026-01-13,2026-04-22,0
+NB100185,Program Hall 2 Controls system Panel DDC-201,DC-1.H2.C.BMS,2025-12-12,2026-01-31,0
+NB100186,Integrated test Hall 2 Controls system Panel DDC-201,DC-1.H2.C.BMS,2025-12-28,2026-04-11,0
+NB100187,Install panels Hall 2 Controls system Panel DDC-202,DC-1.H2.C.BMS,2026-03-20,2026-07-26,0
+NB100188,Program Hall 2 oCntrols system Panel DDC-202,DC-1.H2.C.BMS,2025-10-05,2025-12-25,0
+NB100189,Integrated test Hall 2 Controls system Panel DDC-202,DC-1.H2.C.BMS,2025-11-28,2026-03-21,0
+NB100190,Install panels Hall 2 Controls system Panel DDC-203,DC-1.H2.C.BMS,2025-11-08,2026-02-07,0
+NB100191,Program Hall 2 Controls system Panel DDC-203,DC-1.H2.C.BMS,2025-10-23,2026-01-09,29
+NB100192,Integrated test Hall 2 Controls system Panel DDC-203,DC-1.H2.C.BMS,2025-10-08,2026-01-19,0.432
+NB100193,Install panels Hall 2 Controls system Panel DDC-204,DC-1.H2.C.BMS,2026-02-18,2026-05-04,38
+NB100194,Program Hall 2 Controls system Panel DDC-204,DC-1.H2.C.BMS,2025-11-16,2026-01-04,0
+NB100195,Integrated test Hall 2 Controls system Panel DDC-204,DC-1.H2.C.BMS,2026-04-05,2026-05-23,78
+NB100196,Install panels Hall 2 Controls system Panel DDC-205,DC-1.H2.C.BMS,2025-11-09,2026-01-25,0
+NB100197,,DC-1.H2.C.BMS,2026-01-08,2026-05-09,13
+NB100198,Integrated test Hall 2 Controls system Panel DDC-205,DC-1.H2.C.BMS,2025-11-10,2026-03-21,12
+NB100199,Install panels Hall 2 Controls system Panel DDC-206,DC-1.H2.C.BMS,2025-10-27,2026-01-30,18
+NB113109,Program Hall 2 Controls system Panel DDC-206,DC-1.H2.C.BMS,2026-01-31,2026-05-25,10
+NB100201,Integrated test Hall 2 Controls system Panel DDC-206,DC-1.H2.C.BMS,2025-12-27,2026-05-24,0
+NB100202,Install panels Hall 2 PQ meters Meter set 201,DC-1.H2.C.EPMS,2026-03-15,2026-07-23,0
+NB100203,Program Hall 2 PQ meters Meter set 201,DC-1.H2.C.EPMS,2026-02-06,2026-06-23,0
+NB100204,Integrated test Hall 2 PQ meters Meter set 201,DC-1.H2.C.EPMS,2026-04-07,2026-08-21,0
+NB100205,Install panels Hall 2 PQ meters Meter set 202,DC-1.H2.C.EPMS,2025-11-07,2026-03-28,1
+NB100206,Program Hall 2 PQ meters Meter set 202,DC-1.H2.C.EPMS,2025-10-24,2026-03-15,0
+NB100207,Integrated test Hall 2 PQ meters Meter set 202,DC-1.H2.C.EPMS,2025-11-05,2026-01-19,0.296
+NB100208,Install panels Hall 2 PQ meters Meter set 203,DC-1.H2.C.EPMS,2025-12-09,2026-04-06,0
+NB100209,Program Hall 2 PQ meters Meter set 203,DC-1.H2.C.EPMS,2026-03-21,2026-07-08,0
+NB100210,Integrated test Hall 2 PQ meters Meter set 203,DC-1.H2.C.EPMS,2026-03-16,2026-07-02,0
+NB100211,Install panels Hall 2 PQ meters Meter set 204,DC-1.H2.C.EPMS,2025-12-11,2026-03-12,0
+NB113110,Program Hall 2 PQ meters Meter set 204,DC-1.H2.C.EPMS,2026-01-20,2026-04-07,23
+NB100213,Integrated test Hall 2 PQ meters Meter set 204,DC-1.H2.C.EPMS,2025-11-15,2026-04-10,0
+NB100214,Install panels Hall 2 PQ meters Meter set 205,DC-1.H2.C.EPMS,2026-03-20,2026-08-16,0
+NB100215,Program Hall 2 PQ meters Meter set 205,DC-1.H2.C.EPMS,2026-03-25,2026-05-07,41
+NB100216,Integrated test Hall 2 PQ meters Meter set 205,DC-1.H2.C.EPMS,2025-10-19,2025-12-14,60
+NB100217,Receive & set Hall 3 Medium Voltage Equipment Lineup 3A,DC-1.H3.E.SWG,2025-11-16,2026-01-16,35
+NB100218,Install & terminate Hall 3 Medium Voltage Equipment Lineup 3A,DC-1.H3.E.SWG,2026-01-29,2026-03-10,68
+NB100219,Test & energize Hall 3 Medium Voltage Equipment Lineup 3A,DC-1.H3.E.SWG,2026-04-10,2026-08-12,0
+NB100220,Receive & set Hall 3 Medium Voltage Equipment Lineup 3B,DC-1.H3.E.SWG,2026-04-13,2026-08-07,0
+NB100221,Install & terminate Hall 3 Medium Voltage Equipment Lineup 3B,DC-1.H3.E.SWG,2026-02-02,2026-04-30,29
+NB100222,Test & energize Hall 3 Medium Voltage Equipment Lineup 3B,DC-1.H3.E.SWG,2025-12-10,2026-02-21,37
+NB100223,Receive & set Hall 3 Static UPS Module 3A1,DC-1.H3.E.UPS,2026-01-14,2026-03-10,0
+NB100224,Install & terminate Hall 3 Static UPS Module 3A1,DC-1.H3.E.UPS,2026-04-06,2026-06-07,0.305
+NB113124,Test & energize Hall 3 Static UPS Module 3A1,DC-1.H3.E.UPS,2026-01-23,2026-03-05,68
+NB113125,Receive & set Hall 3 Static UPS Module 3B2,DC-1.H3.E.UPS,2025-10-29,2026-01-01,0
+NB100227,Install & terminate Hall 3 Static UPS Module 3B2,DC-1.H3.E.UPS,2026-01-20,2026-02-20,0
+NB100228,Test & energize Hall 3 Static UPS Module 3B2,DC-1.H3.E.UPS,2025-10-24,2026-02-09,0
+NB100229,Receive & set Hall 3 Static UPS Module 3C3,DC-1.H3.E.UPS,2026-02-08,2026-05-21,0
+NB100230,Install & terminate Hall 3 Static UPS Module 3C3,DC-1.H3.E.UPS,2026-04-08,2026-06-06,55
+NB100231,Test & energize Hall 3 Static UPS Module 3C3,DC-1.H3.E.UPS,2026-03-25,2026-08-20,0
+NB100232,Receive & set Hall 3 Static UPS Module 3D4,DC-1.H3.E.UPS,2026-01-26,2026-04-07,0
+NB100233,Install & terminate Hall 3 Static UPS Module 3D4,DC-1.H3.E.UPS,2026-01-16,2026-02-06,56
+NB100234,Test & energize Hall 3 Static UPS Module 3D4,DC-1.H3.E.UPS,2026-03-17,2026-04-16,39
+NB100235,Receive & set Hall 3 Static UPS Module 3E5,DC-1.H3.E.UPS,2025-10-07,2025-11-16,0.606
+NB100236,Install & terminate Hall 3 Static UPS Module 3E5,DC-1.H3.E.UPS,2026-01-31,2026-03-21,93
+NB100237,Test & energize Hall 3 Static UPS Module 3E5,DC-1.H3.E.UPS,2026-02-19,2026-03-11,0
+NB100238,Receive & set Hall 3 Static UPS Module 3F6,DC-1.H3.E.UPS,2025-10-22,2026-03-11,0
+NB113111,Install & terminate Hall 3 Static UPS Module 3F6,DC-1.H3.E.UPS,2025-10-19,2026-02-23,0.0
+NB113126,Test & energize Hall 3 Static UPS Module 3F6,DC-1.H3.E.UPS,2026-04-03,2026-08-07,0
+NB100241,Receive & set Hall 3 Power track Run 3-01,DC-1.H3.E.BUS,2026-03-25,2026-06-22,51
+NB100242,Install & terminate Hall 3 Power track Run 3-01,DC-1.H3.E.BUS,2026-04-01,2026-06-29,0
+NB100243,Test & energize Hall 3 Power track Run 3-01,DC-1.H3.E.BUS,2026-03-29,2026-04-28,45
+NB100244,Receive & set Hall 3 Power track Run 3-02,DC-1.H3.E.BUS,2025-10-31,2026-01-11,61
+NB100245,Install & terminate Hall 3 Power track Run 3-02,DC-1.H3.E.BUS,2025-12-06,2026-03-20,0
+NB100246,Test & energize Hall 3 Power track Run 3-02,DC-1.H3.E.BUS,2026-04-02,2026-07-14,0
+NB100247,Receive & set Hall 3 Power track Run 3-03,DC-1.H3.E.BUS,2026-01-10,2026-05-07,0
+NB100248,Install & terminate Hall 3 Power track Run 3-03,DC-1.H3.E.BUS,2025-12-03,2026-01-21,47
+NB100249,Test & energize Hall 3 Power track Run 3-03,DC-1.H3.E.BUS,2026-02-27,2026-05-16,22
+NB100250,Receive & set Hall 3 Power track Run 3-04,DC-1.H3.E.BUS,2026-02-26,2026-04-16,33
+NB100251,Install & terminate Hall 3 Power track Run 3-04,DC-1.H3.E.BUS,2026-04-10,2026-06-16,0.282
+NB100252,Test & energize Hall 3 Power track Run 3-04,DC-1.H3.E.BUS,2025-11-26,2026-03-13,26
+NB100253,Receive & set Hall 3 Power track Run 3-05,DC-1.H3.E.BUS,2026-02-26,2026-05-07,0.47
+NB113127,Install & terminate Hall 3 Power track Run 3-05,DC-1.H3.E.BUS,2026-04-12,2026-09-03,0
+NB100255,Test & energize Hall 3 Power track Run 3-05,DC-1.H3.E.BUS,2026-03-05,2026-05-04,100
+NB100256,Receive & set Hall 3 Power track Run 3-06,DC-1.H3.E.BUS,2026-01-19,2026-03-17,0
+NB100257,Install & terminate Hall 3 Power track Run 3-06,DC-1.H3.E.BUS,2025-10-27,2026-01-10,0
+NB100258,Test & energize Hall 3 Power track Run 3-06,DC-1.H3.E.BUS,2025-12-07,2026-04-30,0
+NB100259,Set Hall 3 CRAH units Unit 3-01,DC-1.H3.M.CRAH,2025-10-03,2025-11-14,38
+NB100260,Install & connect Hall 3 CRAH units Unit 3-01,DC-1.H3.M.CRAH,2026-04-07,2026-05-13,0
+NB100261,Flush & commission Hall 3 CRAH units Unit 3-01,DC-1.H3.M.CRAH,2026-01-15,2026-05-19,14
+NB100262,Flush & commission Hall 3 CRAH units Unit 3-01,DC-1.H3.M.CRAH,2025-11-08,2026-02-23,0
+NB100263,Install & connect Hall 3 CRAH units Unit 3-02,DC-1.H3.M.CRAH,2026-02-27,2026-06-26,0
+NB100264,Flush & commission Hall 3 CRAH units Unit 3-02,DC-1.H3.M.CRAH,2026-04-15,2026-07-07,0
+NB100265,Set Hall 3 CRAH units Unit 3-03,DC-1.H3.M.CRAH,2025-10-19,2026-02-06,43
+NB113128,Install & connect Hall 3 CRAH units Unit 3-03,DC-1.H3.M.CRAH,2025-10-03,2026-02-05,0
+NB100267,Flush & commission Hall 3 CRAH units Unit 3-03,DC-1.H3.M.CRAH,2025-10-29,2026-01-08,26
+NB113129,Set Hall 3 CRAH units Unit 3-04,DC-1.H3.M.CRAH,2026-02-07,2026-03-14,0
+NB100269,Install & connect Hall 3 CRAH units Unit 3-04,DC-1.H3.M.CRAH,2026-04-02,2026-05-07,0
+NB100270,Flush & commission Hall 3 CRAH units Unit 3-04,DC-1.H3.M.CRAH,2025-10-16,2026-02-13,27
+NB100271,Set Hall 3 Chilled water piping Loop 3A,DC-1.H3.M.CHW,2026-03-10,2026-06-22,0
+NB100272,Install & connect Hall 3 Chilled water piping Loop 3A,DC-1.H3.M.CHW,2025-11-03,2026-02-24,0
+NB100273,Flush & commission Hall 3 Chilled water piping Loop 3A,DC-1.H3.M.CHW,2025-11-06,2026-02-16,19
+NB100274,Set Hall 3 Chilled water piping Loop 3B,DC-1.H3.M.CHW,2026-02-28,2026-03-26,0
+NB100275,Install & connect Hall 3 Chilled water piping Loop 3B,DC-1.H3.M.CHW,2025-11-05,2025-12-29,0
+NB100276,Flush & commission Hall 3 Chilled water piping Loop 3B,DC-1.H3.M.CHW,2025-11-11,2025-12-06,100
+NB100277,Set Hall 3 Chilled water piping Loop 3C,DC-1.H3.M.CHW,2026-01-07,2026-06-03,0
+NB100278,Install & connect Hall 3 Chilled water piping Loop 3C,DC-1.H3.M.CHW,2026-01-07,2026-04-28,16
+NB100279,Flush & commission Hall 3 Chilled water piping Loop 3C,DC-1.H3.M.CHW,2026-04-04,2026-04-28,100
+NB100280,Install panels Hlal 3 Controls system Panel DDC-301,DC-1.H3.C.BMS,2026-02-04,2026-05-04,19
+NB100281,Program Hall 3 Controls system Panel DDC-301,DC-1.H3.C.BMS,2025-11-04,2026-03-13,0.0
+NB100282,Integrated test Hall 3 Controls system Panel DDC-301,DC-1.H3.C.BMS,2025-12-05,2026-04-14,0.045
+NB100283,Install panels Hall 3 Controls system Panel DDC-302,DC-1.H3.C.BMS,2026-01-29,2026-04-16,0
+NB100284,Program Hall 3 Controls system Panel DDC-302,DC-1.H3.C.BMS,2026-03-23,2026-05-10,97
+NB100285,Integrated tset Hall 3 Controls system Panel DDC-302,DC-1.H3.C.BMS,2025-12-02,2026-01-19,43
+NB100286,Install panels Hall 3 Controls system Panel DDC-303,DC-1.H3.C.BMS,2025-10-24,2025-11-22,0
+NB100287,Program Hall 3 Controls system Panel DDC-303,DC-1.H3.C.BMS,2026-02-01,2026-04-22,24
+NB100288,Integrated test Hall 3 Controls system Panel DDC-303,DC-1.H3.C.BMS,2025-11-10,2026-01-14,0
+NB100289,Install panels Hall 3 Controls system Panel DDC-304,DC-1.H3.C.BMS,2026-03-09,2026-07-26,0
+NB100290,Program Hall 3 Controls system Panel DDC-304,DC-1.H3.C.BMS,2026-03-05,2026-07-09,7
+NB100291,Integrated test Hall 3 Controls system Panel DDC-304,DC-1.H3.C.BMS,2026-01-14,2026-05-27,0
+NB100292,Install panels Hall 3 Controls system Panel DDC-305,DC-1.H3.C.BMS,2026-01-20,2026-02-10,81
+NB100293,Program Hall 3 Controls system Panel DDC-305,DC-1.H3.C.BMS,2025-10-12,2026-02-07,13
+NB100294,Integrated test Hall 3 Controls system Panel DDC-305,DC-1.H3.C.BMS,2026-04-05,2026-05-15,0
+NB100295,Install panels Hall 3 Controls system Panel DDC-306,DC-1.H3.C.BMS,2025-10-25,2026-01-01,0
+NB100296,Program Hall 3 Controls system Panel DDC-306,DC-1.H3.C.BMS,2026-03-26,2026-04-24,0.0
+NB100297,Integrated test Hall 3 Controls system Panel DDC-306,DC-1.H3.C.BMS,2026-03-29,2026-07-05,25
+NB100298,Install panels Hall 3 Controls system Panel DDC-307,DC-1.H3.C.BMS,2026-04-17,2026-07-25,0
+NB100299,Program Hall 3 Controls system Panel DDC-307,DC-1.H3.C.BMS,2026-03-19,2026-06-17,47
+NB100300,Integrated test Hall 3 Controls system Panel DDC-307,DC-1.H3.C.BMS,2026-03-23,2026-08-08,0
+NB100301,Install panels Hall 3 Controls system Panel DDC-308,DC-1.H3.C.BMS,2026-01-10,2026-05-22,5
+NB100302,Program Hall 3 Controls system Panel DDC-308,DC-1.H3.C.BMS,2025-10-07,2026-01-23,0
+NB113130,Integrated test Hall 3 Controls system Panel DDC-308,DC-1.H3.C.BMS,2025-11-10,2026-01-27,0
+NB100304,Install panels Hall 3 PQ meters Meter set 301,DC-1.H3.C.EPMS,2025-10-30,2026-01-03,0
+NB113112,Program Hall 3 PQ meters Meter set 301,DC-1.H3.C.EPMS,2025-11-28,2026-02-08,26
+NB100306,Integrated test Hall 3 PQ meters Meter set 301,DC-1.H3.C.EPMS,2025-11-19,2026-03-07,0
+NB100307,Install panels Hall 3 PQ meters Meter set 302,DC-1.H3.C.EPMS,2026-03-20,2026-06-01,0
+NB100308,Program Hall 3 PQ meters Meter set 302,DC-1.H3.C.EPMS,2025-10-20,2026-03-05,3
+NB100309,Integrated test Hall 3 PQ meters Meter set 302,DC-1.H3.C.EPMS,2026-03-14,2026-07-10,0
+NB100310,Install panels Hall 3 PQ meters Meter set 303,DC-1.H3.C.EPMS,2025-12-23,2026-01-28,0
+NB100311,Program Hall 3 PQ meters Meter set 303,DC-1.H3.C.EPMS,2026-01-20,2026-05-31,12
+NB113113,Integrated test Hall 3 PQ meters Meter set 303,DC-1.H3.C.EPMS,2025-12-09,2026-03-28,0
+NB100313,Install panels Hall 3 PQ meters Meter set 304,DC-1.H3.C.EPMS,2026-04-06,2026-05-06,0
+NB100314,Program Hall 3 PQ meters Meter set 304,DC-1.H3.C.EPMS,2025-12-14,2026-04-04,0
+NB113131,Integrated test Hall 3 PQ meters Meter set 304,DC-1.H3.C.EPMS,2025-12-10,2026-03-12,41
+NB100316,Install panels Hall 3 PQ meters Meter set 305,DC-1.H3.C.EPMS,2026-01-01,2026-04-10,35
+NB100317,Program Hall 3 PQ meters Meter set 305,DC-1.H3.C.EPMS,2026-02-01,2026-05-29,0
+NB100318,Integrated test Hall 3 PQ meters Meter set 305,DC-1.H3.C.EPMS,2025-10-24,2025-11-28,0
+NB100319,Install panels Hall 3 PQ meters Meter set 306,DC-1.H3.C.EPMS,2025-11-15,2026-01-30,0
+NB100320,Program Hall 3 PQ meters Meter set 306,DC-1.H3.C.EPMS,2025-12-31,2026-04-20,11
+NB100321,Integrated test Hall 3 PQ meters Meter set 306,DC-1.H3.C.EPMS,2025-10-30,2025-12-11,0
+NB100322,Install panels Hall 3 PQ meters Meter set 307,DC-1.H3.C.EPMS,2026-04-11,2026-06-20,71
+NB100323,Program Hall 3 PQ meters Meter set 307,DC-1.H3.C.EPMS,2025-12-27,2026-01-19,0
+NB100324,Integrated test Hall 3 PQ meters Meter set 307,DC-1.H3.C.EPMS,2025-12-10,2026-04-19,0
+NB100325,Install panels Hall 3 PQ meters Meter set 308,DC-1.H3.C.EPMS,2025-11-26,2026-01-08,65
+NB100326,Program Hall 3 PQ meters Meter set 308,DC-1.H3.C.EPMS,2025-11-20,2026-01-19,34
+NB100327,Integrated test Hall 3 PQ meters Meter set 308,DC-1.H3.C.EPMS,2025-11-05,2026-01-05,0.666
+NB100328,Project management LOE,DC-1.H0.E.GEN,2025-09-01,2026-01-24,0
+NB100329,Site logistics LOE,DC-1.H0.E.GEN,2025-09-01,2025-12-05,0
+NB100330,Temporary power (construction),DC-1.H0.E.GEN,2025-09-01,2025-10-03,52
+NB100331,Hall 1 MV Energization,,2026-07-13,2026-07-13,16
+NB100332,Hall 2 MV Energization,,2026-07-13,2026-07-13,0
+NB100333,Hall 3 MV Energization,,2026-07-13,2026-07-13,4
