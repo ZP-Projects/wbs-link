@@ -1,0 +1,8 @@
+WBS↔LINK Challenge
+Copyright (c) 2026 WBS↔LINK All rights reserved except as licensed below.
+
+- Code in this repository (scorer/, .github/, docs/*.html, docs/*.js, docs/*.css) is licensed under the Apache License 2.0 (see LICENSE).
+- Challenge data and documentation (challenge/, *.md) are licensed under CC BY-NC 4.0 (see LICENSE-DATA.md).
+- "WBS↔LINK" is a working product name of WBS↔LINK No trademark registration is claimed, and no licence to use the name is granted.
+- The WBS↔LINK mapping engine (its methods, rules, source profiles, grammar learning, prompts and any datasets not published here) is proprietary and confidential. It is NOT part of this repository, and no licence to it, express or implied, is granted.
+- The hidden answers for the challenge set are encrypted and used only by the scoring process.
