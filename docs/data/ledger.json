@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "issue": 2,
+  "user": "ZP-Projects",
+  "display_name": "Wbs link test",
+  "role": "None",
+  "tools": "- [ ] Excel\n- [ ] Power Query\n- [ ] SQL\n- [ ] Python or R\n- [ ] Power BI\n- [ ] AI assistant\n- [x] Other",
+  "minutes": 1.0,
+  "submitted_utc": "2026-09-24T01:38:10+00:00",
+  "set": "practice",
+  "records": 2484,
+  "correct": 2484,
+  "wrong": 0,
+  "silent_errors": 0,
+  "unsure_or_blank": 0,
+  "precision": 1.0,
+  "coverage": 1.0,
+  "matched_rows": 2484
+ }
+]
