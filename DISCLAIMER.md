@@ -6,4 +6,4 @@
 - **Not professional advice.** Nothing here is engineering, cost, legal or financial advice, or an audit, verification or certification. Don't rely on it for decisions.
 - **Public by design.** Submissions are GitHub issues: your GitHub username, the details you enter and your scores are public.
 - **The WBS↔LINK engine is proprietary.** It is not included here, and no rights to it are granted. Any WBS↔LINK scores shown are self-reported by the maintainer on the same synthetic data.
-- **Liability:** to the maximum extent permitted by law, WBS↔LINK and contributors are not liable for any loss arising from use of this repository.
+- **Liability:** to the maximum extent permitted by law, the maintainers and contributors are not liable for any loss arising from use of this repository.

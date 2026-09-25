@@ -1,7 +1,7 @@
 name: Score submission
 on:
   issues:
-    types: [opened, edited]
+    types: [opened]
 permissions:
   contents: write
   issues: write

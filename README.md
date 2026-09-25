@@ -18,7 +18,7 @@ Same work. Different structures. **WBS↔LINK** maps schedule activities and cos
 1. **Download** the [challenge set or practice set](https://zp-projects.github.io/wbs-link/#challenge), or use the `challenge/` folder here.
 2. **Map** each schedule activity and cost line (plus supporting contractor records) to a WBS element in `files/owner/owner_scope_structure.xlsx` (the `Cell ID` column). Or mark it `LEGIT_ORPHAN`, `NEW_SCOPE` or `UNSURE`. Use Excel, SQL, Python, AI, or your own method. Template: `challenge/ANSWER_TEMPLATE.csv`.
 3. **Don't guess.** `UNSURE` is an honest answer.
-4. **Submit:** open [Issues → New issue → Submit results](../../issues/new/choose), drag in your CSV, and note your minutes. A bot replies with your score.
+4. **Submit:** open [Issues → New issue → Submit results](../../issues/new/choose), drag in your CSV, and note your minutes. Practice is repeatable; the hidden Challenge set allows one scored attempt per GitHub user. A bot replies with your score.
 
 ## Scoring
 **A missing mapping creates a question. A confident wrong mapping creates a reporting risk.**
@@ -26,8 +26,9 @@ Same work. Different structures. **WBS↔LINK** maps schedule activities and cos
 | Measure | Meaning |
 |---|---|
 | **Silent errors** | Wrong answers marked high confidence. Counts most |
+| **Correct answers** | More correct answers rank next, preventing strategic abstention |
 | Precision | Correct ÷ answered |
-| Coverage | Answered ÷ total records |
+| Coverage | Answered ÷ scored records |
 | Time | Your reported minutes |
 
 ## What's here and what isn't
@@ -38,4 +39,3 @@ Same work. Different structures. **WBS↔LINK** maps schedule activities and cos
 - Code: [Apache-2.0](LICENSE).
 - Data and documentation: [CC BY-NC 4.0](LICENSE-DATA.md).
 
- © 2026 WBS↔LINK
