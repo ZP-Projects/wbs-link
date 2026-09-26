@@ -2,23 +2,31 @@
 
 **Schedule. WBS. Cost. Connected.**
 
-Major projects often describe the same work differently across schedule and cost systems:
+The schedule is developed, structured and coded one way. The cost system another. The owner has a Work Breakdown Structure (WBS). Contractors bring their own coding structures into the mix.
 
-| Structure | Example |
-|---|---|
-| Schedule activity | `ST3-ELEC-SWG` |
-| WBS element | `STN3 / ELECTRICAL / SWITCHGEAR` |
-| Cost code | `4600.31.07` |
+**Same project. Different structures. Somebody has to build the crosswalk.**
 
-Same work. Different structures. **WBS↔LINK** is an early-stage concept for creating a reviewable mapping layer between them. This repository is its open benchmark: a synthetic project for testing how well different methods can rebuild those links.
+## Think you can?
 
-> ⚠️ **Early beta. Synthetic data only.** See [DISCLAIMER.md](DISCLAIMER.md). Never upload real project, client or employer data.
+WBS↔LINK is an early-stage idea being pressure-tested with the project controls community.
+
+We've built a fictional capital project across three monthly reporting cycles. Your challenge is to map its schedule, cost and supporting contractor records back to the owner WBS.
+
+**Excel. Power Query. SQL. Python. AI. Whatever you use.**
+
+**Map it → Submit it → See how your approach scores**
+
+Start with the **Practice set**, then take the hidden **WBS↔LINK Challenge** when you're ready.
+
+And don't just give us a score. Tell us what the benchmark misses about real projects. Your experience will help shape future versions of both the challenge and WBS↔LINK.
+
+> ⚠️ **Early beta. Fictional project data only.** See [DISCLAIMER.md](DISCLAIMER.md). Never upload real project, client or employer data.
 
 ## Take the challenge (about 1–4 hours)
 
 1. Read the plain-language [How-to guide](challenge/HOW_TO.md).
 2. **Download** the [challenge set or practice set](https://zp-projects.github.io/wbs-link/#challenge), or use the `challenge/` folder here.
-3. **Map** each schedule activity and cost line (plus supporting contractor records) to a WBS `Cell ID`, or use `NO_WBS`, `NEW_SCOPE` or `UNSURE`. Use Excel, SQL, Python, AI, or your own method.
+3. **Map** each schedule activity and cost line (plus supporting contractor records) to a WBS `Cell ID`, or use `NO_WBS`, `NEW_SCOPE` or `UNSURE`. Use Excel, Power Query, SQL, Python, AI, or your own method.
 4. **Don't guess.** `UNSURE` is an honest answer.
 5. **Submit:** open Issues → New issue → Submit results, drag in your CSV, and complete the short professional debrief.
 
@@ -46,7 +54,7 @@ The submission includes a short professional debrief. We are asking practitioner
 
 ## What's here and what isn't
 
-- **Here:** synthetic data, the scorer, the submission bot, the challenge website and the public benchmark.
+- **Here:** fictional project data, the scorer, the submission bot, the challenge website and the public benchmark.
 - **Not here:** the private WBS↔LINK mapping engine. It is proprietary and not open source; see [NOTICE](NOTICE).
 
 The longer-term concept is a secure web workflow to connect schedule, cost, WBS and contractor records; propose mappings; surface uncertainty for review; reuse approved relationships; and export standard Excel/CSV crosswalks. That product workflow is still being developed and should not be read as a shipped capability.
