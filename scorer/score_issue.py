@@ -27,15 +27,15 @@ try:
     entry={"issue":int(num),"user":user,"display_name":field("Display name")[:40] or user,"role":field("Your role (optional)"),"tools":field("Tools used"),"minutes":minutes,"submitted_utc":datetime.now(timezone.utc).isoformat(timespec="seconds"),**r};ledger.append(entry);led.write_text(json.dumps(ledger,indent=1),encoding="utf-8")
     best={}
     for e in ledger:
-        k=(e["user"],e["set"]);rank=(e["silent_errors"],-e["correct"],-e["precision"],-e["coverage"],e["minutes"] if e["minutes"] is not None else 1e9)
+        k=(e["user"],e["set"]);rank=(-e.get("net_score",0),e["silent_errors"],-e["precision"],-e["coverage"],e.get("submitted_utc", ""))
         if k not in best or rank<best[k][0]:best[k]=(rank,e)
-    board=sorted((v[1] for v in best.values()),key=lambda e:(e["set"],e["silent_errors"],-e["correct"],-e["precision"],-e["coverage"],e["minutes"] or 1e9));(ROOT/"docs/data/leaderboard.json").write_text(json.dumps(board,indent=1),encoding="utf-8")
-    lines=[f"### Your WBS↔LINK Challenge score ({'Practice' if which=='practice' else 'Challenge'} set)","","| Measure | Result |","|---|---|",f"| **Silent errors** (confident wrong answers) | **{r['silent_errors']}** |",f"| Correct answers | {r['correct']} |",f"| Precision | {r['precision']:.1%} |",f"| Coverage | {r['coverage']:.1%} ({r['correct']+r['wrong']} of {r['records']} scored records answered) |"]
-    if which=="practice":lines += [f"| Correct / wrong / unsure | {r['correct']} / {r['wrong']} / {r['unsure_or_blank']} |"]
+    board=sorted((v[1] for v in best.values()),key=lambda e:(e["set"],-e.get("net_score",0),e["silent_errors"],-e["precision"],-e["coverage"],e.get("submitted_utc", "")));(ROOT/"docs/data/leaderboard.json").write_text(json.dumps(board,indent=1),encoding="utf-8")
+    lines=[f"### Your WBS↔LINK Challenge score ({'Practice' if which=='practice' else 'Challenge'} set)","","| Measure | Result |","|---|---|",f"| **Trust-weighted score** | **{r['net_score']:.1f}** |",f"| Silent errors (confident wrong mappings) | {r['silent_errors']} |",f"| Coverage | {r['coverage']:.1%} |"]
+    if which=="practice":lines += [f"| Matches reference / differs / unresolved | {r['correct']} / {r['wrong']} / {r['unsure_or_blank']} |",f"| Precision | {r['precision']:.1%} |"]
     if "duplicate_ids_found" in r:lines += [f"| Duplicate/blank IDs flagged | {r['duplicate_ids_found']} |",f"| Structural changes flagged | {r['structural_changes_found']} |"]
     if minutes is not None:lines += [f"| Minutes (self-reported) | {minutes:.0f} |"]
     if r["matched_rows"]<0.5*r["records"]:lines += ["","⚠️ Fewer than half of your rows matched a scored record. Check `period`, `source_file` and `record_id` against the challenge rules."]
-    if which=="holdout":lines += ["","The hidden challenge set allows one scored attempt per GitHub user. Detailed correct/wrong counts are not returned for the holdout."]
+    if which=="holdout":lines += ["","The hidden challenge set allows one scored attempt per GitHub user. Detailed reference-match counts are not returned for the hidden set."]
     lines += ["","Thank you for taking part. The leaderboard updates within a few minutes. Test product, synthetic data: see DISCLAIMER.md."];out.write_text("\n".join(lines),encoding="utf-8")
 except SystemExit:pass
 except Exception as e:

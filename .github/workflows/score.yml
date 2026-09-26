@@ -5,7 +5,7 @@ on:
 permissions:
   contents: write
   issues: write
-concurrency: { group: scoring, cancel-in-progress: false }
+concurrency: { group: "scoring-${{ github.event.issue.number }}", cancel-in-progress: false }
 jobs:
   score:
     if: startsWith(github.event.issue.title, '[Submission]')

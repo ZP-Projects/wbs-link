@@ -5,35 +5,71 @@ labels: ["submission"]
 body:
   - type: markdown
     attributes:
-      value: "Thanks for taking part. A bot scores you within minutes and replies here. **Test product, synthetic data only.** Your GitHub username and scores are public. The hidden Challenge set allows **one scored attempt per GitHub user**; use the Practice set first."
+      value: "Thanks for taking part. A bot scores you within minutes and replies here. **Early beta; synthetic data only.** Your GitHub username, answers, debrief responses and score are public. The hidden Challenge set allows **one scored attempt per GitHub user**; use the Practice set first."
   - type: input
     attributes: { label: Display name, description: "How you'd like to appear on the leaderboard" }
   - type: dropdown
     attributes: { label: "Your role (optional)", options: ["Owner / developer", "PM firm / owner's rep", "General contractor", "Subcontractor / supplier", "Cost or schedule analyst", "Consultant", "Data / software", "Other", "Prefer not to say"] }
   - type: dropdown
-    attributes: { label: "Which set?", options: ["Challenge set (hidden answers; one scored attempt)", "Practice set (answers public; repeatable)"] }
+    attributes: { label: "Which set?", options: ["Challenge set (hidden reference; one scored attempt)", "Practice set (reference public; repeatable)"] }
     validations: { required: true }
   - type: input
-    attributes: { label: Minutes spent, description: "Active working time, honestly" }
+    attributes: { label: Minutes spent, description: "Active working time. This is shown for context and does not break leaderboard ties." }
     validations: { required: true }
   - type: checkboxes
     attributes:
       label: Tools used
       options: [{label: Excel}, {label: Power Query}, {label: SQL}, {label: Python or R}, {label: Power BI}, {label: AI assistant}, {label: Other}]
   - type: textarea
-    attributes: { label: Answers file, description: "Drag your answers .csv here. Required columns: period, source_file, record_id, answer, confidence. Read challenge/README.md before submitting." }
+    attributes: { label: Answers file, description: "Drag your answers .csv here. Required columns: period, source_file, record_id, answer, confidence. Read challenge/HOW_TO.md before submitting." }
     validations: { required: true }
   - type: textarea
     attributes: { label: "Exceptions file (optional)", description: "Drag your exceptions .csv here" }
+
+  - type: markdown
+    attributes:
+      value: "## Short professional debrief\nThese questions help us understand how practitioners think about the problem and what a future benchmark should represent. Please keep examples general and do not share client, employer or confidential project information."
+  - type: dropdown
+    attributes:
+      label: "When the available information pointed in different directions, what did you rely on most?"
+      options: ["Coding structure / IDs", "Descriptions", "Previous-period mappings", "WBS structure", "Related records", "Professional judgment / project context", "A combination of the above", "Other / not applicable"]
+    validations: { required: true }
+  - type: dropdown
+    attributes:
+      label: "How should a confident incorrect mapping be treated compared with leaving a mapping unresolved?"
+      options: ["Much more serious", "Somewhat more serious", "About the same", "Less serious", "Depends on the situation", "Other / not sure"]
+    validations: { required: true }
+  - type: checkboxes
+    attributes:
+      label: "Which conditions make this type of mapping more difficult on your projects?"
+      options:
+        - {label: "WBS changes between reporting periods"}
+        - {label: "Contractor coding changes"}
+        - {label: "One record relates to multiple WBS elements"}
+        - {label: "Cost allocation across WBS elements"}
+        - {label: "Scope transfers between contractors"}
+        - {label: "Change orders / rebaselining"}
+        - {label: "Weak or inconsistent descriptions"}
+        - {label: "Different coding structures between organizations"}
+        - {label: "Other"}
+  - type: dropdown
+    attributes:
+      label: "On your projects, roughly how much effort does this type of reconciliation take in a typical reporting cycle?"
+      options: ["Less than 4 hours", "4–8 hours", "1–2 days", "3–5 days", "More than 5 days", "Varies significantly", "We don't currently perform this reconciliation", "Prefer not to say"]
+    validations: { required: true }
   - type: textarea
-    attributes: { label: "What was hardest? (optional)", description: "Your words help shape the benchmark" }
+    attributes:
+      label: "Anything we missed? (optional)"
+      description: "A project condition, data issue or mapping scenario a future benchmark should represent. Keep it general; no client or employer information."
+  - type: textarea
+    attributes: { label: "Other context (optional)", description: "Use this only if you selected Other above or want to add brief context." }
   - type: checkboxes
     attributes:
       label: Confirmations
       options:
-        - label: My files contain only the synthetic challenge data, and no real project, client or employer information
+        - label: My files and comments contain only synthetic challenge data and no real project, client or employer information
           required: true
-        - label: I understand my GitHub username, entries and scores are public
+        - label: I understand my GitHub username, submission, debrief responses and score are public
           required: true
         - label: I understand the hidden Challenge set allows one scored attempt per GitHub user
           required: true
