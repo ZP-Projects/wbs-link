@@ -1,21 +1,104 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet"><link rel="stylesheet" href="site.css"><script src="config.js"></script><title>WBS↔LINK: Schedule. WBS. Cost. Connected.</title><meta name="description" content="Major projects often describe the same work differently across schedule and cost systems. WBS↔LINK is an early-stage concept for creating a reviewable mapping layer between them."></head><body><main>
-<nav aria-label="Main"><a class="brand" href="index.html"><span class="wm" aria-label="WBS↔LINK">WBS↔LINK</span></a><a href="#challenge">Challenge</a><a href="leaderboard.html">Leaderboard</a><a href="healthcheck.html">Two-file check</a><a href="#beta">Beta access</a><a data-gh="" href="#">GitHub</a></nav>
-<h1><span class="wm" aria-label="WBS↔LINK">WBS↔LINK</span></h1><p class="tag">Schedule. WBS. Cost. Connected.</p><p class="lede">Major projects often describe the same work differently across schedule and cost systems. WBS↔LINK is an early-stage concept for creating a reviewable mapping layer between them.</p>
-<video class="hero" controls playsinline preload="metadata" poster="videos/wbslink-hero.jpg" src="videos/wbslink-hero.mp4" aria-label="WBS↔LINK film, 25 seconds"></video><div class="row"><a class="btn" href="#challenge">Try the challenge</a><a class="btn alt" href="#beta">Request beta access</a><a class="btn alt" href="#how">See how it works</a></div>
-<h2 id="how">Same work. Different structures.</h2><div class="stack" role="img" aria-label="A schedule activity and a cost code both link to the same WBS element"><div class="lvl"><small>SCHEDULE</small><code>ST3-ELEC-SWG</code></div><div class="arr">↕</div><div class="lvl hub"><small>WBS</small><code>STN3 / ELECTRICAL / SWITCHGEAR</code></div><div class="arr">↕</div><div class="lvl"><small>COST</small><code>4600.31.07</code></div></div><p>WBS↔LINK maps schedule activities and cost structures to a common Work Breakdown Structure, and surfaces the links that need review.</p>
-<h2>Map. Review. Reuse.</h2><div class="cols"><div class="card"><b>MAP</b>Designed to propose the relationship between each schedule activity or cost line and the WBS.</div><div class="card"><b>REVIEW</b>Designed to surface uncertain links for a person to confirm rather than quietly assuming them.</div><div class="card"><b>REUSE</b>Designed to carry approved relationships into later reporting cycles, with checks for structural change.</div></div>
-<h2 id="challenge">Think you can build the crosswalk?</h2>
-<p>We've built a fictional capital project across three monthly reporting cycles, with schedule, cost, Work Breakdown Structure and contractor records.</p>
-<p><b>Your challenge is to connect them.</b></p>
-<p><b>Excel. Power Query. SQL. Python. AI. Whatever you use.</b></p>
-<p><b>Map it. Submit your results. See how your approach scores against the benchmark and other submissions.</b></p>
-<p>But the score is only part of it. WBS↔LINK is still early. We want experienced project controls professionals to tell us where the benchmark falls short of the real thing.</p>
-<p><b>What would make this harder on your projects? What have we missed?</b></p>
-<p>Your experience will help shape the next version of the challenge and, ultimately, WBS↔LINK itself.</p>
-<video controls playsinline preload="metadata" poster="videos/wbslink-how-to-test.jpg" src="videos/wbslink-how-to-test.mp4" aria-label="How to take the WBS↔LINK Challenge"></video>
-<ol class="steps"><li><b>Download</b> the fictional project files. The practice set includes its reference mapping.</li><li><b>Map</b> each schedule activity and cost line, plus supporting contractor records, to a WBS element, or mark it NO_WBS, NEW_SCOPE or UNSURE. The challenge README defines each answer and the required record IDs.</li><li><b>Don't guess.</b> UNSURE is an honest answer.</li><li><b>Practice first.</b> Practice is repeatable. The hidden Challenge set allows one scored attempt per GitHub user.</li><li><b>Score:</b> a published trust-weighted score rewards supported mappings and penalizes confident wrong mappings most heavily.</li></ol>
-<p class="principle">A missing mapping creates a question. A confident wrong mapping creates a reporting risk.</p>
-<div class="row"><a class="btn" href="downloads/wbslink-challenge.zip">Take the Challenge</a><a class="btn alt" href="downloads/wbslink-practice.zip">Start with Practice</a><a class="btn alt" href="how-to.html">How It Works</a><a class="btn alt" data-gh="/issues/new?template=submission.yml" href="#">Submit results</a></div>
-<p><a href="leaderboard.html">Leaderboard</a> · <a href="healthcheck.html">Check two of your own files privately (nothing is uploaded)</a></p>
-<section id="beta" class="beta-section"><h2>Have this problem on a live project?</h2><p class="lede">We’re inviting a small number of project teams to test WBS↔LINK against real schedule, cost and WBS structures.</p><p class="note"><b>Please don’t submit confidential, client or employer project information here.</b> If there’s a potential fit, we’ll arrange appropriate data sharing separately.</p><form class="beta-form" action="https://formspree.io/f/xqpabjze" method="POST"><input type="hidden" name="_subject" value="WBS↔LINK beta access request"><input type="hidden" name="source" value="WBS↔LINK beta website"><div class="form-grid"><label><span>Name</span><input type="text" name="name" autocomplete="name" required></label><label><span>Work email</span><input type="email" name="email" autocomplete="email" required></label><label><span>Company</span><input type="text" name="company" autocomplete="organization" required></label><label><span>Role</span><input type="text" name="role" autocomplete="organization-title" required></label><label><span>Industry / project type</span><input type="text" name="industry_project_type" required></label><label><span>Current tools</span><input type="text" name="current_tools"></label><label><span>What are you trying to map?</span><select name="mapping_need" required><option value="" selected disabled>Select one</option><option>Schedule to WBS</option><option>Cost to WBS</option><option>Schedule and cost to WBS</option><option>Not sure yet</option></select></label><label><span>Open to a beta?</span><select name="beta_interest" required><option value="" selected disabled>Select one</option><option>Yes — I’d consider a beta</option><option>Maybe — I’d like to learn more</option></select></label><label class="full"><span>Briefly describe the mapping problem</span><textarea name="problem" rows="5" placeholder="Keep this high level — no confidential project information." required></textarea></label></div><label class="consent"><input type="checkbox" name="no_confidential_data" value="confirmed" required><span>I confirm I have not included confidential, client or employer project information in this form.</span></label><button class="btn" type="submit">Request beta access</button><p class="form-fine">Your submission is used only to evaluate potential WBS↔LINK beta participation. No project files are requested through this form.</p><p class="form-fine">This form is processed by Formspree. Do not include confidential project information.</p></form></section>
-<h2>Built from the problem, not around it.</h2><p>WBS↔LINK was developed around a recurring capital-project controls problem: schedule and cost structures that do not reliably align to a common WBS.</p><p>Built from hands-on capital-project experience spanning engineering, project management, finance and project delivery.</p><p>WBS↔LINK started with a simple question: why are experienced project teams still rebuilding the same crosswalks every reporting cycle?</p><p style="margin-top:22px"><a data-gh="/issues/new?template=pattern.yml" href="#">Share a pattern you see on real projects</a> · <a data-gh="/issues/new?template=hours.yml" href="#">Tell us what the crosswalk costs you</a></p><footer><p><b>Early beta. Synthetic challenge data only.</b> Provided as is, without warranty; not professional advice, audit or certification. Never upload real project, client or employer data. Submissions are public GitHub issues. WBS↔LINK is a working product name. <a data-gh="/blob/main/DISCLAIMER.md" href="#">Full disclaimer</a>.</p></footer></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WBS↔LINK — Govern the relationships between project-control views</title>
+<meta name="description" content="WBS↔LINK helps project teams establish, govern and reuse the relationships between independently authored project-control views through the Owner WBS.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="WBS LINK home">WBS<span>↔</span>LINK</a>
+  <nav aria-label="Primary">
+    <a href="#problem">Problem</a><a href="#spine">Integration Spine</a><a href="#proof">Product proof</a><a href="#cycle2">Cycle 2</a><a href="#practice">Practice Project</a><a href="#community">Community</a>
+  </nav>
+</header>
+<main id="main">
+<section id="top" class="hero section">
+  <div class="hero-copy">
+    <p class="eyebrow">PROJECT-CONTROLS RELATIONSHIP INTELLIGENCE</p>
+    <h1>Same project.<br>Different structures.</h1>
+    <p class="lede">Schedule, cost/forecast, package/contract and other project-control views can each be credible and still organize the same project differently. Management often assumes they describe the same authorized scope. That relationship must be established, not assumed.</p>
+    <div class="actions"><a class="btn primary" href="#video1">See the problem</a><a class="btn" href="#video2">See how WBS↔LINK works</a><a class="text-link" href="#practice">Try the HarbourLink Practice Project →</a></div>
+    <p class="boundary">Synthetic demonstration evidence only. No production-readiness, security/residency, ROI or speed claim is made here.</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="view-card v1"><small>SCHEDULE</small><b>Delivery logic</b><span>Contractor structure</span></div>
+    <div class="view-card v2"><small>COST / FORECAST</small><b>Control accounts</b><span>Financial structure</span></div>
+    <div class="view-card v3"><small>PACKAGE / CONTRACT</small><b>Commercial scope</b><span>Package structure</span></div>
+    <div class="hub"><small>OWNER WBS</small><b>Integration spine</b></div>
+  </div>
+</section>
+
+<section id="video1" class="section media-section">
+  <div class="section-head"><p class="eyebrow">VIDEO 1 · THE CHALLENGE</p><h2>Why credible project views still fail to reconcile</h2><p>One project. Several legitimate professional views. The problem begins when their relationship is assumed instead of established.</p></div>
+  <video controls playsinline preload="metadata" poster="videos/wbslink-video-1-challenge.jpg" src="videos/wbslink-video-1-challenge.mp4" aria-label="WBS LINK commercial film: The Challenge"></video>
+</section>
+
+<section id="spine" class="section spine-section">
+  <div class="section-head"><p class="eyebrow">THE INTEGRATION SPINE</p><h2>Keep each source view. Govern how it relates to the Owner WBS.</h2><p>WBS↔LINK does not invent direct schedule-to-cost truth. It preserves independently authored views and makes their relationship to the approved Owner WBS visible and inspectable.</p></div>
+  <div class="spine-grid" role="img" aria-label="Schedule, cost forecast, package contract and other project-control views connect through governed relationships to the Owner WBS">
+    <div class="sources"><div>Schedule</div><div>Cost / forecast</div><div>Package / contract</div><div>Other supported views</div></div>
+    <div class="connector">governed<br>relationships</div>
+    <div class="owner-wbs"><small>OWNER WBS</small><strong>Project integration spine</strong></div>
+  </div>
+  <div class="feature-grid">
+    <article><h3>Preserve source meaning</h3><p>Source systems remain separately authored. WBS↔LINK records how their records relate to the Owner WBS.</p></article>
+    <article><h3>Preserve uncertainty</h3><p>Unsupported relationships stay unresolved instead of being forced into a convenient answer.</p></article>
+    <article><h3>Preserve professional authority</h3><p>Evidence, interpretation, professional decisions and approval remain distinct.</p></article>
+    <article><h3>Reuse approved state</h3><p>Later reporting cycles retain relationships that remain valid and return only affected relationships for renewed attention.</p></article>
+  </div>
+</section>
+
+<section id="why" class="section compare-section">
+  <div class="section-head"><p class="eyebrow">WHY THIS IS DIFFERENT</p><h2>Useful tools can analyze a crosswalk. The harder problem is maintaining governed relationship state.</h2></div>
+  <div class="compare-grid">
+    <article><h3>Source systems</h3><p>Scheduling, cost and contract systems remain authoritative for their own source data. WBS↔LINK does not replace them.</p></article>
+    <article><h3>Excel / Power Query / Python / BI</h3><p>Excellent for joins, transformations and reporting. They can build a crosswalk, but the professional relationship state, uncertainty, evidence and revalidation logic still have to be governed.</p></article>
+    <article><h3>Frontier LLM analysis</h3><p>Useful for interpretation and analysis. WBS↔LINK’s distinction is persistent governed relationship state with explicit professional authority and reporting-cycle continuity.</p></article>
+    <article><h3>Manual crosswalks</h3><p>They can work, especially in stable environments. The recurring burden is proving what remains valid when source evidence changes.</p></article>
+  </div>
+</section>
+
+<section id="video2" class="section media-section dark-panel">
+  <div class="section-head"><p class="eyebrow">VIDEO 2 · HOW WBS↔LINK WORKS</p><h2>From ordinary project files to reusable governed intelligence</h2><p>Project → upload → source understanding → uncertainty → relationship review → professional decision → approval → Project Intelligence → outputs → next reporting cycle.</p></div>
+  <video controls playsinline preload="metadata" poster="videos/wbslink-video-2-how-it-works.jpg" src="videos/wbslink-video-2-how-it-works.mp4" aria-label="WBS LINK commercial film: How WBS LINK works"></video>
+</section>
+
+<section id="proof" class="section proof-section">
+  <div class="section-head"><p class="eyebrow">ACCEPTED FLAGSHIP PROOF</p><h2>The product exists. Here is what the accepted synthetic flagship demonstrates.</h2><p>These are public-safe screenshots derived from the accepted flagship exact state. They are demonstration evidence, not hidden evaluation material.</p></div>
+  <div class="proof-grid">
+    <figure><img src="assets/flagship/project-intelligence-cycle1.png" alt="Project Intelligence showing What Matters Now and WBS-mediated integration"><figcaption><b>What Matters Now</b><span>Management meaning first, with uncertainty retained.</span></figcaption></figure>
+    <figure><img src="assets/flagship/premium-workbook.png" alt="Premium Workbook opening view"><figcaption><b>Premium Workbook</b><span>Approved intelligence carried into a deeper working artifact.</span></figcaption></figure>
+    <figure><img src="assets/flagship/management-briefing.png" alt="One-page reporting-cycle management briefing"><figcaption><b>Management briefing</b><span>A concise recipient-facing transmittal from the same approved state.</span></figcaption></figure>
+    <figure><img src="assets/flagship/cycle2-changes.png" alt="Cycle 2 Changes experience"><figcaption><b>Cycle 2</b><span>Retained state plus the minority of relationships needing renewed attention.</span></figcaption></figure>
+  </div>
+  <p class="evidence-note">Evidence basis: accepted synthetic flagship state. No hidden truth/oracle content is published here.</p>
+</section>
+
+<section id="cycle2" class="section cycle2-section">
+  <div class="cycle-copy"><p class="eyebrow">THE REPORTING-CYCLE ADVANTAGE</p><h2>You should not have to rebuild the same crosswalk every month.</h2><p>Once a relationship state is approved, the next reporting cycle can preserve what remains valid and isolate what changed.</p><div class="state-row"><span>Retained</span><span>Revalidated</span><span>Reopened</span><span>New</span><span>Retired / lost support</span></div><p class="cycle-note">Only relationships affected by changed evidence return for renewed professional attention. That is persistent governed intelligence, not a one-off analysis.</p></div>
+  <img src="assets/flagship/cycle2-changes.png" alt="Accepted synthetic Cycle 2 Changes evidence">
+</section>
+
+<section id="practice" class="section practice-section">
+  <div><p class="eyebrow">STANDARD FIRST-RUN EXPERIENCE</p><h2>Try WBS↔LINK on a known synthetic project before using your own data.</h2><p>HarbourLink is the accepted blind practice project: a fictional major-infrastructure controls environment with independently authored Owner WBS, schedule, cost/forecast and package views across two reporting cycles.</p><p>Start with Cycle 1. Build and approve the governed relationship state. Then move to Cycle 2 and see what carries forward and what returns for attention.</p><div class="actions"><a class="btn primary" href="downloads/harbourlink-practice-project.zip">Download HarbourLink Practice Project</a><a class="btn" href="downloads/HarbourLink_Case_Briefing.md">Read the case briefing</a><a class="btn" href="downloads/HarbourLink_Mission_Guide.md">Read the mission guide</a></div><p class="boundary">Blind package only. No answers, scoring keys, hidden truth or oracle material are included.</p></div>
+  <div class="practice-card"><span>HARBOURLINK</span><strong>Urban Transit Expansion</strong><ul><li>Owner WBS</li><li>Contractor schedule</li><li>Cost / forecast</li><li>Package register</li><li>Cycle 1 + Cycle 2</li></ul></div>
+</section>
+
+<section id="pilot" class="section pilot-section">
+  <p class="eyebrow">CONTROLLED PRIVATE DEMONSTRATION</p><h2>Have this relationship problem on a real project?</h2><p>We can discuss a private demonstration or controlled pilot path. Do not send confidential, client or employer project files through this public site.</p>
+  <a class="btn primary" href="https://formspree.io/f/xqpabjze">Request a private demonstration</a>
+</section>
+
+<section id="community" class="section community-section">
+  <div class="section-head"><p class="eyebrow">COMMUNITY / BENCHMARK / RESEARCH</p><h2>The WBS↔LINK Community Challenge</h2><p>The benchmark remains available for practitioners who want to test their own method. It is a community research surface, not the definition of the product.</p></div>
+  <div class="community-grid"><a href="https://zp-projects.github.io/wbs-link/#challenge">Take the Community Challenge</a><a href="https://zp-projects.github.io/wbs-link/how-to.html">Challenge how-to</a><a href="https://zp-projects.github.io/wbs-link/leaderboard.html">Leaderboard</a><a href="https://zp-projects.github.io/wbs-link/healthcheck.html">Two-file checker</a></div>
+</section>
+
+<section class="section final-cta"><p class="eyebrow">START WITH PROOF</p><h2>See the problem. Understand the product. Prove it to yourself.</h2><div class="actions"><a class="btn primary" href="downloads/harbourlink-practice-project.zip">Try the practice project</a><a class="btn" href="#video1">Watch Video 1</a><a class="btn" href="#video2">Watch Video 2</a></div></section>
+</main>
+<footer><div class="brand">WBS<span>↔</span>LINK</div><p>Fictional demonstration material only. WBS↔LINK does not replace source systems or professional authority. No production-readiness, security/compliance/residency, ROI, delay-prevention or public performance claim is made on this site.</p><p><a href="https://github.com/ZP-Projects/wbs-link/blob/main/DISCLAIMER.md">Disclaimer</a> · <a href="#community">Community Challenge</a></p></footer>
+</body></html>
