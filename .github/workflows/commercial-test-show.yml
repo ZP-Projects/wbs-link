@@ -1,0 +1,194 @@
+name: Commercial Experience TEST-SHOW
+
+on:
+  push:
+    branches:
+      - eng/codex-commercial-experience
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  commercial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact branch head
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect phase
+        id: phase
+        shell: bash
+        run: |
+          msg="$(git log -1 --pretty=%B)"
+          if [[ "$msg" == *"[commercial-generated]"* ]]; then
+            echo "generated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "generated=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install media and browser dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg unzip fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install pillow playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Materialize preserved proof assets
+        if: steps.phase.outputs.generated != 'true'
+        run: |
+          mkdir -p docs/assets/flagship
+          unzip -o .commercial-bootstrap/flagship-jpgs.zip -d docs/assets/flagship
+          test -s docs/assets/flagship/project-intelligence-cycle1.jpg
+          test -s docs/assets/flagship/cycle2-changes.jpg
+          test -s docs/assets/flagship/premium-workbook.jpg
+          test -s docs/assets/flagship/management-briefing.jpg
+          test -s docs/assets/flagship/outputs-cycle1.jpg
+
+      - name: Generate commercial videos and posters
+        if: steps.phase.outputs.generated != 'true'
+        run: |
+          python docs/videos/source/generate_commercial_videos.py
+          test -s docs/videos/wbslink-video-1-challenge.mp4
+          test -s docs/videos/wbslink-video-1-challenge.jpg
+          test -s docs/videos/wbslink-video-2-how-it-works.mp4
+          test -s docs/videos/wbslink-video-2-how-it-works.jpg
+
+      - name: Static, claim, accessibility and leakage checks
+        run: |
+          set -o pipefail
+          python test_commercial_experience.py | tee /tmp/commercial-static.log
+
+      - name: Start local commercial site
+        run: |
+          python -m http.server 8000 --directory docs >/tmp/commercial-http.log 2>&1 &
+          echo $! > /tmp/commercial-http.pid
+          for i in {1..40}; do
+            curl -fsS http://127.0.0.1:8000/ >/dev/null && exit 0
+            sleep .25
+          done
+          cat /tmp/commercial-http.log
+          exit 1
+
+      - name: Desktop and mobile SHOW evidence
+        run: |
+          python scripts/render_commercial_evidence.py
+          test -s evidence/commercial-experience/website-desktop.png
+          test -s evidence/commercial-experience/website-mobile.png
+          python - <<'PY'
+          import json
+          p=json.load(open('evidence/commercial-experience/browser-check.json'))
+          assert not p['views']['desktop']['horizontalOverflow'], p
+          assert not p['views']['mobile']['horizontalOverflow'], p
+          assert not p['views']['desktop']['brokenImages'], p
+          assert not p['views']['mobile']['brokenImages'], p
+          print('browser-responsive-checks: PASS')
+          PY
+
+      - name: Video and blind-package evidence
+        run: |
+          ffprobe -v error -show_entries format=duration,size -of json docs/videos/wbslink-video-1-challenge.mp4 > /tmp/video1.json
+          ffprobe -v error -show_entries format=duration,size -of json docs/videos/wbslink-video-2-how-it-works.mp4 > /tmp/video2.json
+          python - <<'PY'
+          import json, zipfile
+          v1=json.load(open('/tmp/video1.json'))['format']
+          v2=json.load(open('/tmp/video2.json'))['format']
+          d1=float(v1['duration']); d2=float(v2['duration'])
+          assert 55 <= d1 <= 95, d1
+          assert 65 <= d2 <= 105, d2
+          z='docs/downloads/harbourlink-practice-project.zip'
+          with zipfile.ZipFile(z) as f:
+              names=f.namelist()
+              low='\n'.join(names).lower()
+              for bad in ('truth_package','oracle','expected_conditions','answer_key','reference_mapping'):
+                  assert bad not in low, bad
+              assert any('/cycle1/' in x.lower() for x in names)
+              assert any('/cycle2/' in x.lower() for x in names)
+          print(f'video1_seconds={d1:.2f}')
+          print(f'video2_seconds={d2:.2f}')
+          print('blind-practice-package: PASS')
+          PY
+
+      - name: Raw public-branch smoke
+        if: steps.phase.outputs.generated == 'true'
+        run: |
+          base="https://raw.githubusercontent.com/ZP-Projects/wbs-link/$GITHUB_SHA"
+          curl -fsSI "$base/docs/index.html"
+          curl -fsSI "$base/docs/videos/wbslink-video-1-challenge.mp4"
+          curl -fsSI "$base/docs/videos/wbslink-video-2-how-it-works.mp4"
+          curl -fsSI "$base/docs/downloads/harbourlink-practice-project.zip"
+          echo "raw-public-branch-smoke: PASS"
+
+      - name: Retain BUILD TEST SHOW evidence
+        if: steps.phase.outputs.generated != 'true'
+        shell: bash
+        run: |
+          rm -rf .commercial-bootstrap docs/videos/source/_frames
+          mkdir -p evidence/commercial-experience
+          {
+            echo "# #52 Commercial Experience BUILD → TEST → SHOW"
+            echo
+            echo "- Source implementation SHA: $GITHUB_SHA"
+            echo "- Accepted flagship evidence SHA: abb47dd0c49190b10caa1fe0807c30daab5b2da1"
+            echo "- Branch: eng/codex-commercial-experience"
+            echo "- Static / claim / accessibility / leakage checks: PASS"
+            echo "- Desktop 1440px browser render: PASS"
+            echo "- Mobile 390px browser render: PASS"
+            echo "- Horizontal overflow: NONE"
+            echo "- Video 1 duration contract: PASS"
+            echo "- Video 2 duration contract: PASS"
+            echo "- HarbourLink blind package audit: PASS"
+            echo "- Publication/deployment: NOT PERFORMED"
+            echo
+            echo "Final exact generated-artifact SHA is verified by the follow-on exact-head workflow run."
+          } > evidence/commercial-experience/TEST_SHOW.md
+          cp /tmp/commercial-static.log evidence/commercial-experience/static-checks.log
+          ffprobe -v error -show_entries format=duration,size -of json docs/videos/wbslink-video-1-challenge.mp4 > evidence/commercial-experience/video1-probe.json
+          ffprobe -v error -show_entries format=duration,size -of json docs/videos/wbslink-video-2-how-it-works.mp4 > evidence/commercial-experience/video2-probe.json
+          find docs evidence/commercial-experience -type f -print0 | sort -z | xargs -0 sha256sum > evidence/commercial-experience/SHA256SUMS
+          sha256sum --check evidence/commercial-experience/SHA256SUMS
+
+      - name: Commit generated commercial artifacts to isolated branch
+        if: steps.phase.outputs.generated != 'true'
+        shell: bash
+        run: |
+          git config user.name "Engineering ChatGPT Codex"
+          git config user.email "308842994+ZP-Projects@users.noreply.github.com"
+          git add docs/assets/flagship/*.jpg
+          git add docs/videos/wbslink-video-1-challenge.mp4 docs/videos/wbslink-video-1-challenge.jpg
+          git add docs/videos/wbslink-video-2-how-it-works.mp4 docs/videos/wbslink-video-2-how-it-works.jpg
+          git add docs/downloads/harbourlink-practice-project.zip
+          git add evidence/commercial-experience
+          git rm -r --ignore-unmatch .commercial-bootstrap
+          git commit -m "chore(commercial): retain generated #52 TEST-SHOW evidence [commercial-generated]"
+          git push origin HEAD:eng/codex-commercial-experience
+
+      - name: Verify retained checksums at exact generated head
+        if: steps.phase.outputs.generated == 'true'
+        run: |
+          sha256sum --check evidence/commercial-experience/SHA256SUMS
+
+      - name: Upload exact-run assurance evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: commercial-test-show-${{ github.sha }}
+          path: |
+            evidence/commercial-experience
+            docs/videos/wbslink-video-1-challenge.mp4
+            docs/videos/wbslink-video-1-challenge.jpg
+            docs/videos/wbslink-video-2-how-it-works.mp4
+            docs/videos/wbslink-video-2-how-it-works.jpg
+            docs/downloads/harbourlink-practice-project.zip
+            docs/videos/source
+          if-no-files-found: error
+          retention-days: 14
