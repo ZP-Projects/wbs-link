@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">Accepted flagship Cycle 2 evidence summary</title><desc id="d">Public-safe reconstruction showing retained, revalidated, reopened, new and retired relationship-state categories across the second reporting cycle.</desc>
+<rect width="1200" height="675" fill="#101829"/><text x="54" y="62" font-family="Arial,sans-serif" font-weight="700" font-size="28" fill="#fff">WBS↔LINK · Changes &amp; Revalidation</text>
+<text x="54" y="126" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#c48953">ACCEPTED SYNTHETIC FLAGSHIP · CYCLE 2</text>
+<text x="54" y="190" font-family="Arial,sans-serif" font-weight="700" font-size="44" fill="#fff">What changed and what remained valid</text>
+<text x="54" y="234" font-family="Arial,sans-serif" font-size="21" fill="#c8ceda">Previously approved state is preserved unless changed evidence affects the relationship.</text>
+<g font-family="Arial,sans-serif"><rect x="54" y="292" width="1092" height="224" rx="14" fill="#17223a" stroke="#3c4861"/>
+<g font-size="20" font-weight="700"><text x="90" y="342" fill="#93c7ac">RETAINED</text><text x="300" y="342" fill="#a8c4e8">REVALIDATED</text><text x="548" y="342" fill="#dfad7f">REOPENED</text><text x="764" y="342" fill="#e5d58f">NEW</text><text x="930" y="342" fill="#b9bec8">RETIRED</text></g>
+<g font-size="17" fill="#d6dae3"><text x="90" y="390">Relationship remains valid</text><text x="300" y="390">Evidence changed; state holds</text><text x="548" y="390">Renewed judgment required</text><text x="764" y="390">New source record</text><text x="930" y="390">No longer reported</text></g>
+<line x1="90" y1="438" x2="1070" y2="438" stroke="#4a5670" stroke-width="2"/><text x="90" y="482" font-size="20" fill="#fff">Only affected relationships return for professional attention.</text></g>
+<text x="54" y="614" font-family="Arial,sans-serif" font-size="17" fill="#9ea8bb">Evidence basis: accepted flagship SHA abb47dd0… · Bounded revalidation, not full rebuild.</text></svg>
