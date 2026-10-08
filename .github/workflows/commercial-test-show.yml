@@ -56,7 +56,7 @@ jobs:
         if: steps.phase.outputs.generated != 'true'
         shell: bash
         run: |
-          curl -fsSL 'https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-51ac-81f7-b96f-2aa2e5bddfd2/raw?se=2026-10-08T15%3A56%3A03Z&sp=r&sv=2026-02-06&sr=b&scid=d259d601-430e-527c-88eb-3843b9a385a5&skoid=c36a4874-d531-4a8d-99fc-7da0d9143d9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-08T11%3A23%3A41Z&ske=2026-10-09T11%3A23%3A41Z&sks=b&skv=2026-02-06&sig=Sa0h7p12B7PjL7fUp/RYwTZXYtv91iD5AG5qInkfJzI%3D' -o /tmp/wp-flagship-01-test-show.zip
+          curl -fsSL 'https://sdmntprsoutheastus3.oaiusercontent.com/files/00000000-f2ec-820c-b8ff-0b9b448739f9/raw?se=2026-10-08T16%3A01%3A56Z&sp=r&sv=2026-02-06&sr=b&scid=5490bb20-000d-5d5e-b8f6-4ba5b0975c82&skoid=c36a4874-d531-4a8d-99fc-7da0d9143d9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-08T12%3A53%3A26Z&ske=2026-10-09T12%3A53%3A26Z&sks=b&skv=2026-02-06&sig=OYWoUvtZwSQYLNsmmMxkaV9Eq7t7/VahNitjfpkiToQ%3D' -o /tmp/wp-flagship-01-test-show.zip
           python - <<'PY'
           import hashlib, zipfile
           from pathlib import Path
