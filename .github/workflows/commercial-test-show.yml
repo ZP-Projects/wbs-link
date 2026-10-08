@@ -36,22 +36,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install media and browser dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg unzip fonts-dejavu-core
-          python -m pip install --upgrade pip
-          python -m pip install pillow playwright
-          python -m playwright install --with-deps chromium
-
-      - name: Verify retained accepted flagship proof assets
-        run: |
-          test -s docs/assets/flagship/project-intelligence-cycle1.svg
-          test -s docs/assets/flagship/cycle2-changes.svg
-          test -s docs/assets/flagship/premium-workbook.jpg
-          test -s docs/assets/flagship/management-briefing.svg
-          test -s docs/assets/flagship/outputs-cycle1.svg
-
       - name: Recover authoritative HarbourLink blind practice ZIP
         if: steps.phase.outputs.generated != 'true'
         shell: bash
@@ -120,6 +104,22 @@ jobs:
           print('authoritative blind package recovery: PASS')
           PY
           rm -f /tmp/wp-flagship-01-test-show.zip
+
+      - name: Install media and browser dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg unzip fonts-dejavu-core
+          python -m pip install --upgrade pip
+          python -m pip install pillow playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Verify retained accepted flagship proof assets
+        run: |
+          test -s docs/assets/flagship/project-intelligence-cycle1.svg
+          test -s docs/assets/flagship/cycle2-changes.svg
+          test -s docs/assets/flagship/premium-workbook.jpg
+          test -s docs/assets/flagship/management-briefing.svg
+          test -s docs/assets/flagship/outputs-cycle1.svg
 
       - name: Generate commercial videos and posters
         if: steps.phase.outputs.generated != 'true'
