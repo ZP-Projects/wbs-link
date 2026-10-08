@@ -40,4 +40,26 @@ for name,lo_d,hi_d in [('wbslink-video-1-challenge.mp4',55,95),('wbslink-video-2
     dur=float(json.loads(out)['format']['duration'])
     assert lo_d <= dur <= hi_d,(name,dur)
 
+
+# Community navigation and retired-claim regression gate (Coordinator #52).
+community_targets = ['how-to.html', 'leaderboard.html', 'healthcheck.html']
+community_section = html.split('id="community"', 1)[1].split('</section>', 1)[0]
+community_links = re.findall(r'href="([^"]+)"', community_section)
+assert community_links == ['how-to.html', 'how-to.html', 'leaderboard.html', 'healthcheck.html'], community_links
+for target in community_targets:
+    assert (ROOT / target).is_file(), target
+    page = (ROOT / target).read_text(encoding='utf-8').lower()
+    assert 'index.html#community' in page, target
+    assert 'index.html#challenge' not in page, target
+    for retired in ['early-stage concept', 'secure, ai-enabled',
+                    'pressure-test the problem before pretending the product is finished',
+                    'wbs↔link is a working product name', 'early beta']:
+        assert retired not in page, (target, retired)
+    assert 'synthetic' in page and 'never upload real project' in page, target
+assert 'community challenge' in (ROOT / 'how-to.html').read_text(encoding='utf-8').lower()
+checker = (ROOT / 'healthcheck.html').read_text(encoding='utf-8')
+assert 'Stable identifiers can make month-to-month comparison easier.' in checker
+assert 'Stable IDs make month-to-month mapping cheap.' not in checker
+assert 'in your browser only' in checker
+
 print('commercial-static-checks: PASS')
