@@ -40,7 +40,7 @@ jobs:
         if: steps.phase.outputs.generated != 'true'
         shell: bash
         run: |
-          curl -fsSL 'https://sdmntprsoutheastus3.oaiusercontent.com/files/00000000-f2ec-820c-b8ff-0b9b448739f9/raw?se=2026-10-08T16%3A01%3A56Z&sp=r&sv=2026-02-06&sr=b&scid=5490bb20-000d-5d5e-b8f6-4ba5b0975c82&skoid=c36a4874-d531-4a8d-99fc-7da0d9143d9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-08T12%3A53%3A26Z&ske=2026-10-09T12%3A53%3A26Z&sks=b&skv=2026-02-06&sig=OYWoUvtZwSQYLNsmmMxkaV9Eq7t7/VahNitjfpkiToQ%3D' -o /tmp/wp-flagship-01-test-show.zip
+          curl -fsSL 'https://sdmntprcentralus.oaiusercontent.com/files/00000000-4004-81f5-b6a4-a3809c1a8af9/raw?se=2026-10-08T16%3A08%3A16Z&sp=r&sv=2026-02-06&sr=b&scid=5607b391-9039-536a-ae8f-187f80b3d1e7&skoid=c36a4874-d531-4a8d-99fc-7da0d9143d9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-08T12%3A38%3A04Z&ske=2026-10-09T12%3A38%3A04Z&sks=b&skv=2026-02-06&sig=2C1PXjo6NStJGcaNBxW4m8y6RNL03%2BHB4OlF6kQ6KHc%3D' -o /tmp/wp-flagship-01-test-show.zip
           python - <<'PY'
           import hashlib, zipfile
           from pathlib import Path
@@ -221,7 +221,7 @@ jobs:
           cp /tmp/commercial-static.log evidence/commercial-experience/static-checks.log
           ffprobe -v error -show_entries format=duration,size -of json docs/videos/wbslink-video-1-challenge.mp4 > evidence/commercial-experience/video1-probe.json
           ffprobe -v error -show_entries format=duration,size -of json docs/videos/wbslink-video-2-how-it-works.mp4 > evidence/commercial-experience/video2-probe.json
-          find docs evidence/commercial-experience -type f -print0 | sort -z | xargs -0 sha256sum > evidence/commercial-experience/SHA256SUMS
+          find docs evidence/commercial-experience -type f ! -path 'evidence/commercial-experience/SHA256SUMS' -print0 | sort -z | xargs -0 sha256sum > evidence/commercial-experience/SHA256SUMS
           sha256sum --check evidence/commercial-experience/SHA256SUMS
 
       - name: Commit generated commercial artifacts to isolated branch
