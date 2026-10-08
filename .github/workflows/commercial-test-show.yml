@@ -178,8 +178,8 @@ jobs:
               low='\n'.join(names).lower()
               for bad in ('truth_package','oracle','expected_conditions','answer_key','reference_mapping'):
                   assert bad not in low, bad
-              assert any('/cycle1/' in x.lower() for x in names)
-              assert any('/cycle2/' in x.lower() for x in names)
+              assert any(x.lower().startswith('cycle1/') for x in names)
+              assert any(x.lower().startswith('cycle2/') for x in names)
           print(f'video1_seconds={d1:.2f}')
           print(f'video2_seconds={d2:.2f}')
           print('blind-practice-package: PASS')
