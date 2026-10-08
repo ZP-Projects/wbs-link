@@ -1,0 +1,25 @@
+{
+  "url": "http://127.0.0.1:8000/",
+  "views": {
+    "desktop": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 10393,
+      "title": "WBS\u2194LINK \u2014 Govern the relationships between project-control views",
+      "h1": "Same project.\nDifferent structures.",
+      "videos": 2,
+      "brokenImages": [],
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 13433,
+      "title": "WBS\u2194LINK \u2014 Govern the relationships between project-control views",
+      "h1": "Same project.\nDifferent structures.",
+      "videos": 2,
+      "brokenImages": [],
+      "horizontalOverflow": false
+    }
+  }
+}
