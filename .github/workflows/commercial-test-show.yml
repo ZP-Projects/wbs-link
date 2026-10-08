@@ -52,6 +52,75 @@ jobs:
           test -s docs/assets/flagship/management-briefing.svg
           test -s docs/assets/flagship/outputs-cycle1.svg
 
+      - name: Recover authoritative HarbourLink blind practice ZIP
+        if: steps.phase.outputs.generated != 'true'
+        shell: bash
+        run: |
+          curl -fsSL 'https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-51ac-81f7-b96f-2aa2e5bddfd2/raw?se=2026-10-08T15%3A56%3A03Z&sp=r&sv=2026-02-06&sr=b&scid=d259d601-430e-527c-88eb-3843b9a385a5&skoid=c36a4874-d531-4a8d-99fc-7da0d9143d9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-08T11%3A23%3A41Z&ske=2026-10-09T11%3A23%3A41Z&sks=b&skv=2026-02-06&sig=Sa0h7p12B7PjL7fUp/RYwTZXYtv91iD5AG5qInkfJzI%3D' -o /tmp/wp-flagship-01-test-show.zip
+          python - <<'PY'
+          import hashlib, zipfile
+          from pathlib import Path
+
+          artifact = Path('/tmp/wp-flagship-01-test-show.zip')
+          out = Path('docs/downloads/harbourlink-practice-project.zip')
+          out.parent.mkdir(parents=True, exist_ok=True)
+          base = 'flagship_demo_run/packages/case_a_major_infrastructure/user_package/'
+          names = [
+              'README.txt',
+              'case_briefing.md',
+              'mission_guide.md',
+              'cycle1/owner_wbs.xlsx',
+              'cycle1/contractor_schedule.csv',
+              'cycle1/monthly_cost_forecast.xlsx',
+              'cycle1/package_register.xlsx',
+              'cycle2/owner_wbs.xlsx',
+              'cycle2/contractor_schedule.csv',
+              'cycle2/monthly_cost_forecast.xlsx',
+              'cycle2/package_register.xlsx',
+          ]
+          readme = """WBS↔LINK HarbourLink Practice Project
+
+          This fictional synthetic project is the standard first-run practice experience for WBS↔LINK.
+
+          Recommended sequence
+          1. Read case_briefing.md.
+          2. Read mission_guide.md.
+          3. Use only the Cycle 1 files first.
+          4. Complete the WBS↔LINK journey and review Project Intelligence and outputs.
+          5. Then use the Cycle 2 files and review what remained valid and what changed.
+
+          Included source types
+          - Owner WBS
+          - Contractor schedule
+          - Monthly cost / forecast
+          - Package register
+
+          This package contains fictional synthetic practice data only. No real client or confidential project data is included.
+          """.replace('          ', '').encode('utf-8')
+
+          with zipfile.ZipFile(artifact) as src, zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_DEFLATED) as dst:
+              for name in names:
+                  data = readme if name == 'README.txt' else src.read(base + name)
+                  zi = zipfile.ZipInfo(name, date_time=(2026, 10, 8, 15, 38, 54))
+                  zi.compress_type = zipfile.ZIP_DEFLATED
+                  zi.create_system = 3
+                  zi.external_attr = 0x01800000
+                  dst.writestr(zi, data)
+
+          expected = '4ff169ac299bff0cecf5a67674d4a42931cb7d571031df634044c37a0dd9774e'
+          actual = hashlib.sha256(out.read_bytes()).hexdigest()
+          assert actual == expected, (actual, expected)
+          with zipfile.ZipFile(out) as z:
+              assert z.testzip() is None
+              assert z.namelist() == names
+              low = '\n'.join(z.namelist()).lower()
+              for bad in ('truth_package','oracle','expected_conditions','answer_key','reference_mapping'):
+                  assert bad not in low, bad
+          print('harbourlink-practice-project.zip sha256=' + actual)
+          print('authoritative blind package recovery: PASS')
+          PY
+          rm -f /tmp/wp-flagship-01-test-show.zip
+
       - name: Generate commercial videos and posters
         if: steps.phase.outputs.generated != 'true'
         run: |
