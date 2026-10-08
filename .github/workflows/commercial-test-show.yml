@@ -78,6 +78,7 @@ jobs:
           exit 1
 
       - name: Desktop and mobile SHOW evidence
+        if: steps.phase.outputs.generated != 'true'
         run: |
           python scripts/render_commercial_evidence.py
           test -s evidence/commercial-experience/website-desktop.png
