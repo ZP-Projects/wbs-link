@@ -44,22 +44,24 @@
     <div class="connector">governed<br>relationships</div>
     <div class="owner-wbs"><small>OWNER WBS</small><strong>Project integration spine</strong></div>
   </div>
-  <div class="feature-grid">
-    <article><h3>Preserve source meaning</h3><p>Source systems remain separately authored. WBS↔LINK records how their records relate to the Owner WBS.</p></article>
-    <article><h3>Preserve uncertainty</h3><p>Unsupported relationships stay unresolved instead of being forced into a convenient answer.</p></article>
-    <article><h3>Preserve professional authority</h3><p>Evidence, interpretation, professional decisions and approval remain distinct.</p></article>
-    <article><h3>Reuse approved state</h3><p>Later reporting cycles retain relationships that remain valid and return only affected relationships for renewed attention.</p></article>
+  <div class="feature-grid" aria-label="What WBS LINK preserves">
+    <article><div class="visual-icon" aria-hidden="true">▤</div><h3>Source meaning</h3><p>Independent views stay intact.</p></article>
+    <article><div class="visual-icon" aria-hidden="true">◇</div><h3>Uncertainty</h3><p>Unproven links remain open.</p></article>
+    <article><div class="visual-icon" aria-hidden="true">✓</div><h3>Professional authority</h3><p>People decide and approve.</p></article>
+    <article><div class="visual-icon" aria-hidden="true">↻</div><h3>Reporting continuity</h3><p>Keep what still holds.</p></article>
   </div>
 </section>
 
 <section id="why" class="section compare-section">
   <div class="section-head"><p class="eyebrow">WHY THIS IS DIFFERENT</p><h2>A join shows matches. Governance shows what still holds.</h2></div>
-  <div class="compare-grid">
-    <article><h3>Source systems</h3><p>Scheduling, cost and contract systems remain authoritative for their own source data. WBS↔LINK does not replace them.</p></article>
-    <article><h3>Excel / Power Query / Python / BI</h3><p>Excellent for joins, transformations and reporting. They can build a crosswalk, but the professional relationship state, uncertainty, evidence and revalidation logic still have to be governed.</p></article>
-    <article><h3>Frontier LLM analysis</h3><p>Useful for interpretation and analysis. WBS↔LINK’s distinction is persistent governed relationship state with explicit professional authority and reporting-cycle continuity.</p></article>
-    <article><h3>Manual crosswalks</h3><p>They can work, especially in stable environments. The recurring burden is proving what remains valid when source evidence changes.</p></article>
-  </div>
+  <details class="more-detail"><summary>How is this different from joins, BI or one-off AI analysis?</summary>
+    <div class="compare-grid">
+      <article><h3>Source systems</h3><p>Scheduling, cost and contract systems retain authority for their own data.</p></article>
+      <article><h3>Excel / Power Query / Python / BI</h3><p>Useful for analysis and joins. Relationships, uncertainty and changes still need governance.</p></article>
+      <article><h3>Frontier AI</h3><p>Useful for interpretation. WBS↔LINK maintains reviewed relationship state across cycles.</p></article>
+      <article><h3>Manual crosswalks</h3><p>Useful where stable. Revisions still require evidence-based revalidation.</p></article>
+    </div>
+  </details>
 </section>
 
 <section id="video2" class="section media-section dark-panel">
