@@ -80,6 +80,6 @@ with concat.open('w') as f:
 poster=OUT/'wbslink-video-1-challenge.jpg'
 render(0,0).save(poster,quality=90)
 video=OUT/'wbslink-video-1-challenge.mp4'
-subprocess.run(['ffmpeg','-y','-f','concat','-safe','0','-i',str(concat),'-vf','fps=24,format=yuv420p','-c:v','libx264','-preset','veryfast','-crf','23','-movflags','+faststart',str(video)],check=True)
+subprocess.run(['ffmpeg','-y','-f','concat','-safe','0','-i',str(concat),'-f','lavfi','-i',f'sine=frequency=110:sample_rate=48000:duration={sum(DUR)}','-filter_complex','[1:a]volume=0.015,lowpass=f=280[a]','-map','0:v','-map','[a]','-vf','fps=24,format=yuv420p','-c:v','libx264','-preset','veryfast','-crf','23','-c:a','aac','-b:a','96k','-shortest','-movflags','+faststart',str(video)],check=True)
 shutil.rmtree(FRAMES)
 print(video)
