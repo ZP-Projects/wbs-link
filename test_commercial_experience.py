@@ -62,4 +62,20 @@ assert 'Stable identifiers can make month-to-month comparison easier.' in checke
 assert 'Stable IDs make month-to-month mapping cheap.' not in checker
 assert 'in your browser only' in checker
 
+
+# Issue #3 visual-first commercial experience contract.
+assert 'WBS↔LINK' in html and 'by ZP Synergy Group' in html
+assert 'https://www.zpsynergygroup.ca/' in html
+assert 'rel="noopener noreferrer"' in html
+assert '<details class="more-detail">' in html
+assert '<summary>' in html
+assert html.count('class="visual-icon"') >= 4
+assert 'href="#video1"' in html and 'href="#video2"' in html
+assert 'id="practice"' in html and 'id="cycle2"' in html
+assert 'id="community"' in html
+assert 'videos/wbslink-video-1-challenge.mp4' in html
+assert 'videos/wbslink-video-2-how-it-works.mp4' in html
+for poster in ('wbslink-video-1-challenge.jpg', 'wbslink-video-2-how-it-works.jpg'):
+    assert (ROOT / 'videos' / poster).is_file(), poster
+
 print('commercial-static-checks: PASS')
