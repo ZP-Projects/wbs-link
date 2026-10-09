@@ -14,6 +14,21 @@ Target: 66 seconds. Reaction: “Yes. We have that problem.”
 7. Show persistence into the next reporting cycle.
 8. Close: visible, governable, reusable relationship integrity.
 
+## Video 1 — Cinematic issue #3 cut
+
+Replaces the text-card composition with a reproducible, scene-led synthetic visual metaphor (66 seconds). It is not footage of a real client project. The retained original presentation cut remains recoverable from the reviewed baseline.
+
+1. One project: animated infrastructure deck, rail corridor and structural piers.
+2. Schedule: a delivery sequence appears across the construction environment.
+3. Forecast: financial-control columns appear over the same infrastructure.
+4. Contracts: separate package structures appear over that same project.
+5. Do they align? Source views remain independently credible; no direct equivalence is assumed.
+6. Owner WBS: each source view relates through the Owner WBS integration spine.
+7. Uncertainty: one unresolved relationship remains visibly open for professional judgment.
+8. Close: visible, governed, reviewable and reusable relationship state.
+
+The film uses short on-screen lines and an ambient generated audio bed; it does not claim professional voiceover or real-project footage. Preserve the distinct Video 2 product walkthrough.
+
 ## Video 2 — How WBS↔LINK works
 Target: 82 seconds. Reaction: “I understand how this works, and why I would not want to rebuild this every reporting cycle.”
 
