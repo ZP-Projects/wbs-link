@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - eng/codex-commercial-experience
+      - eng/codex-cinematic-commercial-issue3
   workflow_dispatch:
 
 permissions:
@@ -168,7 +169,7 @@ jobs:
           git add docs/downloads/harbourlink-practice-project.zip
           git add evidence/commercial-experience
           git commit -m "chore(commercial): retain generated #52 TEST-SHOW evidence [commercial-generated]"
-          git push origin HEAD:eng/codex-commercial-experience
+          git push origin HEAD:eng/codex-cinematic-commercial-issue3
 
       - name: Verify retained checksums at exact generated head
         if: steps.phase.outputs.generated == 'true'
