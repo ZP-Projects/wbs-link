@@ -124,5 +124,5 @@ def make_video(name, scenes, durations):
     shutil.copy(imgs[0],VIDEO_DIR/f'{name}.jpg')
     return out
 
-make_video('wbslink-video-1-challenge',video1,[8,8,8,8,9,8,8,9])
+subprocess.run(['python', str(VIDEO_DIR/'source'/'generate_cinematic_video1.py')], check=True)
 make_video('wbslink-video-2-how-it-works',video2,[8,8,8,8,8,8,8,8,9,9])
