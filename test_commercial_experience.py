@@ -39,6 +39,9 @@ for name,lo_d,hi_d in [('wbslink-video-1-challenge.mp4',55,95),('wbslink-video-2
     out=subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','json',str(p)],text=True)
     dur=float(json.loads(out)['format']['duration'])
     assert lo_d <= dur <= hi_d,(name,dur)
+    streams=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=codec_type','-of','json',str(p)],text=True))['streams']
+    kinds={stream['codec_type'] for stream in streams}
+    assert {'video','audio'} <= kinds,(name,kinds)
 
 
 # Community navigation and retired-claim regression gate (Coordinator #52).
