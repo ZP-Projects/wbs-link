@@ -6,3 +6,7 @@
 .more-detail summary:focus-visible{outline:3px solid #c48953;outline-offset:5px}
 .more-detail[open] summary{margin-bottom:1.25rem}
 @media(max-width:640px){.visual-icon{font-size:1.7rem}.more-detail{padding:.85rem}}
+
+/* Product-led parent-brand signature */
+.brand-by{display:inline-block;font-size:.57em;font-weight:500;letter-spacing:.015em;opacity:.78;margin-left:.65rem;vertical-align:middle;white-space:nowrap}
+@media(max-width:640px){.brand-by{display:block;margin:.15rem 0 0;font-size:.48em}}
