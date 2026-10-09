@@ -1,6 +1,6 @@
 # #52 Commercial Experience BUILD → TEST → SHOW
 
-- Source implementation SHA: 8af6f97999d1ecfe3b2da0fae317901b0b00281c
+- Source implementation SHA: e0bd7445676f7953db427b327a4575f478efcece
 - Accepted flagship evidence SHA: abb47dd0c49190b10caa1fe0807c30daab5b2da1
 - Branch: eng/codex-commercial-experience
 - Static / claim / accessibility / leakage checks: PASS
