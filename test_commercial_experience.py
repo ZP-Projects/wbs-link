@@ -87,4 +87,18 @@ if (ROOT / 'videos/wbslink-video-1-original-footage.lock').exists():
         assert hashlib.sha256((ROOT / 'videos' / name).read_bytes()).hexdigest() == expected, name
     assert '<track kind="captions" src="videos/wbslink-video-1-cinematic.vtt" srclang="en" label="English" default>' in html
 
+
+# Issue #3 private application entry. This proves the authored journey,
+# not HTTP reachability or authentication acceptance.
+private_app = 'https://issue-35-execution-gate-production.up.railway.app/'
+assert 'id="app"' in html
+assert 'href="#app"' in html
+assert html.count('href="' + private_app + '"') == 1
+app_section = html.split('id="app"', 1)[1].split('</section>', 1)[0]
+assert 'PRIVATE PRODUCT OWNER PREVIEW' in app_section
+assert 'target="_blank"' in app_section and 'rel="noopener noreferrer"' in app_section
+assert 'Access or a session may be required' in app_section
+assert 'do not upload real project, employer or client information' in app_section
+assert html.index('id="practice"') < html.index('id="app"') < html.index('id="community"')
+
 print('commercial-static-checks: PASS')
