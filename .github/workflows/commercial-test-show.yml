@@ -57,6 +57,8 @@ jobs:
       - name: Generate commercial videos and posters
         if: steps.phase.outputs.generated != 'true'
         run: |
+          # Preserve the exact previously accepted Video 2 binary, not a fresh encode.
+          git restore --source=6028622d3d12c287a06909c6b4e40dafb68cac28 -- docs/videos/wbslink-video-2-how-it-works.mp4
           python docs/videos/source/generate_commercial_videos.py
           test -s docs/videos/wbslink-video-1-challenge.mp4
           test -s docs/videos/wbslink-video-1-challenge.jpg
