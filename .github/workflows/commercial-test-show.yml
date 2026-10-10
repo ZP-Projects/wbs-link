@@ -201,14 +201,14 @@ jobs:
           echo "integrated-app-http-smoke: PASS (authentication and complete app journey separately gated)"
 
       - name: Persist exact-head CI result on public issue 3
-        if: always() && steps.phase.outputs.generated == 'true'
+        if: always()
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           gh api "repos/${{ github.repository }}/issues/3/comments" \
             --method POST \
-            -f body="Engineering | ChatGPT/Codex | exact-head CI verification checkpoint. SHA: $GITHUB_SHA. Run: ${{ github.run_id }}. Technical job status before this reporting step: ${{ job.status }}. Inspect run logs for each check and remote HTTP smoke; no CI outcome is represented as authentication, full user journey, or Product Owner approval." >/dev/null
+            -f body="Engineering | ChatGPT/Codex | exact-head CI verification checkpoint. SHA: $GITHUB_SHA. Run: ${{ github.run_id }}. Generated phase: ${{ steps.phase.outputs.generated }}. Technical job status before reporting: ${{ job.status }}. Inspect run logs for each check and remote HTTP smoke; no CI outcome is represented as authentication, full user journey, or Product Owner approval." >/dev/null
 
       - name: Upload exact-run assurance evidence
         uses: actions/upload-artifact@v4
