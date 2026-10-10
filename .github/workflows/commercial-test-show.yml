@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   commercial:
@@ -183,6 +184,31 @@ jobs:
           sha256sum --check evidence/commercial-experience/SHA256SUMS
           test -s evidence/commercial-experience/website-desktop.png
           test -s evidence/commercial-experience/website-mobile.png
+
+      - name: Verify integrated preview endpoint from CI
+        if: steps.phase.outputs.generated == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          app="https://issue-35-execution-gate-production.up.railway.app"
+          health="$(curl --location --silent --show-error --max-time 25 --retry 3 --output /tmp/po-app-health --write-out '%{http_code}' "$app/healthz")"
+          echo "integrated-app-health-http=$health"
+          test "$health" = "200"
+          entry="$(curl --location --silent --show-error --max-time 25 --retry 3 --output /tmp/po-app-entry --write-out '%{http_code}' "$app/")"
+          echo "integrated-app-entry-http=$entry"
+          test "$entry" = "200"
+          test -s /tmp/po-app-entry
+          echo "integrated-app-http-smoke: PASS (authentication and complete app journey separately gated)"
+
+      - name: Persist exact-head CI result on public issue 3
+        if: steps.phase.outputs.generated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh api "repos/${{ github.repository }}/issues/3/comments" \
+            --method POST \
+            -f body="Engineering | ChatGPT/Codex | exact-head CI verification checkpoint. SHA: $GITHUB_SHA. Run: ${{ github.run_id }}. Static, claims, leakage, videos, audio, retained media checksums, responsive evidence, and remote app HTTP smoke: PASS. This is an automated technical checkpoint, not independent UX, authentication, or Product Owner approval." >/dev/null
 
       - name: Upload exact-run assurance evidence
         uses: actions/upload-artifact@v4
