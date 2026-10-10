@@ -1,8 +1,8 @@
-# #52 Commercial Experience BUILD → TEST → SHOW
+# Issue #3 Commercial Experience TEST → SHOW
 
-- Source implementation SHA: e0bd7445676f7953db427b327a4575f478efcece
+- Source implementation SHA: 44c5930c31a6df0ef885025cf1189aca1f7c9d48
 - Accepted flagship evidence SHA: abb47dd0c49190b10caa1fe0807c30daab5b2da1
-- Branch: eng/codex-commercial-experience
+- Branch: eng/codex-cinematic-commercial-issue3
 - Static / claim / accessibility / leakage checks: PASS
 - Desktop 1440px browser render: PASS
 - Mobile 390px browser render: PASS

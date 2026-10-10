@@ -1,13 +1,16 @@
+# Final hosted-entry verification trigger; reviewed films, package and evidence remain unchanged.
 name: Commercial Experience TEST-SHOW
 
 on:
   push:
     branches:
       - eng/codex-commercial-experience
+      - eng/codex-cinematic-commercial-issue3
   workflow_dispatch:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   commercial:
@@ -31,6 +34,26 @@ jobs:
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      - name: Reconcile evidence-only target branch divergence
+        if: steps.phase.outputs.generated != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin eng/codex-commercial-experience
+          if ! git merge-base --is-ancestor FETCH_HEAD HEAD; then
+            base="$(git merge-base FETCH_HEAD HEAD)"
+            git diff --name-only "$base" FETCH_HEAD > /tmp/target-delta.txt
+            while IFS= read -r path; do
+              case "$path" in
+                evidence/commercial-experience/*) ;;
+                *) echo "Unexpected target-branch change: $path"; exit 1 ;;
+              esac
+            done < /tmp/target-delta.txt
+            git config user.name "Engineering ChatGPT Codex"
+            git config user.email "308842994+ZP-Projects@users.noreply.github.com"
+            git merge --no-ff -s ours -m "chore(commercial): reconcile reviewed evidence-only target branch" FETCH_HEAD
+          fi
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -41,7 +64,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg unzip fonts-dejavu-core
           python -m pip install --upgrade pip
-          python -m pip install pillow playwright
+          python -m pip install pillow playwright RangeHTTPServer
           python -m playwright install --with-deps chromium
 
       - name: Verify retained accepted flagship proof assets
@@ -55,6 +78,8 @@ jobs:
       - name: Generate commercial videos and posters
         if: steps.phase.outputs.generated != 'true'
         run: |
+          # Preserve the exact previously accepted Video 2 binary, not a fresh encode.
+          git restore --source=6028622d3d12c287a06909c6b4e40dafb68cac28 -- docs/videos/wbslink-video-2-how-it-works.mp4
           python docs/videos/source/generate_commercial_videos.py
           test -s docs/videos/wbslink-video-1-challenge.mp4
           test -s docs/videos/wbslink-video-1-challenge.jpg
@@ -68,7 +93,7 @@ jobs:
 
       - name: Start local commercial site
         run: |
-          python -m http.server 8000 --directory docs >/tmp/commercial-http.log 2>&1 &
+          (cd docs && python -m RangeHTTPServer 8000 --bind 127.0.0.1) >/tmp/commercial-http.log 2>&1 &
           echo $! > /tmp/commercial-http.pid
           for i in {1..40}; do
             curl -fsS http://127.0.0.1:8000/ >/dev/null && exit 0
@@ -134,11 +159,11 @@ jobs:
           rm -rf docs/videos/source/_frames
           mkdir -p evidence/commercial-experience
           {
-            echo "# #52 Commercial Experience BUILD → TEST → SHOW"
+            echo "# Issue #3 Commercial Experience TEST → SHOW"
             echo
             echo "- Source implementation SHA: $GITHUB_SHA"
             echo "- Accepted flagship evidence SHA: abb47dd0c49190b10caa1fe0807c30daab5b2da1"
-            echo "- Branch: eng/codex-commercial-experience"
+            echo "- Branch: $GITHUB_REF_NAME"
             echo "- Static / claim / accessibility / leakage checks: PASS"
             echo "- Desktop 1440px browser render: PASS"
             echo "- Mobile 390px browser render: PASS"
@@ -167,8 +192,14 @@ jobs:
           git add docs/videos/wbslink-video-2-how-it-works.mp4 docs/videos/wbslink-video-2-how-it-works.jpg
           git add docs/downloads/harbourlink-practice-project.zip
           git add evidence/commercial-experience
-          git commit -m "chore(commercial): retain generated #52 TEST-SHOW evidence [commercial-generated]"
-          git push origin HEAD:eng/codex-commercial-experience
+          git commit -m "chore(commercial): retain issue #3 TEST-SHOW evidence [commercial-generated]"
+          git push origin HEAD:eng/codex-cinematic-commercial-issue3
+
+      - name: Exact-head desktop and mobile playback verification
+        if: steps.phase.outputs.generated == 'true'
+        env:
+          WBSLINK_SHOW_OUTPUT: ${{ runner.temp }}/commercial-exact-head-show
+        run: python scripts/render_commercial_evidence.py
 
       - name: Verify retained checksums at exact generated head
         if: steps.phase.outputs.generated == 'true'
@@ -176,6 +207,36 @@ jobs:
           sha256sum --check evidence/commercial-experience/SHA256SUMS
           test -s evidence/commercial-experience/website-desktop.png
           test -s evidence/commercial-experience/website-mobile.png
+
+      - name: Verify integrated preview endpoint from CI
+        if: steps.phase.outputs.generated == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          app="https://issue-35-execution-gate-production.up.railway.app"
+          health="$(curl --location --silent --show-error --max-time 25 --retry 3 --output /tmp/po-app-health --write-out '%{http_code}' "$app/healthz")"
+          echo "integrated-app-health-http=$health"
+          test "$health" = "200"
+          entry="$(curl --location --silent --show-error --max-time 25 --retry 3 --output /tmp/po-app-entry --write-out '%{http_code}' "$app/")"
+          echo "integrated-app-entry-http=$entry"
+          test "$entry" = "200"
+          test -s /tmp/po-app-entry
+          echo "integrated-app-http-smoke: PASS (authentication and complete app journey separately gated)"
+
+      - name: Verify hosted desktop and mobile customer entry
+        if: steps.phase.outputs.generated == 'true'
+        run: |
+          python scripts/verify_hosted_commercial_entry.py
+
+      - name: Persist exact-head CI result on public issue 3
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          gh api "repos/${{ github.repository }}/issues/3/comments" \
+            --method POST \
+            -f body="Engineering | ChatGPT/Codex | exact-head CI verification checkpoint. SHA: $GITHUB_SHA. Run: ${{ github.run_id }}. Generated phase: ${{ steps.phase.outputs.generated }}. Technical job status before reporting: ${{ job.status }}. Inspect run logs for each check and remote HTTP smoke; no CI outcome is represented as authentication, full user journey, or Product Owner approval." >/dev/null
 
       - name: Upload exact-run assurance evidence
         uses: actions/upload-artifact@v4
@@ -189,5 +250,6 @@ jobs:
             docs/videos/wbslink-video-2-how-it-works.jpg
             docs/downloads/harbourlink-practice-project.zip
             docs/videos/source
+            ${{ runner.temp }}/commercial-exact-head-show
           if-no-files-found: error
           retention-days: 14

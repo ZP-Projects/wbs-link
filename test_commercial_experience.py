@@ -1,5 +1,5 @@
 from pathlib import Path
-import re, zipfile, subprocess, json
+import re, zipfile, subprocess, json, hashlib
 ROOT=Path(__file__).parent/'docs'
 html=(ROOT/'index.html').read_text(encoding='utf-8')
 low=html.lower()
@@ -39,6 +39,9 @@ for name,lo_d,hi_d in [('wbslink-video-1-challenge.mp4',55,95),('wbslink-video-2
     out=subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','json',str(p)],text=True)
     dur=float(json.loads(out)['format']['duration'])
     assert lo_d <= dur <= hi_d,(name,dur)
+    streams=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','stream=codec_type','-of','json',str(p)],text=True))['streams']
+    kinds={stream['codec_type'] for stream in streams}
+    assert {'video','audio'} <= kinds,(name,kinds)
 
 
 # Community navigation and retired-claim regression gate (Coordinator #52).
@@ -61,5 +64,42 @@ checker = (ROOT / 'healthcheck.html').read_text(encoding='utf-8')
 assert 'Stable identifiers can make month-to-month comparison easier.' in checker
 assert 'Stable IDs make month-to-month mapping cheap.' not in checker
 assert 'in your browser only' in checker
+
+
+# Issue #3 visual-first commercial experience contract.
+assert 'WBS↔LINK' in html and 'by ZP Synergy Group' in html
+assert 'https://www.zpsynergygroup.ca/' in html
+assert 'rel="noopener noreferrer"' in html
+assert '<details class="more-detail">' in html
+assert '<summary>' in html
+assert html.count('class="visual-icon"') >= 4
+assert 'href="#video1"' in html and 'href="#video2"' in html
+assert 'id="practice"' in html and 'id="cycle2"' in html
+assert 'id="community"' in html
+assert 'videos/wbslink-video-1-challenge.mp4' in html
+assert 'videos/wbslink-video-2-how-it-works.mp4' in html
+for poster in ('wbslink-video-1-challenge.jpg', 'wbslink-video-2-how-it-works.jpg'):
+    assert (ROOT / 'videos' / poster).is_file(), poster
+
+if (ROOT / 'videos/wbslink-video-1-original-footage.lock').exists():
+    manifest = json.loads((ROOT / 'videos/source/VIDEO1_ASSET_MANIFEST.json').read_text())
+    for name, expected in manifest['assets'].items():
+        assert hashlib.sha256((ROOT / 'videos' / name).read_bytes()).hexdigest() == expected, name
+    assert '<track kind="captions" src="videos/wbslink-video-1-cinematic.vtt" srclang="en" label="English" default>' in html
+
+
+# Issue #3 private application entry. This proves the authored journey,
+# not HTTP reachability or authentication acceptance.
+private_app = 'https://issue-35-execution-gate-production.up.railway.app/'
+assert 'id="app"' in html
+assert 'href="#app"' in html
+assert html.count('href="' + private_app + '"') == 1
+app_section = html.split('id="app"', 1)[1].split('</section>', 1)[0]
+assert 'PRIVATE PRODUCT OWNER PREVIEW' in app_section
+assert 'target="_blank"' in app_section and 'rel="noopener noreferrer"' in app_section
+assert 'Isolated evaluation environment' in app_section
+assert 'not a production or confidential-data service' in app_section
+assert 'do not upload real project, employer or client information' in app_section
+assert html.index('id="practice"') < html.index('id="app"') < html.index('id="community"')
 
 print('commercial-static-checks: PASS')
