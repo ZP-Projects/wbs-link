@@ -126,4 +126,5 @@ def make_video(name, scenes, durations):
 
 if not (VIDEO_DIR/'wbslink-video-1-original-footage.lock').exists():
     subprocess.run(['python', str(VIDEO_DIR/'source'/'generate_cinematic_video1.py')], check=True)
-make_video('wbslink-video-2-how-it-works',video2,[8,8,8,8,8,8,8,8,9,9])
+if not (VIDEO_DIR/'wbslink-video-2-how-it-works.mp4').exists():
+    make_video('wbslink-video-2-how-it-works',video2,[8,8,8,8,8,8,8,8,9,9])
