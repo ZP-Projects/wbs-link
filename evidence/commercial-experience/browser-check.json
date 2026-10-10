@@ -4,22 +4,76 @@
     "desktop": {
       "scrollWidth": 1440,
       "clientWidth": 1440,
-      "scrollHeight": 9859,
+      "scrollHeight": 9579,
       "title": "WBS\u2194LINK \u2014 Govern the relationships between project-control views",
       "h1": "Same project.\nDifferent structures.",
       "videos": 2,
       "brokenImages": [],
-      "horizontalOverflow": false
+      "horizontalOverflow": false,
+      "media": [
+        {
+          "duration": 60,
+          "width": 1280,
+          "height": 720,
+          "controls": true,
+          "playsInline": true,
+          "error": null,
+          "poster": "http://127.0.0.1:8000/videos/wbslink-video-1-challenge.jpg",
+          "captions": {
+            "mode": "showing",
+            "cues": 15
+          },
+          "playbackAdvanced": true
+        },
+        {
+          "duration": 82.033333,
+          "width": 1920,
+          "height": 1080,
+          "controls": true,
+          "playsInline": true,
+          "error": null,
+          "poster": "http://127.0.0.1:8000/videos/wbslink-video-2-how-it-works.jpg",
+          "playbackAdvanced": true
+        }
+      ],
+      "localJourneyLinks": "PASS"
     },
     "mobile": {
       "scrollWidth": 390,
       "clientWidth": 390,
-      "scrollHeight": 12747,
+      "scrollHeight": 11897,
       "title": "WBS\u2194LINK \u2014 Govern the relationships between project-control views",
       "h1": "Same project.\nDifferent structures.",
       "videos": 2,
       "brokenImages": [],
-      "horizontalOverflow": false
+      "horizontalOverflow": false,
+      "media": [
+        {
+          "duration": 60,
+          "width": 1280,
+          "height": 720,
+          "controls": true,
+          "playsInline": true,
+          "error": null,
+          "poster": "http://127.0.0.1:8000/videos/wbslink-video-1-challenge.jpg",
+          "captions": {
+            "mode": "showing",
+            "cues": 15
+          },
+          "playbackAdvanced": true
+        },
+        {
+          "duration": 82.033333,
+          "width": 1920,
+          "height": 1080,
+          "controls": true,
+          "playsInline": true,
+          "error": null,
+          "poster": "http://127.0.0.1:8000/videos/wbslink-video-2-how-it-works.jpg",
+          "playbackAdvanced": true
+        }
+      ],
+      "localJourneyLinks": "PASS"
     }
   }
 }
