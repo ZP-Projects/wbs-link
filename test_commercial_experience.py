@@ -97,7 +97,8 @@ assert html.count('href="' + private_app + '"') == 1
 app_section = html.split('id="app"', 1)[1].split('</section>', 1)[0]
 assert 'PRIVATE PRODUCT OWNER PREVIEW' in app_section
 assert 'target="_blank"' in app_section and 'rel="noopener noreferrer"' in app_section
-assert 'Access or a session may be required' in app_section
+assert 'Isolated evaluation environment' in app_section
+assert 'not a production or confidential-data service' in app_section
 assert 'do not upload real project, employer or client information' in app_section
 assert html.index('id="practice"') < html.index('id="app"') < html.index('id="community"')
 
