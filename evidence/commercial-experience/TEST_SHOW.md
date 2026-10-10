@@ -1,6 +1,6 @@
 # Issue #3 Commercial Experience TEST → SHOW
 
-- Source implementation SHA: e746c718063af12ba8241681bd4b00415ec1818e
+- Source implementation SHA: 07d26072dec467c97d400737883bb9488653adfc
 - Accepted flagship evidence SHA: abb47dd0c49190b10caa1fe0807c30daab5b2da1
 - Branch: eng/codex-cinematic-commercial-issue3
 - Static / claim / accessibility / leakage checks: PASS
