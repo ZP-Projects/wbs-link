@@ -223,6 +223,11 @@ jobs:
           test -s /tmp/po-app-entry
           echo "integrated-app-http-smoke: PASS (authentication and complete app journey separately gated)"
 
+      - name: Verify hosted desktop and mobile customer entry
+        if: steps.phase.outputs.generated == 'true'
+        run: |
+          python scripts/verify_hosted_commercial_entry.py
+
       - name: Persist exact-head CI result on public issue 3
         if: always()
         env:
