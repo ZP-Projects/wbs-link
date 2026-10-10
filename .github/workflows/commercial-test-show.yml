@@ -42,7 +42,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg unzip fonts-dejavu-core
           python -m pip install --upgrade pip
-          python -m pip install pillow playwright
+          python -m pip install pillow playwright RangeHTTPServer
           python -m playwright install --with-deps chromium
 
       - name: Verify retained accepted flagship proof assets
@@ -69,7 +69,7 @@ jobs:
 
       - name: Start local commercial site
         run: |
-          python -m http.server 8000 --directory docs >/tmp/commercial-http.log 2>&1 &
+          (cd docs && python -m RangeHTTPServer 8000 --bind 127.0.0.1) >/tmp/commercial-http.log 2>&1 &
           echo $! > /tmp/commercial-http.pid
           for i in {1..40}; do
             curl -fsS http://127.0.0.1:8000/ >/dev/null && exit 0
@@ -135,11 +135,11 @@ jobs:
           rm -rf docs/videos/source/_frames
           mkdir -p evidence/commercial-experience
           {
-            echo "# #52 Commercial Experience BUILD → TEST → SHOW"
+            echo "# Issue #3 Commercial Experience TEST → SHOW"
             echo
             echo "- Source implementation SHA: $GITHUB_SHA"
             echo "- Accepted flagship evidence SHA: abb47dd0c49190b10caa1fe0807c30daab5b2da1"
-            echo "- Branch: eng/codex-commercial-experience"
+            echo "- Branch: $GITHUB_REF_NAME"
             echo "- Static / claim / accessibility / leakage checks: PASS"
             echo "- Desktop 1440px browser render: PASS"
             echo "- Mobile 390px browser render: PASS"
@@ -168,8 +168,14 @@ jobs:
           git add docs/videos/wbslink-video-2-how-it-works.mp4 docs/videos/wbslink-video-2-how-it-works.jpg
           git add docs/downloads/harbourlink-practice-project.zip
           git add evidence/commercial-experience
-          git commit -m "chore(commercial): retain generated #52 TEST-SHOW evidence [commercial-generated]"
+          git commit -m "chore(commercial): retain issue #3 TEST-SHOW evidence [commercial-generated]"
           git push origin HEAD:eng/codex-cinematic-commercial-issue3
+
+      - name: Exact-head desktop and mobile playback verification
+        if: steps.phase.outputs.generated == 'true'
+        env:
+          WBSLINK_SHOW_OUTPUT: ${{ runner.temp }}/commercial-exact-head-show
+        run: python scripts/render_commercial_evidence.py
 
       - name: Verify retained checksums at exact generated head
         if: steps.phase.outputs.generated == 'true'
@@ -190,5 +196,6 @@ jobs:
             docs/videos/wbslink-video-2-how-it-works.jpg
             docs/downloads/harbourlink-practice-project.zip
             docs/videos/source
+            ${{ runner.temp }}/commercial-exact-head-show
           if-no-files-found: error
           retention-days: 14

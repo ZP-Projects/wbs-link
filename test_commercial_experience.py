@@ -1,5 +1,5 @@
 from pathlib import Path
-import re, zipfile, subprocess, json
+import re, zipfile, subprocess, json, hashlib
 ROOT=Path(__file__).parent/'docs'
 html=(ROOT/'index.html').read_text(encoding='utf-8')
 low=html.lower()
@@ -80,5 +80,11 @@ assert 'videos/wbslink-video-1-challenge.mp4' in html
 assert 'videos/wbslink-video-2-how-it-works.mp4' in html
 for poster in ('wbslink-video-1-challenge.jpg', 'wbslink-video-2-how-it-works.jpg'):
     assert (ROOT / 'videos' / poster).is_file(), poster
+
+if (ROOT / 'videos/wbslink-video-1-original-footage.lock').exists():
+    manifest = json.loads((ROOT / 'videos/source/VIDEO1_ASSET_MANIFEST.json').read_text())
+    for name, expected in manifest['assets'].items():
+        assert hashlib.sha256((ROOT / 'videos' / name).read_bytes()).hexdigest() == expected, name
+    assert '<track kind="captions" src="videos/wbslink-video-1-cinematic.vtt" srclang="en" label="English" default>' in html
 
 print('commercial-static-checks: PASS')

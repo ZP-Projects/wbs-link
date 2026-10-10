@@ -1,0 +1,10 @@
+{
+  "provenance": "Completed film supplied by the Product Owner; illustrative owner-created footage, not client or HarbourLink evidence. Commercial authorization recorded on issue #3. Original source clips are not included in this transfer.",
+  "transfer_zip_sha256": "e6416098f344ccf6d8021fdadd514d9786c594a0a95f5b07b7f1e14e545e2cfa",
+  "duration_seconds": 60,
+  "assets": {
+    "wbslink-video-1-challenge.mp4": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8",
+    "wbslink-video-1-challenge.jpg": "6cd74c27f7a9ec3b9759392869fd138cf1c189a5060940b18c2aaf14f3cb7c24",
+    "wbslink-video-1-cinematic.vtt": "8a1bc285d638049de7f6fafae13fdf940a7a31f77895221282e96a7ea143113e"
+  }
+}
