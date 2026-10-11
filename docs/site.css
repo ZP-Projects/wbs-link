@@ -10,3 +10,33 @@
 /* Product-led parent-brand signature */
 .brand-by{display:inline-block;font-size:.57em;font-weight:500;letter-spacing:.015em;opacity:.78;margin-left:.65rem;vertical-align:middle;white-space:nowrap}
 @media(max-width:640px){.brand-by{display:block;margin:.15rem 0 0;font-size:.48em}}
+
+/* Issue #70 editorial rhythm: compact mobile presentation, text beside visual cues. */
+@media(max-width:560px){
+  .section{padding:46px 20px}
+  .hero{padding-top:52px;padding-bottom:32px;gap:18px}
+  .hero h1{margin-bottom:16px}
+  .hero .lede{margin:0;line-height:1.5}
+  .hero-art{min-height:420px}
+  .hero-art .view-card{width:210px;padding:13px 15px}
+  .hero-art .view-card b{font-size:16px;margin:3px 0}
+  .hero-art .view-card span{font-size:12px}
+  .hero-art .v1{top:0}
+  .hero-art .v2{top:105px;left:16px}
+  .hero-art .v3{top:210px}
+  .hero-art .hub{top:310px;left:40px;width:215px;padding:15px}
+  .section-head{margin-bottom:22px}
+  .section-head h2,.spine-section h2,.cycle-copy h2,.practice-section h2,.pilot-section h2,.final-cta h2{font-size:clamp(29px,8vw,36px);margin-bottom:12px}
+  .section-head>p:last-child{font-size:16px}
+  .feature-grid{gap:10px;margin-top:20px}
+  .feature-grid article{display:grid;grid-template-columns:34px minmax(0,1fr);column-gap:12px;align-items:start;padding:14px 16px}
+  .feature-grid article .visual-icon{grid-row:1 / span 2;font-size:25px;margin:0;line-height:1.2}
+  .feature-grid article h3{font-size:16px;margin:0 0 2px}
+  .feature-grid article p{margin:0;font-size:14px;line-height:1.45}
+  .pilot-section{margin-top:24px;margin-bottom:24px}
+  .final-cta{margin-bottom:36px}
+  .proof-grid{gap:14px}
+  .proof-grid figcaption{padding:13px 15px}
+  .practice-section{gap:22px}
+  .cycle2-section{gap:22px}
+}
