@@ -19,13 +19,13 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          python -m pip install pillow playwright
+          python -m pip install pillow playwright aiohttp
           python -m playwright install --with-deps chromium
       - name: Static claim, navigation, blind ZIP and media contract
         run: python test_commercial_experience.py
       - name: Render 1440px and 390px editorial SHOW and verify actual media
         run: |
-          python -m http.server 8000 --directory docs >/tmp/editorial-http.log 2>&1 &
+          python scripts/serve_editorial_range_http.py >/tmp/editorial-http.log 2>&1 &
           for i in $(seq 1 40); do curl -fsS http://127.0.0.1:8000/ >/dev/null && break; sleep .25; done
           WBSLINK_SHOW_OUTPUT=evidence/editorial-70 python scripts/render_commercial_evidence.py
       - name: Assert unchanged approved binary hashes
