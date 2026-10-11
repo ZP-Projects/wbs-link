@@ -59,7 +59,7 @@ with sync_playwright() as p:
                     page.wait_for_function('''({i,t}) => {
                         const v = document.querySelectorAll('video')[i];
                         return !v.seeking && v.readyState >= 2 && Math.abs(v.currentTime - t) < .1;
-                    }''', arg={'i': index, 't': seconds})
+                    }''', arg={'i': index, 't': seconds}, timeout=90000)
                     video.screenshot(path=str(OUT / f'video{index+1}-{name}-{int(seconds)}s.png'))
                 metrics['media'].append(state)
             for target in ('how-to.html', 'leaderboard.html', 'healthcheck.html',
