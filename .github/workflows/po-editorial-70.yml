@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  issues: write
 jobs:
   editorial-commercial:
     runs-on: ubuntu-latest
@@ -37,6 +38,12 @@ jobs:
               assert hashlib.sha256((root/name).read_bytes()).hexdigest()==want,name
           print('cinematic-origin-binaries: PASS')
           PY
+      - name: Durable exact-run Editorial gate report
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${{ github.repository }}/issues/3/comments" --method POST -f body="Engineering | ChatGPT/Codex | Issue #70 editorial verification. Exact SHA: $GITHUB_SHA. Run: ${{ github.run_id }}. Job status before report: ${{ job.status }}. Review the retained logs and artifacts; this is not independent approval." >/dev/null
       - uses: actions/upload-artifact@v4
         if: always()
         with:
