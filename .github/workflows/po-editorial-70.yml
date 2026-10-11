@@ -1,0 +1,45 @@
+name: PO Editorial 70 Commercial TEST SHOW
+on:
+  push:
+    branches: [eng/po-editorial-commercial-70]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial-commercial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install media and browser tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install pillow playwright
+          python -m playwright install --with-deps chromium
+      - name: Static claim, navigation, blind ZIP and media contract
+        run: python test_commercial_experience.py
+      - name: Render 1440px and 390px editorial SHOW and verify actual media
+        run: |
+          python -m http.server 8000 --directory docs >/tmp/editorial-http.log 2>&1 &
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:8000/ >/dev/null && break; sleep .25; done
+          WBSLINK_SHOW_OUTPUT=evidence/editorial-70 python scripts/render_commercial_evidence.py
+      - name: Assert unchanged approved binary hashes
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib
+          root=pathlib.Path('docs/videos')
+          assets=json.loads((root/'source/VIDEO1_ASSET_MANIFEST.json').read_text())['assets']
+          for name,want in assets.items():
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest()==want,name
+          print('cinematic-origin-binaries: PASS')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: po-editorial-commercial-${{ github.sha }}
+          path: evidence/editorial-70/
+          retention-days: 14
