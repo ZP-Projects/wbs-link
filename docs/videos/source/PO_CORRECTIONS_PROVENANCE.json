@@ -25,7 +25,11 @@
     "assets/flagship/chart4.png": "9b3d735c0a7035247b6fc5de8d96ad052fc61b94bd06ff524c6bfff7b19bb410",
     "assets/flagship/chart1.png": "f88b0e85a3c164a0dcbcaaeff0f1b09da4b872a54c6847bde85448bd86d4d00f",
     "assets/flagship/chart2.png": "f1d2f19bc0c5fce9c87158c1d2b003477062bf0cbcf8c36465d43a710ca0b0f8",
-    "videos/source/harbourlink_ui/integration.png": "2a4af83a3b3839ef4edf508d006d8d04cb034fc402ae1a6da5d1cb6643a3142c"
+    "videos/source/harbourlink_ui/integration.png": "2a4af83a3b3839ef4edf508d006d8d04cb034fc402ae1a6da5d1cb6643a3142c",
+    "videos/source/harbourlink_ui/recordings/cycle2.webm": "1ce0123daea2d4b82f010980c6cc17ec63796920e9684a5ddf5058f4ce674670",
+    "videos/source/harbourlink_ui/recordings/interpretation.webm": "944fd44564f11f83a8e78234f20e95e7dea1db38a7e5b1f35ac3f1a08231b466",
+    "videos/source/harbourlink_ui/recordings/wbs.webm": "8bb1d95b221239ec9d52acfe216e2331add8b5088b2b7b797a16e628e20a8843",
+    "videos/source/harbourlink_ui/recordings/evidence.webm": "3f2a012f373dc2113605179b0a6095aadfeb4ec1f122ae0942ee8ce7e720438d"
   },
   "actual_interactions": [
     "WBS Cost and Schedule perspective clicks",

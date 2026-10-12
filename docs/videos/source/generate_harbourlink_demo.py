@@ -170,6 +170,13 @@ def score(duration):
         f.setnchannels(2);f.setsampwidth(2);f.setframerate(rate);f.writeframes((mix*32767).astype('<i2').tobytes())
 
 if __name__=='__main__':
+    # Retained original browser recordings make actual UI motion reproducible.
+    for recording in (HERE/'harbourlink_ui/recordings').glob('*.webm'):
+        destination=WORK/'motion'/recording.stem
+        destination.mkdir(parents=True,exist_ok=True)
+        subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(recording),
+                        '-vf','crop=1450:860:75:140,fps=24,tpad=stop_mode=clone:stop_duration=8',
+                        '-t','8','-q:v','3',str(destination/'%04d.jpg')],check=True)
     duration=sum(s[-1] for s in SCENES)
     out=DOCS/'videos/wbslink-video-2-how-it-works.mp4'
     score(duration)
