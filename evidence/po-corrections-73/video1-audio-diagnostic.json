@@ -1,0 +1,64 @@
+{
+  "hosted_diagnostic": {
+    "status": "BLOCKED",
+    "url": "https://issue-35-execution-gate-v2-production.up.railway.app/videos/wbslink-video-1-challenge.mp4",
+    "error": "CONNECT tunnel failed, response 403; server envoy; configured proxy retained"
+  },
+  "candidate_audio": [
+    {
+      "file": "wbslink-video-1-original.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "60.000000",
+          "size": "12013953"
+        }
+      },
+      "levels": [
+        "[Parsed_volumedetect_0 @ 0x7f3c70002400] mean_volume: -47.0 dB",
+        "[Parsed_volumedetect_0 @ 0x7f3c70002400] max_volume: -40.6 dB"
+      ]
+    },
+    {
+      "file": "wbslink-video-1-challenge.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "60.010000",
+          "size": "12794352"
+        }
+      },
+      "levels": [
+        "[Parsed_volumedetect_0 @ 0x7fc3f8002400] mean_volume: -21.0 dB",
+        "[Parsed_volumedetect_0 @ 0x7fc3f8002400] max_volume: -14.6 dB"
+      ]
+    }
+  ],
+  "source_audio_assets": "No separately transferred source audio files in current repository. Original Product Owner supplied encoded MP4 is preserved."
+}

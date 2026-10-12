@@ -40,3 +40,10 @@
   .practice-section{gap:22px}
   .cycle2-section{gap:22px}
 }
+
+/* Product Owner #73: connected spine and uncropped actual document proof. */
+.integration-visual{margin:0;min-width:0}.integration-visual img{display:block;width:100%;height:auto}.integration-visual figcaption{font-size:13px;color:#b4c2d2;margin:14px 12px 0}.hero{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px}.proof-grid img{aspect-ratio:auto;object-fit:contain;height:auto}.proof-document{align-self:start}.proof-document a{display:block;background:#fff}.proof-document img{padding:12px}.analytics-proof{margin-top:40px;border-top:1px solid var(--line);padding-top:32px}.analytics-proof h3{font-size:28px;line-height:1.2;margin:0}.analytics-proof p{max-width:740px}.chart-proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.chart-proof-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.chart-proof-grid img{display:block;width:100%;height:auto}.chart-proof-grid figcaption{padding:14px 18px;font-weight:650;font-size:15px}.sound-play{margin-top:18px;cursor:pointer}.playback-note{font-size:14px}.dark-panel .playback-note{color:#c6ccda}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}@media(max-width:900px){.hero{grid-template-columns:1fr}.integration-visual{max-width:520px;width:100%;margin:auto}}@media(max-width:560px){.hero{gap:32px}.chart-proof-grid{grid-template-columns:1fr;gap:14px}.proof-document img{padding:6px}.analytics-proof h3{font-size:24px}.integration-visual figcaption{margin-left:0}.sound-play{width:100%}}
+
+.proof-grid .proof-reading{display:block;color:var(--ink);font-size:18px;line-height:1.5;margin-bottom:12px}.proof-document figcaption{gap:12px}.proof-document figcaption>b{font-size:21px}.proof-document img{padding:18px}
+
+.chart-proof-grid img{object-fit:contain}

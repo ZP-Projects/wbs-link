@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 600" role="img" aria-labelledby="title desc">
+<title id="title">Project views connected through the Owner WBS</title><desc id="desc">Schedule, cost forecast and package contract views connect to a central Owner WBS. A dashed cost relationship shows where more evidence is needed. Management insight follows the reviewed WBS relationships; no direct source-to-source authority is asserted.</desc>
+<defs><linearGradient id="panel" x2="1" y2="1"><stop stop-color="#202d44"/><stop offset="1" stop-color="#121d31"/></linearGradient><linearGradient id="spine" x2="0" y2="1"><stop stop-color="#ca996c"/><stop offset="1" stop-color="#9c693d"/></linearGradient></defs>
+<rect x="1" y="1" width="518" height="598" rx="24" fill="url(#panel)" stroke="#3a4860"/>
+<g font-family="Arial,sans-serif" fill="#eef0ec"><text x="28" y="42" fill="#d5a579" font-size="14" letter-spacing="2">ONE PROJECT · DIFFERENT VIEWS</text>
+<g stroke="#465872" stroke-width="1.5" fill="#1b2940"><rect x="26" y="76" width="228" height="104" rx="12"/><rect x="26" y="214" width="228" height="104" rx="12"/><rect x="26" y="352" width="228" height="104" rx="12"/></g>
+<g stroke="#d5a579" stroke-width="2" fill="none"><path d="M44 96h26v28H44z M44 104h26 M50 92v8 M64 92v8 M49 113h7 M58 119h8"/><path d="M44 263v-23h27 M47 257l8-8 7 4 9-15"/><path d="M45 373h24v29H45z M50 382h14 M50 388h14 M50 394h9"/></g>
+<text x="82" y="112" font-size="20" font-weight="700">Schedule</text><text x="44" y="153" font-size="16" fill="#b4c2d2">Delivery sequence</text>
+<text x="82" y="250" font-size="20" font-weight="700">Cost / forecast</text><text x="44" y="291" font-size="16" fill="#b4c2d2">Control accounts</text>
+<text x="82" y="388" font-size="20" font-weight="700">Package / contract</text><text x="44" y="429" font-size="16" fill="#b4c2d2">Commercial scope</text>
+<g stroke="#cda074" stroke-width="3" fill="none"><path d="M254 128H324"/><path d="M254 404H324"/><path d="M324 128V404"/></g><path d="M254 266H324" stroke="#cda074" stroke-width="3" stroke-dasharray="5 6"/>
+<circle cx="289" cy="266" r="14" fill="#1b2940" stroke="#d5a579" stroke-width="2"/><text x="285" y="272" font-size="19" fill="#d5a579">?</text>
+<rect x="339" y="92" width="154" height="342" rx="16" fill="#152035" stroke="#cda074" stroke-width="2"/><rect x="355" y="120" width="6" height="275" rx="3" fill="url(#spine)"/>
+<path d="M324 128H355 M324 266H355 M324 404H355" stroke="#cda074" stroke-width="3"/>
+<text x="376" y="137" font-size="18" fill="#d5a579" font-weight="700">OWNER</text><text x="376" y="164" font-size="27" font-weight="700">WBS</text><text x="376" y="207" font-size="16">Integration</text><text x="376" y="229" font-size="16">spine</text>
+<g stroke="#6d819c" fill="none" stroke-width="2"><path d="M377 269h90 M377 306h90 M377 343h90"/></g><g fill="#d5a579"><circle cx="377" cy="269" r="4"/><circle cx="377" cy="306" r="4"/><circle cx="377" cy="343" r="4"/></g>
+<path d="M416 434V482H260" stroke="#cda074" stroke-width="3" fill="none"/><rect x="26" y="492" width="467" height="78" rx="12" fill="#25334a" stroke="#65748a"/>
+<text x="46" y="522" font-size="19" font-weight="700">Approved position + issues for review</text><text x="46" y="548" font-size="16" fill="#b4c2d2">Missing coverage stays visible. Follow the evidence.</text>
+<text x="27" y="480" font-size="14" fill="#d5a579">Dashed link: evidence still required</text></g>
+</svg>

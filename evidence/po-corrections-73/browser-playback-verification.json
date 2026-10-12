@@ -1,0 +1,82 @@
+[
+  {
+    "width": 1440,
+    "video": 1,
+    "paused": false,
+    "muted": false,
+    "volume": 1,
+    "currentTime": 1.018667,
+    "duration": 60.01,
+    "readyState": 4,
+    "audioContext": "running",
+    "rms": 0.04410208212050573,
+    "captions": [
+      {
+        "language": "en",
+        "mode": "showing",
+        "cues": 15
+      }
+    ],
+    "physical_device_tested": false
+  },
+  {
+    "width": 1440,
+    "video": 2,
+    "paused": false,
+    "muted": false,
+    "volume": 1,
+    "currentTime": 1.02525,
+    "duration": 80,
+    "readyState": 4,
+    "audioContext": "running",
+    "rms": 0.055289287094062355,
+    "captions": [
+      {
+        "language": "en",
+        "mode": "showing",
+        "cues": 10
+      }
+    ],
+    "physical_device_tested": false
+  },
+  {
+    "width": 390,
+    "video": 1,
+    "paused": false,
+    "muted": false,
+    "volume": 1,
+    "currentTime": 1.029333,
+    "duration": 60.01,
+    "readyState": 4,
+    "audioContext": "running",
+    "rms": 0.04771222763018732,
+    "captions": [
+      {
+        "language": "en",
+        "mode": "showing",
+        "cues": 15
+      }
+    ],
+    "physical_device_tested": false
+  },
+  {
+    "width": 390,
+    "video": 2,
+    "paused": false,
+    "muted": false,
+    "volume": 1,
+    "currentTime": 1.026667,
+    "duration": 80,
+    "readyState": 4,
+    "audioContext": "running",
+    "rms": 0.055289287094062355,
+    "captions": [
+      {
+        "language": "en",
+        "mode": "showing",
+        "cues": 10
+      }
+    ],
+    "physical_device_tested": false
+  }
+]
