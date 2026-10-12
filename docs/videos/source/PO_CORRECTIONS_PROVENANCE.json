@@ -1,0 +1,51 @@
+{
+  "issue": 73,
+  "product_head": "9ae7df438da5968b5d5ca3d7dbd1e7fc4291d9c1",
+  "product_document_source": "3fc3a95d3dc7cf0d9c587478ec55c30dd366b2c3",
+  "marketing_head": "c7e0858270b259526413b689551cc722cad61d00",
+  "website_base": "4826baa68a51834d7609b5170f9b41f04cbaa7f6",
+  "synthetic_project": "HarbourLink Urban Transit Expansion",
+  "ui_capture": "Actual local candidate app with existing approved synthetic fixture; Cycle 2 current state. No approval interaction simulated.",
+  "charts_source": "Existing marketing exact-head retained native chart crops at frozen product #71 d247dfa743b816f1c7f1036d2f7de9a77a73ca60; chart data unchanged in Fresh Eyes.",
+  "documents": "Original generated Cycle 2 PDF and actual workbook render; detail images are explicit excerpts with full-page link.",
+  "audio": "Video 1 original soundtrack +26dB; H.264 stream copied unchanged. Video 2 original deterministic instrumental score generated from harmonics, arpeggios and percussion; no third-party samples or TTS.",
+  "captions": "English descriptive narrative; no claim of spoken narration.",
+  "hidden_material": "No reference keys, truth/oracle files or databases are inputs or retained assets.",
+  "hosted_video_diagnostic": "BLOCKED: CONNECT tunnel HTTP 403 via configured proxy; candidate-source actual MP4 measured instead. No proxy/policy changes.",
+  "files": {
+    "videos/source/harbourlink_ui/project.png": "47e26f3c8088a437b914c107282398ccbea25010c4649131385fd56d351f0869",
+    "videos/source/harbourlink_ui/guide.png": "a5db898df1506cb87be327abd1dc941a60172e393de1df64cf512f9e6ad1b88e",
+    "videos/source/harbourlink_ui/approval.png": "f79702575fd847ce14fa3a83826d491b70ceb1cb0950da41611e79946d722df1",
+    "videos/source/harbourlink_ui/outputs.png": "d763453bb8daca7680bf88627c6efc85259a7be2ff4e10b07a30840a87c7e6a0",
+    "videos/source/harbourlink_ui/evidence.png": "abc6f12e89cdcdc8e5862368f01e75feb38860c72cbf421bdb0cf14fc85c10ba",
+    "videos/source/harbourlink_ui/cycle2.png": "ee25c48ab7efc7d722c851e1d49154315450a38643a79c69f45e808a687e4b55",
+    "videos/source/harbourlink_ui/interpretation.png": "4bf02ae6d16a9ee45ade9df24b1635a620d07202c174ac270b19b56a740cc54d",
+    "videos/source/harbourlink_ui/wbs.png": "8c6df721b6cab57387f7ba0b0d06025fc3dc7dff6e301068747f3e47d5ff8605",
+    "assets/flagship/chart3.png": "de21b7b11c69f1adb7fe9c2d67774bae6ac6ce0aa04f3b37d8fac39cd36a163a",
+    "assets/flagship/chart4.png": "9b3d735c0a7035247b6fc5de8d96ad052fc61b94bd06ff524c6bfff7b19bb410",
+    "assets/flagship/chart1.png": "f88b0e85a3c164a0dcbcaaeff0f1b09da4b872a54c6847bde85448bd86d4d00f",
+    "assets/flagship/chart2.png": "f1d2f19bc0c5fce9c87158c1d2b003477062bf0cbcf8c36465d43a710ca0b0f8",
+    "videos/source/harbourlink_ui/integration.png": "2a4af83a3b3839ef4edf508d006d8d04cb034fc402ae1a6da5d1cb6643a3142c"
+  },
+  "actual_interactions": [
+    "WBS Cost and Schedule perspective clicks",
+    "Crosswalk source Why disclosure",
+    "Professional-decision scroll to recorded approval",
+    "Cycle 2 revisions navigation and scrolling"
+  ],
+  "movie_boundary": "Edited local browser recordings and magnified actual document excerpts. Current approved Cycle 2 position and Version 1/2 history; no simulated approval, no claim of a continuous live ingestion session.",
+  "final_media": {
+    "videos/wbslink-video-1-challenge.mp4": {
+      "bytes": 12794352,
+      "sha256": "17ed0f30af2249e017ed5c1b898aa4f289b5c6d1a36e98596899c22ff04446c6"
+    },
+    "videos/wbslink-video-2-how-it-works.mp4": {
+      "bytes": 13051072,
+      "sha256": "520cb19b0c289956baae58783666340c386b76d98e8272b967eb985bfbca71f8"
+    },
+    "videos/wbslink-video-2-harbourlink.vtt": {
+      "bytes": 1848,
+      "sha256": "c0eb516697305dccf8ecaee88de9b6709f50ad433e822f1b59fecf410d6926a7"
+    }
+  }
+}
