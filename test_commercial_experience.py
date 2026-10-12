@@ -4,7 +4,7 @@ ROOT=Path(__file__).parent/'docs'
 html=(ROOT/'index.html').read_text(encoding='utf-8')
 low=html.lower()
 
-order=['id="top"','id="video1"','id="spine"','id="why"','id="video2"','id="proof"','id="cycle2"','id="practice"','id="pilot"','id="community"']
+order=['id="top"','id="proof"','id="video1"','id="spine"','id="why"','id="video2"','id="cycle2"','id="practice"','id="pilot"','id="community"']
 pos=[low.index(x) for x in order]
 assert pos==sorted(pos), pos
 assert low.index('id="practice"') < low.index('id="community"')
@@ -103,3 +103,8 @@ assert 'do not upload real project, employer or client information' in app_secti
 assert html.index('id="practice"') < html.index('id="app"') < html.index('id="community"')
 
 print('commercial-static-checks: PASS')
+
+# Issue #73: one HarbourLink entry, before methodology, preserves every existing film and evidence surface.
+assert html.index('id="proof"') < html.index('id="spine"')
+assert '/projects/harbourlink' in html.split('id="top"',1)[1].split('</section>',1)[0]
+assert "source assertion, interpretation and professional decision" in html

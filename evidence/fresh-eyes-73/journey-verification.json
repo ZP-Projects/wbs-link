@@ -1,0 +1,16 @@
+[
+  {
+    "width": 1440,
+    "actions": 2,
+    "local_candidate_handoff": true,
+    "live_hosted_preview_tested": false,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "actions": 2,
+    "local_candidate_handoff": true,
+    "live_hosted_preview_tested": false,
+    "overflow": false
+  }
+]
