@@ -12,10 +12,11 @@ import wave
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import json
 
 HERE = Path(__file__).resolve().parent
 DOCS = HERE.parents[1]
-WORK = Path('/workspace/work/integrated-final-73/video-build')
+WORK = Path('/workspace/work/closure-73/video-build')
 WORK.mkdir(parents=True, exist_ok=True)
 W, H, FPS = 1920, 1080, 24
 BG = (15, 21, 37)
@@ -24,18 +25,7 @@ GOLD = (205, 160, 116)
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 
-SCENES = [
-    ('One project. Views that do not align.', 'integration', 'link', 'Schedule and cost meet only through the Owner WBS. HarbourLink exposes the missing coverage.', 8),
-    ('The executive finding comes first.', 'project', 'eye', 'In this approved synthetic position, 4 of 6 Owner-WBS branches have both schedule and cost relationships. Two have only one view.', 8),
-    ('Follow the finding into Owner WBS 1.5.', 'wbs', 'tree', 'Testing and Commissioning has schedule relationships but no governed cost relationships. That is an issue for professional review, not a project-health score.', 8),
-    ('Open the Crosswalk. Inspect the source.', 'evidence', 'source', 'This schedule record states WBS Code 1.5.1. The source assertion and its evidence stay visible; the relationship does not establish a direct schedule-to-cost link.', 8),
-    ('Interpretation and decision stay distinct.', 'interpretation', 'review', 'Elsewhere in the same project, changed source evidence has been re-decided by Maya Chen, Owner Project Controls. Software interpretation does not approve a professional decision.', 8),
-    ('The approved position travels with you.', 'report', 'document', 'The actual two-page executive briefing carries the approved position, exact professional Actions and quantitative withholding, with supporting evidence on page two.', 8),
-    ('Four charts. Four stated populations.', 'charts', 'chart', 'The Premium Workbook retains all 21 worksheets and four charts: Owner-WBS coverage, relationships by source, cycle movement and unresolved outcomes. Their populations remain distinct.', 8),
-    ('Cycle 2 preserves what still holds.', 'cycle2', 'cycle', 'Cycle 2 distinguishes carry-forward, revalidation and renewed professional review. App current-live views exclude retired; reporting-cycle movement includes retired. These populations are not interchangeable.', 8),
-    ('Professional approval remains traceable.', 'approval', 'review', 'The approved Crosswalk records Version 2 and Maya Chen as its professional approver. No automatic approval is demonstrated or implied.', 8),
-    ('Explore HarbourLink. Follow the evidence.', 'guide', 'link', 'Explore the fictional HarbourLink practice project. Inspect the source assertion, interpretation, evidence, decision and next reporting cycle.', 8),
-]
+SCENES = [('One project. Views that do not align.', 'integration', 'link', 'Schedule, cost and package views meet through the Owner WBS. HarbourLink exposes missing coverage.', 8), ('The executive finding comes first.', 'project', 'eye', 'This approved synthetic position has schedule and cost relationships in 4 of 6 Owner-WBS branches. Coverage is not project health.', 8), ('Follow the finding into Owner WBS 1.5.', 'wbs', 'tree', 'Testing and Commissioning has schedule relationships but no governed cost relationships. The gap requires professional review, not a project-health score.', 8), ('Open the Crosswalk. Inspect the source.', 'evidence', 'source', 'This schedule record states WBS Code 1.5.1. Its source assertion remains visible; it does not establish a direct schedule-to-cost link.', 8), ('Interpretation and decision stay distinct.', 'interpretation', 'review', 'Maya Chen records a professional decision. Software interpretation does not approve a professional decision.', 8), ('The approved position travels with you.', 'report', 'document', 'The complete executive briefing carries the approved position, exact professional Actions and withholding. Its second page provides supporting evidence.', 8), ('Four charts. Four stated populations.', 'charts', 'chart', 'The Premium Workbook retains 21 sheets and four charts: coverage, source outcomes, cycle movement and unresolved outcomes. Each population stays distinct.', 8), ('Cycle 2 preserves what still holds.', 'cycle2', 'cycle', 'Cycle 2 preserves supported relationships. Current-live views exclude retired; reporting movement includes retired. New source records and new governed relationships differ.', 8), ('Professional approval remains traceable.', 'approval', 'review', 'Version 2 records Maya Chen as professional approver. No automatic approval is demonstrated or implied.', 8), ('Explore HarbourLink. Follow the evidence.', 'guide', 'link', 'Explore fictional HarbourLink. Follow the source assertion, interpretation, evidence, professional decision and next reporting cycle.', 8)]
 
 def font(size, bold=False):
     return ImageFont.truetype(BOLD if bold else FONT, size)
@@ -114,7 +104,7 @@ def render(index, t):
     draw.text((280,33),'HARBOURLINK  /  SYNTHETIC APPLICATION DEMONSTRATION',font=font(18),fill=GOLD)
     draw.text((W-172,32),f'{index+1:02d} / 10',font=font(20),fill=GOLD)
     icon(draw,kind,74,94)
-    draw.text((144,89),title,font=font(41,True),fill=WHITE)
+    draw.text((144,89),title,font=font(55,True),fill=WHITE)
     shot=image_for(name,progress)
     maxw,maxh=1760,780
     scale=min(maxw/shot.width,maxh/shot.height)
@@ -175,12 +165,38 @@ def score(duration):
 
 if __name__=='__main__':
     # Retained original browser recordings make actual UI motion reproducible.
+    # Exclude actual pre-navigation white frames, never reconstruct a UI state.
+    trim_evidence=[]
     for recording in (HERE/'harbourlink_ui/recordings').glob('*.webm'):
         destination=WORK/'motion'/recording.stem
         destination.mkdir(parents=True,exist_ok=True)
+        probe=WORK/'probe'/recording.stem
+        probe.mkdir(parents=True,exist_ok=True)
         subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(recording),
-                        '-vf','crop=1450:860:75:140,fps=24,tpad=stop_mode=clone:stop_duration=8',
-                        '-t','8','-q:v','3',str(destination/'%04d.jpg')],check=True)
+                        '-vf','crop=1450:860:75:140,fps=24','-q:v','3',str(probe/'%04d.jpg')],check=True)
+        start=0
+        for i,frame in enumerate(sorted(probe.glob('*.jpg'))):
+            pixels=np.array(Image.open(frame).resize((145,86)))
+            dark_fraction=float(np.mean(np.min(pixels,axis=2)<230))
+            if dark_fraction>.008:
+                start=i/24
+                break
+        else:
+            raise RuntimeError(f'{recording.name}: no meaningful real UI frame')
+        trim_evidence.append({'recording':recording.name,'leading_blank_seconds':start,
+                              'first_real_frame_dark_fraction':dark_fraction})
+        meaningful=[]
+        for frame in sorted(probe.glob('*.jpg')):
+            pixels=np.array(Image.open(frame).resize((145,86)))
+            if float(np.mean(np.min(pixels,axis=2)<230))>.008:
+                meaningful.append(frame)
+        # Edited actual footage: remove browser loading blanks at any navigation.
+        # Keep real frame order; hold the last real frame to fill the eight-second scene.
+        import shutil
+        for i in range(192):
+            shutil.copyfile(meaningful[min(i,len(meaningful)-1)],destination/f'{i+1:04d}.jpg')
+        trim_evidence[-1].update(raw_frames=len(list(probe.glob('*.jpg'))),meaningful_frames=len(meaningful),removed_blank_frames=len(list(probe.glob('*.jpg')))-len(meaningful))
+    (WORK/'leading-frame-verification.json').write_text(json.dumps(trim_evidence,indent=2))
     duration=sum(s[-1] for s in SCENES)
     out=DOCS/'videos/wbslink-video-2-how-it-works.mp4'
     score(duration)
