@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 HERE = Path(__file__).resolve().parent
 DOCS = HERE.parents[1]
-WORK = Path('/workspace/work/po-corrections-73/video-build')
+WORK = Path('/workspace/work/integrated-final-73/video-build')
 WORK.mkdir(parents=True, exist_ok=True)
 W, H, FPS = 1920, 1080, 24
 BG = (15, 21, 37)
@@ -32,7 +32,7 @@ SCENES = [
     ('Interpretation and decision stay distinct.', 'interpretation', 'review', 'Elsewhere in the same project, changed source evidence has been re-decided by Maya Chen, Owner Project Controls. Software interpretation does not approve a professional decision.', 8),
     ('The approved position travels with you.', 'report', 'document', 'The actual two-page executive briefing carries the approved position, exact professional Actions and quantitative withholding, with supporting evidence on page two.', 8),
     ('Four charts. Four stated populations.', 'charts', 'chart', 'The Premium Workbook retains all 21 worksheets and four charts: Owner-WBS coverage, relationships by source, cycle movement and unresolved outcomes. Their populations remain distinct.', 8),
-    ('Cycle 2 preserves what still holds.', 'cycle2', 'cycle', 'The actual Cycle 2 application separates what carried forward, was revalidated, returned for a decision, was new or lost support. Changed evidence returns to professional review.', 8),
+    ('Cycle 2 preserves what still holds.', 'cycle2', 'cycle', 'Cycle 2 distinguishes carry-forward, revalidation and renewed professional review. App current-live views exclude retired; reporting-cycle movement includes retired. These populations are not interchangeable.', 8),
     ('Professional approval remains traceable.', 'approval', 'review', 'The approved Crosswalk records Version 2 and Maya Chen as its professional approver. No automatic approval is demonstrated or implied.', 8),
     ('Explore HarbourLink. Follow the evidence.', 'guide', 'link', 'Explore the fictional HarbourLink practice project. Inspect the source assertion, interpretation, evidence, decision and next reporting cycle.', 8),
 ]
@@ -78,10 +78,14 @@ def image_for(name, progress):
         image.paste(finding,(655,(780-finding.height)//2))
         return image
     if name == 'report':
-        im=load_image(DOCS/'assets/flagship/executive-briefing-cycle2.png')
-        # Magnified complete summary body; only outside margins omitted.
-        box=(60,50,im.width-60,1225)
-        return im.crop(box)
+        panel=Image.new('RGB',(1760,780),BG)
+        brief=load_image(DOCS/'assets/flagship/executive-briefing-cycle2.png').copy()
+        brief.thumbnail((620,760),Image.Resampling.LANCZOS)
+        panel.paste(brief,(10,(780-brief.height)//2))
+        workbook=load_image(DOCS/'assets/flagship/premium-executive-view.png').copy()
+        workbook.thumbnail((1100,780),Image.Resampling.LANCZOS)
+        panel.paste(workbook,(650,(780-workbook.height)//2))
+        return panel
     if name == 'charts':
         # Two charts at a time, full chart images with no cover-cropping.
         if progress<.25:
