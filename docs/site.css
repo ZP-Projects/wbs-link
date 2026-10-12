@@ -47,3 +47,8 @@
 .proof-grid .proof-reading{display:block;color:var(--ink);font-size:18px;line-height:1.5;margin-bottom:12px}.proof-document figcaption{gap:12px}.proof-document figcaption>b{font-size:21px}.proof-document img{padding:18px}
 
 .chart-proof-grid img{object-fit:contain}
+
+/* Final #73 ordinary-text contrast on the actual light/dark surfaces. */
+:root{--muted:#46505f}.section .eyebrow{color:#80501f}.hero .eyebrow,.dark-panel .eyebrow{color:#d5a579}.section:not(.hero):not(.dark-panel):not(.cycle2-section) .boundary{color:#46505f}
+
+.cycle-chart{margin:0;min-width:0}.cycle-chart img{display:block;background:#fff;object-fit:contain}.cycle-chart figcaption{color:#c6ccda;font-size:16px;line-height:1.5;margin-top:14px}.cycle2-section .eyebrow{color:#d5a579}
