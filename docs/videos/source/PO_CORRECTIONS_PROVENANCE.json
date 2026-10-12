@@ -1,12 +1,12 @@
 {
   "issue": 73,
-  "product_head": "b4803b39a0355abff2402dd70afef23212c15eaa",
-  "product_document_source": "b4803b39a0355abff2402dd70afef23212c15eaa",
-  "marketing_head": "a4d7a7d88ba03700fe8a1dd15b6a217e0ca9a1e0",
-  "website_base": "237e545499b193319eee902a8453f628ac1b8be0",
+  "product_head": "72460cd9b78785607ccc255521c46dade0897bc6",
+  "product_document_source": "72460cd9b78785607ccc255521c46dade0897bc6",
+  "marketing_head": "3a42017c4b21682b68fc2f6518443b0c94516f9f",
+  "website_base": "7de70d0d43403851a22f560d43cd391482270dfd",
   "synthetic_project": "HarbourLink Urban Transit Expansion",
   "ui_capture": "Fresh actual local b4803b39 app, approved Cycle 2 fixture used for final PDFs and workbooks. Only read-only interactions recorded; no approval simulated.",
-  "charts_source": "Four complete chart frames from LibreOffice rendering of the actual final-source b4803b39 HarbourLink Cycle 2 Premium Workbook; governed chart sources and populations retained.",
+  "charts_source": "Complete current native workbook frames with actual labels and no neighbouring chart border, from fb0fb7b8 product outputs.",
   "documents": "Final-source generated Cycle 2 PDF and native workbook render. Video 2 uses full pages and all four complete chart frames.",
   "audio": "Video 1 original soundtrack +26dB; H.264 stream copied unchanged. Video 2 original deterministic instrumental score generated from harmonics, arpeggios and percussion; no third-party samples or TTS.",
   "captions": "English descriptive narrative; no claim of spoken narration.",
@@ -15,21 +15,21 @@
   "files": {
     "videos/source/harbourlink_ui/project.png": "47e26f3c8088a437b914c107282398ccbea25010c4649131385fd56d351f0869",
     "videos/source/harbourlink_ui/guide.png": "a5db898df1506cb87be327abd1dc941a60172e393de1df64cf512f9e6ad1b88e",
-    "videos/source/harbourlink_ui/approval.png": "5a86cd56a4e938e0ebf1e10025c612d4367d236747f7f4f20bdc7af373dbcc60",
-    "videos/source/harbourlink_ui/outputs.png": "0e2f4e71511799a4d7d8181af3ab9dbd48abdbf2cebcd29e5d786d7ede57d6c7",
+    "videos/source/harbourlink_ui/approval.png": "0b7fb55167235ab0d77202c6ccbfa2fe4c13cf5799dbd9a68161d7d9c7c18030",
+    "videos/source/harbourlink_ui/outputs.png": "86e813da2d95740e7cce99ec10af11503eaf60de194ce581652c1c15cdb0409f",
     "videos/source/harbourlink_ui/evidence.png": "abc6f12e89cdcdc8e5862368f01e75feb38860c72cbf421bdb0cf14fc85c10ba",
     "videos/source/harbourlink_ui/cycle2.png": "ee25c48ab7efc7d722c851e1d49154315450a38643a79c69f45e808a687e4b55",
     "videos/source/harbourlink_ui/interpretation.png": "4bf02ae6d16a9ee45ade9df24b1635a620d07202c174ac270b19b56a740cc54d",
     "videos/source/harbourlink_ui/wbs.png": "8b847ba367cf054fe83ac068c80a444858f90e4eb97e3fa7d57e49094098f81e",
-    "assets/flagship/chart3.png": "948c275694eb89fafdbfc32247db2f11cee0a4d11e56a2ebfdfcae81a0c35a9f",
-    "assets/flagship/chart4.png": "bc390a2507e3a18e2d488bce9d83c1087f64d6d07c568566786e733c07047a10",
-    "assets/flagship/chart1.png": "4b117e8f03102e5c9ed386f04664e9df7210ad08be78cf1864c132cbbff696e5",
-    "assets/flagship/chart2.png": "b2755b3e931e8f780443f8c7dae167abed5f85edabbfaeccd0397b25e977273b",
+    "assets/flagship/chart3.png": "8ce012fb4467ea65b4245b4e2ef1c223ed7a1a64c839ed2ba0ae022b89f2675a",
+    "assets/flagship/chart4.png": "3fac8dc3af8949a7a6a82ec537d55f8c0318115671117acc9846608d73d7397c",
+    "assets/flagship/chart1.png": "7231a96081b281155e8cdac00c3a5edcb27379e1f5d27c0fbbf925225a386913",
+    "assets/flagship/chart2.png": "6688f9adc116d658347222e6e36c928ba81f6af23b64a068a736fb8919d2dbea",
     "videos/source/harbourlink_ui/integration.png": "2a4af83a3b3839ef4edf508d006d8d04cb034fc402ae1a6da5d1cb6643a3142c",
-    "videos/source/harbourlink_ui/recordings/cycle2.webm": "0889ce7ced7e0ab10d0fd621b26a467ac9b90dd7caa2f49c1bd73cf5bb088d82",
-    "videos/source/harbourlink_ui/recordings/interpretation.webm": "946ebd46f021aed61d605bb501a1e6822b3d5ff0114f22e061120d74e2fb0e14",
-    "videos/source/harbourlink_ui/recordings/wbs.webm": "4b4c1906b66d448d359e14fbc1ae56c703e4c72544984343a584fb220e5c83bc",
-    "videos/source/harbourlink_ui/recordings/evidence.webm": "3a3bad2325c66a3c30b1182fcd296fcfc12f7e312c0d4152289dc11e0960efd2",
+    "videos/source/harbourlink_ui/recordings/cycle2.webm": "44f501894427d1efe0d8aa2b7cf3be2f8a7422621131c55af95f00c8de005c74",
+    "videos/source/harbourlink_ui/recordings/interpretation.webm": "2f2e5d3766208e6b88e429de3b4f019779a65efe3fd65913764680c268a06a70",
+    "videos/source/harbourlink_ui/recordings/wbs.webm": "ddbbc238784f9c82212f53458c672c69c6a68bd168dc70b7b7ee102db36f6a61",
+    "videos/source/harbourlink_ui/recordings/evidence.webm": "6ea5fed46fdd1d6a4149d5cf923b0ad23f6ce3cc7cec86863195e94a857695a4",
     "assets/flagship/executive-briefing-cycle2.png": "70089be9e02bcee1be8d56b5995618cd635121b08a1e716ce6e13b2810f463ff",
     "assets/flagship/executive-briefing-detail.png": "608300cc3a89876653127b92908e94c966a55b784b9c90dd5d009afa702cdd7f",
     "assets/flagship/premium-executive-view.png": "2a03f48ad01d59dc2594dc43fcf5a1308804215dc88098d8c47fc073c565759c",
@@ -41,20 +41,23 @@
     "Professional-decision scroll to recorded approval",
     "Cycle 2 revisions navigation and scrolling"
   ],
-  "movie_boundary": "Edited local browser recordings and magnified actual document excerpts. Current approved Cycle 2 position and Version 1/2 history; no simulated approval, no claim of a continuous live ingestion session.",
+  "movie_boundary": "Edited actual current candidate browser recordings. Loading-only white frames removed in order; final real frames held to fit the scene. No simulated approval or continuous live-ingestion claim.",
   "final_media": {
     "videos/wbslink-video-1-challenge.mp4": {
       "bytes": 12794352,
       "sha256": "17ed0f30af2249e017ed5c1b898aa4f289b5c6d1a36e98596899c22ff04446c6"
     },
     "videos/wbslink-video-2-how-it-works.mp4": {
-      "bytes": 13717267,
-      "sha256": "6192f7466e777375eb7cbe7f27fe569d357fb75c564d8e6f90fbe95dc9f19c45"
+      "bytes": 14364438,
+      "sha256": "eed2d3914086294ed36620a2db3d199af79d05448558c8f8dea6cdc21e190beb"
     },
     "videos/wbslink-video-2-harbourlink.vtt": {
-      "bytes": 1878,
-      "sha256": "2d29ad9a7ff7addea165cc86be6a00f003daa889346f2d4dc2d0c8f4e773f194"
+      "bytes": 1667,
+      "sha256": "05af7b8b9aeedf3837f4647ec967ff3720d2fa279952f3bc2bd3baa758bac855"
     }
   },
-  "video1_reuse": "Existing corrected candidate reused byte-identically: owner-supplied construction footage has no report, workbook, UI or count frames requiring synchronization. Audio correction retained."
+  "video1_reuse": "Existing corrected candidate reused byte-identically: owner-supplied construction footage has no report, workbook, UI or count frames requiring synchronization. Audio correction retained.",
+  "controlling_mandate": "6124905783",
+  "quality_blocker": "Q73-FINAL-CYCLE-01",
+  "caption_method": "Ten descriptive cues, each at most 24 words across its eight-second scene; not spoken narration."
 }
