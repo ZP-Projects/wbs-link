@@ -106,5 +106,6 @@ print('commercial-static-checks: PASS')
 
 # Issue #73: one HarbourLink entry, before methodology, preserves every existing film and evidence surface.
 assert html.index('id="proof"') < html.index('id="spine"')
-assert '/projects/harbourlink' in html.split('id="top"',1)[1].split('</section>',1)[0]
+assert 'examples/harbourlink/cycle1/Integrated_Management_Report.html#S01' in html.split('id="top"',1)[1].split('</section>',1)[0]
+assert 'READ-ONLY APPROVED SYNTHETIC EXAMPLE' in (ROOT/'examples/harbourlink/cycle1/Integrated_Management_Report.html').read_text()
 assert "source assertion, interpretation and professional decision" in html

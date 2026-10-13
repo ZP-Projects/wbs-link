@@ -6,44 +6,48 @@
   "website_base": "149fa0a42f4a37db315add93c26d3460ee757613",
   "synthetic_project": "HarbourLink Urban Transit Expansion",
   "ui_capture": "Existing approved72460-governed-data captures retained for unchanged scenes; scene8 is a fresh actual714321 UI recording. Diagram capture is actual final local website. No approval simulated.",
-  "charts_source": "Approved72460 native workbook chart frames retained; responsive homepage plots read the exact original customer workbook source cells.",
-  "documents": "Final-source generated Cycle 2 PDF and native workbook render. Video 2 uses full pages and all four complete chart frames.",
-  "audio": "Video1 original procedural construction/equipment/office Foley timed to15existing4s cuts; originalH264 copied. Video2 restrained original60BPM piano/pad timed to10existing8s scenes. No third-party samples/TTS or claimed captured location sound.",
+  "charts_source": "All four native charts rendered from the current Cycle 2 workbook in LibreOffice; exact workbook hash is independently pinned in chart-data.json.",
+  "documents": "Current canonical Integrated Management Report and Premium Workbook; no rejected executive paragraph remains in active proof.",
+  "audio": "Video 1 original visual stream copied, with licensed recorded event-synchronised Foley. Video 2 retains the accepted Advertime recording with whole-mix guitar-range EQ and its ten-scene 80-second sequence; all current UI frames encoded. No isolated stems or captured-location-sound claim.",
   "captions": "English descriptive narrative; no claim of spoken narration.",
   "hidden_material": "No reference keys, truth/oracle files or databases are inputs or retained assets.",
   "hosted_video_diagnostic": "BLOCKED: CONNECT tunnel HTTP 403 via configured proxy; candidate-source actual MP4 measured instead. No proxy/policy changes.",
   "files": {
-    "videos/source/harbourlink_ui/project.png": "47e26f3c8088a437b914c107282398ccbea25010c4649131385fd56d351f0869",
-    "videos/source/harbourlink_ui/guide.png": "a5db898df1506cb87be327abd1dc941a60172e393de1df64cf512f9e6ad1b88e",
-    "videos/source/harbourlink_ui/approval.png": "0b7fb55167235ab0d77202c6ccbfa2fe4c13cf5799dbd9a68161d7d9c7c18030",
+    "videos/source/harbourlink_ui/project.png": "091ed9568808992696ae1c6ab50d4356c1414d4cc4c955b7506e977dc1240795",
+    "videos/source/harbourlink_ui/guide.png": "9cef82726ca7cfe1957ec4501e64ac248555da0b2fcd11f0ea917e96fb27fabe",
+    "videos/source/harbourlink_ui/approval.png": "8ce097bcfa756c6fa0d061a8c0c40c00e7dd6e5a55d5abbdea29fe1852f08fcc",
     "videos/source/harbourlink_ui/outputs.png": "86e813da2d95740e7cce99ec10af11503eaf60de194ce581652c1c15cdb0409f",
-    "videos/source/harbourlink_ui/evidence.png": "abc6f12e89cdcdc8e5862368f01e75feb38860c72cbf421bdb0cf14fc85c10ba",
-    "videos/source/harbourlink_ui/cycle2.png": "307d798f99bd2b4c5c77451c3b6c8b9bbd26d588bc034d26af7cb4a5bdf95e2c",
-    "videos/source/harbourlink_ui/interpretation.png": "4bf02ae6d16a9ee45ade9df24b1635a620d07202c174ac270b19b56a740cc54d",
-    "videos/source/harbourlink_ui/wbs.png": "8b847ba367cf054fe83ac068c80a444858f90e4eb97e3fa7d57e49094098f81e",
-    "assets/flagship/chart3.png": "8ce012fb4467ea65b4245b4e2ef1c223ed7a1a64c839ed2ba0ae022b89f2675a",
-    "assets/flagship/chart4.png": "3fac8dc3af8949a7a6a82ec537d55f8c0318115671117acc9846608d73d7397c",
-    "assets/flagship/chart1.png": "7231a96081b281155e8cdac00c3a5edcb27379e1f5d27c0fbbf925225a386913",
-    "assets/flagship/chart2.png": "6688f9adc116d658347222e6e36c928ba81f6af23b64a068a736fb8919d2dbea",
-    "videos/source/harbourlink_ui/integration.png": "c7fe6abc9b741a1fadc97dcc5d81e0f36f759a2fa469586665af055d2facfec8",
+    "videos/source/harbourlink_ui/evidence.png": "045ccdc8ffceda893519ab32cbb1a4213281f28128fb7deaffe71892b0d127b7",
+    "videos/source/harbourlink_ui/cycle2.png": "e5c832ed4cc1f9b796ec19e71cd1fe1fcd72605fd669052de18e1fce85a85143",
+    "videos/source/harbourlink_ui/interpretation.png": "2531a41809713861181a305b3bccfe43c92ae05366dda60ab55c14086b287e9c",
+    "videos/source/harbourlink_ui/wbs.png": "932cd2fcefaa247f787fe8de354bb133d56ad0bcf80eb254cfa241524a04a2ea",
+    "assets/flagship/chart3.png": "08a47c1cd508aba028d8f609668afbb21d5cf1e85edff53ff83d27234cecc61e",
+    "assets/flagship/chart4.png": "a49e6461e2b6ce495b37f986804bc9cc7f27ab89046bd9ddd63fd3f607696038",
+    "assets/flagship/chart1.png": "7d9017655477d6b080e99db07960166e9e9c8f25b9e3fbf3b39235c26869451d",
+    "assets/flagship/chart2.png": "a96c5fe0da076d08f296a41c88df4dc4172c77a4eb7d0b6a87f73fbfdffc7d0f",
+    "videos/source/harbourlink_ui/integration.png": "c507c5667868ec76d267f2e365ee8be170a88099fbdc502a60e3b1f331445bbe",
     "videos/source/harbourlink_ui/recordings/cycle2.webm": "a458b1054af1c529e9050f2170db653c9fec9d319ba765585f3e6821e66f6645",
     "videos/source/harbourlink_ui/recordings/interpretation.webm": "2f2e5d3766208e6b88e429de3b4f019779a65efe3fd65913764680c268a06a70",
     "videos/source/harbourlink_ui/recordings/wbs.webm": "ddbbc238784f9c82212f53458c672c69c6a68bd168dc70b7b7ee102db36f6a61",
     "videos/source/harbourlink_ui/recordings/evidence.webm": "6ea5fed46fdd1d6a4149d5cf923b0ad23f6ce3cc7cec86863195e94a857695a4",
-    "assets/flagship/executive-briefing-cycle2.png": "70089be9e02bcee1be8d56b5995618cd635121b08a1e716ce6e13b2810f463ff",
+    "assets/flagship/executive-briefing-cycle2.png": "90a57e5bb4a2b8141e093c10cab28d028b668ae981cc1c49e30ce9491d707a2e",
     "assets/flagship/executive-briefing-detail.png": "608300cc3a89876653127b92908e94c966a55b784b9c90dd5d009afa702cdd7f",
-    "assets/flagship/premium-executive-view.png": "2a03f48ad01d59dc2594dc43fcf5a1308804215dc88098d8c47fc073c565759c",
+    "assets/flagship/premium-executive-view.png": "c65b3b15e00497cd3c77ddd87dbb006e967854bf47c0a2136df397f039a4c24a",
     "assets/flagship/premium-executive-detail.png": "36b0070af956cbc6db64472d93cd3caae66428ae9997fc7eac2ff8bdf06f322f",
     "assets/flagship/owner-wbs-integration.svg": "2dad01175670f0c4f78b8301a0c1554ff308082abb7a3f664072ebb414c8c10a",
     "assets/flagship/display-terms.json": "795e89fde5e60159008f0fda8d1d16fbb01300da034526cd35b5812223046fba",
-    "assets/flagship/chart-data.json": "ec101d67d51fee32d589338eec7edd83c5c2efae4f69f062a9df0a2851c0f17e",
+    "assets/flagship/chart-data.json": "e4cdc9d8c9fbc231e4b174dfc9d08ce711fb4803e0d6c17714a14df2a2adced6",
     "videos/source/design_hosted_audio_73.py": "d1fb8fe7f70af7f0569bc6e2e7a6751f2bb967dcfe332f42ab128481dda37f63",
     "videos/source/patch_hosted_cut_73.py": "ebdd1eb853168d6dfddc9b44b28bb5f4965af7efbab19bb1f8dc4b2021aee56e",
     "videos/source/build_web_proof_73.py": "aa5ce53375150d8becab5de92f16ae5d0efcccf9fae5bb236933ffd724433607",
-    "index.html": "a732bf1e71e91ccbdbeb1ca5dab68e9ff79a70a922362c59c5c1e795ebd2ee3d",
-    "site.css": "3fb3cad94ae3397ed14dcf8cad13903e0a63ef1ce3c75edf737c79eeb4a128ca",
+    "index.html": "0ecc58634678389c7efcc349cd2f34682c63dbd98ec0ec6f546009c1f10efa56",
+    "site.css": "a9fd589d3ff68f80821e15a4b6ee9b4b1eb9ffa343e6013338a866c061eb1b02",
     "media-controls.js": "76cbfff0f5c88e8f7d8c8e82c9bf16334ed5cf4a32ef2e524a49c6f7aa31c389",
-    "videos/source/ATTRIBUTION.md": "11b1bded54bfd045afa9c0bd2e5598e344282b6410fe6a44000cb4b342231403"
+    "videos/source/ATTRIBUTION.md": "d0549d1cc23a2641ab1037d9d0a35bbaf2acb22d55ae78da1831783136520571",
+    "videos/wbslink-video-2-how-it-works.jpg": "75ca38fd87763f28bf384b7616ad8baebb9b19bd35f0c06b8e327ea233cb3323",
+    "assets/flagship/movement-detail.png": "1a43e1cc1ea7e8a55d36df8717a8bddf60a07eed3d27d2108d4f981933fa4c76",
+    "assets/flagship/coverage-finding-15.png": "f03471a8458b6bcc177c40cff6c9bb73e539b22e09cc2bc3e6b534a666fb14d8",
+    "videos/source/build_client_convergence_73.py": "c2290d47a79b410092a97c14e68c9622a8ec227a494294a8ffe26623bf08a48e"
   },
   "actual_interactions": [
     "WBS Cost and Schedule perspective clicks",
@@ -76,7 +80,112 @@
   "caption_method": "Ten descriptive cues, each at most 24 words across its eight-second scene; not spoken narration.",
   "copy_version": "en-CA/73.1",
   "visual_changes": "Video2 only scenes1and8 patched to synchronize diagram and truthful Changes labels; existing80s/tenscene cut and other8 scenes retained.",
-  "listening": "Human/ordinary-device/hosted listening and creative acceptance remain pending; engineering loudness/spectrum/playback are not substitutes.",
+  "listening": "Prior7deaf audio rejected firsthand. Replacement candidate: no subjective listening or creative acceptance claimed.",
   "actual_scene8_capture_head": "714321c051b2939c205a5ccd16c78ba191a23bdc",
-  "capture_equivalence": "Finalf507 differs from714321 only in source-type heading onWBSreview route; captured Changes route and full canonical governed export are unchanged."
+  "capture_equivalence": "Finalf507 differs from714321 only in source-type heading onWBSreview route; captured Changes route and full canonical governed export are unchanged.",
+  "client_convergence_73": {
+    "video1_visual_stream_identical": true,
+    "video1_sound": "Licensed recorded Foley, cut-window cue sheet; no original location sound claim",
+    "video2_music": "Accepted Advertime whole-mix EQ, no stems available",
+    "listening_acceptance": "Pending independent human listening",
+    "media": {
+      "wbslink-video-1-challenge.mp4": "529c85de137f315e6afc4230e29d28ebf36665b42694a3c734512136a951029c",
+      "wbslink-video-2-how-it-works.mp4": "d22aadec2d8cbd87e8883d91869680799574c9ba47f50565d912619e433119f3",
+      "wbslink-video-1-cinematic.vtt": "04221a0c1fd5dfacb9fea48f8bb70ca9dd4660da4d5b9f20f5c237b0cc4dd44e",
+      "wbslink-video-2-harbourlink.vtt": "8c6822ceb000178cbfd9a0e34ee3ecc1e3e4641b8e314fba7ffbb8faa034a6d0"
+    }
+  },
+  "product_source": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae",
+  "ui_capture_method": "Actual local candidate HTTP/Chromium viewport captures, complete actual element close-ups with establishing context. No approval transaction performed. Current frames listed in client_convergence; earlier archived recordings are not current workflow evidence.",
+  "client_convergence": {
+    "app_url": "http://127.0.0.1:8834",
+    "source": "Actual local isolated candidate with approved fictional synthetic HarbourLink data",
+    "actions": [
+      {
+        "scene": "project",
+        "url": "/p/1/overview",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "wbs",
+        "url": "/p/1/explorer?node=WBS%3A1.5",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "evidence",
+        "url": "/p/1/crosswalk?q=SCH-05-001",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "interpretation",
+        "url": "/examples/harbourlink/cycle/2#S05",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "report",
+        "url": "/examples/harbourlink/cycle/2#S01",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "charts",
+        "url": "/p/1/deliverables",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "cycle2",
+        "url": "/examples/harbourlink/cycle/2#S04",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "approval",
+        "url": "/examples/harbourlink/cycle/2#S06",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      },
+      {
+        "scene": "guide",
+        "url": "/projects/harbourlink",
+        "http": 200,
+        "capture": "Actual visible viewport"
+      }
+    ],
+    "approval_performed": false,
+    "timeline": "10 scenes, 8 seconds each, preserved sequence",
+    "closeups": "Complete actual elements; established interface precedes detail. No fabricated click or uninterrupted approval transaction.",
+    "music": "Accepted Advertime recording, whole-mix EQ at 1.2/3.2 kHz and -20.5 LUFS target. No stems available; no isolated guitar edit claimed.",
+    "changed_scenes_this_pass": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "separate_decision_example": "CST-03-004 is a separate unresolved example, not a claim that SCH-05-001 was individually decided.",
+    "captions": [
+      "Schedule, cost and package meet through the Owner WBS. Source meanings remain separate.",
+      "4 of 6 Owner-WBS branches have both views. Coverage is not project health.",
+      "WBS 1.5 has schedule relationships. Cost coverage is absent. A professional reviews the gap.",
+      "SCH-05-001 states WBS Code 1.5.1. The original source assertion remains visible.",
+      "Separate example: CST-03-004. Maya\u2019s recorded decision preserves uncertainty. Software interpretation does not approve a professional decision.",
+      "One integrated report, print, phone and browser. Same findings, exact Actions and withholding.",
+      "Four workbook charts retain their populations. A separately labelled detail scale shows small movements.",
+      "1,613 carried forward; 1 revalidated. Together 1,614 of 1,625 remained valid, retired included.",
+      "MappingVersion 2 records Maya Chen\u2019s approval. No automatic approval is demonstrated or implied.",
+      "Explore approved synthetic HarbourLink. Follow a finding to evidence, then compare both cycles."
+    ],
+    "native_listening_acceptance": "Not established by technical decode, levels or screenshots.",
+    "product_source_sha": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae"
+  }
 }

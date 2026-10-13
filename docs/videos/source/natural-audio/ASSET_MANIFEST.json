@@ -1,0 +1,65 @@
+{
+  "license": "CC0-1.0",
+  "mirror_heads": {
+    "kenney-ui": "8c3d81b9159d058c444f89d12d518276b0b09345",
+    "cc0-sounds": "f2b6264f9ab89fabc266914c3654685d68c5a39b",
+    "freepd": "cf011c7016595833b550a88ff127f089188b25f8"
+  },
+  "scope": "Supplemental recorded effects; not captured from original film or shown site. No generated noise/tone/pad bed.",
+  "sources": {
+    "mouse": "Kenney organic UI: https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks",
+    "steps": "Joseph Sardin https://bigsoundbank.com/footsteps-shoe-on-concrete-s0514.html ; edited CC0 takes yegors/hard-lines public/audio",
+    "machine_paper": "rubberduck Android recordings https://opengameart.org/content/100-cc0-sfx",
+    "site": "rubberduck https://opengameart.org/content/100-cc0-sfx-2",
+    "keyboard": "Ben Burnes CC0 creator README retained",
+    "music": "Advertime by Rafael Krux; FreePD CC0 collection mirror 0lhi/FreePD"
+  },
+  "assets": {
+    "mouseclick.wav": {
+      "bytes": 13646,
+      "sha256": "9f2a6efb18f36bcbae784af13f6f0edfaee99202acf6a830610b77b786c6004f"
+    },
+    "mouserelease.wav": {
+      "bytes": 15182,
+      "sha256": "2841f77228c7956b804cd828da10897746cfb5efafc80d6066e58cab7db5be1c"
+    },
+    "paper.ogg": {
+      "bytes": 25529,
+      "sha256": "b2b2b55e44761c7a45283bce0196f41f72207180fb08c970d7dcf93b705d280c"
+    },
+    "keyboard.wav": {
+      "bytes": 342880,
+      "sha256": "e031cc52a841e90b0c46ea95e4b5e59cf35b2965db398196988aa62bc87038db"
+    },
+    "site.ogg": {
+      "bytes": 170609,
+      "sha256": "2037a4b9825c9e9e9434841c35b7241b6e8718b16925f05fdd9d8ed01269bf80"
+    },
+    "machine.ogg": {
+      "bytes": 25914,
+      "sha256": "9b4ee1e0737a99c63b1ada16766f22231484de244a5deb53986e93957634eff6"
+    },
+    "advertime.mp3": {
+      "bytes": 5360940,
+      "sha256": "6f0d4433cf788304d60add551cc460dd877865e6d84a2ab3fa7d15ba3f55d6ce"
+    },
+    "step-hard-0.wav": {
+      "bytes": 34638,
+      "sha256": "e89c27e195cac348a60942c32a52f2259270a37c49087f78e21c3777fbbd4dc0"
+    },
+    "step-hard-1.wav": {
+      "bytes": 34638,
+      "sha256": "b44c6be6d9f16a4c65adf1e5853916ccb5bf85214adc0a9c552d3a5db5db76e6"
+    },
+    "step-hard-2.wav": {
+      "bytes": 34638,
+      "sha256": "116e9ce90b053dccdbd8bf5f53415b7dfea5a816aea613e4356136f3ceba3d52"
+    },
+    "step-hard-3.wav": {
+      "bytes": 34446,
+      "sha256": "0d3cf5fa874ebaab5a42e2c12791d72317480e063e98512da4ac85ee4b927f7b"
+    }
+  },
+  "network": "Direct BigSoundBank request HTTP403; not bypassed. Independently hosted CC0 GitHub assets retrieved through supported proxy. No installations/policy changes.",
+  "listening": "Prior mixes rejected; new candidate needs actual human listening."
+}

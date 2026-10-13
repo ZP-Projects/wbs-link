@@ -1,17 +1,13 @@
-# Source and attribution
+# Current audio correction — issue73
 
-- Current output renders use the approved governed-output basis `72460cd9b78785607ccc255521c46dade0897bc6`; unchanged UI scenes are retained and the corrected Changes scene uses `714321c051b2939c205a5ccd16c78ba191a23bdc`.
-- All project names/data shown are fictional synthetic demonstration materials.
-- No hidden truth/oracle material is used in the films.
-- Typefaces: DejaVu Sans / DejaVu Sans Bold (system-installed fonts, not redistributed separately).
-- Audio: original designed equipment/site/office ambience and restrained original piano/pad score; no third-party recording, music, samples or voice. See current build notes below.
+The Product Owner rejected the7deaf candidate audio as fuzzy interference (Video1) and church-like music (Video2). Browser download of097514 package was confirmed; creative acceptance was not.
 
-## Hosted-polish contract6135055002 — current audio and proof
+Both existing H264 streams are preserved exactly. No film visuals, data, approvals, Actions or chart populations are regenerated. Video1 now uses CC0 physical mouse clicks (Kenney), recorded shoe steps (Joseph Sardin), keyboard samples (Ben Burnes), and paper/machine/site effects (rubberduck). Supplemental Foley is not sound captured on the shown site or the original footage. Source clips remain absent from the owner transfer. Site effects follow panorama cuts; shoe takes follow warehouse cuts; desk cuts use discrete typing/click/paper events without the rejected procedural hiss bed.
 
-The original owner-created cinematic Video1 visual stream is retained exactly. Its former110Hz soundtrack is replaced by original procedural crane/site, industrial ventilation, equipment-fan and office/paper sound design, timed to the existing15cuts. These are designed sounds, not recordings captured from the shown footage or location. Video2 uses an original restrained60BPM piano/pad score, timed to its ten existing evidence scenes; only diagram and Changes-page scenes were patched for current wording. No external recording, sample pack, music, voice or dependency was added.
+Video2 uses an80-second excerpt of Advertime by Rafael Krux from the FreePD CC0 collection, faded and levelled for the evidence walkthrough. This replaces the rejected generated60BPM pad/piano score. Human suitability/listening is still required.
 
-Two-pass loudness targets: Video1-18LUFS, Video2-19LUFS, truepeak ceiling-2dBTP. Decoding, spectral balance, waveform/loudness and browser signal checks are Engineering evidence. They do not prove subjective listening, ordinary speaker reproduction or Product Owner creative acceptance. Those remain pending.
+All11source assets, individual hashes, creator license records, source URLs and exact mirror heads are retained under natural-audio/. build.py uses existing numpy and FFmpeg; no dependencies installed. Original sound sources are CC0; credit is retained even where optional. Direct BigSoundBank download failed HTTP403 and was not bypassed. Edited shoe takes came from their independently hosted licensed GitHub collection.
 
-Approved report/workbook/native-chart binaries remain sourced from72460cd9b78785607ccc255521c46dade0897bc6. Their data/Actions/approval/revisions and source-exact names are unchanged. Actual scene8 UI is714321c051b2939c205a5ccd16c78ba191a23bdc. Display terms are versionen-CA/73.1; an original name such as Contractor Programme remains visible as provenance beside the Contractor Program display alias. The public chart-data.json contains approved workbook cells and refs, not hidden answer material.
+Report/workbook basis remains72460cd9b78785607ccc255521c46dade0897bc6, productf507e3a05c59e87aa3a15f8371f794ca0ff5bc73, marketing54a02ca40f738018363b85f5191acec4694a8309. Source names, source assertions, Canadian display catalogen-CA/73.1 and actual recorded UI/proof frames remain unchanged. Synthetic demonstration only; hidden truth/oracles excluded.
 
-Historical full-montage generators are preserved as build history. Current bounded audio build: design_hosted_audio_73.py --work <scratch>. Current scene patch: patch_hosted_cut_73.py --work <scratch> --site-url <local-candidate> --base-video <immutable149fa0Video2>. Retained actualcycle2 recording and diagram capture are used; no fake approval. Preserve the original cut rather than rerunning the historical generic full-film builder.
+Full-film legacy generators and design_hosted_audio_73.py are historical, not the current build path. Do not rebuild owner-accepted visuals. Use natural-audio/build.py --work <scratch>, then FFmpeg remux -c:v copy with resulting mixes.

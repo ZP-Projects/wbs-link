@@ -113,7 +113,7 @@ def render(index, t):
     size=(int(shot.width*scale),int(shot.height*scale))
     shot=shot.resize(size,Image.Resampling.LANCZOS)
     x=(W-shot.width)//2;y=180+(maxh-shot.height)//2
-    draw.rounded_rectangle((x-8,y-8,x+shot.width+8,y+shot.height+8),radius=16,fill=(58,70,89))
+    draw.rectangle((x-8,y-8,x+shot.width+8,y+shot.height+8),fill=(58,70,89))
     frame.paste(shot,(x,y))
     draw=ImageDraw.Draw(frame)
     # An animated navigation trail links actual views without fabricating clicks.
