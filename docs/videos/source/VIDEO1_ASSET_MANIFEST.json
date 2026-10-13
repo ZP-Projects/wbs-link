@@ -3,9 +3,9 @@
   "transfer_zip_sha256": "e6416098f344ccf6d8021fdadd514d9786c594a0a95f5b07b7f1e14e545e2cfa",
   "duration_seconds": 60,
   "assets": {
-    "wbslink-video-1-challenge.mp4": "17ed0f30af2249e017ed5c1b898aa4f289b5c6d1a36e98596899c22ff04446c6",
+    "wbslink-video-1-challenge.mp4": "81a5e1077bdba73d308e6e6833aa18edb39288492f1901f171653456b73a8d42",
     "wbslink-video-1-challenge.jpg": "6cd74c27f7a9ec3b9759392869fd138cf1c189a5060940b18c2aaf14f3cb7c24",
-    "wbslink-video-1-cinematic.vtt": "8a1bc285d638049de7f6fafae13fdf940a7a31f77895221282e96a7ea143113e",
+    "wbslink-video-1-cinematic.vtt": "25023399c03c8c7bb99c738f14011762e4182425c6e5b406727e83aa72be63a8",
     "source/wbslink-video-1-original.mp4": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8"
   },
   "original_accepted_assets": {
@@ -15,10 +15,10 @@
   },
   "audio_correction": {
     "issue": 73,
-    "gain_db": 26,
+    "contract": 6135055002,
+    "method": "Original designed mechanical/industrial/office ambience timed to existing footage;2passloudnorm-18LUFS/-2dBTP,stereoAAC192kbps/48kHz;not captured location sound",
     "video_codec": "copy",
-    "audio_codec": "AAC 192 kbps / 48 kHz",
-    "hosted_source_check": "BLOCKED: configured proxy returned HTTP 403 CONNECT; deployed SHA recorded by Coordinator only",
-    "original_footage": "source/wbslink-video-1-original.mp4"
+    "previous110Hz_track": "replaced, not merely amplified",
+    "listening": "Human/device/hosted and creative acceptance pending"
   }
 }

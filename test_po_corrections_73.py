@@ -14,7 +14,9 @@ assert 'owner-wbs-integration.svg' in html
 svg = (ROOT / 'assets/flagship/owner-wbs-integration.svg').read_text()
 for required in ['OWNER', 'WBS', 'Schedule', 'Cost / forecast', 'Package / contract', 'evidence still required']:
     assert required in svg, required
-assert 'stroke-dasharray' in svg
+# Hosted contract6135055002 replaces ambiguous dashed/merged routing.
+assert svg.count('class="source-connection"') == 3
+assert 'stroke-dasharray' not in svg and '<marker' not in svg
 assert '.proof-grid img{aspect-ratio:auto;object-fit:contain;height:auto}' in css
 assert html.count('aria-label="Open chart ') == 4
 for name in ['executive-briefing-cycle2.png', 'premium-executive-view.png']:
