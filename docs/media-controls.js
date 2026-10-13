@@ -5,7 +5,8 @@ document.querySelectorAll('.sound-play').forEach(button => {
   const status = section.querySelector('.playback-note');
   button.addEventListener('click', async () => {
     video.muted = false;
-    video.volume = 1;
+    // Honor an existing audible player volume on resume; explicit Play restores zero volume.
+    if (video.volume === 0) video.volume = 1;
     try {
       await video.play();
       status.textContent = 'Playing with sound. Use the player to pause, adjust volume or enable captions.';

@@ -1,0 +1,122 @@
+{
+  "copy_version": "en-CA/73.1",
+  "source": "actual customer Premium Workbook /03 EXECUTIVE VIEW",
+  "governed_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
+  "workbook_sha256": "8e2d6efb725cd5bbcff4ddb99c3145a65f9ae17eda7762a6905574719858740e",
+  "charts": [
+    {
+      "source_categories": [
+        "Schedule and cost",
+        "Schedule only",
+        "Cost only",
+        "Neither schedule nor cost"
+      ],
+      "values_by_series": [
+        [
+          4,
+          1,
+          1,
+          0
+        ]
+      ],
+      "display_categories": [
+        "Schedule and cost",
+        "Schedule only",
+        "Cost only",
+        "Neither schedule nor cost"
+      ],
+      "category_ref": "'03 EXECUTIVE VIEW'!$A$105:$A$108",
+      "series_refs": [
+        "'03 EXECUTIVE VIEW'!$C$105:$C$108"
+      ]
+    },
+    {
+      "source_categories": [
+        "Commercial Package Register",
+        "Contractor Programme",
+        "Cost & Forecast Control Accounts"
+      ],
+      "values_by_series": [
+        [
+          59,
+          899,
+          399
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          182,
+          81
+        ]
+      ],
+      "display_categories": [
+        "Commercial Package Register",
+        "Contractor Program",
+        "Cost & Forecast Control Accounts"
+      ],
+      "category_ref": "'03 EXECUTIVE VIEW'!$A$130:$A$132",
+      "series_refs": [
+        "'03 EXECUTIVE VIEW'!$C$130:$C$132",
+        "'03 EXECUTIVE VIEW'!$E$130:$E$132",
+        "'03 EXECUTIVE VIEW'!$G$130:$G$132"
+      ]
+    },
+    {
+      "source_categories": [
+        "Carried forward",
+        "Re-keyed, revalidated",
+        "Changed, re-decided",
+        "New",
+        "Retired"
+      ],
+      "values_by_series": [
+        [
+          1613,
+          1,
+          4,
+          4,
+          3
+        ]
+      ],
+      "display_categories": [
+        "Carried forward",
+        "Re-keyed, revalidated",
+        "Changed, re-decided",
+        "New",
+        "Retired"
+      ],
+      "category_ref": "'03 EXECUTIVE VIEW'!$A$154:$A$158",
+      "series_refs": [
+        "'03 EXECUTIVE VIEW'!$C$154:$C$158"
+      ]
+    },
+    {
+      "source_categories": [
+        "Left unresolved on purpose (UNSURE)",
+        "Scope not in the approved WBS (NEW_SCOPE)",
+        "No WBS element applies (NO_WBS)"
+      ],
+      "values_by_series": [
+        [
+          264,
+          0,
+          1
+        ]
+      ],
+      "display_categories": [
+        "Left unresolved on purpose (UNSURE)",
+        "Scope not in the approved WBS (NEW_SCOPE)",
+        "No WBS element applies (NO_WBS)"
+      ],
+      "category_ref": "'03 EXECUTIVE VIEW'!$A$180:$A$182",
+      "series_refs": [
+        "'03 EXECUTIVE VIEW'!$C$180:$C$182"
+      ]
+    }
+  ],
+  "scope": "read-only responsive presentation; native chart objects, source rows and counting populations unchanged"
+}

@@ -1,14 +1,14 @@
 {
   "issue": 73,
-  "product_head": "72460cd9b78785607ccc255521c46dade0897bc6",
+  "product_head": "f507e3a05c59e87aa3a15f8371f794ca0ff5bc73",
   "product_document_source": "72460cd9b78785607ccc255521c46dade0897bc6",
-  "marketing_head": "3a42017c4b21682b68fc2f6518443b0c94516f9f",
-  "website_base": "7de70d0d43403851a22f560d43cd391482270dfd",
+  "marketing_head": "54a02ca40f738018363b85f5191acec4694a8309",
+  "website_base": "149fa0a42f4a37db315add93c26d3460ee757613",
   "synthetic_project": "HarbourLink Urban Transit Expansion",
-  "ui_capture": "Fresh actual local b4803b39 app, approved Cycle 2 fixture used for final PDFs and workbooks. Only read-only interactions recorded; no approval simulated.",
-  "charts_source": "Complete current native workbook frames with actual labels and no neighbouring chart border, from fb0fb7b8 product outputs.",
+  "ui_capture": "Existing approved72460-governed-data captures retained for unchanged scenes; scene8 is a fresh actual714321 UI recording. Diagram capture is actual final local website. No approval simulated.",
+  "charts_source": "Approved72460 native workbook chart frames retained; responsive homepage plots read the exact original customer workbook source cells.",
   "documents": "Final-source generated Cycle 2 PDF and native workbook render. Video 2 uses full pages and all four complete chart frames.",
-  "audio": "Video 1 original soundtrack +26dB; H.264 stream copied unchanged. Video 2 original deterministic instrumental score generated from harmonics, arpeggios and percussion; no third-party samples or TTS.",
+  "audio": "Video1 original procedural construction/equipment/office Foley timed to15existing4s cuts; originalH264 copied. Video2 restrained original60BPM piano/pad timed to10existing8s scenes. No third-party samples/TTS or claimed captured location sound.",
   "captions": "English descriptive narrative; no claim of spoken narration.",
   "hidden_material": "No reference keys, truth/oracle files or databases are inputs or retained assets.",
   "hosted_video_diagnostic": "BLOCKED: CONNECT tunnel HTTP 403 via configured proxy; candidate-source actual MP4 measured instead. No proxy/policy changes.",
@@ -18,22 +18,32 @@
     "videos/source/harbourlink_ui/approval.png": "0b7fb55167235ab0d77202c6ccbfa2fe4c13cf5799dbd9a68161d7d9c7c18030",
     "videos/source/harbourlink_ui/outputs.png": "86e813da2d95740e7cce99ec10af11503eaf60de194ce581652c1c15cdb0409f",
     "videos/source/harbourlink_ui/evidence.png": "abc6f12e89cdcdc8e5862368f01e75feb38860c72cbf421bdb0cf14fc85c10ba",
-    "videos/source/harbourlink_ui/cycle2.png": "ee25c48ab7efc7d722c851e1d49154315450a38643a79c69f45e808a687e4b55",
+    "videos/source/harbourlink_ui/cycle2.png": "307d798f99bd2b4c5c77451c3b6c8b9bbd26d588bc034d26af7cb4a5bdf95e2c",
     "videos/source/harbourlink_ui/interpretation.png": "4bf02ae6d16a9ee45ade9df24b1635a620d07202c174ac270b19b56a740cc54d",
     "videos/source/harbourlink_ui/wbs.png": "8b847ba367cf054fe83ac068c80a444858f90e4eb97e3fa7d57e49094098f81e",
     "assets/flagship/chart3.png": "8ce012fb4467ea65b4245b4e2ef1c223ed7a1a64c839ed2ba0ae022b89f2675a",
     "assets/flagship/chart4.png": "3fac8dc3af8949a7a6a82ec537d55f8c0318115671117acc9846608d73d7397c",
     "assets/flagship/chart1.png": "7231a96081b281155e8cdac00c3a5edcb27379e1f5d27c0fbbf925225a386913",
     "assets/flagship/chart2.png": "6688f9adc116d658347222e6e36c928ba81f6af23b64a068a736fb8919d2dbea",
-    "videos/source/harbourlink_ui/integration.png": "2a4af83a3b3839ef4edf508d006d8d04cb034fc402ae1a6da5d1cb6643a3142c",
-    "videos/source/harbourlink_ui/recordings/cycle2.webm": "44f501894427d1efe0d8aa2b7cf3be2f8a7422621131c55af95f00c8de005c74",
+    "videos/source/harbourlink_ui/integration.png": "c7fe6abc9b741a1fadc97dcc5d81e0f36f759a2fa469586665af055d2facfec8",
+    "videos/source/harbourlink_ui/recordings/cycle2.webm": "a458b1054af1c529e9050f2170db653c9fec9d319ba765585f3e6821e66f6645",
     "videos/source/harbourlink_ui/recordings/interpretation.webm": "2f2e5d3766208e6b88e429de3b4f019779a65efe3fd65913764680c268a06a70",
     "videos/source/harbourlink_ui/recordings/wbs.webm": "ddbbc238784f9c82212f53458c672c69c6a68bd168dc70b7b7ee102db36f6a61",
     "videos/source/harbourlink_ui/recordings/evidence.webm": "6ea5fed46fdd1d6a4149d5cf923b0ad23f6ce3cc7cec86863195e94a857695a4",
     "assets/flagship/executive-briefing-cycle2.png": "70089be9e02bcee1be8d56b5995618cd635121b08a1e716ce6e13b2810f463ff",
     "assets/flagship/executive-briefing-detail.png": "608300cc3a89876653127b92908e94c966a55b784b9c90dd5d009afa702cdd7f",
     "assets/flagship/premium-executive-view.png": "2a03f48ad01d59dc2594dc43fcf5a1308804215dc88098d8c47fc073c565759c",
-    "assets/flagship/premium-executive-detail.png": "36b0070af956cbc6db64472d93cd3caae66428ae9997fc7eac2ff8bdf06f322f"
+    "assets/flagship/premium-executive-detail.png": "36b0070af956cbc6db64472d93cd3caae66428ae9997fc7eac2ff8bdf06f322f",
+    "assets/flagship/owner-wbs-integration.svg": "2dad01175670f0c4f78b8301a0c1554ff308082abb7a3f664072ebb414c8c10a",
+    "assets/flagship/display-terms.json": "795e89fde5e60159008f0fda8d1d16fbb01300da034526cd35b5812223046fba",
+    "assets/flagship/chart-data.json": "ec101d67d51fee32d589338eec7edd83c5c2efae4f69f062a9df0a2851c0f17e",
+    "videos/source/design_hosted_audio_73.py": "d1fb8fe7f70af7f0569bc6e2e7a6751f2bb967dcfe332f42ab128481dda37f63",
+    "videos/source/patch_hosted_cut_73.py": "ebdd1eb853168d6dfddc9b44b28bb5f4965af7efbab19bb1f8dc4b2021aee56e",
+    "videos/source/build_web_proof_73.py": "aa5ce53375150d8becab5de92f16ae5d0efcccf9fae5bb236933ffd724433607",
+    "index.html": "a732bf1e71e91ccbdbeb1ca5dab68e9ff79a70a922362c59c5c1e795ebd2ee3d",
+    "site.css": "3fb3cad94ae3397ed14dcf8cad13903e0a63ef1ce3c75edf737c79eeb4a128ca",
+    "media-controls.js": "76cbfff0f5c88e8f7d8c8e82c9bf16334ed5cf4a32ef2e524a49c6f7aa31c389",
+    "videos/source/ATTRIBUTION.md": "11b1bded54bfd045afa9c0bd2e5598e344282b6410fe6a44000cb4b342231403"
   },
   "actual_interactions": [
     "WBS Cost and Schedule perspective clicks",
@@ -44,20 +54,29 @@
   "movie_boundary": "Edited actual current candidate browser recordings. Loading-only white frames removed in order; final real frames held to fit the scene. No simulated approval or continuous live-ingestion claim.",
   "final_media": {
     "videos/wbslink-video-1-challenge.mp4": {
-      "bytes": 12794352,
-      "sha256": "17ed0f30af2249e017ed5c1b898aa4f289b5c6d1a36e98596899c22ff04446c6"
+      "bytes": 13214228,
+      "sha256": "81a5e1077bdba73d308e6e6833aa18edb39288492f1901f171653456b73a8d42"
     },
     "videos/wbslink-video-2-how-it-works.mp4": {
-      "bytes": 14364438,
-      "sha256": "eed2d3914086294ed36620a2db3d199af79d05448558c8f8dea6cdc21e190beb"
+      "bytes": 15877469,
+      "sha256": "368c70dea7136b7ce662c2b409c6aed2a5ee28f9518a734dc0a2b41079f97c8f"
+    },
+    "videos/wbslink-video-1-cinematic.vtt": {
+      "bytes": 1245,
+      "sha256": "25023399c03c8c7bb99c738f14011762e4182425c6e5b406727e83aa72be63a8"
     },
     "videos/wbslink-video-2-harbourlink.vtt": {
-      "bytes": 1667,
-      "sha256": "05af7b8b9aeedf3837f4647ec967ff3720d2fa279952f3bc2bd3baa758bac855"
+      "bytes": 1693,
+      "sha256": "f843588553d7d53d39ef7e2d0a1c77bc8beb7f32e3466e4c712459107bf4dbe6"
     }
   },
-  "video1_reuse": "Existing corrected candidate reused byte-identically: owner-supplied construction footage has no report, workbook, UI or count frames requiring synchronization. Audio correction retained.",
-  "controlling_mandate": "6124905783",
+  "video1_reuse": "Original visual H264 bitstream retained; old110Hz tone replaced with owned designed ambient sound. Captions add sound descriptions.",
+  "controlling_mandate": "6135055002",
   "quality_blocker": "Q73-FINAL-CYCLE-01",
-  "caption_method": "Ten descriptive cues, each at most 24 words across its eight-second scene; not spoken narration."
+  "caption_method": "Ten descriptive cues, each at most 24 words across its eight-second scene; not spoken narration.",
+  "copy_version": "en-CA/73.1",
+  "visual_changes": "Video2 only scenes1and8 patched to synchronize diagram and truthful Changes labels; existing80s/tenscene cut and other8 scenes retained.",
+  "listening": "Human/ordinary-device/hosted listening and creative acceptance remain pending; engineering loudness/spectrum/playback are not substitutes.",
+  "actual_scene8_capture_head": "714321c051b2939c205a5ccd16c78ba191a23bdc",
+  "capture_equivalence": "Finalf507 differs from714321 only in source-type heading onWBSreview route; captured Changes route and full canonical governed export are unchanged."
 }
