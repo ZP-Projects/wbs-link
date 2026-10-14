@@ -5,7 +5,7 @@
   "assets": {
     "wbslink-video-1-challenge.mp4": "52ebc12339d3a26b20a734835cc3a52f2042de71159f8f586b643ce3ceee6538",
     "wbslink-video-1-challenge.jpg": "6cd74c27f7a9ec3b9759392869fd138cf1c189a5060940b18c2aaf14f3cb7c24",
-    "wbslink-video-1-cinematic.vtt": "f52caf7dd010dfe4012e909b521d83d4d7a49bb622fd91150ab3d37b2c375332",
+    "wbslink-video-1-cinematic.vtt": "cae08d03339a7a3a72024cac6412837d5830f1fd1cc9b23170281b8f8852a4b1",
     "source/wbslink-video-1-original.mp4": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8"
   },
   "original_accepted_assets": {
@@ -17,7 +17,7 @@
     "issue": 73,
     "method": "Retained H264 stream, CC0 Advertime instrumental with restrained keyboard/paper and equipment recordings anchored to identified shot windows. Unsupported footfalls/mouse cues removed. Exact frame/sample cue map retained.",
     "mix": "20LUFS target, 2dBTP ceiling",
-    "music_reference": "Exact earlier Planning Planet soundtrack not recovered; the same legally verified rhythmic direction as the earlier creative sample is used.",
+    "music_reference": "ActualSept26hero retrieved and AAC verified; no historical reuse rights or actual listening confirmed. Separately licensedCC0direction retained pending controlled final human comparison.",
     "listening": "Human listening pending; no technical-only subjective PASS.",
     "bass_control": "Recorded music low shelf at200Hz/-7dB, rhythmic direction retained; no low-frequency generated hum."
   }

@@ -46,7 +46,7 @@ for name in ['Archivo-400.ttf','Archivo-700.ttf','OFL-Archivo.txt']:
 m.FONT=str(fonts/'Archivo-400.ttf');m.BOLD=str(fonts/'Archivo-700.ttf');m.WORK=r
 m.BG=(18,26,46);m.WHITE=(245,245,243);m.GOLD=(201,143,82)
 captions=[
- 'Schedule, cost and package meet through the Owner WBS. Source meanings remain separate.',
+ 'Owner WBS is the owner’s common list of project work. Schedule, cost and work packages relate to it independently.',
  '4 of 6 Owner-WBS branches have both views. Coverage is not project health.',
  'WBS 1.5 has schedule relationships. Cost coverage is absent. A professional reviews the gap.',
  'SCH-05-001 states WBS Code 1.5.1. The original source assertion remains visible.',
@@ -106,7 +106,21 @@ def render(index,t):
   draw.text((80,1020),'Recorded approved snapshot · fictional data only · no approval transaction demonstrated',font=font(23),fill=m.GOLD)
   draw.rectangle((0,1075,int(1920*(index+t/8)/10),1080),fill=m.GOLD)
  else:
-  im=original_render(index,t)
+  # The opening explains the shared work list before technical depth. Both
+  # visuals are complete current browser elements, not a cropped UI fragment.
+  im=Image.new('RGB',(1920,1080),m.BG);draw=ImageDraw.Draw(im)
+  draw.text((280,33),'HARBOURLINK / CONTROLLED SYNTHETIC REVIEW',font=font(22),fill=m.GOLD)
+  draw.text((74,92),'Different views. One list of work.',font=font(66,True),fill=m.WHITE)
+  draw.text((74,190),'Owner WBS is the owner’s common list of project work.',font=font(32),fill=m.WHITE)
+  diagram=Image.open(ui/'integration.png').convert('RGB')
+  diagram.thumbnail((630,710),Image.Resampling.LANCZOS)
+  im.paste(diagram,(80+(630-diagram.width)//2,260+(710-diagram.height)//2))
+  finding=Image.open(details/'project.png').convert('RGB')
+  finding.thumbnail((980,260),Image.Resampling.LANCZOS)
+  draw.rectangle((760,265,1845,900),fill='white')
+  im.paste(finding,(800+(1000-finding.width)//2,320))
+  draw.multiline_text((820,620),'Owner-WBS branches with both views.\nCoverage is not project health.\n\nTesting and Commissioning has no\ngoverned cost coverage. A professional\nchecks what the gap means.',font=font(32),fill='#121A2E',spacing=12)
+  draw.text((80,1020),'Fictional approved snapshot · source meaning and professional authority remain separate',font=font(23),fill=m.GOLD)
  if min(1,t/.32,(8-t)/.32)>=1:
   draw=ImageDraw.Draw(im);draw.rectangle((66,20,238,65),fill=m.BG)
   x=72
@@ -142,7 +156,7 @@ def stamp(n):return f'00:{n//60:02d}:{n%60:02d}.000'
 vtt='WEBVTT\n\n'+''.join(f'{i+1}\n{stamp(i*8)} --> {stamp((i+1)*8)}\n'+('[Light rhythmic recorded instrumental]\n' if i==0 else '')+caption+'\n\n' for i,caption in enumerate(captions))
 (HERE.parent/'wbslink-video-2-harbourlink.vtt').write_text(vtt.rstrip()+'\n')
 metadata['music']='Advertime rhythmic direction retained; additional2dB whole-mix guitar-range attenuation at1.2/3.2kHz. -20.5LUFS target. No isolated stems or human-listening PASS claimed.'
-metadata['composition']='Complete real 390px elements with editorial context; no small full-UI interlude. Original integration scene reused.'
+metadata['composition']='Complete real browser elements with owner-first editorial context; no cropped UI fragment or fabricated approval. Opening and downstream evidence use current captures.'
 metadata['audio_transfer']='Existing accepted AAC track copied without remix or re-encoding' if args.audio_track else 'Existing accepted WAV encoded to AAC'
 metadata['changed_scenes_this_pass']=sorted(selected) if selected else list(range(1,11));metadata['separate_decision_example']='CST-03-004 is a separate unresolved example, not a claim that SCH-05-001 was individually decided.';metadata['captions']=captions;metadata['native_listening_acceptance']='Not established by technical decode, levels or screenshots.'
 (r/'PROVENANCE.json').write_text(json.dumps(metadata,indent=2));print('Complete 80-second encoded cut and matching captions built.')

@@ -42,7 +42,7 @@ for i,shot in enumerate(shots):
  import textwrap
  lines=textwrap.wrap(titles[i],width=24)
  d.multiline_text((66,224),'\n'.join(lines),font=face(66,True),fill='#F5F5F3',spacing=10)
- subtitles=['Independent source relationships','Owner-WBS coverage, not health','WBS 1.5 Testing and Commissioning','SCH-05-001 · source assertion','CST-03-004 · unresolved group','Exact wording from approved report','Separate scale, carried excluded','1,613 carried +1 revalidated','Recorded MappingVersion 2','Read-only synthetic demonstration']
+ subtitles=['Your common list of project work','Owner-WBS coverage, not health','WBS 1.5 Testing and Commissioning','SCH-05-001 · source assertion','CST-03-004 · unresolved group','Exact wording from approved report','Separate scale, carried excluded','1,613 carried +1 revalidated','Recorded MappingVersion 2','Read-only synthetic demonstration']
  d.text((66,340),subtitles[i],font=face(35),fill='#C98F52')
  picture=Image.open(shot).convert('RGB');scale=min(948/picture.width,1220/picture.height)
  picture=picture.resize((round(picture.width*scale),round(picture.height*scale)),Image.Resampling.LANCZOS)
