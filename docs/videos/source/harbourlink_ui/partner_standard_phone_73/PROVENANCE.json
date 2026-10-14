@@ -1,0 +1,18 @@
+{
+  "format": "1080x1920 portrait, actual390px UI elements at3x device density",
+  "timeline": "Same10 scenes \u00d78 seconds as80-second desktop film",
+  "approval_transaction": false,
+  "captions": "Separate optional VTT, disabled by default",
+  "source_captures": [
+    "01.png",
+    "02.png",
+    "03.png",
+    "04.png",
+    "05.png",
+    "06.png",
+    "07.png",
+    "08.png",
+    "09.png",
+    "10.png"
+  ]
+}

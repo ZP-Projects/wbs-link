@@ -2,7 +2,7 @@
   "copy_version": "en-CA/73.1",
   "source": "actual customer Premium Workbook /03 EXECUTIVE VIEW",
   "governed_output_basis_sha": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae",
-  "workbook_sha256": "728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088",
+  "workbook_sha256": "790ae745b4a585f2feb13427c6275c4529a886e4ee6587f7e05e90fe30daff5b",
   "charts": [
     {
       "source_categories": [
@@ -122,6 +122,9 @@
   "report_content_sha256": "5966039b23129c5a29f972955e480b332d60bfbd3a941dd9815204b1419396f5",
   "source_product_sha": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae",
   "historical_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
-  "report_presentation_source_sha": "fb0238405bf2571cf4bddc795cb665b68969522e",
-  "controlling_closure_comment": "6157874336"
+  "report_presentation_source_sha": "0169ba53ae1c10b529e5fb49f00fe0af99f8cffb",
+  "controlling_closure_comment": "6157874336",
+  "governed_baseline_workbook_sha256": "728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088",
+  "presentation_iteration": "Product Owner partner-standard transformation",
+  "workbook_presentation_source_sha": "0169ba53ae1c10b529e5fb49f00fe0af99f8cffb"
 }

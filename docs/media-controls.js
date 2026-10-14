@@ -1,3 +1,5 @@
+document.querySelectorAll('video[data-phone-src]').forEach(video => { if (matchMedia('(max-width: 560px)').matches) video.src = video.dataset.phoneSrc; });
+document.querySelectorAll('video').forEach(video => { for (const track of video.textTracks) track.mode = 'disabled'; });
 /* Explicit playback uses a user gesture; no muted autoplay or hidden volume control. */
 document.querySelectorAll('.sound-play').forEach(button => {
   const section = button.closest('section');

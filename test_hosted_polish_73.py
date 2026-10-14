@@ -13,8 +13,9 @@ cat=json.loads((R/'assets/flagship/display-terms.json').read_text());data=json.l
 # 4b9fbc4306a1b35ca2e606547dcfd1624cb05eae (blob2343031efc63edd6f692952a7cf84251ed82c2e2,
 # 555129 bytes). This remains a fixed oracle, not a hash derived from the file under test.
 assert data['source_product_sha']=='4b9fbc4306a1b35ca2e606547dcfd1624cb05eae'
-assert data['workbook_sha256']=='728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088'
-assert hashlib.sha256((R/'examples/harbourlink/cycle2/Premium_Workbook.xlsx').read_bytes()).hexdigest()=='728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088'
+assert data['governed_baseline_workbook_sha256']=='728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088'
+assert data['workbook_sha256']=='790ae745b4a585f2feb13427c6275c4529a886e4ee6587f7e05e90fe30daff5b'
+assert hashlib.sha256((R/'examples/harbourlink/cycle2/Premium_Workbook.xlsx').read_bytes()).hexdigest()=='790ae745b4a585f2feb13427c6275c4529a886e4ee6587f7e05e90fe30daff5b'
 assert data['charts'][0]['values_by_series']==[[4,1,1,0]] and data['charts'][2]['values_by_series']==[[1613,1,4,4,3]] and data['charts'][3]['values_by_series']==[[264,0,1]]
 assert sum(sum(v) for v in data['charts'][1]['values_by_series'])==1622
 for x in data['charts'][1]['source_categories']:

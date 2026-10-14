@@ -36,7 +36,7 @@ with sync_playwright() as p:
   elif name=='cycle2':page.locator('#S04 > p').first.screenshot(path=str(details/f'{name}.png'))
   elif name=='approval':page.locator('#S06 dl').screenshot(path=str(details/f'{name}.png'))
   elif name=='guide':page.locator('[data-approved-synthetic-demo]').screenshot(path=str(details/f'{name}.png'))
- page.goto(args.site_url,wait_until='networkidle');page.locator('.integration-visual img').screenshot(path=str(ui/'integration.png'))
+ page.goto(args.site_url,wait_until='networkidle');page.locator('.integration-visual').screenshot(path=str(ui/'integration.png'))
  b.close()
 
 spec=importlib.util.spec_from_file_location('preserved_cut',HERE/'generate_harbourlink_demo.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
@@ -84,7 +84,7 @@ def render(index,t):
    ('SCH-05-001','Original source assertion\nWBS Code = 1.5.1','This is the present schedule view.\nThe absent cost view is bounded\nby the branch population.'),
    ('CST-03-004','Separate unresolved example\nRecorded group decision.\nUncertainty retained.','Interpretation is not approval.'),
    ('One report','Print · phone · browser\nSame exact Actions.\nSame approved findings.','Cost / forecast total withheld.'),
-   ('E03D · Detail','Carried forward excluded.\n1 revalidated\n4 changed · 4 new · 3 retired','Separate zero-based scale.\nWhole population: 1,625,\nincluding retired.'),
+   ('Figure 03D · Detail','Carried forward excluded.\n1 revalidated\n4 changed · 4 new · 3 retired','Separate zero-based scale.\nWhole population: 1,625,\nincluding retired.'),
    ('1,614 / 1,625','Remained valid\n1,613 carried forward\n+ 1 re-keyed/revalidated','Denominator includes retired.'),
    ('MappingVersion 2','Maya Chen\nOwner Project Controls','Recorded whole-version approval.\nSeparate from individual decisions.'),
    ('HarbourLink','Approved synthetic example\nRead the finding.\nFollow its evidence.\nCompare approved cycles.','No uploaded data is approved.')]
@@ -102,7 +102,7 @@ def render(index,t):
   shot=shot.resize((round(shot.width*scale),round(shot.height*scale)),Image.Resampling.LANCZOS)
   im.paste(shot,(660+(1160-shot.width)//2,242+(650-shot.height)//2))
   draw=ImageDraw.Draw(im)
-  draw.text((80,972),'Complete actual report / application element · source assertion, decision and approval remain separate',font=font(25),fill=m.WHITE)
+  draw.text((80,972),'Actual report / app element · source, decision and approval remain separate',font=font(25),fill=m.WHITE)
   draw.text((80,1020),'Recorded approved snapshot · fictional data only · no approval transaction demonstrated',font=font(23),fill=m.GOLD)
   draw.rectangle((0,1075,int(1920*(index+t/8)/10),1080),fill=m.GOLD)
  else:
@@ -141,7 +141,7 @@ subprocess.run(['ffmpeg','-v','error','-y','-i',str(silent),'-i',str(audio),'-ma
 def stamp(n):return f'00:{n//60:02d}:{n%60:02d}.000'
 vtt='WEBVTT\n\n'+''.join(f'{i+1}\n{stamp(i*8)} --> {stamp((i+1)*8)}\n'+('[Light rhythmic recorded instrumental]\n' if i==0 else '')+caption+'\n\n' for i,caption in enumerate(captions))
 (HERE.parent/'wbslink-video-2-harbourlink.vtt').write_text(vtt.rstrip()+'\n')
-metadata['music']='Accepted Advertime recording, whole-mix EQ at 1.2/3.2 kHz and -20.5 LUFS target. No stems available; no isolated guitar edit claimed.'
+metadata['music']='Advertime rhythmic direction retained; additional2dB whole-mix guitar-range attenuation at1.2/3.2kHz. -20.5LUFS target. No isolated stems or human-listening PASS claimed.'
 metadata['composition']='Complete real 390px elements with editorial context; no small full-UI interlude. Original integration scene reused.'
 metadata['audio_transfer']='Existing accepted AAC track copied without remix or re-encoding' if args.audio_track else 'Existing accepted WAV encoded to AAC'
 metadata['changed_scenes_this_pass']=sorted(selected) if selected else list(range(1,11));metadata['separate_decision_example']='CST-03-004 is a separate unresolved example, not a claim that SCH-05-001 was individually decided.';metadata['captions']=captions;metadata['native_listening_acceptance']='Not established by technical decode, levels or screenshots.'

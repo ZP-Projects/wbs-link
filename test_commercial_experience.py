@@ -4,7 +4,8 @@ ROOT=Path(__file__).parent/'docs'
 html=(ROOT/'index.html').read_text(encoding='utf-8')
 low=html.lower()
 
-order=['id="top"','id="proof"','id="video1"','id="spine"','id="why"','id="video2"','id="cycle2"','id="practice"','id="pilot"','id="community"']
+# Product Owner transformation supersedes the earlier feature-led sequence.
+order=['id="top"','id="why"','id="spine"','id="proof"','id="cycle2"','id="video1"','id="video2"','id="practice"','id="pilot"','id="community"']
 pos=[low.index(x) for x in order]
 assert pos==sorted(pos), pos
 assert low.index('id="practice"') < low.index('id="community"')
@@ -85,7 +86,8 @@ if (ROOT / 'videos/wbslink-video-1-original-footage.lock').exists():
     manifest = json.loads((ROOT / 'videos/source/VIDEO1_ASSET_MANIFEST.json').read_text())
     for name, expected in manifest['assets'].items():
         assert hashlib.sha256((ROOT / 'videos' / name).read_bytes()).hexdigest() == expected, name
-    assert '<track kind="captions" src="videos/wbslink-video-1-cinematic.vtt" srclang="en" label="English" default>' in html
+    assert '<track kind="captions" src="videos/wbslink-video-1-cinematic.vtt" srclang="en-CA" label="English (CC)">' in html
+    assert not re.search(r'<track\b[^>]*\bdefault\b',html)
 
 
 # Issue #3 private application entry. This proves the authored journey,
@@ -105,7 +107,7 @@ assert html.index('id="practice"') < html.index('id="app"') < html.index('id="co
 print('commercial-static-checks: PASS')
 
 # Issue #73: one HarbourLink entry, before methodology, preserves every existing film and evidence surface.
-assert html.index('id="proof"') < html.index('id="spine"')
+assert html.index('id="spine"') < html.index('id="proof"')
 assert 'examples/harbourlink/cycle1/Integrated_Management_Report.html#S01' in html.split('id="top"',1)[1].split('</section>',1)[0]
 assert 'READ-ONLY APPROVED SYNTHETIC EXAMPLE' in (ROOT/'examples/harbourlink/cycle1/Integrated_Management_Report.html').read_text()
 assert "source assertion, interpretation and professional decision" in html
