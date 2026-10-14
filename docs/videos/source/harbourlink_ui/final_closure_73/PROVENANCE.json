@@ -1,0 +1,49 @@
+{
+  "product_sha": "fb0238405bf2571cf4bddc795cb665b68969522e",
+  "local_only": true,
+  "browser": "Chromium",
+  "CSS_viewport": [
+    390,
+    844
+  ],
+  "device_scale_factor": 3,
+  "files": [
+    {
+      "path": "project.png",
+      "sha256": "39bb04ad94569461395081048e3f20db610b4ca4634853c197f331dbc1db1d6d"
+    },
+    {
+      "path": "guide.png",
+      "sha256": "985c714bb4d02df212211c5b71b60b8c160ebc9087c5ba12aac1b9b51f7ba2de"
+    },
+    {
+      "path": "approval.png",
+      "sha256": "f323c1a441258ee324bae4d08ea20223b5fb4c809a97d23f89eb41aef20a14d1"
+    },
+    {
+      "path": "charts.png",
+      "sha256": "3579d5737fb126957419be9bf535d1db689ca32001664ac72bdbaf29a5921873"
+    },
+    {
+      "path": "evidence.png",
+      "sha256": "e063049e7737f7a8939b619914048ee45d71f8baae98747e880e1317d38875c1"
+    },
+    {
+      "path": "cycle2.png",
+      "sha256": "02da1f53f1b3670d1399af7513f06ce274e8f650d6d5ed1ab4113f5e5ad9a027"
+    },
+    {
+      "path": "interpretation.png",
+      "sha256": "188878a70f230e6f269414aa70af96cfb347c6590d26cc1b5b32330e4567f0fe"
+    },
+    {
+      "path": "wbs.png",
+      "sha256": "df0896255be37d792a2bf55bba41f51e6d718e76cdd19d0678107e9d306fe22b"
+    },
+    {
+      "path": "report.png",
+      "sha256": "61a135231ef09e0f08dd52ad02bcf3ce93cfa4bd5cd5128ccbb1f04466fecefc"
+    }
+  ],
+  "no_approval_transaction": true
+}

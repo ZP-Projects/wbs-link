@@ -121,5 +121,7 @@
   "scope": "read-only responsive presentation; native chart objects, source rows and counting populations unchanged",
   "report_content_sha256": "5966039b23129c5a29f972955e480b332d60bfbd3a941dd9815204b1419396f5",
   "source_product_sha": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae",
-  "historical_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6"
+  "historical_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
+  "report_presentation_source_sha": "fb0238405bf2571cf4bddc795cb665b68969522e",
+  "controlling_closure_comment": "6157874336"
 }
