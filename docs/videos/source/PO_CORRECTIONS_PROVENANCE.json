@@ -1,8 +1,8 @@
 {
   "issue": 73,
-  "product_head": "a3dd4711ff276363cc6df4492a2c965ea60409c3",
-  "product_document_source": "a3dd4711ff276363cc6df4492a2c965ea60409c3",
-  "marketing_head": "ee0fc7a355fe11d2cafa44509d0973397b8510f8",
+  "product_head": "295d798781ccf7ac457a2f8bd2893f4b505d683f",
+  "product_document_source": "295d798781ccf7ac457a2f8bd2893f4b505d683f",
+  "marketing_head": "325d73e1720f22cd44da29139eb79dbf9973dbe9",
   "website_base": "149fa0a42f4a37db315add93c26d3460ee757613",
   "synthetic_project": "HarbourLink Urban Transit Expansion",
   "ui_capture": "Current complete actual approved synthetic report/application elements, four-viewport reflow tested. No professional approval performed.",
@@ -289,7 +289,7 @@
     "captions": "Optional VTT, disabled by default. Original editorial scene titles remain part of the visuals; no accessibility-caption burn-in.",
     "phone_film": "Separate80-second1080x1920 Video2 cut from complete actual390px UI elements; same timeline and identical AAC to desktop.",
     "original_reference": "Planning Planet contribution accessed; exact earlier music not recovered. Original brandPDF absent; complete verified transcription applied.",
-    "exact_product_sha": "a3dd4711ff276363cc6df4492a2c965ea60409c3",
-    "exact_marketing_sha": "ee0fc7a355fe11d2cafa44509d0973397b8510f8"
+    "exact_product_sha": "295d798781ccf7ac457a2f8bd2893f4b505d683f",
+    "exact_marketing_sha": "325d73e1720f22cd44da29139eb79dbf9973dbe9"
   }
 }
