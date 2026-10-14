@@ -25,7 +25,7 @@ with sync_playwright() as p:
   if name=='project':
    page.goto(args.app_url+'/examples/harbourlink/cycle/2#S01',wait_until='networkidle');page.locator('#S01 .big').screenshot(path=str(details/f'{name}.png'))
   elif name=='wbs':
-   page.goto(args.app_url+'/examples/harbourlink/cycle/2#S02',wait_until='networkidle');page.locator('#S02 .branch').filter(has_text='1.5 Testing and Commissioning').screenshot(path=str(details/f'{name}.png'))
+   page.goto(args.app_url+'/examples/harbourlink/cycle/2#S02',wait_until='networkidle');page.locator('#S02 .coverage-matrix').screenshot(path=str(details/f'{name}.png'))
   elif name=='evidence':
    page.goto(args.app_url+'/examples/harbourlink/cycle/2#S05',wait_until='networkidle')
    finding=page.locator('#S05 .finding').filter(has_text='SCH-05-001');finding.locator('.stages li').first.screenshot(path=str(details/f'{name}.png'))

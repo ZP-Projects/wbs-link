@@ -7,7 +7,7 @@ from pathlib import Path
 import argparse,subprocess,json,shutil
 from PIL import Image,ImageDraw,ImageFont
 from playwright.sync_api import sync_playwright
-HERE=Path(__file__).parent;p=argparse.ArgumentParser();p.add_argument('--work',type=Path,required=True);p.add_argument('--app-url',required=True);p.add_argument('--site-url',required=True);args=p.parse_args();R=args.work;R.mkdir(parents=True,exist_ok=True)
+HERE=Path(__file__).parent;p=argparse.ArgumentParser();p.add_argument('--work',type=Path,required=True);p.add_argument('--app-url',required=True);p.add_argument('--site-url',required=True);p.add_argument('--only-scenes',default='');args=p.parse_args();R=args.work;R.mkdir(parents=True,exist_ok=True)
 titles=['One Owner WBS','4 of 6 branches','Cost coverage absent','Read the source','Separate example','Exact professional Action','Small cycle movements','1,614 remain valid','Separate approval','Explore HarbourLink']
 shots=[];meta={'format':'1080x1920 portrait, actual390px UI elements at3x device density','timeline':'Same10 scenes ×8 seconds as80-second desktop film','approval_transaction':False,'captions':'Separate optional VTT, disabled by default'}
 with sync_playwright() as p:
@@ -15,7 +15,7 @@ with sync_playwright() as p:
  pg.goto(args.site_url,wait_until='networkidle');pg.locator('.owner-map').screenshot(path=str(R/'01.png'));shots.append(R/'01.png')
  for i,(url,selector,filtertext,nth) in enumerate([
   ('/examples/harbourlink/cycle/2#S01','#S01 .big',None,0),
-  ('/examples/harbourlink/cycle/2#S02','#S02 .branch','1.5 Testing and Commissioning',0),
+  ('/examples/harbourlink/cycle/2#S02','#S02 .coverage-matrix',None,0),
   ('/examples/harbourlink/cycle/2#S05','#S05 .finding','SCH-05-001',0),
   ('/examples/harbourlink/cycle/2#S05','#S05 .finding','CST-03-004',2),
   ('/examples/harbourlink/cycle/2#S01','#S01 .finding',None,0),
@@ -34,8 +34,11 @@ with sync_playwright() as p:
  b.close()
 fonts=HERE/'fonts'
 def face(size,bold=False):return ImageFont.truetype(str(fonts/('Archivo-700.ttf' if bold else 'Archivo-400.ttf')),size)
+selected={int(x) for x in args.only_scenes.split(',') if x}
 segments=[]
 for i,shot in enumerate(shots):
+ if selected and i+1 not in selected:
+  old=R/f'scene-{i+1:02}.mp4';assert old.is_file();segments.append(old);continue
  im=Image.new('RGB',(1080,1920),'#121A2E');d=ImageDraw.Draw(im)
  d.text((66,68),'WBS LINK · HARBOURLINK',font=face(38,True),fill='#F5F5F3')
  d.text((66,150),f'{i+1:02} / 10',font=face(36),fill='#C98F52')
