@@ -3,6 +3,7 @@ import json,os,re,sys,urllib.request
 from datetime import datetime,timezone
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).parent));from score import score
+from public_results import public_entry
 ROOT=Path(__file__).resolve().parents[1];body=os.environ.get("ISSUE_BODY","");user=os.environ.get("ISSUE_USER","unknown");num=os.environ.get("ISSUE_NUMBER","0")
 def field(name):
     m=re.search(r"###\s*"+re.escape(name)+r"\s*\n+(.*?)(?=\n###\s|\Z)",body,re.S);v=(m.group(1).strip() if m else "");return "" if v=="_No response_" else v
@@ -16,17 +17,23 @@ def fetch(text):
 out=ROOT/"result.md"
 try:
     which="practice" if "practice" in field("Which set?").lower() else "holdout"
-    led=ROOT/"docs/data/ledger.json";ledger=json.loads(led.read_text(encoding="utf-8") or "[]") if led.exists() else []
-    if which=="holdout" and any(e.get("user")==user and e.get("set")=="holdout" for e in ledger):
+    led=ROOT/"docs/data/ledger.json";ledger=[public_entry(e) for e in json.loads(led.read_text(encoding="utf-8") or "[]")] if led.exists() else []
+    own_reservation=next((e for e in ledger if e.get("user")==user and e.get("set")=="holdout" and e.get("issue")==int(num) and e.get("status")=="reserved"),None)
+    if which=="holdout" and os.environ.get("REQUIRE_HOLDOUT_RESERVATION")!="1":
+        raise ValueError("A durable attempt reservation is required.")
+    if which=="holdout" and (own_reservation is None or any(e.get("user")==user and e.get("set")=="holdout" and e is not own_reservation for e in ledger)):
         out.write_text("### Challenge attempt not scored\n\nThe hidden challenge set allows one scored attempt per GitHub user. This protects the holdout answers from iterative probing. You can use the public practice set as often as you like.\n",encoding="utf-8");raise SystemExit(0)
     answers=fetch(field("Answers file"))
     if not answers:raise ValueError("No CSV attachment found in 'Answers file'. Drag your .csv file into that box so GitHub turns it into a link.")
     exc=fetch(field("Exceptions file (optional)"));r=score(answers,which,exc)
     try:minutes=float(re.findall(r"[\d.]+",field("Minutes spent"))[0])
     except (IndexError,ValueError):minutes=None
-    entry={"issue":int(num),"user":user,"display_name":field("Display name")[:40] or user,"role":field("Your role (optional)"),"tools":field("Tools used"),"minutes":minutes,"submitted_utc":datetime.now(timezone.utc).isoformat(timespec="seconds"),**r};ledger.append(entry);led.write_text(json.dumps(ledger,indent=1),encoding="utf-8")
+    entry={"issue":int(num),"user":user,"display_name":field("Display name")[:40] or user,"role":field("Your role (optional)"),"tools":field("Tools used"),"minutes":minutes,"submitted_utc":datetime.now(timezone.utc).isoformat(timespec="seconds"),**r,"status":"scored"};entry=public_entry(entry)
+    if own_reservation is not None:ledger.remove(own_reservation)
+    ledger.append(entry);led.write_text(json.dumps(ledger,indent=1),encoding="utf-8")
     best={}
     for e in ledger:
+        if e.get("status")=="reserved":continue
         k=(e["user"],e["set"]);rank=(-e.get("net_score",0),e["silent_errors"],-e["precision"],-e["coverage"],e.get("submitted_utc", ""))
         if k not in best or rank<best[k][0]:best[k]=(rank,e)
     board=sorted((v[1] for v in best.values()),key=lambda e:(e["set"],-e.get("net_score",0),e["silent_errors"],-e["precision"],-e["coverage"],e.get("submitted_utc", "")));(ROOT/"docs/data/leaderboard.json").write_text(json.dumps(board,indent=1),encoding="utf-8")
