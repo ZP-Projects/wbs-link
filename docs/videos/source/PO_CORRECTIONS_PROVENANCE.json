@@ -48,7 +48,7 @@
     "assets/flagship/movement-detail.png": "1a43e1cc1ea7e8a55d36df8717a8bddf60a07eed3d27d2108d4f981933fa4c76",
     "assets/flagship/coverage-finding-15.png": "f03471a8458b6bcc177c40cff6c9bb73e539b22e09cc2bc3e6b534a666fb14d8",
     "videos/source/build_client_convergence_73.py": "eb36c698c60a7e9a5d9358b53b49fe944f6c4955c126f6db233a322f022335ae",
-    "videos/wbslink-video-2-how-it-works-phone.mp4": "2e085a37028d79608dd8bf55ea94b9cb0aa115c55083dcf87fedea8598add810",
+    "videos/wbslink-video-2-how-it-works-phone.mp4": "f24c11ab16a0b2bc198098b735e7a399b52e920178bc02201a687fd0fbbd918a",
     "videos/wbslink-video-2-how-it-works-phone.vtt": "b9c69773fef22b54d85c7c374bb33738ed277e4de4a5d05689f32748d389e94f"
   },
   "actual_interactions": [
@@ -324,6 +324,7 @@
       9
     ],
     "video2_soundtrack_preserved": true,
-    "native_Office_physical_phone_human_listening": "Not established by Engineering browser/render checks."
+    "native_Office_physical_phone_human_listening": "Not established by Engineering browser/render checks.",
+    "portrait_scene6_followup": "Title bounding-box layout keeps the two-line headline separate from its subtitle; only scene6 re-encoded after actual-frame inspection."
   }
 }

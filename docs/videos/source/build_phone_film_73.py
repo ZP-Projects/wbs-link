@@ -44,14 +44,18 @@ for i,shot in enumerate(shots):
  d.text((66,150),f'{i+1:02} / 10',font=face(36),fill='#C98F52')
  import textwrap
  lines=textwrap.wrap(titles[i],width=24)
- d.multiline_text((66,224),'\n'.join(lines),font=face(66,True),fill='#F5F5F3',spacing=10)
+ title_text='\n'.join(lines)
+ title_box=d.multiline_textbbox((66,224),title_text,font=face(66,True),spacing=10)
+ d.multiline_text((66,224),title_text,font=face(66,True),fill='#F5F5F3',spacing=10)
+ subtitle_y=max(340,title_box[3]+24)
+ panel_top=max(400,subtitle_y+60)
  subtitles=['Your common list of project work','Owner-WBS coverage, not health','WBS 1.5 Testing and Commissioning','SCH-05-001 · source assertion','CST-03-004 · unresolved group','Exact wording from approved report','Separate scale, carried excluded','1,613 carried +1 revalidated','Recorded MappingVersion 2','Read-only synthetic demonstration']
- d.text((66,340),subtitles[i],font=face(35),fill='#C98F52')
- picture=Image.open(shot).convert('RGB');scale=min(948/picture.width,1220/picture.height)
+ d.text((66,subtitle_y),subtitles[i],font=face(35),fill='#C98F52')
+ picture=Image.open(shot).convert('RGB');available_height=1640-(panel_top+20);scale=min(948/picture.width,available_height/picture.height)
  picture=picture.resize((round(picture.width*scale),round(picture.height*scale)),Image.Resampling.LANCZOS)
- y=420+(1220-picture.height)//2
+ y=panel_top+20+(available_height-picture.height)//2
  # Integration is the actual navy website composition; other captures are complete white UI elements.
- if i:d.rectangle((48,400,1032,1660),fill='white')
+ if i:d.rectangle((48,panel_top,1032,1660),fill='white')
  im.paste(picture,((1080-picture.width)//2,y))
  d=ImageDraw.Draw(im)
  if i==9:d.multiline_text((90,610),'Choose a finding.\nFollow its own evidence.\nCompare the approved cycles.',font=face(47,True),fill='#121A2E',spacing=25)
