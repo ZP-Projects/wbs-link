@@ -1,0 +1,765 @@
+{
+  "schema": "wbslink.integrated-management-report/1",
+  "project": "HarbourLink Urban Transit Expansion",
+  "sections": [
+    {
+      "id": "S01",
+      "title": "Executive Summary"
+    },
+    {
+      "id": "S02",
+      "title": "Where the Records Do Not Connect"
+    },
+    {
+      "id": "S03",
+      "title": "What Still Needs Professional Review"
+    },
+    {
+      "id": "S04",
+      "title": "What Changed Since the Approved Baseline"
+    },
+    {
+      "id": "S05",
+      "title": "Findings, Actions and Evidence"
+    },
+    {
+      "id": "S06",
+      "title": "Assurance and Limits"
+    }
+  ],
+  "basis": "Reporting basis: Version 1 · confirmed by Maya Chen, Owner Project Controls · 2026-10-16 14:11 UTC",
+  "data_date": "Data date: 2026-06-30 (Contractor Programme Rev 0); 2026-06-30 (Cost & Forecast Control Accounts Rev 0); 2026-06-30 (Commercial Package Register Rev 0)",
+  "cycle": "Initial reporting baseline",
+  "version": 1,
+  "approved_by": "Maya Chen, Owner Project Controls",
+  "approved_at": "2026-10-16 14:11:18.493651",
+  "wbs_version": 1,
+  "integrity_ok": true,
+  "findings": [
+    {
+      "id": "F-0611c8162d",
+      "title": "Schedule and cost coverage differ in this WBS area",
+      "why": "The schedule has an established relationship to this Owner WBS area, but cost does not.",
+      "position": "Cross-view gap remains",
+      "next": "Confirm whether the missing governed relationship is expected or requires project-controls attention.",
+      "where": "1.5 Testing and Commissioning",
+      "governed_matter": "Schedule scope has no governed cost relationships",
+      "evidence": {
+        "Source Record ID": "SCH-05-001",
+        "Relationship ID": "R721-v1",
+        "Source Document": "Contractor Programme",
+        "Description": "Central section: test procedure readiness review - field start",
+        "Source Assertion": "WBS Code = 1.5.1",
+        "Contrary Source Evidence": "",
+        "Evidence Note": "",
+        "Relationship Type": "ONE_TO_ONE",
+        "WBS Code": "1.5.1",
+        "WBS Name": "Testing and Commissioning - Test Readiness",
+        "Basis": "Source assignment -- not individually reviewed",
+        "Decided By": "",
+        "Decision Scope": "",
+        "Reporting Period": "Initial",
+        "Revision": "Rev 0",
+        "Change vs Previous Version": "New"
+      },
+      "branch": {
+        "code": "1.5",
+        "name": "Testing and Commissioning",
+        "schedule": 180,
+        "cost": 0,
+        "state": "Cost coverage gap"
+      },
+      "route": "04 ISSUES FOR REVIEW → 09 WBS EXPLORER → 08 CROSSWALK → 10 EVIDENCE & DECISIONS"
+    },
+    {
+      "id": "F-7a4c154c28",
+      "title": "Cost and schedule coverage differ in this WBS area",
+      "why": "Cost has an established relationship to this Owner WBS area, but the schedule does not.",
+      "position": "Cross-view gap remains",
+      "next": "Confirm whether the missing governed relationship is expected or requires project-controls attention.",
+      "where": "1.6 Program Management",
+      "governed_matter": "Cost scope has no governed schedule relationships",
+      "evidence": {
+        "Source Record ID": "CST-06-001",
+        "Relationship ID": "R1483-v1",
+        "Source Document": "Cost & Forecast Control Accounts",
+        "Description": "Program Management - design integration - professional services",
+        "Source Assertion": "Cost Account = CA-6001; WBS Code = 1.6.1",
+        "Contrary Source Evidence": "",
+        "Evidence Note": "",
+        "Relationship Type": "ONE_TO_ONE",
+        "WBS Code": "1.6.1",
+        "WBS Name": "Program Management - Program Controls",
+        "Basis": "Source assignment -- not individually reviewed",
+        "Decided By": "",
+        "Decision Scope": "",
+        "Reporting Period": "Initial",
+        "Revision": "Rev 0",
+        "Change vs Previous Version": "New"
+      },
+      "branch": {
+        "code": "1.6",
+        "name": "Program Management",
+        "schedule": 0,
+        "cost": 80,
+        "state": "Schedule coverage gap"
+      },
+      "route": "04 ISSUES FOR REVIEW → 09 WBS EXPLORER → 08 CROSSWALK → 10 EVIDENCE & DECISIONS"
+    },
+    {
+      "id": "F-7411890404",
+      "title": "1 item is recorded outside the current Owner WBS",
+      "why": "The approved project view records work that the current Owner WBS does not represent.",
+      "position": "Requires scope treatment",
+      "next": "Review the governed NEW_SCOPE outcomes in the project-controls context.",
+      "where": "Outside the current Owner WBS",
+      "governed_matter": "1 governed relationship outcome(s) record NEW_SCOPE",
+      "evidence": {
+        "Source Record ID": "SCH-90-901",
+        "Relationship ID": "R1081-v2",
+        "Source Document": "Contractor Programme",
+        "Description": "Temporary offsite logistics compound",
+        "Source Assertion": "WBS Code = 2.1",
+        "Contrary Source Evidence": "Source states 'WBS Code' = '2.1' -- names no element of this WBS -- professional reason (Maya Chen, Owner Project Controls): Source states a project-delivery code outside the currently approved Owner WBS.",
+        "Evidence Note": "",
+        "Relationship Type": "NEW_SCOPE",
+        "WBS Code": "NEW_SCOPE",
+        "WBS Name": "",
+        "Basis": "Professional decision",
+        "Decided By": "Maya Chen, Owner Project Controls",
+        "Decision Scope": "Individual",
+        "Reporting Period": "Initial",
+        "Revision": "Rev 0",
+        "Change vs Previous Version": "New"
+      },
+      "branch": null,
+      "route": "04 ISSUES FOR REVIEW → 09 WBS EXPLORER → 08 CROSSWALK → 10 EVIDENCE & DECISIONS"
+    },
+    {
+      "id": "F-0aaa67f1b0",
+      "title": "263 items still need more information before they can be placed in the Owner WBS",
+      "why": "The approved project view keeps them unresolved instead of forcing them into a WBS area.",
+      "position": "Unresolved pending evidence",
+      "next": "Use only conclusions that do not depend on these unresolved relationships.",
+      "where": "",
+      "governed_matter": "263 relationship outcome(s) remain deliberately unresolved",
+      "evidence": {
+        "Source Record ID": "CST-03-004",
+        "Relationship ID": "R1246-v2",
+        "Source Document": "Cost & Forecast Control Accounts",
+        "Description": "Systems - systems integration - professional services",
+        "Source Assertion": "Cost Account = CA-3004",
+        "Contrary Source Evidence": "",
+        "Evidence Note": "",
+        "Relationship Type": "UNSURE",
+        "WBS Code": "UNSURE",
+        "WBS Name": "",
+        "Basis": "Professional decision",
+        "Decided By": "Maya Chen, Owner Project Controls",
+        "Decision Scope": "Group decision (81 records sharing one decision state)",
+        "Reporting Period": "Initial",
+        "Revision": "Rev 0",
+        "Change vs Previous Version": "New"
+      },
+      "branch": null,
+      "route": "04 ISSUES FOR REVIEW → 08 CROSSWALK (Relationship Type filter) → 10 EVIDENCE & DECISIONS"
+    }
+  ],
+  "coverage": {
+    "rows": [
+      [
+        "Schedule and cost",
+        4
+      ],
+      [
+        "Schedule only",
+        1
+      ],
+      [
+        "Cost only",
+        1
+      ],
+      [
+        "Neither schedule nor cost",
+        0
+      ]
+    ],
+    "total": 6,
+    "denominator": "reported WBS branches",
+    "id": "E01",
+    "unit": "reported Owner-WBS branches",
+    "numerator": 4,
+    "branches": [
+      {
+        "code": "1.1",
+        "name": "Guideway and Civil",
+        "schedule": 180,
+        "cost": 80,
+        "state": "Both views present"
+      },
+      {
+        "code": "1.2",
+        "name": "Stations",
+        "schedule": 179,
+        "cost": 80,
+        "state": "Both views present"
+      },
+      {
+        "code": "1.3",
+        "name": "Systems",
+        "schedule": 180,
+        "cost": 79,
+        "state": "Both views present"
+      },
+      {
+        "code": "1.4",
+        "name": "Vehicles and Depot",
+        "schedule": 179,
+        "cost": 80,
+        "state": "Both views present"
+      },
+      {
+        "code": "1.5",
+        "name": "Testing and Commissioning",
+        "schedule": 180,
+        "cost": 0,
+        "state": "Cost coverage gap"
+      },
+      {
+        "code": "1.6",
+        "name": "Program Management",
+        "schedule": 0,
+        "cost": 80,
+        "state": "Schedule coverage gap"
+      }
+    ],
+    "qualification": "Coverage through the Owner WBS; not project health or direct schedule-to-cost equivalence.",
+    "route": "05 INTEGRATION HEALTH → 09 WBS EXPLORER → 08 CROSSWALK"
+  },
+  "source": {
+    "rows": [
+      [
+        "Commercial Package Register",
+        60,
+        0,
+        0
+      ],
+      [
+        "Contractor Programme",
+        898,
+        2,
+        182
+      ],
+      [
+        "Cost & Forecast Control Accounts",
+        399,
+        0,
+        81
+      ]
+    ],
+    "total": 1622,
+    "series": [
+      "Related to a WBS element",
+      "Recorded outside the WBS",
+      "Left unresolved"
+    ],
+    "denominator": "current relationships (retired excluded)",
+    "id": "E02",
+    "labelled_rows": [
+      {
+        "source": "Commercial Package Register",
+        "total": 60,
+        "outcomes": [
+          [
+            "Related to a WBS element",
+            60
+          ],
+          [
+            "Recorded outside the WBS",
+            0
+          ],
+          [
+            "Left unresolved",
+            0
+          ]
+        ]
+      },
+      {
+        "source": "Contractor Programme",
+        "total": 1082,
+        "outcomes": [
+          [
+            "Related to a WBS element",
+            898
+          ],
+          [
+            "Recorded outside the WBS",
+            2
+          ],
+          [
+            "Left unresolved",
+            182
+          ]
+        ]
+      },
+      {
+        "source": "Cost & Forecast Control Accounts",
+        "total": 480,
+        "outcomes": [
+          [
+            "Related to a WBS element",
+            399
+          ],
+          [
+            "Recorded outside the WBS",
+            0
+          ],
+          [
+            "Left unresolved",
+            81
+          ]
+        ]
+      }
+    ]
+  },
+  "movement": {
+    "rows": [
+      [
+        "Carried forward",
+        0
+      ],
+      [
+        "Re-keyed, revalidated",
+        0
+      ],
+      [
+        "Changed, re-decided",
+        0
+      ],
+      [
+        "New",
+        1622
+      ],
+      [
+        "Retired",
+        0
+      ]
+    ],
+    "total": 1622,
+    "first": true,
+    "denominator": "relationships, including retired",
+    "id": "E03",
+    "authority": "Initial approved baseline: 1,622 relationships; no earlier approved cycle for comparison.",
+    "detail": [],
+    "detail_id": "E03D",
+    "detail_note": "Separate detail scale; Carried forward excluded. Counts and zero-based lengths remain exact."
+  },
+  "outcomes": {
+    "rows": [
+      [
+        "Left unresolved on purpose (UNSURE)",
+        263
+      ],
+      [
+        "Scope not in the approved WBS (NEW_SCOPE)",
+        1
+      ],
+      [
+        "No WBS element applies (NO_WBS)",
+        1
+      ]
+    ],
+    "open": 265,
+    "total": 1622,
+    "denominator": "current relationships (retired excluded)",
+    "id": "E04"
+  },
+  "attention_records": 2,
+  "populations": {
+    "unplaced": 263,
+    "outside": 1
+  },
+  "withheld": [
+    "A management total is not included because the supplied information does not establish all of the measure, currency, period, record-grain and allocation rules needed to aggregate it reliably."
+  ],
+  "source_basis": {
+    "basis": "RECORDED_AT_APPROVAL",
+    "sources": [
+      {
+        "system_id": 1,
+        "snapshot_id": 1,
+        "artifact_id": 1,
+        "name": "Owner WBS",
+        "role": "WBS_DICTIONARY",
+        "role_label": "WBS dictionary",
+        "role_validity": "AS_SUPPLIED",
+        "revision": "Rev 0",
+        "period": "Initial",
+        "data_date": "2026-06-30",
+        "rows": 79,
+        "authority": "",
+        "mapped": false
+      },
+      {
+        "system_id": 2,
+        "snapshot_id": 2,
+        "artifact_id": 2,
+        "name": "Contractor Programme",
+        "role": "SCHEDULE",
+        "role_label": "schedule",
+        "role_validity": "AS_SUPPLIED",
+        "revision": "Rev 0",
+        "period": "Initial",
+        "data_date": "2026-06-30",
+        "rows": 1082,
+        "authority": "",
+        "mapped": true
+      },
+      {
+        "system_id": 3,
+        "snapshot_id": 3,
+        "artifact_id": 3,
+        "name": "Cost & Forecast Control Accounts",
+        "role": "COST_ESTIMATE",
+        "role_label": "cost estimate",
+        "role_validity": "AS_SUPPLIED",
+        "revision": "Rev 0",
+        "period": "Initial",
+        "data_date": "2026-06-30",
+        "rows": 480,
+        "authority": "",
+        "mapped": true
+      },
+      {
+        "system_id": 4,
+        "snapshot_id": 4,
+        "artifact_id": 4,
+        "name": "Commercial Package Register",
+        "role": "WORK_PACKAGE_LIST",
+        "role_label": "work-package list",
+        "role_validity": "AS_SUPPLIED",
+        "revision": "Rev 0",
+        "period": "Initial",
+        "data_date": "2026-06-30",
+        "rows": 60,
+        "authority": "",
+        "mapped": true
+      }
+    ],
+    "roles": {
+      "1": "WBS_DICTIONARY",
+      "2": "SCHEDULE",
+      "3": "COST_ESTIMATE",
+      "4": "WORK_PACKAGE_LIST"
+    },
+    "boundary": {
+      "generated_from": [
+        "Owner WBS"
+      ],
+      "supported_dimensions": [],
+      "assessed_purposes": [],
+      "not_yet_assessed": [
+        "Schedule / time-control alignment",
+        "Cost-control alignment",
+        "Contract / package alignment",
+        "Asset / handover alignment",
+        "Scope coverage",
+        "Owner coding definitions"
+      ],
+      "statement": "This candidate is built only from Owner WBS. Self-consistent, not independently validated: Owner coding definitions -- the structure was derived from that evidence, so relating the same evidence back to it cannot test it. Evidence supplied but not yet assessed: Schedule / time-control alignment, Cost-control alignment, Contract / package alignment, Scope coverage. It has not been tested against: Asset / handover alignment. It should not be read as suitable for purposes it has not been assessed against until that evidence is supplied and assessed.",
+      "evidence_available": [
+        "Schedule / time-control alignment",
+        "Cost-control alignment",
+        "Contract / package alignment",
+        "Scope coverage"
+      ],
+      "purpose_states": [
+        {
+          "purpose": "SCHEDULE_ALIGNMENT",
+          "label": "Schedule / time-control alignment",
+          "state": "EVIDENCE_AVAILABLE",
+          "result": "Evidence supplied; not yet assessed -- Contractor Programme: 898 of 1082 record(s) relate to existing branches; 1 need a decision; 0 name scope the structure lacks; 183 could not be related."
+        },
+        {
+          "purpose": "COST_CONTROL_ALIGNMENT",
+          "label": "Cost-control alignment",
+          "state": "EVIDENCE_AVAILABLE",
+          "result": "Evidence supplied; not yet assessed -- Cost & Forecast Control Accounts: 399 of 480 record(s) relate to existing branches; 0 need a decision; 0 name scope the structure lacks; 81 could not be related."
+        },
+        {
+          "purpose": "CONTRACT_PACKAGE_ALIGNMENT",
+          "label": "Contract / package alignment",
+          "state": "EVIDENCE_AVAILABLE",
+          "result": "Evidence supplied; not yet assessed -- Commercial Package Register: 59 of 60 record(s) relate to existing branches; 1 need a decision; 0 name scope the structure lacks; 0 could not be related."
+        },
+        {
+          "purpose": "ASSET_HANDOVER_ALIGNMENT",
+          "label": "Asset / handover alignment",
+          "state": "NOT_ASSESSED",
+          "result": null
+        },
+        {
+          "purpose": "SCOPE_COVERAGE",
+          "label": "Scope coverage",
+          "state": "EVIDENCE_AVAILABLE",
+          "result": "Evidence supplied; not yet assessed -- Commercial Package Register: 59 of 60 record(s) relate to existing branches; 1 need a decision; 0 name scope the structure lacks; 0 could not be related."
+        },
+        {
+          "purpose": "CODING_AUTHORITY",
+          "label": "Owner coding definitions",
+          "state": "SELF_CONSISTENT",
+          "result": "Self-consistent, not independently validated: structure taken from the owner's WBS (Owner WBS); reading confirmed by Maya Chen, Owner Project Controls."
+        }
+      ],
+      "role_unresolved": []
+    },
+    "snapshot_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_integrity": {
+      "status": "SOURCE_REPRESENTATION_ESTABLISHED",
+      "unresolved": [],
+      "objects": [
+        {
+          "source": "Owner WBS",
+          "system_id": 1,
+          "artifact_id": 1,
+          "revision": "Rev 0",
+          "rows": 79,
+          "role": "WBS_DICTIONARY",
+          "role_basis": "declared at upload",
+          "table_boundary": "ESTABLISHED",
+          "role_validity": "AS_SUPPLIED",
+          "region": null,
+          "interpretation": "TABLE",
+          "interpretation_basis": "DETERMINISTIC_SEMANTIC_RELATION",
+          "format": "xlsx",
+          "object_boundary": "SINGLE"
+        },
+        {
+          "source": "Contractor Programme",
+          "system_id": 2,
+          "artifact_id": 2,
+          "revision": "Rev 0",
+          "rows": 1082,
+          "role": "SCHEDULE",
+          "role_basis": "declared at upload",
+          "table_boundary": "ESTABLISHED",
+          "role_validity": "AS_SUPPLIED",
+          "region": null,
+          "interpretation": "TABLE",
+          "interpretation_basis": "DETERMINISTIC_SEMANTIC_RELATION",
+          "format": "csv",
+          "object_boundary": "SINGLE"
+        },
+        {
+          "source": "Cost & Forecast Control Accounts",
+          "system_id": 3,
+          "artifact_id": 3,
+          "revision": "Rev 0",
+          "rows": 480,
+          "role": "COST_ESTIMATE",
+          "role_basis": "declared at upload",
+          "table_boundary": "ESTABLISHED",
+          "role_validity": "AS_SUPPLIED",
+          "region": null,
+          "interpretation": "TABLE",
+          "interpretation_basis": "DETERMINISTIC_SEMANTIC_RELATION",
+          "format": "xlsx",
+          "object_boundary": "SINGLE"
+        },
+        {
+          "source": "Commercial Package Register",
+          "system_id": 4,
+          "artifact_id": 4,
+          "revision": "Rev 0",
+          "rows": 60,
+          "role": "WORK_PACKAGE_LIST",
+          "role_basis": "declared at upload",
+          "table_boundary": "ESTABLISHED",
+          "role_validity": "AS_SUPPLIED",
+          "region": null,
+          "interpretation": "TABLE",
+          "interpretation_basis": "SOURCE_NATIVE_SCHEMA",
+          "format": "xlsx",
+          "object_boundary": "SINGLE"
+        }
+      ],
+      "conservation": [
+        {
+          "file": "owner_wbs.xlsx",
+          "cells": 319,
+          "by_disposition": {
+            "READ": 319,
+            "UNRESOLVED": 0,
+            "CONTEXT": 0,
+            "EMPTY": 0
+          },
+          "conserved": true,
+          "objects": [
+            {
+              "object": "Owner WBS",
+              "sheet": "Owner WBS",
+              "disposition": "READ",
+              "cells": 319,
+              "rows": 79,
+              "region": "Owner WBS!A1:D80",
+              "interpretation": "TABLE",
+              "basis": "DETERMINISTIC_SEMANTIC_RELATION"
+            }
+          ]
+        },
+        {
+          "file": "contractor_schedule.csv",
+          "cells": 7398,
+          "by_disposition": {
+            "READ": 7398,
+            "UNRESOLVED": 0,
+            "CONTEXT": 0,
+            "EMPTY": 0
+          },
+          "conserved": true,
+          "objects": [
+            {
+              "object": "file",
+              "sheet": "file",
+              "disposition": "READ",
+              "cells": 7398,
+              "rows": 1082,
+              "region": "file!A1:G1083",
+              "interpretation": "TABLE",
+              "basis": "DETERMINISTIC_SEMANTIC_RELATION"
+            }
+          ]
+        },
+        {
+          "file": "monthly_cost_forecast.xlsx",
+          "cells": 4248,
+          "by_disposition": {
+            "READ": 4248,
+            "UNRESOLVED": 0,
+            "CONTEXT": 0,
+            "EMPTY": 0
+          },
+          "conserved": true,
+          "objects": [
+            {
+              "object": "Cost Forecast",
+              "sheet": "Cost Forecast",
+              "disposition": "READ",
+              "cells": 4248,
+              "rows": 480,
+              "region": "Cost Forecast!A1:I481",
+              "interpretation": "TABLE",
+              "basis": "DETERMINISTIC_SEMANTIC_RELATION"
+            }
+          ]
+        },
+        {
+          "file": "package_register.xlsx",
+          "cells": 427,
+          "by_disposition": {
+            "READ": 427,
+            "UNRESOLVED": 0,
+            "CONTEXT": 0,
+            "EMPTY": 0
+          },
+          "conserved": true,
+          "objects": [
+            {
+              "object": "Package Register",
+              "sheet": "Package Register",
+              "disposition": "READ",
+              "cells": 427,
+              "rows": 60,
+              "region": "Package Register!A1:G61",
+              "interpretation": "TABLE",
+              "basis": "SOURCE_NATIVE_SCHEMA"
+            }
+          ]
+        }
+      ],
+      "regions": [
+        {
+          "file": "owner_wbs.xlsx",
+          "region": "Owner WBS!A1:D80",
+          "sheet": "Owner WBS",
+          "interpretation": "TABLE",
+          "basis": "DETERMINISTIC_SEMANTIC_RELATION",
+          "attachment": "NOT_APPLICABLE",
+          "temporal": null,
+          "object_boundary": "SINGLE",
+          "interpretation_version": 1
+        },
+        {
+          "file": "contractor_schedule.csv",
+          "region": "file!A1:G1083",
+          "sheet": "file",
+          "interpretation": "TABLE",
+          "basis": "DETERMINISTIC_SEMANTIC_RELATION",
+          "attachment": "NOT_APPLICABLE",
+          "temporal": null,
+          "object_boundary": "SINGLE",
+          "interpretation_version": 1
+        },
+        {
+          "file": "monthly_cost_forecast.xlsx",
+          "region": "Cost Forecast!A1:I481",
+          "sheet": "Cost Forecast",
+          "interpretation": "TABLE",
+          "basis": "DETERMINISTIC_SEMANTIC_RELATION",
+          "attachment": "NOT_APPLICABLE",
+          "temporal": null,
+          "object_boundary": "SINGLE",
+          "interpretation_version": 1
+        },
+        {
+          "file": "package_register.xlsx",
+          "region": "Package Register!A1:G61",
+          "sheet": "Package Register",
+          "interpretation": "TABLE",
+          "basis": "SOURCE_NATIVE_SCHEMA",
+          "attachment": "NOT_APPLICABLE",
+          "temporal": null,
+          "object_boundary": "SINGLE",
+          "interpretation_version": 1
+        }
+      ],
+      "by_file": [
+        {
+          "file": "contractor_schedule.csv",
+          "status": "SOURCE_REPRESENTATION_ESTABLISHED"
+        },
+        {
+          "file": "monthly_cost_forecast.xlsx",
+          "status": "SOURCE_REPRESENTATION_ESTABLISHED"
+        },
+        {
+          "file": "owner_wbs.xlsx",
+          "status": "SOURCE_REPRESENTATION_ESTABLISHED"
+        },
+        {
+          "file": "package_register.xlsx",
+          "status": "SOURCE_REPRESENTATION_ESTABLISHED"
+        }
+      ],
+      "rule": "ESTABLISHED only when every materially populated current region has an established object boundary and an affirmative governed TABLE or CONTEXT interpretation, every TABLE needed for role-dependent use has a governed role, and no material region remains UNRESOLVED (object boundary, object type or role). Cell conservation and output reconciliation do not establish source truth.",
+      "scope": "Output reconciliation shows that the Crosswalk, XLSX, PDF and JSON consume one governed state. It does not show that the upstream source representation is true: that is the source representation integrity gate.",
+      "basis": "RECORDED_AT_APPROVAL",
+      "mapping_version_id": 1
+    }
+  },
+  "withheld_summary": [
+    "Cost / forecast total withheld. Aggregation eligibility is not established."
+  ],
+  "scope_count_note": "09 WBS EXPLORER: relationship coverage/status. 14 WBS HIERARCHY: relationship ROWS, including split targets and retired rows unless filtered.",
+  "continuity": {
+    "carried": 0,
+    "revalidated": 0
+  },
+  "evidence_boundary": "Source assertions, software interpretation, contrary evidence, professional decision and approval remain separate. Agreement between outputs does not validate source meaning.",
+  "content_sha256": "19c71d0696099ff85ba42a5fa9480bd1f1ea450497269f9d1be045615540b0dc"
+}

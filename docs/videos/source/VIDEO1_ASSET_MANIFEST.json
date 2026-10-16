@@ -3,9 +3,9 @@
   "transfer_zip_sha256": "e6416098f344ccf6d8021fdadd514d9786c594a0a95f5b07b7f1e14e545e2cfa",
   "duration_seconds": 60,
   "assets": {
-    "wbslink-video-1-challenge.mp4": "81a5e1077bdba73d308e6e6833aa18edb39288492f1901f171653456b73a8d42",
+    "wbslink-video-1-challenge.mp4": "52ebc12339d3a26b20a734835cc3a52f2042de71159f8f586b643ce3ceee6538",
     "wbslink-video-1-challenge.jpg": "6cd74c27f7a9ec3b9759392869fd138cf1c189a5060940b18c2aaf14f3cb7c24",
-    "wbslink-video-1-cinematic.vtt": "25023399c03c8c7bb99c738f14011762e4182425c6e5b406727e83aa72be63a8",
+    "wbslink-video-1-cinematic.vtt": "cae08d03339a7a3a72024cac6412837d5830f1fd1cc9b23170281b8f8852a4b1",
     "source/wbslink-video-1-original.mp4": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8"
   },
   "original_accepted_assets": {
@@ -15,10 +15,10 @@
   },
   "audio_correction": {
     "issue": 73,
-    "contract": 6135055002,
-    "method": "Original designed mechanical/industrial/office ambience timed to existing footage;2passloudnorm-18LUFS/-2dBTP,stereoAAC192kbps/48kHz;not captured location sound",
-    "video_codec": "copy",
-    "previous110Hz_track": "replaced, not merely amplified",
-    "listening": "Human/device/hosted and creative acceptance pending"
+    "method": "Retained H264 stream, CC0 Advertime instrumental with restrained keyboard/paper and equipment recordings anchored to identified shot windows. Unsupported footfalls/mouse cues removed. Exact frame/sample cue map retained.",
+    "mix": "20LUFS target, 2dBTP ceiling",
+    "music_reference": "ActualSept26hero retrieved and AAC verified; no historical reuse rights or actual listening confirmed. Separately licensedCC0direction retained pending controlled final human comparison.",
+    "listening": "Human listening pending; no technical-only subjective PASS.",
+    "bass_control": "Recorded music low shelf at200Hz/-7dB, rhythmic direction retained; no low-frequency generated hum."
   }
 }

@@ -1,8 +1,8 @@
 {
   "copy_version": "en-CA/73.1",
   "source": "actual customer Premium Workbook /03 EXECUTIVE VIEW",
-  "governed_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
-  "workbook_sha256": "8e2d6efb725cd5bbcff4ddb99c3145a65f9ae17eda7762a6905574719858740e",
+  "governed_output_basis_sha": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae",
+  "workbook_sha256": "606bc80650f714a2229c942ddc377bf2ebfba599dbdf5aa3c60266801b45a782",
   "charts": [
     {
       "source_categories": [
@@ -118,5 +118,17 @@
       ]
     }
   ],
-  "scope": "read-only responsive presentation; native chart objects, source rows and counting populations unchanged"
+  "scope": "read-only responsive presentation; native chart objects, source rows and counting populations unchanged",
+  "report_content_sha256": "27989148b82c41f1eeece02eec41b6ad1288d16a2bef7b59d530901e09544fc4",
+  "source_product_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
+  "historical_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
+  "report_presentation_source_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
+  "controlling_closure_comment": "6157874336",
+  "governed_baseline_workbook_sha256": "728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088",
+  "presentation_iteration": "Product Owner partner-standard transformation",
+  "workbook_presentation_source_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
+  "presentation_source_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
+  "current_scenario": "harbourlink-reporting-2026-v2",
+  "actual_approved_at": "2026-10-16 14:14:10.063502",
+  "historical_metadata_boundary": "governed_output_basis_sha and baseline hashes describe the retained historical predecessor only; current source_product_sha identifies the new scenario producer."
 }
