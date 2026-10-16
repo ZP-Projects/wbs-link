@@ -25,7 +25,7 @@ with sync_playwright() as p:
   if name=='project':
    page.goto(args.app_url+'/examples/harbourlink/cycle/2#S01',wait_until='networkidle');page.locator('#S01 .big').screenshot(path=str(details/f'{name}.png'))
   elif name=='wbs':
-   page.goto(args.app_url+'/examples/harbourlink/cycle/2#S02',wait_until='networkidle');page.locator('#S02 .coverage-matrix').screenshot(path=str(details/f'{name}.png'))
+   page.goto(args.app_url+'/examples/harbourlink/cycle/2#S02',wait_until='networkidle');page.locator('#S01 .coverage-matrix').screenshot(path=str(details/f'{name}.png'))
   elif name=='evidence':
    page.goto(args.app_url+'/examples/harbourlink/cycle/2#S05',wait_until='networkidle')
    finding=page.locator('#S05 .finding').filter(has_text='SCH-05-001');finding.locator('.stages li').first.screenshot(path=str(details/f'{name}.png'))
@@ -51,7 +51,7 @@ captions=[
  'WBS 1.5 has schedule relationships. Cost coverage is absent. A professional reviews the gap.',
  'SCH-05-001 states WBS Code 1.5.1. The original source assertion remains visible.',
  'Separate example: CST-03-004. Maya’s recorded decision preserves uncertainty. Software interpretation does not approve a professional decision.',
- 'One integrated report, print, phone and browser. Same findings, exact Actions and withholding.',
+ 'One integrated report. Responsive HTML on any screen and one PDF per cycle. Same findings, exact Actions and withholding.',
  'Four workbook charts retain their populations. A separately labelled detail scale shows small movements.',
  '1,613 carried forward; 1 revalidated. Together 1,614 of 1,625 remained valid, retired included.',
  'MappingVersion 2 records Maya Chen’s approval. No automatic approval is demonstrated or implied.',
@@ -83,7 +83,7 @@ def render(index,t):
    ('WBS 1.5','Testing and Commissioning\nSchedule present.\nCost coverage absent.','No zero-cost conclusion.'),
    ('SCH-05-001','Original source assertion\nWBS Code = 1.5.1','This is the present schedule view.\nThe absent cost view is bounded\nby the branch population.'),
    ('CST-03-004','Separate unresolved example\nRecorded group decision.\nUncertainty retained.','Interpretation is not approval.'),
-   ('One report','Print · phone · browser\nSame exact Actions.\nSame approved findings.','Cost / forecast total withheld.'),
+   ('One report','Responsive HTML · one PDF\nSame exact Actions.\nSame approved findings.','Cost / forecast total withheld.'),
    ('Figure 03D · Detail','Carried forward excluded.\n1 revalidated\n4 changed · 4 new · 3 retired','Separate zero-based scale.\nWhole population: 1,625,\nincluding retired.'),
    ('1,614 / 1,625','Remained valid\n1,613 carried forward\n+ 1 re-keyed/revalidated','Denominator includes retired.'),
    ('MappingVersion 2','Maya Chen\nOwner Project Controls','Recorded whole-version approval.\nSeparate from individual decisions.'),

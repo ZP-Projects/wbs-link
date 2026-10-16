@@ -15,7 +15,7 @@ with sync_playwright() as p:
  pg.goto(args.site_url,wait_until='networkidle');pg.locator('.owner-map').screenshot(path=str(R/'01.png'));shots.append(R/'01.png')
  for i,(url,selector,filtertext,nth) in enumerate([
   ('/examples/harbourlink/cycle/2#S01','#S01 .big',None,0),
-  ('/examples/harbourlink/cycle/2#S02','#S02 .coverage-matrix',None,0),
+  ('/examples/harbourlink/cycle/2#S01','#S01 .coverage-matrix',None,0),
   ('/examples/harbourlink/cycle/2#S05','#S05 .finding','SCH-05-001',0),
   ('/examples/harbourlink/cycle/2#S05','#S05 .finding','CST-03-004',2),
   ('/examples/harbourlink/cycle/2#S01','#S01 .finding',None,0),

@@ -12,10 +12,12 @@ cat=json.loads((R/'assets/flagship/display-terms.json').read_text());data=json.l
 # Independently retrieved through GitHub at immutable producer commit
 # 4b9fbc4306a1b35ca2e606547dcfd1624cb05eae (blob2343031efc63edd6f692952a7cf84251ed82c2e2,
 # 555129 bytes). This remains a fixed oracle, not a hash derived from the file under test.
-assert data['source_product_sha']=='4b9fbc4306a1b35ca2e606547dcfd1624cb05eae'
+assert data['governed_output_basis_sha']=='4b9fbc4306a1b35ca2e606547dcfd1624cb05eae'
+assert data['source_product_sha']=='de958f0aa4f9ce8d71095a17f53a325361d49360'
+assert data['current_scenario']=='harbourlink-reporting-2026-v2'
 assert data['governed_baseline_workbook_sha256']=='728df9ac02d5fea0dbe8b7ff39fe918d9367fdd4a70f09f4e5cf72cbe120f088'
-assert data['workbook_sha256']=='2258121f5105703f8f2953a12fb5fec80e1b6042092b262f1118ec4a6908927e'
-assert hashlib.sha256((R/'examples/harbourlink/cycle2/Premium_Workbook.xlsx').read_bytes()).hexdigest()=='2258121f5105703f8f2953a12fb5fec80e1b6042092b262f1118ec4a6908927e'
+assert data['workbook_sha256']=='606bc80650f714a2229c942ddc377bf2ebfba599dbdf5aa3c60266801b45a782'
+assert hashlib.sha256((R/'examples/harbourlink/cycle2/Premium_Workbook.xlsx').read_bytes()).hexdigest()=='606bc80650f714a2229c942ddc377bf2ebfba599dbdf5aa3c60266801b45a782'
 assert data['charts'][0]['values_by_series']==[[4,1,1,0]] and data['charts'][2]['values_by_series']==[[1613,1,4,4,3]] and data['charts'][3]['values_by_series']==[[264,0,1]]
 assert sum(sum(v) for v in data['charts'][1]['values_by_series'])==1622
 for x in data['charts'][1]['source_categories']:
