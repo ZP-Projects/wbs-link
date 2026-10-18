@@ -27,10 +27,14 @@
       "title": "Assurance and Limits"
     }
   ],
-  "basis": "Reporting basis: Version 1 · confirmed by Maya Chen, Owner Project Controls · 2026-10-16 14:11 UTC",
+  "basis": "Reporting basis: Version 1 · MappingVersion reference: MV-1 · confirmed by Maya Chen, Owner Project Controls · 2026-10-16 14:11 UTC",
   "data_date": "Data date: 2026-06-30 (Contractor Programme Rev 0); 2026-06-30 (Cost & Forecast Control Accounts Rev 0); 2026-06-30 (Commercial Package Register Rev 0)",
   "cycle": "Initial reporting baseline",
   "version": 1,
+  "approved_sequence": 1,
+  "mapping_version_id": "MV-1",
+  "version_status": "APPROVED",
+  "version_label": "Version 1",
   "approved_by": "Maya Chen, Owner Project Controls",
   "approved_at": "2026-10-16 14:11:18.493651",
   "wbs_version": 1,
@@ -113,7 +117,7 @@
       "position": "Requires scope treatment",
       "next": "Review the governed NEW_SCOPE outcomes in the project-controls context.",
       "where": "Outside the current Owner WBS",
-      "governed_matter": "1 governed relationship outcome(s) record NEW_SCOPE",
+      "governed_matter": "1 governed relationship outcome records NEW_SCOPE",
       "evidence": {
         "Source Record ID": "SCH-90-901",
         "Relationship ID": "R1081-v2",
@@ -142,7 +146,7 @@
       "position": "Unresolved pending evidence",
       "next": "Use only conclusions that do not depend on these unresolved relationships.",
       "where": "",
-      "governed_matter": "263 relationship outcome(s) remain deliberately unresolved",
+      "governed_matter": "263 relationship outcomes remain deliberately unresolved",
       "evidence": {
         "Source Record ID": "CST-03-004",
         "Relationship ID": "R1246-v2",
@@ -761,5 +765,11 @@
     "revalidated": 0
   },
   "evidence_boundary": "Source assertions, software interpretation, contrary evidence, professional decision and approval remain separate. Agreement between outputs does not validate source meaning.",
-  "content_sha256": "19c71d0696099ff85ba42a5fa9480bd1f1ea450497269f9d1be045615540b0dc"
+  "presentation_edition": "client-quality-2026-v3",
+  "report_populations": {
+    "all_target_rows": 1623,
+    "current_target_rows": 1623
+  },
+  "governed_content_sha256": "a15d760aafb9ef8e152abd005178fa566d880c5d2bbaf96e8d6af312d6b7ff12",
+  "content_sha256": "a4de8e053bfe55eaf5f8d939414f71931a5173735728ec17969440dfe82c35fd"
 }

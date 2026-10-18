@@ -2,10 +2,16 @@
   "copy_version": "en-CA/73.1",
   "source": "actual customer Premium Workbook /03 EXECUTIVE VIEW",
   "governed_output_basis_sha": "4b9fbc4306a1b35ca2e606547dcfd1624cb05eae",
-  "workbook_sha256": "606bc80650f714a2229c942ddc377bf2ebfba599dbdf5aa3c60266801b45a782",
+  "workbook_sha256": "6e1ae80bc35fb2416ab2f8589ee53320608ae4441b3d9b6c0d4405c855537fff",
   "charts": [
     {
       "source_categories": [
+        "Schedule and cost",
+        "Schedule only",
+        "Cost only",
+        "Neither schedule nor cost"
+      ],
+      "display_categories": [
         "Schedule and cost",
         "Schedule only",
         "Cost only",
@@ -19,21 +25,21 @@
           0
         ]
       ],
-      "display_categories": [
-        "Schedule and cost",
-        "Schedule only",
-        "Cost only",
-        "Neither schedule nor cost"
-      ],
       "category_ref": "'03 EXECUTIVE VIEW'!$A$105:$A$108",
       "series_refs": [
         "'03 EXECUTIVE VIEW'!$C$105:$C$108"
-      ]
+      ],
+      "management_question": "Where do both views connect?"
     },
     {
       "source_categories": [
         "Commercial Package Register",
         "Contractor Programme",
+        "Cost & Forecast Control Accounts"
+      ],
+      "display_categories": [
+        "Commercial Package Register",
+        "Contractor Program",
         "Cost & Forecast Control Accounts"
       ],
       "values_by_series": [
@@ -53,20 +59,23 @@
           81
         ]
       ],
-      "display_categories": [
-        "Commercial Package Register",
-        "Contractor Program",
-        "Cost & Forecast Control Accounts"
-      ],
       "category_ref": "'03 EXECUTIVE VIEW'!$A$130:$A$132",
       "series_refs": [
         "'03 EXECUTIVE VIEW'!$C$130:$C$132",
         "'03 EXECUTIVE VIEW'!$E$130:$E$132",
         "'03 EXECUTIVE VIEW'!$G$130:$G$132"
-      ]
+      ],
+      "management_question": "Where is source review needed?"
     },
     {
       "source_categories": [
+        "Carried forward",
+        "Re-keyed, revalidated",
+        "Changed, re-decided",
+        "New",
+        "Retired"
+      ],
+      "display_categories": [
         "Carried forward",
         "Re-keyed, revalidated",
         "Changed, re-decided",
@@ -82,21 +91,20 @@
           3
         ]
       ],
-      "display_categories": [
-        "Carried forward",
-        "Re-keyed, revalidated",
-        "Changed, re-decided",
-        "New",
-        "Retired"
-      ],
       "category_ref": "'03 EXECUTIVE VIEW'!$A$154:$A$158",
       "series_refs": [
         "'03 EXECUTIVE VIEW'!$C$154:$C$158"
-      ]
+      ],
+      "management_question": "What changed this cycle?"
     },
     {
       "source_categories": [
-        "Left unresolved on purpose (UNSURE)",
+        "Unresolved (UNSURE)",
+        "Scope not in the approved WBS (NEW_SCOPE)",
+        "No WBS element applies (NO_WBS)"
+      ],
+      "display_categories": [
+        "Unresolved (UNSURE)",
         "Scope not in the approved WBS (NEW_SCOPE)",
         "No WBS element applies (NO_WBS)"
       ],
@@ -107,20 +115,16 @@
           1
         ]
       ],
-      "display_categories": [
-        "Left unresolved on purpose (UNSURE)",
-        "Scope not in the approved WBS (NEW_SCOPE)",
-        "No WBS element applies (NO_WBS)"
-      ],
       "category_ref": "'03 EXECUTIVE VIEW'!$A$180:$A$182",
       "series_refs": [
         "'03 EXECUTIVE VIEW'!$C$180:$C$182"
-      ]
+      ],
+      "management_question": "Which outcomes remain open?"
     }
   ],
   "scope": "read-only responsive presentation; native chart objects, source rows and counting populations unchanged",
   "report_content_sha256": "27989148b82c41f1eeece02eec41b6ad1288d16a2bef7b59d530901e09544fc4",
-  "source_product_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
+  "source_product_sha": "129f5f201ca13505f5ffc9b02ce40e7997011a61",
   "historical_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
   "report_presentation_source_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
   "controlling_closure_comment": "6157874336",
@@ -130,5 +134,9 @@
   "presentation_source_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
   "current_scenario": "harbourlink-reporting-2026-v2",
   "actual_approved_at": "2026-10-16 14:14:10.063502",
-  "historical_metadata_boundary": "governed_output_basis_sha and baseline hashes describe the retained historical predecessor only; current source_product_sha identifies the new scenario producer."
+  "historical_metadata_boundary": "governed_output_basis_sha and baseline hashes describe the retained historical predecessor only; current source_product_sha identifies the new scenario producer.",
+  "presentation_edition": "client-quality-2026-v3",
+  "previous_customer_workbook_sha256": "606bc80650f714a2229c942ddc377bf2ebfba599dbdf5aa3c60266801b45a782",
+  "rendering": "LibreOffice actual final chart objects; not native Microsoft Excel",
+  "source_database_sha256": "7f192c2226061efe7fe121a80f851668714f5daa13a1b9d41e66dafbdedfca73"
 }

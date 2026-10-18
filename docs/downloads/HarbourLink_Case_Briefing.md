@@ -1,19 +1,7 @@
 # HarbourLink Urban Transit Expansion
 
-## Your role
-You are reviewing the current reporting-cycle controls package on behalf of the owner.
+HarbourLink is a fictional transit expansion used to practise an owner's reporting-cycle review. Schedule, cost/forecast and commercial package records describe the work independently. The Owner Work Breakdown Structure (WBS) provides the common hierarchy of project work.
 
-## Mission
-Use WBS↔LINK to establish whether the supplied independently authored project-control views
-reconcile through the Owner WBS. Resolve only the professional exceptions that genuinely
-require judgment, approve the governed state when satisfied, then review Project Intelligence,
-the Premium Workbook and the reporting-cycle briefing.
+Review whether the supplied views connect through that hierarchy. Inspect original source assertions, contrary evidence and actual professional decision scope. A coverage gap is a question to investigate; it does not establish zero cost, missing work, an overrun or project health.
 
-A second reporting cycle is included. Determine what remained valid, what changed, and what
-requires renewed professional attention.
-
-## Working principle
-The supplied schedule, cost/forecast and package views remain independently authored. Do not
-assume matching labels mean the sources are directly equivalent.
-
-This is synthetic demonstration data. It contains no real client or confidential project data.
+June is the initial reporting baseline. July provides revised schedule, cost and package files while retaining the June Owner WBS. Read the canonical first-time guide for the two separate approval gates and revision sequence. No expected answers, automatic approvals or real-client data are supplied.
