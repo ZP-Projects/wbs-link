@@ -81,7 +81,7 @@ def render(model):
                '<p class="scale-note">Separate zero-based detail scale. Stable and revalidated relationships excluded.</p></section></div>')
     f3 = figure(3, 'What changed since the last approved report?',
                 f'{detail_total:,} changed, new or retired relationships deserve a closer look.', visual3,
-                caption(3, f'{movement["total"]:,} relationships including retired; {carried + revalidated:,} remained valid.',
+                caption(3, f'{movement["total"]:,} relationship versions include retired history; {carried:,} carried forward and {revalidated:,} re-keyed/revalidated are distinct classifications, not individual source confirmations.',
                         'Carry-forward and revalidation remain distinct; the detail makes the smaller changes readable.',
                         'The movement denominator includes retired relationships, unlike current relationship counts.',
                         'S04', 'inspect changed, new and retired records and revision evidence'))

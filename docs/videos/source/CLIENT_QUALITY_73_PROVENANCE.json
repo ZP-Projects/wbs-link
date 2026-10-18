@@ -1,0 +1,49 @@
+{
+  "source_product_sha": "129f5f201ca13505f5ffc9b02ce40e7997011a61",
+  "source_model_sha256": "1253424d32d358306cd00d647a26af89c6b14beb8b386fb63db01fe36faa8631",
+  "source_workbook_sha256": "6e1ae80bc35fb2416ab2f8589ee53320608ae4441b3d9b6c0d4405c855537fff",
+  "renders": {
+    "executive-briefing-cycle2.png": {
+      "source": "document-render/Reports/cycle2/Integrated_Management_Report_Print/page-01.png",
+      "sha256": "8deb12f7a384cd0a34ecce65c56b702d3c13f46a1436877811c22b4bcafbbf97"
+    },
+    "executive-briefing-detail.png": {
+      "source": "document-render/Reports/cycle2/Integrated_Management_Report_Print/page-02.png",
+      "sha256": "998d5545c69a4f772c3096787c7101153308ba98961251d38e3c7f6f7815fd29"
+    },
+    "coverage-finding-15.png": {
+      "source": "document-render/Reports/cycle2/Integrated_Management_Report_Print/page-05.png",
+      "sha256": "0690275fa7827b6a2a6c34678947b7c8f65fb463efa1a901f596f6db5ce1390b"
+    },
+    "movement-detail.png": {
+      "source": "document-render/Reports/cycle2/Integrated_Management_Report_Print/page-04.png",
+      "sha256": "466e3de721433789c4aca8a615c92b9c92139a5d1da0b6eba80000d292bd4bcc"
+    },
+    "premium-executive-view.png": {
+      "source": "clean-workbook-proof/executive.png",
+      "sha256": "6239a4ca9ceec0dc0a210161e160d609a0c0a8a798a6b47f8218805264a3e20c"
+    },
+    "premium-executive-detail.png": {
+      "source": "clean-workbook-proof/executive.png",
+      "sha256": "6239a4ca9ceec0dc0a210161e160d609a0c0a8a798a6b47f8218805264a3e20c"
+    },
+    "chart1.png": {
+      "source": "clean-workbook-proof/chart1.png",
+      "sha256": "3353e45c71d92c5c2f2c4eb169aa6063438d6bdf8ccb9b7776285b4a8f31442a"
+    },
+    "chart2.png": {
+      "source": "clean-workbook-proof/chart2.png",
+      "sha256": "cbecaefd9abd65dae8878e5b9a1946572264dd42614b1321d57d565a8e0d117c"
+    },
+    "chart3.png": {
+      "source": "clean-workbook-proof/chart3.png",
+      "sha256": "172c6fe9ccd36a582a3041b84419704df3410f12a7dbd3ffb8d196babb38cc47"
+    },
+    "chart4.png": {
+      "source": "clean-workbook-proof/chart4.png",
+      "sha256": "aae5585142faff3782df99158978d836e012f1ef25cf454fbca7d24675c731f0"
+    }
+  },
+  "Film1_unchanged": "52ebc12339d3a26b20a734835cc3a52f2042de71159f8f586b643ce3ceee6538",
+  "undeployed": true
+}

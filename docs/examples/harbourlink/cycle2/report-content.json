@@ -27,10 +27,14 @@
       "title": "Assurance and Limits"
     }
   ],
-  "basis": "Reporting basis: Version 2 · confirmed by Maya Chen, Owner Project Controls · 2026-10-16 14:14 UTC",
+  "basis": "Reporting basis: Version 2 · MappingVersion reference: MV-2 · confirmed by Maya Chen, Owner Project Controls · 2026-10-16 14:14 UTC",
   "data_date": "Data date: 2026-07-31 (Contractor Programme Rev 1); 2026-07-31 (Cost & Forecast Control Accounts Rev 1); 2026-07-31 (Commercial Package Register Rev 1)",
   "cycle": "Cycle update",
   "version": 2,
+  "approved_sequence": 2,
+  "mapping_version_id": "MV-2",
+  "version_status": "APPROVED",
+  "version_label": "Version 2",
   "approved_by": "Maya Chen, Owner Project Controls",
   "approved_at": "2026-10-16 14:14:10.063502",
   "wbs_version": 1,
@@ -113,7 +117,7 @@
       "position": "Unresolved pending evidence",
       "next": "Use only conclusions that do not depend on these unresolved relationships.",
       "where": "",
-      "governed_matter": "264 relationship outcome(s) remain deliberately unresolved",
+      "governed_matter": "264 relationship outcomes remain deliberately unresolved",
       "evidence": {
         "Source Record ID": "CST-03-004",
         "Relationship ID": "R1246-v3",
@@ -749,5 +753,83 @@
     "revalidated": 1
   },
   "evidence_boundary": "Source assertions, software interpretation, contrary evidence, professional decision and approval remain separate. Agreement between outputs does not validate source meaning.",
-  "content_sha256": "27989148b82c41f1eeece02eec41b6ad1288d16a2bef7b59d530901e09544fc4"
+  "presentation_edition": "client-quality-2026-v3",
+  "previous_report_summary": {
+    "current": 1622,
+    "mapped": 1357,
+    "UNSURE": 263,
+    "NEW_SCOPE": 1,
+    "NO_WBS": 1,
+    "history": 1622,
+    "retired": 0,
+    "target_rows": 1623,
+    "current_target_rows": 1623,
+    "sources": {
+      "Commercial Package Register": {
+        "Related to a WBS element": 60,
+        "Recorded outside the WBS": 0,
+        "Left unresolved": 0
+      },
+      "Contractor Programme": {
+        "Related to a WBS element": 898,
+        "Recorded outside the WBS": 2,
+        "Left unresolved": 182
+      },
+      "Cost & Forecast Control Accounts": {
+        "Related to a WBS element": 399,
+        "Recorded outside the WBS": 0,
+        "Left unresolved": 81
+      }
+    },
+    "branches": {
+      "1.1": {
+        "code": "1.1",
+        "name": "Guideway and Civil",
+        "schedule": 180,
+        "cost": 80,
+        "state": "Both views present"
+      },
+      "1.2": {
+        "code": "1.2",
+        "name": "Stations",
+        "schedule": 179,
+        "cost": 80,
+        "state": "Both views present"
+      },
+      "1.3": {
+        "code": "1.3",
+        "name": "Systems",
+        "schedule": 180,
+        "cost": 79,
+        "state": "Both views present"
+      },
+      "1.4": {
+        "code": "1.4",
+        "name": "Vehicles and Depot",
+        "schedule": 179,
+        "cost": 80,
+        "state": "Both views present"
+      },
+      "1.5": {
+        "code": "1.5",
+        "name": "Testing and Commissioning",
+        "schedule": 180,
+        "cost": 0,
+        "state": "Cost coverage gap"
+      },
+      "1.6": {
+        "code": "1.6",
+        "name": "Program Management",
+        "schedule": 0,
+        "cost": 80,
+        "state": "Schedule coverage gap"
+      }
+    }
+  },
+  "report_populations": {
+    "all_target_rows": 1626,
+    "current_target_rows": 1623
+  },
+  "governed_content_sha256": "3fc53b525b57ab120c622ab7924dd5dabc104dec4d29c8106fa468078988ba7a",
+  "content_sha256": "7549aba83082748339c6365e72a8f09d60696ebfaa29d87f8c86b5d67c5666aa"
 }
