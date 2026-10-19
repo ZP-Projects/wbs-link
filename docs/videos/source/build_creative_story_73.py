@@ -10,7 +10,7 @@ from PIL import Image,ImageDraw,ImageFont
 HERE=Path(__file__).resolve().parent;VIDEO=HERE.parent
 NAVY='#121A2E';PAPER='#F5F5F3';GREY='#565B64';COGNAC='#8F5A28'
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-def build(model_path,work,proof):
+def build(model_path,work,proof,only_phone=False):
  proof=Path(proof)
  m=json.loads(Path(model_path).read_text());work=Path(work).resolve();work.mkdir(parents=True,exist_ok=True)
  film1=VIDEO/'wbslink-video-1-challenge.mp4';before=digest(film1)
@@ -65,7 +65,9 @@ def build(model_path,work,proof):
    y+=size*leading
   return y
  outputs=[]
- for phone in [False,True]:
+ if only_phone:
+  prior=json.loads((work/'PROVENANCE.json').read_text());outputs=[x for x in prior['outputs'] if x['file']=='wbslink-video-2-how-it-works.mp4']
+ for phone in ([True] if only_phone else [False,True]):
   W,H=(1080,1920) if phone else (1920,1080);tag='phone' if phone else 'landscape';folder=work/tag;folder.mkdir(exist_ok=True);segments=[]
   for i,(title,label,body,boundary) in enumerate(scenes):
    im=Image.new('RGB',(W,H),NAVY);d=ImageDraw.Draw(im);margin=68 if phone else 90
@@ -105,9 +107,13 @@ def build(model_path,work,proof):
       d.line((x+245,top+155,W//2,bottom-145),fill=COGNAC,width=4)
      d.rectangle((W//2-300,bottom-145,W//2+300,bottom-60),fill=NAVY);write(d,'Owner WBS',W//2-255,bottom-128,520,45,True,PAPER)
     else:
+     # Three separate labelled paths, never a serial source-to-source chain.
+     node_x=W-margin-285;node_y=top+310
      for j,label in enumerate(['Schedule','Cost / forecast','Work packages']):
-      y=top+60+j*140;d.rectangle((margin+35,y,W-margin-35,y+95),outline=COGNAC,width=3);write(d,label,margin+60,y+20,W-2*margin-100,46,True)
-     d.line((W//2,top+500,W//2,top+620),fill=COGNAC,width=5);d.rectangle((margin+35,top+620,W-margin-35,top+740),fill=NAVY);write(d,'Owner WBS',margin+65,top+650,W-2*margin-100,50,True,PAPER)
+      y=top+65+j*240;left=margin+30;right=margin+570
+      d.rectangle((left,y,right,y+115),outline=COGNAC,width=3);write(d,label,left+22,y+30,right-left-44,42,True)
+      d.line((right+10,y+58,node_x-15,node_y+45+j*55),fill=COGNAC,width=5)
+     d.rectangle((node_x,node_y,W-margin-20,node_y+220),fill=NAVY);write(d,'Owner\nWBS',node_x+22,node_y+45,230,48,True,PAPER)
     write(d,'Explanatory diagram · each source connects independently.',margin+30,bottom-50,W-2*margin-60,25,False,GREY)
    frame=folder/f'scene-{i+1:02d}.png';im.save(frame)
    out=folder/f'scene-{i+1:02d}.mp4';segments.append(out)
@@ -124,4 +130,4 @@ def build(model_path,work,proof):
  (work/'PROVENANCE.json').write_text(json.dumps({'model_sha256':digest(Path(model_path)),'source':'Approved fictional report fields, no hidden truth','film1_unchanged_sha256':before,'retained_audio_sha256':digest(audio),'audio':'Retained original instrumental AAC packet stream, trimmed at 80 seconds; no new speech/voice claim','composition':'Actual complete report components plus identified explanatory diagrams, not a performed application transaction','outputs':outputs,'captions':captions,'native_human_listening':'NOT VERIFIED'},indent=2)+'\n')
  print('BUILT full 80s landscape/phone films; Film 1 unchanged',flush=True)
 if __name__=='__main__':
- ap=argparse.ArgumentParser();ap.add_argument('--model',required=True);ap.add_argument('--work',required=True);ap.add_argument('--proof',required=True);a=ap.parse_args();build(a.model,a.work,a.proof)
+ ap=argparse.ArgumentParser();ap.add_argument('--model',required=True);ap.add_argument('--work',required=True);ap.add_argument('--proof',required=True);ap.add_argument('--only-phone',action='store_true');a=ap.parse_args();build(a.model,a.work,a.proof,a.only_phone)

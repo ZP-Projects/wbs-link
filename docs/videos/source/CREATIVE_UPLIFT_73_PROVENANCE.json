@@ -103,7 +103,7 @@
   "film2": {
     "model_sha256": "d9b2433c8e52a9421215962a00f92f4f1dad1bbecfc08ec01e011b47e4a79aa6",
     "source": "Approved fictional report fields, no hidden truth",
-    "film1_unchanged_sha256": "d6566b5184d0320108cada6d11660cb7ca3d6acc69da326ed53de5cf1f07e805",
+    "film1_unchanged_sha256": "ddb44698d1c0b771326e4fca3a06bb4092a8bf52801eb28d73040dc41acec9c5",
     "retained_audio_sha256": "efbc20c98b93cc5681299e910eeb58e74e834b070685facb8472f28ca2ee88de",
     "audio": "Retained original instrumental AAC packet stream, trimmed at 80 seconds; no new speech/voice claim",
     "composition": "Actual complete report components plus identified explanatory diagrams, not a performed application transaction",
@@ -114,7 +114,7 @@
       },
       {
         "file": "wbslink-video-2-how-it-works-phone.mp4",
-        "sha256": "3d3da5844a31b5b9087cdd699755e8f43e46cdd6af46f12aec29742571d47335"
+        "sha256": "0dc1ab95736e8e5e72ecfcdf2b20247b095022e8f400067cca9a74e9807aaa47"
       }
     ],
     "captions": [
