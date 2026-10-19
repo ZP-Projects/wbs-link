@@ -45,5 +45,7 @@
     }
   },
   "Film1_unchanged": "52ebc12339d3a26b20a734835cc3a52f2042de71159f8f586b643ce3ceee6538",
-  "undeployed": true
+  "undeployed": true,
+  "scope": "Historical accepted v3 provenance; not the current creative cut",
+  "superseded_by": "CREATIVE_UPLIFT_73_PROVENANCE.json"
 }

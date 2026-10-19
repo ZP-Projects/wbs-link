@@ -1,10 +1,10 @@
-# Current integrated film edition — issue 73
+# Current creative film edition · issue73
 
-Film 1 remains byte-identical to the natural-audio correction described below. Its Foley is supplemental recorded sound, not audio captured at the shown site.
+Film 1 is a new 60-second custom-graphic explainer, expressly authorised by the Product Owner’s final creative addendum. It uses original diagrams and complete actual approved HarbourLink report components. No stock footage repetition or invented application transaction is used. It is caption-led, with a 60-second excerpt of the existing licensed Advertime instrumental, level0.8 and a final3-second fade. Historical site Foley is not presented beneath the diagrams. No spoken narration is claimed.
 
-Film 2 now uses purpose-designed, caption-led management evidence exhibits built by `build_management_story_73.py`. Its landscape and phone H.264 streams are new; they do not depict a newly performed application transaction. The original Advertime instrumental AAC packet stream is retained without re-encoding and trimmed at the 80-second cut (one final 445-byte packet beyond the cut is omitted). The licensed CC0 sources and credit records below remain applicable. No new voice or human listening acceptance is claimed.
+Film 2 retains its ten-scene80-second sequence and exact already-trimmed instrumental AAC packets. Only five scenes per composition replace explanatory typography with complete actual current report components: gap, original assertion, interpretation, bounded group decision and separate approval. Conceptual diagrams remain explicitly identified. Landscape and phone captions remain matched. Native, unaided human comprehension/listening and physical-phone acceptance are NOT VERIFIED.
 
-Current report/workbook source: Product `129f5f201ca13505f5ffc9b02ce40e7997011a61`, presentation edition `client-quality-2026-v3`. See `CLIENT_QUALITY_73_PROVENANCE.json` for actual current render/file hashes. The source URLs, creators and licence records remain in `natural-audio/`; no new third-party media or dependency was added.
+Source report edition: `creative-uplift-2026-v4`. Exact source/capture/component custody is in `CREATIVE_UPLIFT_73_PROVENANCE.json`. The generator does not read a runtime database or hidden fixture. Existing CC0 Advertime by Rafael Krux / FreePD source, licence and asset hashes below are retained; no new third-party asset, voice or dependency is introduced.
 
 ## Historical natural-audio correction record
 

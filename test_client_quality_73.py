@@ -2,7 +2,9 @@
 import hashlib,json,subprocess
 from pathlib import Path
 from openpyxl import load_workbook
-D=Path(__file__).parent/'docs'
+# Exact v3 contract remains tested against its immutable archived artefacts.
+# New current creative edition has dedicated stronger authority/media tests.
+D=Path(__file__).parent/'docs/archive/creative-uplift-baseline'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def test_current_proof_not_the_archived_baseline():
  data=json.loads((D/'assets/flagship/chart-data.json').read_text())

@@ -85,7 +85,7 @@ for poster in ('wbslink-video-1-challenge.jpg', 'wbslink-video-2-how-it-works.jp
 if (ROOT / 'videos/wbslink-video-1-original-footage.lock').exists():
     manifest = json.loads((ROOT / 'videos/source/VIDEO1_ASSET_MANIFEST.json').read_text())
     for name, expected in manifest['assets'].items():
-        assert hashlib.sha256((ROOT / 'videos' / name).read_bytes()).hexdigest() == expected, name
+        assert hashlib.sha256((ROOT / 'archive/creative-uplift-baseline/videos' / name).read_bytes()).hexdigest() == expected, name
     assert '<track kind="captions" src="videos/wbslink-video-1-cinematic.vtt" srclang="en-CA" label="English (CC)">' in html
     assert not re.search(r'<track\b[^>]*\bdefault\b',html)
 
