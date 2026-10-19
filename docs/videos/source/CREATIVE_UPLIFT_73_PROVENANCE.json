@@ -1,0 +1,522 @@
+{
+  "source_product_sha": "edd79f94a857c9529a9fd1f9ba29ea523ec094cb",
+  "model_sha256": "d9b2433c8e52a9421215962a00f92f4f1dad1bbecfc08ec01e011b47e4a79aa6",
+  "reports": {
+    "executive-briefing-cycle2.png": "f627fb6b466817806f6315c5166c8b1f026dc12d5ccfccb84472f739a8fb80bc",
+    "executive-briefing-detail.png": "a24b2847f0da27f3187fada595e56c059174d066be36da9564ddd0a90f9c4e19",
+    "coverage-finding-15.png": "c43d958fe2f1e58df00653f90c5ddf333d32b690dab5873d96fd59d05b59ba64",
+    "executive-decisions-cycle2.png": "c43d958fe2f1e58df00653f90c5ddf333d32b690dab5873d96fd59d05b59ba64",
+    "movement-detail.png": "98b72eee62c26906ba9361122e2ef4fdd720fa83579e66ce92f2979566b261d8"
+  },
+  "film1": {
+    "source_model_sha256": "d9b2433c8e52a9421215962a00f92f4f1dad1bbecfc08ec01e011b47e4a79aa6",
+    "actual_capture_provenance_sha256": "6c1c9545b50a64239e8326a712b8aa7f1100532f05ca2f3a33a1ff046751b24c",
+    "film_sha256": "ddb44698d1c0b771326e4fca3a06bb4092a8bf52801eb28d73040dc41acec9c5",
+    "captions": [
+      "Schedule, cost and package records can each be credible while describing project work differently.",
+      "A source WBS Code is an assertion. Its meaning still requires evidence and professional judgement.",
+      "HarbourLink has 180 Testing and Commissioning schedule relationships. Cost relationships are absent; this does not establish zero cost or missing work.",
+      "Confirm whether the missing governed relationship is expected or requires project-controls attention.",
+      "Schedule, cost and package information relate independently through the owner\u2019s Work Breakdown Structure. No direct schedule-to-cost equivalence is implied.",
+      "Inspect the original source assertion and contrary evidence. Software interpretation is separate from a professional decision.",
+      "A separate cost example records a group decision to keep 81 relationships unresolved. That scope does not extend to every relationship.",
+      "Maya Chen\u2019s fictional recorded whole-version approval establishes the reporting position. It does not individually confirm every relationship.",
+      "July unresolved relationships increase from 263 to 264, including one package relationship. Both work-area gaps remain; cause and impact are not established.",
+      "Read the approved Management Report and exact Action. Follow the workbook evidence before drawing a project conclusion."
+    ],
+    "scenes": [
+      {
+        "scene": 1,
+        "start": 0,
+        "duration": 6,
+        "image_sha256": "394c34a9c926a88e4559f2e0a2b70a98b10c43ca34c50f3a3f8e5b36a6525d86",
+        "purpose": "Credible records. Different views of the work."
+      },
+      {
+        "scene": 2,
+        "start": 6,
+        "duration": 6,
+        "image_sha256": "0d1e9564844fd9e7fdb0969697b2ab0b70445d8d6c03276424a41eb78a01ce03",
+        "purpose": "A familiar code does not settle the relationship."
+      },
+      {
+        "scene": 3,
+        "start": 12,
+        "duration": 6,
+        "image_sha256": "9e4c08ced26bc2e0a069e16d1984d4d60bc58c8000dde49327db990247c08c0c",
+        "purpose": "An absent view limits the management comparison."
+      },
+      {
+        "scene": 4,
+        "start": 18,
+        "duration": 6,
+        "image_sha256": "f584f37bece3d5de5f68438a06e9564259b0f5acadb8bbce70786be9ad662f11",
+        "purpose": "Make the review need explicit."
+      },
+      {
+        "scene": 5,
+        "start": 24,
+        "duration": 6,
+        "image_sha256": "f670a1cf731356c3b1544641a95f38a5bf46f3bc42bdbdde7c5e5322258bd262",
+        "purpose": "Relate each view through the Owner WBS."
+      },
+      {
+        "scene": 6,
+        "start": 30,
+        "duration": 6,
+        "image_sha256": "a63d5865facc406f801418185ae77cf8665fa713071c77ca7058dfbd2194fabf",
+        "purpose": "Keep the original assertion visible."
+      },
+      {
+        "scene": 7,
+        "start": 36,
+        "duration": 6,
+        "image_sha256": "fdfd4fae04968bb72009875ecbc3f9dad80036f7f74c75ecde7a2a3afcabc44e",
+        "purpose": "Record what was actually decided."
+      },
+      {
+        "scene": 8,
+        "start": 42,
+        "duration": 6,
+        "image_sha256": "60e3a65f3f0ae22a9d3d3777ffd110167e0ed2254f64e0a7e8a8ba0d859a5968",
+        "purpose": "Approve the reporting position separately."
+      },
+      {
+        "scene": 9,
+        "start": 48,
+        "duration": 6,
+        "image_sha256": "0b5ad7856fa9cb5fb835b7e5aa0094dffb0d5d92d416afcda2d6b446528ecde1",
+        "purpose": "Changed evidence requires renewed review."
+      },
+      {
+        "scene": 10,
+        "start": 54,
+        "duration": 6,
+        "image_sha256": "1f1ad5e87011266e180735274ea8f09a5f582232dd629f61c4d480b9f4608e13",
+        "purpose": "Turn the gap into an evidence-led conversation."
+      }
+    ],
+    "audio": "60s excerpt from existing licensed Advertime instrumental; level0.8, final3s fade; no new voice/media dependency. Historical Foley no longer accompanies graphic scenes.",
+    "human_listening": "NOT VERIFIED",
+    "source": "Approved fictional report model only; no hidden oracle or client data"
+  },
+  "film2": {
+    "model_sha256": "d9b2433c8e52a9421215962a00f92f4f1dad1bbecfc08ec01e011b47e4a79aa6",
+    "source": "Approved fictional report fields, no hidden truth",
+    "film1_unchanged_sha256": "d6566b5184d0320108cada6d11660cb7ca3d6acc69da326ed53de5cf1f07e805",
+    "retained_audio_sha256": "efbc20c98b93cc5681299e910eeb58e74e834b070685facb8472f28ca2ee88de",
+    "audio": "Retained original instrumental AAC packet stream, trimmed at 80 seconds; no new speech/voice claim",
+    "composition": "Actual complete report components plus identified explanatory diagrams, not a performed application transaction",
+    "outputs": [
+      {
+        "file": "wbslink-video-2-how-it-works.mp4",
+        "sha256": "cc29ac862243c3298695a6262e91f16a8effce15077935014d2ca8686e3bb2f2"
+      },
+      {
+        "file": "wbslink-video-2-how-it-works-phone.mp4",
+        "sha256": "3d3da5844a31b5b9087cdd699755e8f43e46cdd6af46f12aec29742571d47335"
+      }
+    ],
+    "captions": [
+      "HarbourLink compares schedule, cost and work packages through the owner\u2019s Work Breakdown Structure.",
+      "Testing and Commissioning has schedule relationships, but no cost relationships in the approved source set.",
+      "Confirm whether the missing governed relationship is expected or requires project-controls attention.",
+      "Check the original source: its WBS Code is 1.5.1. An assertion is not an individual professional confirmation.",
+      "Review the interpretation and contrary evidence. The work-area count establishes the absent cost view; one example alone does not.",
+      "Software interpretation does not approve a professional decision. Keep uncertainty where evidence does not settle the relationship.",
+      "No automatic approval is demonstrated or implied. Maya Chen\u2019s recorded whole-version approval does not individually confirm every relationship.",
+      "July keeps both gaps. Unresolved relationships increase from 263 to 264, including one package relationship.",
+      "July has 1,622 current relationships plus three retired versions: 1,625 relationship versions in all.",
+      "Read the exact Action and recorded changes. Follow the source and decision evidence before drawing a project conclusion."
+    ],
+    "native_human_listening": "NOT VERIFIED"
+  },
+  "proof": [
+    {
+      "image": "gap-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"gap-1.5\"]",
+      "viewport": 390,
+      "component_text": "Testing and Commissioning \u00b7 WBS 1.5\n\nObserved information gap\n180 schedule relationships; cost relationships ABSENT.\n\nWhy management should review\nThe missing cost view limits comparison for this work area. Check whether the absence is expected.\n\nExact recorded Action\nConfirm whether the missing governed relationship is expected or requires project-controls attention.\n\n4.1 Finding \u00b7 5.1 Original evidence and approval scope",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 256.9375,
+        "width": 314,
+        "height": 485.6875
+      },
+      "sha256": "200659837cfbcc1f39b037c37dd5189473f3c20da1449dbdac9618020c8a5402",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "uncertainty-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"uncertainty\"]",
+      "viewport": 390,
+      "component_text": "What remains uncertain\n\n264 current relationships remain unresolved. Outside the current WBS: 0. No applicable WBS element: 1.\n\nExact recorded Action\nUse only conclusions that do not depend on these unresolved relationships.\n\nCoverage is not progress or project health. An absent relationship does not establish zero cost, missing work or an overrun. Cost / forecast totals remain withheld where their aggregation basis is not established.",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 263.3125,
+        "width": 314,
+        "height": 472.625
+      },
+      "sha256": "7a4c1f04c24652ca2c8b66410743a5a88cbb850273dd6a796f883100c544b6ec",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "position-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"approved-position\"]",
+      "viewport": 390,
+      "component_text": "4 of 6 work areas\nhave both schedule and cost relationships\n\nVersion 2\nApproved information position",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 398.84375,
+        "width": 314,
+        "height": 201.71875
+      },
+      "sha256": "002ae12363714b14751e979ef1e41bb2651b0272730ed8415e96b3c135145217",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage1-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage1-F-0611c8162d\"]",
+      "viewport": 390,
+      "component_text": "1 \u00b7 Original source assertion: WBS Code = 1.5.1",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 473.59375,
+        "width": 314,
+        "height": 52.6875
+      },
+      "sha256": "e064a62197993db0b860a83a86e2ecada04d0ca8835dadfa7cf337d64e08720f",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage2-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage2-F-0611c8162d\"]",
+      "viewport": 390,
+      "component_text": "2 \u00b7 Interpretation and contrary evidence: ONE_TO_ONE \u2192 1.5.1 Testing and Commissioning - Test Readiness\nContrary source evidence: None recorded.\nEvidence note: None recorded.",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 538.28125,
+        "width": 314,
+        "height": 184.40625
+      },
+      "sha256": "c4c8ddf2fdf4e4f65ae65e31e742c7a97e1fc0736a866f97c5f32ce87023f814",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage3-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage3-F-0611c8162d\"]",
+      "viewport": 390,
+      "component_text": "3 \u00b7 Relationship basis: Source assignment -- not individually reviewed\nNo individual named decision recorded.\nDecision scope: Not recorded for this record.",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 734.6875,
+        "width": 314,
+        "height": 131.71875
+      },
+      "sha256": "f2aaaecc490dae19d52515b52babf6e6bda367653f6ed91f484db8c5de87a0b6",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage4-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage4-F-0611c8162d\"]",
+      "viewport": 390,
+      "component_text": "4 \u00b7 Separate approval authority: Version 2 \u00b7 MappingVersion reference: MV-2\nApproved by: Maya Chen, Owner Project Controls\nRecorded (UTC): 2026-10-16 14:14:10.063502",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 842.40625,
+        "width": 314,
+        "height": 158.0625
+      },
+      "sha256": "2b89dd15ceacfa61ab0db8873c3e904531581cd1a39258f8df28c7b5dab32037",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "bounded-decision-390.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage3-F-0aaa67f1b0\"]",
+      "viewport": 390,
+      "component_text": "3 \u00b7 Recorded professional decision: Earlier professional decision, carried forward\nDecided by: Maya Chen, Owner Project Controls\nDecision scope: Group decision (81 records sharing one decision state), carried forward",
+      "component_bounds_css": {
+        "x": 38,
+        "y": 394.625,
+        "width": 314,
+        "height": 210.75
+      },
+      "sha256": "48472a67e508aa1a9844cd193d895e0fd446d13f554400e9e07cd28ebd596e5f",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "gap-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"gap-1.5\"]",
+      "viewport": 640,
+      "component_text": "Testing and Commissioning \u00b7 WBS 1.5\n\nObserved information gap\n180 schedule relationships; cost relationships ABSENT.\n\nWhy management should review\nThe missing cost view limits comparison for this work area. Check whether the absence is expected.\n\nExact recorded Action\nConfirm whether the missing governed relationship is expected or requires project-controls attention.\n\n4.1 Finding \u00b7 5.1 Original evidence and approval scope",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 635.796875,
+        "width": 504,
+        "height": 364.59375
+      },
+      "sha256": "69b030a625ea84463f58c63444fc91d23c393b8e87ab8ba33917143dadf1e4cb",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "uncertainty-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"uncertainty\"]",
+      "viewport": 640,
+      "component_text": "What remains uncertain\n\n264 current relationships remain unresolved. Outside the current WBS: 0. No applicable WBS element: 1.\n\nExact recorded Action\nUse only conclusions that do not depend on these unresolved relationships.\n\nCoverage is not progress or project health. An absent relationship does not establish zero cost, missing work or an overrun. Cost / forecast totals remain withheld where their aggregation basis is not established.",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 306.984375,
+        "width": 504,
+        "height": 386.875
+      },
+      "sha256": "371ee1cbd548185b66bd3c9cbac62ae93b1ff7f4bdde32d2fe46f212453320b4",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "position-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"approved-position\"]",
+      "viewport": 640,
+      "component_text": "4 of 6 work areas\nhave both schedule and cost relationships\n\nVersion 2\nApproved information position",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 415.75,
+        "width": 504,
+        "height": 169.375
+      },
+      "sha256": "5cf24bd681051176fc8cd54a4044fbef9f1dd0ebae53768296fbdd32ef6ccdd5",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage1-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage1-F-0611c8162d\"]",
+      "viewport": 640,
+      "component_text": "1 \u00b7 Original source assertion: WBS Code = 1.5.1",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 486.453125,
+        "width": 504,
+        "height": 27.890625
+      },
+      "sha256": "fc08dec7c64e629bfe6014967fc152921108636e55f58ca69bec7b3fe3ba869f",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage2-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage2-F-0611c8162d\"]",
+      "viewport": 640,
+      "component_text": "2 \u00b7 Interpretation and contrary evidence: ONE_TO_ONE \u2192 1.5.1 Testing and Commissioning - Test Readiness\nContrary source evidence: None recorded.\nEvidence note: None recorded.",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 526.34375,
+        "width": 504,
+        "height": 111.5625
+      },
+      "sha256": "da9ce0e20be92c73c9beb8e3e74aad7d1c2ae1c82df3b00b6211574d469c6317",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage3-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage3-F-0611c8162d\"]",
+      "viewport": 640,
+      "component_text": "3 \u00b7 Relationship basis: Source assignment -- not individually reviewed\nNo individual named decision recorded.\nDecision scope: Not recorded for this record.",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 649.90625,
+        "width": 504,
+        "height": 111.5625
+      },
+      "sha256": "d7208d1b4a1eb65d131e07af7bf1194408d576dad063094dcda3c0a49cd682e0",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage4-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage4-F-0611c8162d\"]",
+      "viewport": 640,
+      "component_text": "4 \u00b7 Separate approval authority: Version 2 \u00b7 MappingVersion reference: MV-2\nApproved by: Maya Chen, Owner Project Controls\nRecorded (UTC): 2026-10-16 14:14:10.063502",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 773.46875,
+        "width": 504,
+        "height": 111.5625
+      },
+      "sha256": "16b9b584fa5ccc66ca70915aff3c1bbe01231b6f83acbe6d90f14fe1c30cab3e",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "bounded-decision-640.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage3-F-0aaa67f1b0\"]",
+      "viewport": 640,
+      "component_text": "3 \u00b7 Recorded professional decision: Earlier professional decision, carried forward\nDecided by: Maya Chen, Owner Project Controls\nDecision scope: Group decision (81 records sharing one decision state), carried forward",
+      "component_bounds_css": {
+        "x": 68,
+        "y": 430.15625,
+        "width": 504,
+        "height": 139.453125
+      },
+      "sha256": "35b1b9424b13a05e7536dc2b574db0766b02ff19ab327d9427862230a34de0f3",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "gap-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"gap-1.5\"]",
+      "viewport": 1440,
+      "component_text": "Testing and Commissioning \u00b7 WBS 1.5\n\nObserved information gap\n180 schedule relationships; cost relationships ABSENT.\n\nWhy management should review\nThe missing cost view limits comparison for this work area. Check whether the absence is expected.\n\nExact recorded Action\nConfirm whether the missing governed relationship is expected or requires project-controls attention.\n\n4.1 Finding \u00b7 5.1 Original evidence and approval scope",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 635.21875,
+        "width": 944,
+        "height": 364.59375
+      },
+      "sha256": "7f763253f15af840e6db14e8de88bcf72e13a4b140a1100cd8adc6db76fb613f",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "uncertainty-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"uncertainty\"]",
+      "viewport": 1440,
+      "component_text": "What remains uncertain\n\n264 current relationships remain unresolved. Outside the current WBS: 0. No applicable WBS element: 1.\n\nExact recorded Action\nUse only conclusions that do not depend on these unresolved relationships.\n\nCoverage is not progress or project health. An absent relationship does not establish zero cost, missing work or an overrun. Cost / forecast totals remain withheld where their aggregation basis is not established.",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 334.40625,
+        "width": 944,
+        "height": 331.09375
+      },
+      "sha256": "c07cc6f42cb727cd340e726f7eb60b415becce026f373a6dc9952560c3734141",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "position-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"approved-position\"]",
+      "viewport": 1440,
+      "component_text": "4 of 6 work areas\nhave both schedule and cost relationships\n\nVersion 2\nApproved information position",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 448,
+        "width": 944,
+        "height": 104.6875
+      },
+      "sha256": "84569088f19eb55d10bdb0f5dae499a585df2b36095b0a68706d60c456a560eb",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage1-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage1-F-0611c8162d\"]",
+      "viewport": 1440,
+      "component_text": "1 \u00b7 Original source assertion: WBS Code = 1.5.1",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 485.921875,
+        "width": 944,
+        "height": 27.890625
+      },
+      "sha256": "dbd844418acb3b0ddaeec0668068ad0326bc769323483529b0895ff403d78047",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage2-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage2-F-0611c8162d\"]",
+      "viewport": 1440,
+      "component_text": "2 \u00b7 Interpretation and contrary evidence: ONE_TO_ONE \u2192 1.5.1 Testing and Commissioning - Test Readiness\nContrary source evidence: None recorded.\nEvidence note: None recorded.",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 525.8125,
+        "width": 944,
+        "height": 111.5625
+      },
+      "sha256": "b3b6b021040d4240c97591bc076e5acc9a6a74d063d3a874efd53d9d10bca577",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage3-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage3-F-0611c8162d\"]",
+      "viewport": 1440,
+      "component_text": "3 \u00b7 Relationship basis: Source assignment -- not individually reviewed\nNo individual named decision recorded.\nDecision scope: Not recorded for this record.",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 649.375,
+        "width": 944,
+        "height": 83.671875
+      },
+      "sha256": "d2e03bb07b6ac30861ff5bb7979f25e404ae5fc9e0cfffe01b1829aac492df17",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "stage4-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage4-F-0611c8162d\"]",
+      "viewport": 1440,
+      "component_text": "4 \u00b7 Separate approval authority: Version 2 \u00b7 MappingVersion reference: MV-2\nApproved by: Maya Chen, Owner Project Controls\nRecorded (UTC): 2026-10-16 14:14:10.063502",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 745.046875,
+        "width": 944,
+        "height": 83.671875
+      },
+      "sha256": "2daa324dc6f188db861b41848ec9648d45f6c5521bfcf33d0184774214d5f33e",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    },
+    {
+      "image": "bounded-decision-1440.png",
+      "source": "cycle2/Integrated_Management_Report.html",
+      "source_sha256": "bfd06c077532269bc498f092f3f4689c57b77465304e88458e539347ae7d891e",
+      "selector": "[data-proof=\"stage3-F-0aaa67f1b0\"]",
+      "viewport": 1440,
+      "component_text": "3 \u00b7 Recorded professional decision: Earlier professional decision, carried forward\nDecided by: Maya Chen, Owner Project Controls\nDecision scope: Group decision (81 records sharing one decision state), carried forward",
+      "component_bounds_css": {
+        "x": 248,
+        "y": 458.421875,
+        "width": 944,
+        "height": 83.671875
+      },
+      "sha256": "fd042284d31b0ae996b0148f4eaaca490e43c3b1f5d95d32415e4f4fec714b64",
+      "method": "Actual complete canonical component, Chromium device scale2; no overpainting, cropping or fabricated UI. Context is identified in composition."
+    }
+  ],
+  "licence": "Existing CC0 Advertime source; no new assets",
+  "undeployed": true
+}

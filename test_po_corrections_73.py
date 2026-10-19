@@ -38,7 +38,7 @@ def video_stream(path):
         'ffmpeg', '-v', 'error', '-i', str(path), '-map', '0:v:0', '-c', 'copy', '-f', 'h264', '-'
     ])).hexdigest()
 
-assert video_stream(ROOT/'videos/wbslink-video-1-challenge.mp4') == video_stream(ROOT/'videos/source/wbslink-video-1-original.mp4')
+assert video_stream(ROOT/'archive/creative-uplift-baseline/videos/wbslink-video-1-challenge.mp4') == video_stream(ROOT/'videos/source/wbslink-video-1-original.mp4')
 for name in ['wbslink-video-1-challenge.mp4', 'wbslink-video-2-how-it-works.mp4']:
     p=ROOT/'videos'/name
     info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))

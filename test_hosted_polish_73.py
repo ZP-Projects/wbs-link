@@ -24,10 +24,10 @@ for x in data['charts'][1]['source_categories']:
  if x=='Contractor Programme':assert 'Contractor Program' in data['charts'][1]['display_categories'] and 'Source name as supplied: Contractor Programme' in html
 assert html.count('class="chart-denominator"')==4 and 'lang="en-CA"' in html
 for number,seconds,cues in [(1,60,15),(2,80,10)]:
- name=f'wbslink-video-{number}-'+('challenge' if number==1 else 'how-it-works')+'.mp4';path=R/'videos'/name
+ name=f'wbslink-video-{number}-'+('challenge' if number==1 else 'how-it-works')+'.mp4';path=(R/'archive/creative-uplift-baseline' if number==1 else R)/'videos'/name
  info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-show_streams','-of','json',str(path)]));assert abs(float(info['format']['duration'])-seconds)<.1
  assert {s['codec_name'] for s in info['streams']}>={'h264','aac'}
- vtt=(R/'videos'/('wbslink-video-1-cinematic.vtt' if number==1 else 'wbslink-video-2-harbourlink.vtt')).read_text();assert vtt.count('-->')==cues
+ vtt=((R/'archive/creative-uplift-baseline' if number==1 else R)/'videos'/('wbslink-video-1-cinematic.vtt' if number==1 else 'wbslink-video-2-harbourlink.vtt')).read_text();assert vtt.count('-->')==cues
  audio=np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-i',str(path),'-vn','-ar','16000','-ac','1','-f','f32le','-']),dtype='<f4');assert np.max(np.abs(audio))<.98
  rms=[float(np.sqrt(np.mean(a*a))) for a in np.array_split(audio,cues)];assert min(rms)>.002
  if number==1:

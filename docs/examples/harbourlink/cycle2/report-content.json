@@ -753,7 +753,7 @@
     "revalidated": 1
   },
   "evidence_boundary": "Source assertions, software interpretation, contrary evidence, professional decision and approval remain separate. Agreement between outputs does not validate source meaning.",
-  "presentation_edition": "client-quality-2026-v3",
+  "presentation_edition": "creative-uplift-2026-v4",
   "previous_report_summary": {
     "current": 1622,
     "mapped": 1357,
@@ -831,5 +831,5 @@
     "current_target_rows": 1623
   },
   "governed_content_sha256": "3fc53b525b57ab120c622ab7924dd5dabc104dec4d29c8106fa468078988ba7a",
-  "content_sha256": "7549aba83082748339c6365e72a8f09d60696ebfaa29d87f8c86b5d67c5666aa"
+  "content_sha256": "d3930f2ccf54aa56d018817caceb0dd5b78553925ecc42b2a91682ee5b4de831"
 }
