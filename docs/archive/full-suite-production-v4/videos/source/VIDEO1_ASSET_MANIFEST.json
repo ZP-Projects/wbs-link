@@ -1,0 +1,24 @@
+{
+  "provenance": "Completed film supplied by the Product Owner; illustrative owner-created footage, not client or HarbourLink evidence. Commercial authorization recorded on issue #3. Original source clips are not included in this transfer.",
+  "transfer_zip_sha256": "e6416098f344ccf6d8021fdadd514d9786c594a0a95f5b07b7f1e14e545e2cfa",
+  "duration_seconds": 60,
+  "assets": {
+    "wbslink-video-1-challenge.mp4": "52ebc12339d3a26b20a734835cc3a52f2042de71159f8f586b643ce3ceee6538",
+    "wbslink-video-1-challenge.jpg": "6cd74c27f7a9ec3b9759392869fd138cf1c189a5060940b18c2aaf14f3cb7c24",
+    "wbslink-video-1-cinematic.vtt": "cae08d03339a7a3a72024cac6412837d5830f1fd1cc9b23170281b8f8852a4b1",
+    "source/wbslink-video-1-original.mp4": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8"
+  },
+  "original_accepted_assets": {
+    "wbslink-video-1-challenge.mp4": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8",
+    "wbslink-video-1-challenge.jpg": "6cd74c27f7a9ec3b9759392869fd138cf1c189a5060940b18c2aaf14f3cb7c24",
+    "wbslink-video-1-cinematic.vtt": "8a1bc285d638049de7f6fafae13fdf940a7a31f77895221282e96a7ea143113e"
+  },
+  "audio_correction": {
+    "issue": 73,
+    "method": "Retained H264 stream, CC0 Advertime instrumental with restrained keyboard/paper and equipment recordings anchored to identified shot windows. Unsupported footfalls/mouse cues removed. Exact frame/sample cue map retained.",
+    "mix": "20LUFS target, 2dBTP ceiling",
+    "music_reference": "ActualSept26hero retrieved and AAC verified; no historical reuse rights or actual listening confirmed. Separately licensedCC0direction retained pending controlled final human comparison.",
+    "listening": "Human listening pending; no technical-only subjective PASS.",
+    "bass_control": "Recorded music low shelf at200Hz/-7dB, rhythmic direction retained; no low-frequency generated hum."
+  }
+}

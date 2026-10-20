@@ -1,0 +1,128 @@
+{
+  "fps": 24,
+  "sample_rate": 48000,
+  "duration_seconds": 60,
+  "source_video": "../wbslink-video-1-original.mp4",
+  "source_video_sha256": "99119a6efa384dd9ba835a9e6f614e20fbabf4522f2ef459f3935850013888a8",
+  "music": {
+    "track": "Advertime",
+    "creator": "Rafael Krux",
+    "licence": "CC0, retained FreePD provenance",
+    "sha256": "6f0d4433cf788304d60add551cc460dd877865e6d84a2ab3fa7d15ba3f55d6ce",
+    "reference": "Previously accepted creative musical direction; exact Planning Planet soundtrack not recovered. This is not a claim of that historical track."
+  },
+  "bass_control": "V1 recorded music low shelf at200Hz/-7dB removes excessive bass emphasis; retained rhythm, no procedural hum.",
+  "cue_rule": "Onset/offset aligned to actual identifiable shot/action windows at24fps. Exact human-perceived gesture synchronisation remains a listening-review criterion. No footsteps over camera movement; no mouse clicks over tablets or off-screen hands.",
+  "removed_unsupported_cues": [
+    "footsteps: visible footfalls unavailable",
+    "mouse: contact/button actions not demonstrable in the wide desk footage",
+    "tablet: no physical mouse effect assigned"
+  ],
+  "events": [
+    {
+      "asset": "machine.ogg",
+      "onset_frame": 198,
+      "offset_frame_exclusive": 237,
+      "onset_seconds": 8.25,
+      "offset_seconds": 9.875,
+      "sample_onset": 396000,
+      "sample_offset": 474000,
+      "perspective": "Close equipment, softened mechanical bed",
+      "visible_basis": "Industrial equipment close-up ends before the wider construction view; no percussive impact is invented.",
+      "gain": 0.05,
+      "recording_sha256": "9b4ee1e0737a99c63b1ada16766f22231484de244a5deb53986e93957634eff6"
+    },
+    {
+      "asset": "machine.ogg",
+      "onset_frame": 870,
+      "offset_frame_exclusive": 909,
+      "onset_seconds": 36.25,
+      "offset_seconds": 37.875,
+      "sample_onset": 1740000,
+      "sample_offset": 1818000,
+      "perspective": "Close equipment, softened mechanical bed",
+      "visible_basis": "Industrial equipment close-up ends before the wider construction view; no percussive impact is invented.",
+      "gain": 0.05,
+      "recording_sha256": "9b4ee1e0737a99c63b1ada16766f22231484de244a5deb53986e93957634eff6"
+    },
+    {
+      "asset": "keyboard.wav",
+      "onset_frame": 390,
+      "offset_frame_exclusive": 423,
+      "onset_seconds": 16.25,
+      "offset_seconds": 17.625,
+      "sample_onset": 780000,
+      "sample_offset": 846000,
+      "perspective": "Close hand/keyboard",
+      "visible_basis": "Actual keyboard close-up. Cue ends before document/tablet cut.",
+      "gain": 0.085,
+      "recording_sha256": "e031cc52a841e90b0c46ea95e4b5e59cf35b2965db398196988aa62bc87038db"
+    },
+    {
+      "asset": "paper.ogg",
+      "onset_frame": 441,
+      "offset_frame_exclusive": 465,
+      "onset_seconds": 18.375,
+      "offset_seconds": 19.375,
+      "sample_onset": 882000,
+      "sample_offset": 930000,
+      "perspective": "Near desk, restrained rustle",
+      "visible_basis": "Paper handling in the widened office shot; no keyboard or mouse sound continues across the cut.",
+      "gain": 0.055,
+      "recording_sha256": "b2b2b55e44761c7a45283bce0196f41f72207180fb08c970d7dcf93b705d280c"
+    },
+    {
+      "asset": "keyboard.wav",
+      "onset_frame": 774,
+      "offset_frame_exclusive": 807,
+      "onset_seconds": 32.25,
+      "offset_seconds": 33.625,
+      "sample_onset": 1548000,
+      "sample_offset": 1614000,
+      "perspective": "Close hand/keyboard",
+      "visible_basis": "Actual keyboard close-up. Cue ends before document/tablet cut.",
+      "gain": 0.085,
+      "recording_sha256": "e031cc52a841e90b0c46ea95e4b5e59cf35b2965db398196988aa62bc87038db"
+    },
+    {
+      "asset": "paper.ogg",
+      "onset_frame": 825,
+      "offset_frame_exclusive": 849,
+      "onset_seconds": 34.375,
+      "offset_seconds": 35.375,
+      "sample_onset": 1650000,
+      "sample_offset": 1698000,
+      "perspective": "Near desk, restrained rustle",
+      "visible_basis": "Paper handling in the widened office shot; no keyboard or mouse sound continues across the cut.",
+      "gain": 0.055,
+      "recording_sha256": "b2b2b55e44761c7a45283bce0196f41f72207180fb08c970d7dcf93b705d280c"
+    },
+    {
+      "asset": "keyboard.wav",
+      "onset_frame": 1254,
+      "offset_frame_exclusive": 1287,
+      "onset_seconds": 52.25,
+      "offset_seconds": 53.625,
+      "sample_onset": 2508000,
+      "sample_offset": 2574000,
+      "perspective": "Close hand/keyboard",
+      "visible_basis": "Actual keyboard close-up. Cue ends before document/tablet cut.",
+      "gain": 0.085,
+      "recording_sha256": "e031cc52a841e90b0c46ea95e4b5e59cf35b2965db398196988aa62bc87038db"
+    },
+    {
+      "asset": "paper.ogg",
+      "onset_frame": 1305,
+      "offset_frame_exclusive": 1329,
+      "onset_seconds": 54.375,
+      "offset_seconds": 55.375,
+      "sample_onset": 2610000,
+      "sample_offset": 2658000,
+      "perspective": "Near desk, restrained rustle",
+      "visible_basis": "Paper handling in the widened office shot; no keyboard or mouse sound continues across the cut.",
+      "gain": 0.055,
+      "recording_sha256": "b2b2b55e44761c7a45283bce0196f41f72207180fb08c970d7dcf93b705d280c"
+    }
+  ],
+  "human_listening": "Not performed by Engineering; one uninterrupted ordinary-speaker/headphone and physical-phone session remains required."
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 500" role="img" aria-labelledby="title desc">
+<title id="title">Three source views meet through the Owner WBS</title><desc id="desc">Three independent Schedule, Cost / forecast and Package / contract connections terminate at the Owner WBS. The reviewed WBS leads to approved position, issues and source evidence. Missing evidence still required is shown separately as open review; no direct source-to-source link or automatic approval.</desc>
+<rect x="1" y="1" width="388" height="498" rx="18" fill="#152035" stroke="#465872"/>
+<g font-family="Arial,sans-serif" fill="#eef0ec">
+<text x="195" y="34" text-anchor="middle" font-size="15" fill="#d5a579">THREE VIEWS · ONE PROJECT</text>
+<g fill="#1b2940" stroke="#65748a"><rect x="14" y="62" width="104" height="98" rx="8"/><rect x="143" y="62" width="104" height="98" rx="8"/><rect x="272" y="62" width="104" height="98" rx="8"/></g>
+<g text-anchor="middle" font-size="18" font-weight="700"><text x="66" y="106">Schedule</text><text x="195" y="97">Cost /</text><text x="195" y="120">forecast</text><text x="324" y="97">Package /</text><text x="324" y="120">contract</text></g>
+<g class="source-connections" stroke="#d5a579" stroke-width="2.5"><path class="source-connection" data-source="schedule" d="M66 160V236"/><path class="source-connection" data-source="cost" d="M195 160V236"/><path class="source-connection" data-source="package" d="M324 160V236"/></g>
+<rect x="14" y="236" width="362" height="86" rx="8" fill="#1b2940" stroke="#d5a579" stroke-width="2"/>
+<text x="195" y="271" text-anchor="middle" font-size="26" font-weight="700">OWNER WBS</text><text x="195" y="297" text-anchor="middle" font-size="17">Professional review and approval</text>
+<path class="reviewed-output-connection" d="M195 322V362" stroke="#d5a579" stroke-width="2.5"/>
+<rect x="14" y="362" width="362" height="86" rx="8" fill="#1b2940" stroke="#65748a"/>
+<text x="195" y="397" text-anchor="middle" font-size="22" font-weight="700">Approved position</text><text x="195" y="423" text-anchor="middle" font-size="17">Issues for review · source evidence</text>
+<text x="195" y="478" text-anchor="middle" font-size="16" fill="#b4c2d2">Missing evidence remains open for review.</text>
+</g></svg>

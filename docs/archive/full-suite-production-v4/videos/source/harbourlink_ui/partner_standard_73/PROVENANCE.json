@@ -1,0 +1,83 @@
+{
+  "app_url": "http://127.0.0.1:8854",
+  "source": "Actual local isolated candidate with approved fictional synthetic HarbourLink data",
+  "actions": [
+    {
+      "scene": "project",
+      "url": "/p/1/overview",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "wbs",
+      "url": "/p/1/explorer?node=WBS%3A1.5",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "evidence",
+      "url": "/p/1/crosswalk?q=SCH-05-001",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "interpretation",
+      "url": "/examples/harbourlink/cycle/2#S05",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "report",
+      "url": "/examples/harbourlink/cycle/2#S01",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "charts",
+      "url": "/p/1/deliverables",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "cycle2",
+      "url": "/examples/harbourlink/cycle/2#S04",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "approval",
+      "url": "/examples/harbourlink/cycle/2#S06",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    },
+    {
+      "scene": "guide",
+      "url": "/projects/harbourlink",
+      "http": 200,
+      "capture": "Actual visible viewport"
+    }
+  ],
+  "approval_performed": false,
+  "timeline": "10 scenes, 8 seconds each, preserved sequence",
+  "closeups": "Complete actual elements; established interface precedes detail. No fabricated click or uninterrupted approval transaction.",
+  "music": "Advertime rhythmic direction retained; additional2dB whole-mix guitar-range attenuation at1.2/3.2kHz. -20.5LUFS target. No isolated stems or human-listening PASS claimed.",
+  "composition": "Complete real browser elements with owner-first editorial context; no cropped UI fragment or fabricated approval. Opening and downstream evidence use current captures.",
+  "audio_transfer": "Existing accepted AAC track copied without remix or re-encoding",
+  "changed_scenes_this_pass": [
+    1
+  ],
+  "separate_decision_example": "CST-03-004 is a separate unresolved example, not a claim that SCH-05-001 was individually decided.",
+  "captions": [
+    "Owner WBS is the owner\u2019s common list of project work. Schedule, cost and work packages relate to it independently.",
+    "4 of 6 Owner-WBS branches have both views. Coverage is not project health.",
+    "WBS 1.5 has schedule relationships. Cost coverage is absent. A professional reviews the gap.",
+    "SCH-05-001 states WBS Code 1.5.1. The original source assertion remains visible.",
+    "Separate example: CST-03-004. Maya\u2019s recorded decision preserves uncertainty. Software interpretation does not approve a professional decision.",
+    "One integrated report, print, phone and browser. Same findings, exact Actions and withholding.",
+    "Four workbook charts retain their populations. A separately labelled detail scale shows small movements.",
+    "1,613 carried forward; 1 revalidated. Together 1,614 of 1,625 remained valid, retired included.",
+    "MappingVersion 2 records Maya Chen\u2019s approval. No automatic approval is demonstrated or implied.",
+    "Explore approved synthetic HarbourLink. Follow a finding to evidence, then compare both cycles."
+  ],
+  "native_listening_acceptance": "Not established by technical decode, levels or screenshots."
+}

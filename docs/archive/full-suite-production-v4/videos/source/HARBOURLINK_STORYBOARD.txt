@@ -1,0 +1,10 @@
+00–08s | One project. Views that do not align. | actual integration visual | Schedule, cost and package views meet through the Owner WBS. HarbourLink exposes missing coverage.
+08–16s | The executive finding comes first. | actual project visual | This approved synthetic position has schedule and cost relationships in 4 of 6 Owner-WBS branches. Coverage is not project health.
+16–24s | Follow the finding into Owner WBS 1.5. | actual wbs visual | Testing and Commissioning has schedule relationships but no governed cost relationships. The gap requires professional review, not a project-health score.
+24–32s | Open the Crosswalk. Inspect the source. | actual evidence visual | This schedule record states WBS Code 1.5.1. Its source assertion remains visible; it does not establish a direct schedule-to-cost link.
+32–40s | Interpretation and decision stay distinct. | actual interpretation visual | Maya Chen records a professional decision. Software interpretation does not approve a professional decision.
+40–48s | The approved position travels with you. | actual report visual | The complete executive briefing carries the approved position, exact professional Actions and withholding. Its second page provides supporting evidence.
+48–56s | Four charts. Four stated populations. | actual charts visual | The Premium Workbook retains 21 sheets and four charts: coverage, source outcomes, cycle movement and unresolved outcomes. Each population stays distinct.
+56–64s | Cycle 2 preserves what still holds. | actual cycle2 visual | Cycle 2 preserves supported relationships. Current-live views exclude retired; reporting movement includes retired. New source records and new governed relationships differ.
+64–72s | Professional approval remains traceable. | actual approval visual | Version 2 records Maya Chen as professional approver. No automatic approval is demonstrated or implied.
+72–80s | Explore HarbourLink. Follow the evidence. | actual guide visual | Explore fictional HarbourLink. Follow the source assertion, interpretation, evidence, professional decision and next reporting cycle.
