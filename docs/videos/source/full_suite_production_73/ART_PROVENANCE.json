@@ -1,0 +1,29 @@
+{
+  "created_UTC": "2026-10-19",
+  "method": "OpenAI image generation, original custom commission, unchanged original PNG files retained",
+  "continuity": "One fictional warm contemporary infrastructure office / month-end context",
+  "third_party_stock": false,
+  "assets": [
+    {
+      "file": "art/01_controls_manager.png",
+      "sha256": "bc99495aa6451f11d673e0cefa2ccd17b99e33bbe44533335be8147aefee14c4",
+      "bytes": 1909279,
+      "casting_direction": "Black male owner controls manager",
+      "provenance": "Original generated fictional cinematic illustration, made for this production; not documentary client footage, a real person, testimonial or payment evidence. Casting intent does not establish actual heritage. No association with Maya Chen."
+    },
+    {
+      "file": "art/02_contractor_lead.png",
+      "sha256": "ee010ea1de24559094667dd260b0a98b8a54fea67ab4f93e07bba6ba15c9c762",
+      "bytes": 1782286,
+      "casting_direction": "Black woman contractor commercial lead",
+      "provenance": "Original generated fictional cinematic illustration, made for this production; not documentary client footage, a real person, testimonial or payment evidence. Casting intent does not establish actual heritage. No association with Maya Chen."
+    },
+    {
+      "file": "art/03_ceo_question.png",
+      "sha256": "86f056e94e876095e8b694534c3e70bcb7d4205396b885fd056fd2c749b03055",
+      "bytes": 1644632,
+      "casting_direction": "Latina CEO",
+      "provenance": "Original generated fictional cinematic illustration, made for this production; not documentary client footage, a real person, testimonial or payment evidence. Casting intent does not establish actual heritage. No association with Maya Chen."
+    }
+  ]
+}

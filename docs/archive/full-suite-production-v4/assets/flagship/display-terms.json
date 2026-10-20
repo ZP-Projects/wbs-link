@@ -1,0 +1,77 @@
+{
+  "version": "en-CA/73.1",
+  "locale": "en-CA",
+  "source_display_labels": {
+    "Contractor Programme": "Contractor Program"
+  },
+  "editorial_display_labels": {
+    "the scheduler's current programme export": "the scheduler's current program export"
+  },
+  "dimension_labels": {
+    "LOCATION_SPACE": "location / area",
+    "FACILITY_ASSET": "facility / asset",
+    "DISCIPLINE": "discipline",
+    "SYSTEM_ELEMENT": "system / element",
+    "PACKAGE_CONTRACT": "package / contract",
+    "PHASE_STAGE": "phase / stage",
+    "PROJECT_PROGRAM": "project / program",
+    "SCOPE_NATURE": "scope nature",
+    "TEMPORAL_WINDOW": "time window",
+    "RESPONSIBILITY_PARTY": "responsible party",
+    "QUANTITY_MEASURE": "quantity",
+    "DELIVERABLE_TYPE": "deliverable type",
+    "INTERVENTION_PURPOSE": "intervention purpose"
+  },
+  "dimension_examples": {
+    "LOCATION_SPACE": "station or area",
+    "FACILITY_ASSET": "bridge or building",
+    "DISCIPLINE": "civil or electrical",
+    "SYSTEM_ELEMENT": "signalling or drainage",
+    "PACKAGE_CONTRACT": "work package or contract",
+    "PHASE_STAGE": "design or construction",
+    "PROJECT_PROGRAM": "HarbourLink",
+    "SCOPE_NATURE": "renewal or new works",
+    "TEMPORAL_WINDOW": "July 2027",
+    "RESPONSIBILITY_PARTY": "owner or contractor",
+    "QUANTITY_MEASURE": "metres or units",
+    "DELIVERABLE_TYPE": "drawing or inspection",
+    "INTERVENTION_PURPOSE": "maintain or expand"
+  },
+  "dimension_groups": [
+    [
+      "Place and scope",
+      [
+        "LOCATION_SPACE",
+        "FACILITY_ASSET",
+        "SYSTEM_ELEMENT",
+        "DISCIPLINE",
+        "SCOPE_NATURE",
+        "DELIVERABLE_TYPE",
+        "INTERVENTION_PURPOSE"
+      ]
+    ],
+    [
+      "Project and responsibility",
+      [
+        "PROJECT_PROGRAM",
+        "PACKAGE_CONTRACT",
+        "RESPONSIBILITY_PARTY"
+      ]
+    ],
+    [
+      "Timing and quantity",
+      [
+        "PHASE_STAGE",
+        "TEMPORAL_WINDOW",
+        "QUANTITY_MEASURE"
+      ]
+    ]
+  ],
+  "protected": [
+    "original source names/columns/assertions",
+    "professional Actions",
+    "stable IDs",
+    "legal titles",
+    "historical provenance"
+  ]
+}

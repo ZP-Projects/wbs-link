@@ -124,7 +124,7 @@
   ],
   "scope": "read-only responsive presentation; native chart objects, source rows and counting populations unchanged",
   "report_content_sha256": "27989148b82c41f1eeece02eec41b6ad1288d16a2bef7b59d530901e09544fc4",
-  "source_product_sha": "edd79f94a857c9529a9fd1f9ba29ea523ec094cb",
+  "source_product_sha": "4db095f43e5a0986acc73f21891e0a25a68c24f2",
   "historical_output_basis_sha": "72460cd9b78785607ccc255521c46dade0897bc6",
   "report_presentation_source_sha": "de958f0aa4f9ce8d71095a17f53a325361d49360",
   "controlling_closure_comment": "6157874336",
@@ -135,7 +135,7 @@
   "current_scenario": "harbourlink-reporting-2026-v2",
   "actual_approved_at": "2026-10-16 14:14:10.063502",
   "historical_metadata_boundary": "governed_output_basis_sha and baseline hashes describe the retained historical predecessor only; current source_product_sha identifies the new scenario producer.",
-  "presentation_edition": "creative-uplift-2026-v4",
+  "presentation_edition": "full-suite-production-2026-v5",
   "previous_customer_workbook_sha256": "606bc80650f714a2229c942ddc377bf2ebfba599dbdf5aa3c60266801b45a782",
   "rendering": "LibreOffice actual final chart objects; not native Microsoft Excel",
   "source_database_sha256": "7f192c2226061efe7fe121a80f851668714f5daa13a1b9d41e66dafbdedfca73"

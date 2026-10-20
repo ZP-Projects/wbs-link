@@ -1,7 +1,7 @@
-"""Current creative cut preserves facts, approved history, audio and authentic evidence."""
+"""Frozen v4 creative contract, preserved in full; current v5 has separate production tests."""
 from pathlib import Path
 import hashlib,json,subprocess,re
-D=Path(__file__).parent/'docs';V=D/'videos';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+DOCS=Path(__file__).parent/'docs';D=DOCS/'archive/full-suite-production-v4';V=D/'videos';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def stream(p,kind,format):return subprocess.check_output(['ffmpeg','-v','error','-i',str(p),'-map',f'0:{kind}:0','-c','copy','-f',format,'-'])
 def test_current_reports_preserve_all_accepted_governed_model_fields():
  for c in [1,2]:
@@ -11,7 +11,7 @@ def test_current_reports_preserve_all_accepted_governed_model_fields():
   for x in [m,old]:
    for k in ['presentation_edition','content_sha256']:x.pop(k)
   assert m==old
-  assert (D/f'examples/harbourlink/cycle{c}/Premium_Workbook.xlsx').read_bytes()==(D/f'archive/creative-uplift-baseline/examples/harbourlink/cycle{c}/Premium_Workbook.xlsx').read_bytes()
+  assert (D/f'examples/harbourlink/cycle{c}/Premium_Workbook.xlsx').read_bytes()==(DOCS/f'archive/creative-uplift-baseline/examples/harbourlink/cycle{c}/Premium_Workbook.xlsx').read_bytes()
  data=json.loads((D/'assets/flagship/chart-data.json').read_text());assert data['presentation_edition']=='creative-uplift-2026-v4' and data['charts'][0]['values_by_series']==[[4,1,1,0]] and data['charts'][2]['values_by_series']==[[1613,1,4,4,3]]
 def test_actual_report_components_have_source_and_pixel_custody():
  p=json.loads((V/'source/CREATIVE_UPLIFT_73_PROVENANCE.json').read_text());assert len(p['proof'])==24
@@ -30,7 +30,7 @@ def test_full_current_compositions_captions_and_original_film2_audio():
   subprocess.run(['ffmpeg','-v','error','-xerror','-i',str(V/name),'-f','null','-'],check=True)
   if 'video-2' in name:
    assert hashlib.sha256(stream(V/name,'a','adts')).hexdigest()=='efbc20c98b93cc5681299e910eeb58e74e834b070685facb8472f28ca2ee88de'
- assert stream(V/'wbslink-video-1-challenge.mp4','v','h264')!=stream(D/'archive/creative-uplift-baseline/videos/wbslink-video-1-challenge.mp4','v','h264')
+ assert stream(V/'wbslink-video-1-challenge.mp4','v','h264')!=stream(DOCS/'archive/creative-uplift-baseline/videos/wbslink-video-1-challenge.mp4','v','h264')
 def test_commercial_and_audio_copy_matches_new_cut_without_false_live_parity():
  h=(D/'index.html').read_text();assert 'Original custom graphics and actual HarbourLink report evidence' in h
  assert 'picture-matched workplace and equipment sounds' not in h
