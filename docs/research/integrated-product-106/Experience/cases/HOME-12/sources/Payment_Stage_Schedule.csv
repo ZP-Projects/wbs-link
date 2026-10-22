@@ -1,0 +1,3 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+H-M01,H12.10,"Stage payment after frame inspection, condition only",Timberline,,,,60000,CAD,A,Source assertion
+H-M02,H12.20,"Stage payment after rough-in inspection, condition only",Cedar Electric,,,,18000,CAD,A,Source assertion

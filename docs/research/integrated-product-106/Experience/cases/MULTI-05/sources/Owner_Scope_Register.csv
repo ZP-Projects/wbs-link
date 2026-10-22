@@ -1,0 +1,4 @@
+Owner Code,Name,Parent,Location,Facility,System
+T01,North interchange,,,,
+T01.N,North Station,T01,NS,station,
+T01.TR,Trackwork,T01,,,TRK

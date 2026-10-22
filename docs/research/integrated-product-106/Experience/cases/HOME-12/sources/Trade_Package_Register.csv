@@ -1,0 +1,4 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+H-P01,H12.20,Internal power and lighting,Cedar Electric,,,,,,A,Source assertion
+H-P02,H12.10,Timber structure,Timberline,,,,,,A,Source assertion
+H-P03,H12.99,"External service connection, owner scope unresolved",Utility interface,,,,,,A,Source assertion

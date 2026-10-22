@@ -1,0 +1,4 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+I-P01,I01.1.20,Process equipment package,Forge Mechanical,Phase 1,,,1200000,USD,A,Source assertion
+I-P02,I01.2.20,Electrical installation package,Vector Power,Phase 2,,,1600000,CAD,A,Source assertion
+I-P03,I01.2.30,Automation package,Signal Works,Phase 2,,,900000,CAD,A,Source assertion

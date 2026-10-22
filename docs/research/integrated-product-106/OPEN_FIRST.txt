@@ -1,0 +1,17 @@
+WBS↔LINK · Integrated fictional review
+
+1. Save the ZIP and use Windows Extract All (or your system's extraction tool).
+2. Keep all extracted folders together.
+3. Open 00_START_HERE.html. Choose Explore a project, then Electrical.
+4. Select Schedule, Cost, Packages or Findings. Inspect the source beside the selected scope.
+5. Reports & downloads supplies the matching complete-case PDF and Excel workbook, plus a selected-scope CSV.
+
+Other projects and recorded cycles are available in Project / recorded version.
+Website/index.html is the commercial introduction. The retained HarbourLink films explain the method; they are not a recording of this workspace.
+
+All projects are fictional. No live folder or external AI is connected. Proposal review, professional decisions, whole-version approval and payment certification remain separate.
+
+If your organisation blocks local HTML, do not change security settings. The PDFs and workbooks remain available directly in Experience/cases and Reports. Native Windows Edge opening, full Microsoft Office features, screen readers, physical phones and actual unaided human comprehension require separate acceptance checks.
+
+
+Presentation opening: begin with Marketing/WBS-LINK_Executive_Presentation_6slides.pdf for the reference appearance. The editable .pptx uses Archivo. If your organisation permits font installation, install the supplied Fonts/Archivo-400.ttf and Archivo-700.ttf before editing, then restart your presentation app. Font substitution can change line wrapping. Do not change security settings. Native Microsoft PowerPoint acceptance remains pending.

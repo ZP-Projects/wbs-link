@@ -1,0 +1,5 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+I-C01,I01.1.10,Civil capital forecast,Granite Civil,Phase 1,,,1900000,CAD,A,Source assertion
+I-C02,I01.1.20,Equipment capital forecast,Forge Mechanical,Phase 1,,,4600000,CAD,A,Source assertion
+I-C03,I01.2.20,Electrical capital forecast,Vector Power,Phase 2,,,2200000,CAD,A,Source assertion
+I-C04,,Unallocated owner contingency,,All phases,,,700000,CAD,A,Source assertion
