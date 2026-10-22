@@ -10,7 +10,7 @@ def data():
 
 def test_same_product_source_and_all_generated_website_members():
  receipt=json.loads((ROOT/'BUILD.json').read_text());p=data()
- assert receipt['product_source_sha']==p['product_source_sha']=='53794f67aa2d9b0b33970dbaa6d4813459db3afa'
+ assert receipt['product_source_sha']==p['product_source_sha']=='17ffb513747b363305fc780ffe8c908b6fc08b9b'
  for f in receipt['files']:assert (ROOT/f['path']).stat().st_size==f['bytes'] and sha256((ROOT/f['path']).read_bytes()).hexdigest()==f['sha256']
  assert p['mode']=='integrated' and len(p['cases'])==6
 
