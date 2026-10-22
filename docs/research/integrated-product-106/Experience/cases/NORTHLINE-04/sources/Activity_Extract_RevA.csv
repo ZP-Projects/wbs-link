@@ -1,0 +1,4 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+N-S01,N01.A.E.SG,Install main switchboard,Polar Power,Systems,2026-08-03,2026-08-21,,,A,Source assertion
+N-S02,N01.A.E.CX,Integrated electrical commissioning,Polar Power,Commissioning,2026-09-07,2026-09-18,,,A,Source assertion
+N-S03,N01.A.M,Install cooling equipment,Boreal Mechanical,Systems,2026-08-03,2026-09-04,,,A,Source assertion

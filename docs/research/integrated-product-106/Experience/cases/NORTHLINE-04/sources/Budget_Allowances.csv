@@ -1,0 +1,3 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status,Basis
+N-C01,N01.A.E,Electrical budget allowance; not allocated to child WBS,Polar Power,,,,1800000,CAD,A,Source assertion,Parent electrical budget; no commissioning allocation supplied.
+N-C02,N01.A.E.SG,"Switchgear supply allowance; included in N-C01, not additive",Northstar Switchboards,,,,420000,CAD,A,Source assertion,"Included in N-C01; source value, not a variance or additional budget."

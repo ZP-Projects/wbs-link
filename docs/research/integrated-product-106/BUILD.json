@@ -1,0 +1,338 @@
+{
+  "product_source_sha": "9321a8485a554149e451b4bc7d4188aadae88d2c",
+  "website_base_sha": "aac3e67249c37b6fef5004f2e9e293e88a2f4f42",
+  "scope": "Same-component integrated product candidate. Existing #73 hosted services, films and frozen reports are untouched. No deployment.",
+  "files": [
+    {
+      "path": "00_START_HERE.html",
+      "bytes": 7270353,
+      "sha256": "36a7a6fe8a263458db7e9f8720b6fcc4359c7c48842bd6665e784a0161b054dd"
+    },
+    {
+      "path": "01_Review_Status.html",
+      "bytes": 2960,
+      "sha256": "8843b3a9fb918a44de7fc4ea19c5c31350aef056282da002a79db9f9bd3c06b6"
+    },
+    {
+      "path": "02_HarbourLink_First_Time_Guide.html",
+      "bytes": 8222,
+      "sha256": "71307e8207062f4b75f60518e2d2fb399e2b9bc2f5a1a4399d9c051b0b71648e"
+    },
+    {
+      "path": "02_HarbourLink_First_Time_Guide.pdf",
+      "bytes": 46157,
+      "sha256": "738d0e96ebaa851aabc807b186bf968e5027805750bfbf18a386e605d5231378"
+    },
+    {
+      "path": "03_Watch_the_Films.html",
+      "bytes": 1349,
+      "sha256": "4a5fe93e63cfb992e833647df69ed926566308c904f421c277452a497489acb9"
+    },
+    {
+      "path": "Experience/cases/HOME-12/HOME-12_Evidence_Workbook.xlsx",
+      "bytes": 20463,
+      "sha256": "72f2c6efcf249bd9c00d32740f9e615c09041ee8b2dbf1a8800fdfc139879c3e"
+    },
+    {
+      "path": "Experience/cases/HOME-12/HOME-12_Management_Review.html",
+      "bytes": 10614,
+      "sha256": "522c90ccee51206b6e26c7b6d37ce0c523d59ae6706575cb180558f5c690bd3d"
+    },
+    {
+      "path": "Experience/cases/HOME-12/HOME-12_Management_Review.pdf",
+      "bytes": 66735,
+      "sha256": "6fcd2235f6270d349bbf0e0204a6b16b7f469d975eb5ff162e4144fb2fcea1aa"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Budget_Allowances.csv",
+      "bytes": 288,
+      "sha256": "ef39dd59ebff8f42df4443c8b47fd7519853b1fb56295e6273dfc77152c64371"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Construction_Agreement.pdf",
+      "bytes": 19677,
+      "sha256": "0d253344fb9064b8b4f50f9874b8236b1dd7af0fe6b8f3982b3a657f14f9a4e8"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Electrical_Layout_E01.pdf",
+      "bytes": 19622,
+      "sha256": "7062663796983b6c8fccfc31648a5a13a9900d7126026417957cbc1f8706aad8"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Owner_Scope_Register.csv",
+      "bytes": 139,
+      "sha256": "9de321b23f30e872571662fa335b15eb2f5262b70b75b72ac800c6034a771174"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Payment_Stage_Schedule.csv",
+      "bytes": 322,
+      "sha256": "dc28310642e7f1b71294bb07ae3e49cc44512e50d9ece754bfc20525cf60135d"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Site_Activity_Extract.csv",
+      "bytes": 374,
+      "sha256": "a30bb7f5609951baf00b64e3a1381d93f9a3b4dee6bb44eee19d5bb386b77546"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Site_Coordination_Notes.docx",
+      "bytes": 1010,
+      "sha256": "e39b6d55a9a83eb45da8812eba281919e121bee95f590fc00fd03a32a198bc5f"
+    },
+    {
+      "path": "Experience/cases/HOME-12/sources/Trade_Package_Register.csv",
+      "bytes": 348,
+      "sha256": "3993b4dfe76f38f987a6bff75f17b65358ccb97280e0dffc1033cfc3ee649eb5"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Evidence_Workbook.xlsx",
+      "bytes": 21200,
+      "sha256": "8ec434a7f0761488c4b5810d942ca986c53b123060198a306851cf68b3564850"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Management_Review.html",
+      "bytes": 11197,
+      "sha256": "3405633eea2c81326721b58ef15d4d06b34a4882c3d8b6d2f6b17f5f5c138b5b"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Management_Review.pdf",
+      "bytes": 65909,
+      "sha256": "8f5e43961fc4d42bc066a133b87ba8b557b4f4fcc28b0454278c1b59aac04f59"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Baseline_Activity_Schedule.csv",
+      "bytes": 525,
+      "sha256": "152dc98bc6f04093691a5f91a209c5730f004858312e00de200b133018939406"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Capex_Forecast_Register.csv",
+      "bytes": 466,
+      "sha256": "45c9e7b6362bfda3c926f400cb1067a48519a74d468d28fb89d30ce33673fb90"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Capital_Contract_Interfaces.pdf",
+      "bytes": 19663,
+      "sha256": "529b7f9bb18d8d44cf328e1b6447574a87afc0aa12f1a76bedb27d0fa4222745"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Contractor_Package_Register.csv",
+      "bytes": 381,
+      "sha256": "51d0a6980ad1b7a512cd904fafd7f335bffcfea57cdc116841ffba7297b887fd"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Electrical_Switchgear_Specification.pdf",
+      "bytes": 19564,
+      "sha256": "ace9f2813f527d5ba0c13296502918de2faad0e2743c88a98fd6219039843386"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Owner_Scope_Register.csv",
+      "bytes": 293,
+      "sha256": "835440e27805fcda8d9512e63a5ad3bcbc369ea2febd92f543a71db440530734"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Proposed_Phase2_Schedule_RevB.csv",
+      "bytes": 321,
+      "sha256": "e8c6b6dcafb0dff48bd19064268af43dd39c5ae5b58ac4a5bc71c154fdce2261"
+    },
+    {
+      "path": "Experience/cases/INDUSTRIAL-01/sources/Revision_Applicability_Notice.docx",
+      "bytes": 1003,
+      "sha256": "75e0007913f0237f0a7e715e70b11fd4eba2a0811e69d0abbb648a4a70b8443d"
+    },
+    {
+      "path": "Experience/cases/MULTI-05/MULTI-05_Evidence_Workbook.xlsx",
+      "bytes": 16621,
+      "sha256": "c7df638b2d3637d1a01c8d97ca523f32a3c1382a2267e4578b3c5625a51e2d78"
+    },
+    {
+      "path": "Experience/cases/MULTI-05/MULTI-05_Management_Review.html",
+      "bytes": 7140,
+      "sha256": "55158520bd7a033c0d875d6e91df1e0e3cce3a071e1b4f41131011b8b01c9c88"
+    },
+    {
+      "path": "Experience/cases/MULTI-05/MULTI-05_Management_Review.pdf",
+      "bytes": 51168,
+      "sha256": "a1b42897f82d326cadfb0e19f41b7f7aca12dcca530f365289073b956036ea17"
+    },
+    {
+      "path": "Experience/cases/MULTI-05/sources/Owner_Scope_Register.csv",
+      "bytes": 141,
+      "sha256": "0a1703961de3b2098e6a3db4096562934f9b9c70ec19a362ce39e287b9e93084"
+    },
+    {
+      "path": "Experience/cases/MULTI-05/sources/Shared_Trade_Package.csv",
+      "bytes": 613,
+      "sha256": "fd5b64aec9e60e6ae8aebde0d25b341c3e7b710ad2566ff58d978c7ed6ee4d07"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/NORTHLINE-04_Evidence_Workbook.xlsx",
+      "bytes": 19229,
+      "sha256": "278fcfa825085cc605203c0ea28544f3b46cf1c627d3e25464ac607df6f5be26"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/NORTHLINE-04_Management_Review.html",
+      "bytes": 11251,
+      "sha256": "f503439936509392db6cbdcbc0ff9669b8c234521fd5c84b399423fb0e453cfc"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/NORTHLINE-04_Management_Review.pdf",
+      "bytes": 66443,
+      "sha256": "1a8380d1227082a560012af4d48c8099ad2143ad0f08facc5f08f105c6b1e783"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/sources/Activity_Extract_RevA.csv",
+      "bytes": 430,
+      "sha256": "e4ece9357b4e9caf76e91141ad437ab7ff14be526573f80a625d24fa10e3a9fb"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/sources/Budget_Allowances.csv",
+      "bytes": 487,
+      "sha256": "a07c0841ee2d5dbfd307cd38858af092102e915a57c7043000dcc7884ad6b663"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/sources/Owner_Scope_Register.csv",
+      "bytes": 202,
+      "sha256": "f28a7bcf2894afb76bce449a2585c865755fe086cbbfbd35f50f62fff0573351"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/sources/Review_and_Allocation_Notice.docx",
+      "bytes": 1238,
+      "sha256": "8285a96c4693112bec5c44a79bc7421ed692dc1a28969d68e0864058876f626f"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/sources/Switchgear_Dates_Proposed_RevB.csv",
+      "bytes": 215,
+      "sha256": "357ab1a5d69b7388bae228dcf1c889c13ef86d10e84e1bd8ea9cc154686ce849"
+    },
+    {
+      "path": "Experience/cases/NORTHLINE-04/sources/Trade_Package_Register.csv",
+      "bytes": 473,
+      "sha256": "638cf3c033f4095e37032ce9a032fe65a523db9b18155857289112eb9d972bdc"
+    },
+    {
+      "path": "Experience/fonts/archivo-latin-400-normal.woff2",
+      "bytes": 14700,
+      "sha256": "07f9160163da2ec0f6376ef9d27a2bb8163f98019ba798da4baafb154e30056e"
+    },
+    {
+      "path": "Experience/fonts/archivo-latin-700-normal.woff2",
+      "bytes": 14508,
+      "sha256": "abada6cd4c92a9a706f6d7ed3189f322ff43dd78b9402c7d1137465b861d2a04"
+    },
+    {
+      "path": "Experience/icons-LICENSE.txt",
+      "bytes": 3681,
+      "sha256": "526ec3ec3c55d237cf15eef7d3dd70b419dbdeb7ef9fc3906b1f28c93fdf4028"
+    },
+    {
+      "path": "Experience/index.html",
+      "bytes": 319,
+      "sha256": "4389534c3f58b1a1d41733b5e9b88fd1c0e9ceb95cfe3b5b82a01d4166b06557"
+    },
+    {
+      "path": "Experience/package-check.svg",
+      "bytes": 105,
+      "sha256": "9b96e178092450c069be1e75cc3164546fd216af41990822b0c6869ec9c55ac2"
+    },
+    {
+      "path": "Fonts/Archivo-400.ttf",
+      "bytes": 40576,
+      "sha256": "f5eab63c758024d350f454b46cce73eaaa2b296938bdf2dff184d288036844c1"
+    },
+    {
+      "path": "Fonts/Archivo-700.ttf",
+      "bytes": 40796,
+      "sha256": "4d9c7c7b64c80fe618446e8e02a2502b8417847bd59a5fb75edd671f68c0779a"
+    },
+    {
+      "path": "Fonts/DejaVu-Licence.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "Fonts/DejaVuSans.ttf",
+      "bytes": 759720,
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+    },
+    {
+      "path": "Fonts/OFL-Archivo.txt",
+      "bytes": 4503,
+      "sha256": "c3c8402eec0e31dc9a76851235b1c02a0bb821488b2db8e35bcc2ab60ca8fc2b"
+    },
+    {
+      "path": "Marketing/Proposed_Introduction.md",
+      "bytes": 827,
+      "sha256": "dc455a1237883e7e1e6638041e3d6fcd05a645989117558f42ee54dede6a7550"
+    },
+    {
+      "path": "Marketing/WBS-LINK_Capability_Brief.html",
+      "bytes": 116849,
+      "sha256": "d8402c8f2ae714e3200406cb7ec5167385cb148263508ed21affa3629f3932c9"
+    },
+    {
+      "path": "Marketing/WBS-LINK_Capability_Brief.pdf",
+      "bytes": 38937,
+      "sha256": "9d78678b97f20b9bd0bb1dcce0fa8c5767064f022ae0e77d87ccae97d6bcb6ff"
+    },
+    {
+      "path": "Marketing/WBS-LINK_Executive_Presentation_6slides.pdf",
+      "bytes": 245065,
+      "sha256": "82f10789b9b0851c3f80dd85e99cc9c293b8fa3ed81f01b8ce7c13cf26a36d7f"
+    },
+    {
+      "path": "Marketing/WBS-LINK_Executive_Presentation_6slides.pptx",
+      "bytes": 65322,
+      "sha256": "674a4eba52d012737410a11d8410db0aa09a6c7b70f43fe5f5442aa73f99f71f"
+    },
+    {
+      "path": "OPEN_FIRST.txt",
+      "bytes": 1169,
+      "sha256": "fff818f9409fc03d37cb42e15cc4e965d3b2fb83ac31b9605c5a0ed938106abe"
+    },
+    {
+      "path": "Practice/HarbourLink_Case_Briefing.md",
+      "bytes": 897,
+      "sha256": "1914582342670aa27022502b96085e8a5f788b6001f4959e3e8fea1ec1fc4f5f"
+    },
+    {
+      "path": "Practice/harbourlink-practice-project.zip",
+      "bytes": 102832,
+      "sha256": "7b0fa447bca7311f3f5b81bb5787753a7e27ab64305864df1a3c35cb382181a7"
+    },
+    {
+      "path": "Reports/cycle1/Integrated_Management_Report.html",
+      "bytes": 15801,
+      "sha256": "84eb05a3c2c81ca8bb8d7cde21f803e5ee084c384c270344c45044389a82b792"
+    },
+    {
+      "path": "Reports/cycle1/Integrated_Management_Report_Print.pdf",
+      "bytes": 76249,
+      "sha256": "bf51ceaea0a20ba6b73289e8e3f4e5332e0fd01082c24c8490ce740f56245325"
+    },
+    {
+      "path": "Reports/cycle1/Premium_Workbook.xlsx",
+      "bytes": 653345,
+      "sha256": "0f9ae279c82264577ab4c8301f03d5e7c372943e75838eeb95eaa7fd7a0b1dce"
+    },
+    {
+      "path": "Reports/cycle2/Integrated_Management_Report.html",
+      "bytes": 14323,
+      "sha256": "8494289aa3aafc60baf06e836ce58b969b8c43eba54dec04e9000fb93a5fef4a"
+    },
+    {
+      "path": "Reports/cycle2/Integrated_Management_Report_Print.pdf",
+      "bytes": 70526,
+      "sha256": "4f7f3f4e0a76190a8cfafe63ae7be043c15949bfc239d3156b79edaa7d35c392"
+    },
+    {
+      "path": "Reports/cycle2/Premium_Workbook.xlsx",
+      "bytes": 586316,
+      "sha256": "4ebc3db12bdd3b61d19fcc863622be40bb528abc7a19215657abdcba50dfb9ff"
+    },
+    {
+      "path": "Website/index.html",
+      "bytes": 46961,
+      "sha256": "12e22925e080c0146d32aa94ef748a2a382194aa91ec373ade3f61b22ac745b8"
+    }
+  ],
+  "commercial_source": "This repository owns the final commercial HTML, including direct capability/deck downloads; the product SHA identifies the shared workspace."
+}

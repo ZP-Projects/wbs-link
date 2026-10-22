@@ -1,0 +1,5 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+I-S01,I01.1.10,Prepare process foundations,Granite Civil,Phase 1,2026-06-01,2026-07-05,,,A,Source assertion
+I-S02,I01.1.20,Set process equipment,Forge Mechanical,Phase 1,2026-07-06,2026-08-20,,,A,Source assertion
+I-S03,I01.2.20,Energize electrical distribution,Vector Power,Phase 2,2026-09-01,2026-09-30,,,A,Source assertion
+I-S04,I01.3.10,Integrated commissioning,Start-up team,Phase 3,2026-10-15,2026-11-15,,,A,Source assertion

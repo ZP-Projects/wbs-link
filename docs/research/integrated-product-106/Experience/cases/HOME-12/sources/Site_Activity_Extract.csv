@@ -1,0 +1,4 @@
+Record ID,Owner Code,Description,Trade,Phase,Start,Finish,Amount,Currency,Revision,Status
+H-S01,H12.10,Frame ground floor,Timberline,Shell,2026-06-01,2026-06-20,,,A,Source assertion
+H-S02,H12.20,Electrical rough-in,Cedar Electric,Services,2026-06-22,2026-07-08,,,A,Source assertion
+H-S03,,"Coordination allowance, work area unspecified",,Services,,,,,A,Source assertion

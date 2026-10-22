@@ -1,0 +1,7 @@
+Owner Code,Name,Parent
+N01,Northline data centre,
+N01.A,Building A,N01
+N01.A.E,Electrical,N01.A
+N01.A.E.SG,Switchgear,N01.A.E
+N01.A.E.CX,Electrical commissioning,N01.A.E
+N01.A.M,Mechanical,N01.A
