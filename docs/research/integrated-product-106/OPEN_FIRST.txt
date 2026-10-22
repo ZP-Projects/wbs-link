@@ -12,3 +12,6 @@ Website/index.html is the commercial introduction. The retained HarbourLink film
 All projects are fictional. No live folder or external AI is connected. Proposal review, professional decisions, whole-version approval and payment certification remain separate.
 
 If your organisation blocks local HTML, do not change security settings. The PDFs and workbooks remain available directly in Experience/cases and Reports. Native Windows Edge opening, full Microsoft Office features, screen readers, physical phones and actual unaided human comprehension require separate acceptance checks.
+
+
+Presentation opening: begin with Marketing/WBS-LINK_Executive_Presentation_6slides.pdf for the reference appearance. The editable .pptx uses Archivo. If your organisation permits font installation, install the supplied Fonts/Archivo-400.ttf and Archivo-700.ttf before editing, then restart your presentation app. Font substitution can change line wrapping. Do not change security settings. Native Microsoft PowerPoint acceptance remains pending.

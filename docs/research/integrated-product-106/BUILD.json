@@ -1,17 +1,17 @@
 {
-  "product_source_sha": "9321a8485a554149e451b4bc7d4188aadae88d2c",
+  "product_source_sha": "53794f67aa2d9b0b33970dbaa6d4813459db3afa",
   "website_base_sha": "aac3e67249c37b6fef5004f2e9e293e88a2f4f42",
-  "scope": "Same-component integrated product candidate. Existing #73 hosted services, films and frozen reports are untouched. No deployment.",
+  "scope": "Bounded ROUND0 review corrections; one matching integrated candidate. Frozen website root and accepted films unchanged. No deployment.",
   "files": [
     {
       "path": "00_START_HERE.html",
-      "bytes": 7270353,
-      "sha256": "36a7a6fe8a263458db7e9f8720b6fcc4359c7c48842bd6665e784a0161b054dd"
+      "bytes": 7271169,
+      "sha256": "9ec3937021a627ee139863b438d845ec63b3e6ecd0f6c04add9c820c2edb1efb"
     },
     {
       "path": "01_Review_Status.html",
-      "bytes": 2960,
-      "sha256": "8843b3a9fb918a44de7fc4ea19c5c31350aef056282da002a79db9f9bd3c06b6"
+      "bytes": 3365,
+      "sha256": "08518c4faa6b75af5df97e8b041fcfe2f9df3e83f6ef2f38094abfec7d701d03"
     },
     {
       "path": "02_HarbourLink_First_Time_Guide.html",
@@ -25,13 +25,13 @@
     },
     {
       "path": "03_Watch_the_Films.html",
-      "bytes": 1349,
-      "sha256": "4a5fe93e63cfb992e833647df69ed926566308c904f421c277452a497489acb9"
+      "bytes": 5900,
+      "sha256": "72b0b0891803b90fd906d179d699600ee0019b7958cbcfe26a0f2bf86f4bff2e"
     },
     {
       "path": "Experience/cases/HOME-12/HOME-12_Evidence_Workbook.xlsx",
-      "bytes": 20463,
-      "sha256": "72f2c6efcf249bd9c00d32740f9e615c09041ee8b2dbf1a8800fdfc139879c3e"
+      "bytes": 20781,
+      "sha256": "1caada1252e5782a53f78751bd747b0ea28b5d47b78c14aaaed362e11484e6f9"
     },
     {
       "path": "Experience/cases/HOME-12/HOME-12_Management_Review.html",
@@ -85,8 +85,8 @@
     },
     {
       "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Evidence_Workbook.xlsx",
-      "bytes": 21200,
-      "sha256": "8ec434a7f0761488c4b5810d942ca986c53b123060198a306851cf68b3564850"
+      "bytes": 21570,
+      "sha256": "93ca7ca25381987279c4ad791ab595107509aae1045a643b4b472f37261ed7be"
     },
     {
       "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Management_Review.html",
@@ -140,8 +140,8 @@
     },
     {
       "path": "Experience/cases/MULTI-05/MULTI-05_Evidence_Workbook.xlsx",
-      "bytes": 16621,
-      "sha256": "c7df638b2d3637d1a01c8d97ca523f32a3c1382a2267e4578b3c5625a51e2d78"
+      "bytes": 16334,
+      "sha256": "090e5c1e565fb562f97da825afef30c58f6a581b7de5b02847fd02d07386fe0d"
     },
     {
       "path": "Experience/cases/MULTI-05/MULTI-05_Management_Review.html",
@@ -165,8 +165,8 @@
     },
     {
       "path": "Experience/cases/NORTHLINE-04/NORTHLINE-04_Evidence_Workbook.xlsx",
-      "bytes": 19229,
-      "sha256": "278fcfa825085cc605203c0ea28544f3b46cf1c627d3e25464ac607df6f5be26"
+      "bytes": 18942,
+      "sha256": "e1698ead74156de5f0bf192004a4c3bca7a67ee89b87d24da614d59a96188b66"
     },
     {
       "path": "Experience/cases/NORTHLINE-04/NORTHLINE-04_Management_Review.html",
@@ -285,8 +285,8 @@
     },
     {
       "path": "OPEN_FIRST.txt",
-      "bytes": 1169,
-      "sha256": "fff818f9409fc03d37cb42e15cc4e965d3b2fb83ac31b9605c5a0ed938106abe"
+      "bytes": 1617,
+      "sha256": "7dd57c9329c654fc05e13c5aefead82e699d9e2aa572bd43ea082652572dedc4"
     },
     {
       "path": "Practice/HarbourLink_Case_Briefing.md",
@@ -300,33 +300,33 @@
     },
     {
       "path": "Reports/cycle1/Integrated_Management_Report.html",
-      "bytes": 15801,
-      "sha256": "84eb05a3c2c81ca8bb8d7cde21f803e5ee084c384c270344c45044389a82b792"
+      "bytes": 17908,
+      "sha256": "2d21f51b51d9d8c28520ba8921ba4c68b7a9250ad1357bc4376010f2e2cf92c3"
     },
     {
       "path": "Reports/cycle1/Integrated_Management_Report_Print.pdf",
-      "bytes": 76249,
-      "sha256": "bf51ceaea0a20ba6b73289e8e3f4e5332e0fd01082c24c8490ce740f56245325"
+      "bytes": 81754,
+      "sha256": "6b7782f175a82de3f1159980b5b3c2cea95ccf2dec8751fde359b099b55399b9"
     },
     {
       "path": "Reports/cycle1/Premium_Workbook.xlsx",
-      "bytes": 653345,
-      "sha256": "0f9ae279c82264577ab4c8301f03d5e7c372943e75838eeb95eaa7fd7a0b1dce"
+      "bytes": 675479,
+      "sha256": "e83d8e4269853d8a96736b350ca5bcc1af7f0b853d206cd825eafcd966226697"
     },
     {
       "path": "Reports/cycle2/Integrated_Management_Report.html",
-      "bytes": 14323,
-      "sha256": "8494289aa3aafc60baf06e836ce58b969b8c43eba54dec04e9000fb93a5fef4a"
+      "bytes": 16481,
+      "sha256": "fea26b3ce12d8dd3d615250ecd6f9990bff0bea1e0f53288b25b85451840d6a8"
     },
     {
       "path": "Reports/cycle2/Integrated_Management_Report_Print.pdf",
-      "bytes": 70526,
-      "sha256": "4f7f3f4e0a76190a8cfafe63ae7be043c15949bfc239d3156b79edaa7d35c392"
+      "bytes": 76088,
+      "sha256": "ecc94602fbe2a77ed228de90d707e0e47f9a5502ed1d4df00175daf75a8d8523"
     },
     {
       "path": "Reports/cycle2/Premium_Workbook.xlsx",
-      "bytes": 586316,
-      "sha256": "4ebc3db12bdd3b61d19fcc863622be40bb528abc7a19215657abdcba50dfb9ff"
+      "bytes": 607654,
+      "sha256": "fbaac2417842f694abaaaeaac5425464903b4663157c18f7eebd03af884daafe"
     },
     {
       "path": "Website/index.html",
