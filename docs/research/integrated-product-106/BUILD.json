@@ -1,12 +1,12 @@
 {
-  "product_source_sha": "17ffb513747b363305fc780ffe8c908b6fc08b9b",
+  "product_source_sha": "0de5d701040d702467c42796655a5530bad3c6c2",
   "website_base_sha": "aac3e67249c37b6fef5004f2e9e293e88a2f4f42",
   "scope": "Bounded ROUND0 review corrections; one matching integrated candidate. Frozen website root and accepted films unchanged. No deployment.",
   "files": [
     {
       "path": "00_START_HERE.html",
       "bytes": 7353322,
-      "sha256": "ff574660ecde7ca9408ea72ac63d8245bc0231cef9dbf16ffbacc8a32fc20ecb"
+      "sha256": "dd5cf2429e2497a0b4b342b746e2abb3e6e129ecec6f737e1f876d70c0e7acc7"
     },
     {
       "path": "01_Review_Status.html",
@@ -30,8 +30,8 @@
     },
     {
       "path": "Experience/cases/HOME-12/HOME-12_Evidence_Workbook.xlsx",
-      "bytes": 20781,
-      "sha256": "e323f964849a8644176b8ce7ee6ce7509c5504aa55f992c5407eea42e8676255"
+      "bytes": 20778,
+      "sha256": "3d35a1dc2351c8f76335f8b38799478db75789b95ff0fc9af61d8473ac08c953"
     },
     {
       "path": "Experience/cases/HOME-12/HOME-12_Management_Review.html",
@@ -85,8 +85,8 @@
     },
     {
       "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Evidence_Workbook.xlsx",
-      "bytes": 21570,
-      "sha256": "86d70ad9836c370919c332eb421da503f50b02cc97e510ed187d0d3ceba83a5a"
+      "bytes": 21571,
+      "sha256": "4af49990fa655a35dd8143c16b5237dfc592ec08c9d0559186b29610c83c81f7"
     },
     {
       "path": "Experience/cases/INDUSTRIAL-01/INDUSTRIAL-01_Management_Review.html",
@@ -300,13 +300,13 @@
     },
     {
       "path": "Reports/cycle1/Integrated_Management_Report.html",
-      "bytes": 17869,
-      "sha256": "9924fb282fa44e4b24ad9f43e6daec4aaac92469a6ecec9fc0669c4c3992e6e1"
+      "bytes": 17818,
+      "sha256": "723cbefc63abb7931d9b585be567de7dd8c59b701ad5599a03179d82247eb4c4"
     },
     {
       "path": "Reports/cycle1/Integrated_Management_Report_Print.pdf",
-      "bytes": 81761,
-      "sha256": "8c5d1f1387d27f2ca2478ba3464883363f64b543a8472ad6f7b84eb7033d4815"
+      "bytes": 81624,
+      "sha256": "fc9b0def0e71fde60f3df52de8e026cae1381aad2141bf18fbd68e22bf728cc9"
     },
     {
       "path": "Reports/cycle1/Premium_Workbook.xlsx",
@@ -315,13 +315,13 @@
     },
     {
       "path": "Reports/cycle2/Integrated_Management_Report.html",
-      "bytes": 16442,
-      "sha256": "b440811e653c5ef138e8aeaafc715f186377f45a1ae44b8f192f3735a293ce3a"
+      "bytes": 16391,
+      "sha256": "59307df42b114f06cbcb8266c486da6fb790c0144c38254becc0bc778c9cda79"
     },
     {
       "path": "Reports/cycle2/Integrated_Management_Report_Print.pdf",
-      "bytes": 76095,
-      "sha256": "a674273c62e1a58e2469903514f68ebd0d024a6044f77c03020e70e712ce8f72"
+      "bytes": 75959,
+      "sha256": "4bada59e527f8efb94aa55d0a0ab1c593369ea32862991bf921a4cde49e8a2e1"
     },
     {
       "path": "Reports/cycle2/Premium_Workbook.xlsx",
